@@ -138,36 +138,13 @@
 
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Jennifer Heise</h4>
-            <p>Dipl. Sozialpädagogin, Dipl. Tanzpädagogin (TI), Theaterpädagogin, Systemische Beraterin, intouch Massagetherapeutin Hauptberuflich in der Ev. Jugendarbeit tätig- Schwerpunkt Musicalprojektarbeit</p>
+            <p>Dipl. Sozialpädagogin, Dipl. Tanzpädagogin (TI), Theaterpädagogin, hauptberuflich in der Ev. Jugendarbeit tätig- Schwerpunkt Musicalprojektarbeit</p>
           </div>
 
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Wolfgang Hering</h4>
             <p>Diplom-Pädagoge und Musiker, seit 1994 freiberuflicher Kinderliedermacher und Buchautor</p>
             <a class="hyperlink" rel="”noreferrer”" href="https://www.wolfganghering.de" target="_blank">wolfganghering.de</a>
-          </div>
-
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Nnandi Jones</h4>
-            <p>Diplom-Tanzpädagogin (TI), Choreografin, Tänzerin mit dem Schwerpunkt Dancehall/Ragga, Soca und Hip Hop sowie Lehrerin (u.a. Studium an der Deutschen Sporthochschule Köln mit dem Schwerpunkt Tanz), Mitbegründerin, Choreografin, Leiterin und Tänzerin der Tanz Crew RUDE GIRLS, die bei Contests, Festivals, Charityveranstaltungen etc. tanzt. Tänzerin und Choreografin bei diversen Fernsehshows- und Serien, Musikvideos, Modenschauen, dem Christopher Street Day, Galas, Bällen, etc. Tanzpädagogin an verschiedenen Tanzschulen und Schulen für Kinder, Jugendliche und Erwachsene in Köln und Umgebung (Kurse, Workshops) und ehemals an der Deutschen Sporthochschule Köln. Choreografie- und Bühenprojekte für Kinder und Jugendliche: z.B. Pro Stage, Musik und Bewegung an Schulen, Tanz AGs für Kinder, die mit verschiedenen Tanzstilen innerhalb Kölns auftreten. Zusätzliche langjährige Tanzerfahrung in Jazz, Modern, Ballett, Afrikanischem Tanz etc.</p>
-          </div>
-
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Theresia Kammann</h4>
-            <p>ist Dipl. Tanzpädagogin (TI) und studierte auch Tanz an der Dans`Art Academy. Durch vielfältige Erfahrungen im Unterrichten und bei Bühnenprojekten ist ihr eine Balance zwischen künstlerischem Ausdruck und fundiertem Wissen besonders wichtig.</p>
-          </div>
-
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Jungyeon Kim</h4>
-            <p>Choreographin, zeitgenössische Tanzpädagogin, Dozentin, Certified Laban Movement Analyst. J. Kim vermittelt Tanz in Bildungskontexten für SchülerInnen, Studierende, ErzieherInnen und LehrerInnen, in Fortbildungskontexten für Tätige im Bereich Kunst- und Kulturvermittlung, sowie auch durch Kurse und Workshops für Tanzbegeisterten.</p>
-            <a class="hyperlink" rel="”noreferrer”" href="https://www.jungyeonkim.com" target="_blank">jungyeonkim.com</a>
-          </div>
-
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Andrea Marton</h4>
-            <p>Tanzvermittlerin, Feldenkrais-Lehrerin und Choreografin. Sie vermittelt seit über 20 Jahren zeitgenössischen Tanz an Kinder, Jugendliche und Erwachsene. Seit sieben Jahren leitet sie das Tanzlabor60plus und diverse Mixed-Age-Projekte. Andrea Marton choreografiert Kinder- und Jugendtanzstücke und leitet generationsübergreifende Projekte für die Bühne und den öffentlichen Raum. Als erfahrene Tanzvermittlerin gibt sie Fort- und Weiterbildungen im In- und Ausland.</p>
-            <p>Sie ist künstlerische Co-Leitung von FOKUS TANZ (Tanzplan München) und verantwortlich für die Projektbegleitung der Tanzkünstler*innen und für das Fortbildungsprogramm des Projektleiterpools.</p>
-            <p>Aktuell hat sie ein Stipendium zu Methodenforschung smart- zwischen Real und Digital in der zeitgenössischen Tanzvermittlung. Gemeinsam mit Martina Kessel leitet sie das Förderformat von Neustart Kultur Reconnect participative Dance bei dem Bundesverband Aktion Tanz.</p>
           </div>
 
           <div class="___guest flex flex-col">
@@ -188,20 +165,10 @@
           </div>
 
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Kathrin Steinert</h4>
-            <p>Diplom Tanzpädagogin (TI), Gesellschaftstanzlehrerin (DTHO), in Ausbildung für Orientalischen Tanz (Catt) in Berlin, Langjährige Tanzerfahrung in Salsa, Bachata und Kizomba durch die Teilnahme an internationalen Workshops, studierte Grundschullehrerin</p>
-          </div>
-
-          <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Sabine von Stuckrad</h4>
             <p>DiplomTanzpädagogin (TI), staatl. anerkannte Motopädin, Moving Cycle Practitioner + Theaterplastikerin</p>
           </div>
-
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Verena Tarnai</h4>
-            <p>Diplom Tanzpädagogin (TI) und Erzieherin. Seit 2012 selbständig als Tanzpädagogin mit den Schwerpunkten Kreativer Kindertanz, Hip Hop und Funky Jazz für Kinder im Kindergarten- und Grundschulalter. Sie leitet eigene Kindertanzkurse, Tanz-AGs und Tanzprojekte (z.B. über NRW Landesprogramm "Kultur undSchule"), sowie Tanz-Workshops für ERwachsene (kfd) mit Schwerpunkten Kreativer Tanz und Folklore.</p>
-          </div>
-
+          
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Adams Tchawodji</h4>
             <p>kommt aus Lomé, Togo und ist seit seiner Kindheit tanzinteressiert. Seit 2003 beginnt sein professioneller Werdegang im Rahmen einer Ausbildung bei der Gruppe "Dagbeneva" in Kpalimé, Togo. Inhalte: Erstellen und Erlernen von Choreografien, diverse Auftritte vor hohem Publikum plus regelmäßigem Training. 2015 reist er mit einem tänzerischen Zertifikat im Bereich "westafrikanischer traditioneller Tanz" nach Deutschland, er unterrichtet seitdem diesen Tanz in der Tanzzentrale Leipzig und danach in Köln. Hier beginnt er mit der Organisation und Durchführung von Workshops, sowie mit dem selbständigen Projekt "TrommelTanz" für Kinder.</p>
