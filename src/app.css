@@ -7,19 +7,19 @@ html {
 }
 
 .ti_headline_blue_bold {
-  @apply font-bold text-2xl lg:text-3xl uppercase tracking-wide text-ti_blue_accent;
+  @apply font-bold text-2xl lg:text-3xl uppercase tracking-wide text-ti_blue_accent break-words;
 }
 
 .ti_headline_blue_light {
-  @apply font-extralight text-2xl lg:text-3xl uppercase tracking-wide text-ti_blue_mat;
+  @apply font-extralight text-2xl lg:text-3xl uppercase tracking-wide text-ti_blue_mat break-words;
 }
 
 .ti_subheadline_blue_bold {
-  @apply font-bold text-lg lg:text-xl uppercase tracking-wide text-ti_blue_accent;
+  @apply font-bold text-lg lg:text-xl uppercase tracking-wide text-ti_blue_accent break-words;
 }
 
 .ti_subheadline_blue_light {
-  @apply font-extralight text-xl lg:text-2xl uppercase tracking-wide text-ti_blue_mat;
+  @apply font-extralight text-xl lg:text-2xl uppercase tracking-wide text-ti_blue_mat break-words;
 }
 
 .graphcms_card_startpage a,
