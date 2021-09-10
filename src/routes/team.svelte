@@ -132,7 +132,8 @@
 
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Anne Grafweg</h4>
-            <p>Dipl. Tanzpädagogin, Ausbildung an der Hochschule der Künste (Arnheim) mit Schwerpunkt Moderner Tanz, Ballett, Jazzdance. Regelmäßige Fortbildungen u.a. bei Royston Maldoom, Bruce Taylor, Susanne Linke. Langjährige Unterrichtstätigkeit mit Kindern, Jugendlichen und Erwachsenen. Zahlreiche Engagements als Tänzerin u.a. am Schauspielhaus Düsseldorf und bei freien Kompanien. Choreografische Arbeit seit 1991 u.a. in der Choreografischen Werkstatt Solingen. Seit 2012 ausgebildete Yoga Vidya Lehrerin.</p>
+            <p>Dipl. Tanzpädagogin, Ausbildung an der Hochschule der Künste (Arnheim), Schwerpunkte sind Moderner Tanz, Ballett, Jazzdance. Engagements als Tänzerin am Schauspielhaus Düsseldorf u.a., choreografische Arbeit in der Choreografischen Werkstatt Solingen. Unterrichtserfahrung mit Kindern, Jugendlichen und Erwachsenen.
+            </p>
             <a class="hyperlink" rel="”noreferrer”" href="https://www.anne-grafweg.de" target="_blank">anne-grafweg.de</a>
           </div>
 
@@ -156,7 +157,7 @@
 
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Mônica Santos</h4>
-            <p>Tanz-Ausbildung in Brasilien (Conservatório Musical Santa Cecília, Academia de Dança Eleonora Oliosi), Schwerpunkt Klassischer Tanz, Weiterbildung in Modern- und Jazz Dance. Pädagogische Ausbildung in Brasilien und Deutschland (Academia de Dança Marian Guimarães, Deutscher Bundersverband Tanz e. V.). Weiterbildung in Tanz für Kinder und Improvisation. Tänzerin u. a. in der Companhia de Danca Eleonora Oliosi und in der Oper Bonn. Seit 1992 als Tänzerin und Pädagogin in Deutschland tätig. Seit 2000 regelmäßige Teilnahme mit Jugendlichen an verschiedenen nationalen und internationalen Tanzwettbewerben.Leitung des Gira-Girô Tanztheaters (mehrere Eigenproduktionen im In- und Ausland u.a.: „Zwei Zentimeter neben den Wolken“, „how to talk to flowers“, „Raça“, „Bandolins“)</p>
+            <p>Tänzerin, Tanzpädagogin mit Ausbildungen in Brasilien (Conservatório Musical Santa Cecília, Academia de Dança Eleonora Oliosi) und Deutschland; Schwerpunkte Klassischer Tanz, Weiterbildung in Modern- und Jazz Dance, Improvisation und Tanz für Kinder. Tänzerin in der Companhia de Danca Eleonora Oliosi und der Oper Bonn. Teilnahme mit Jugendlichen an nationalen und internationalen Tanzwettbewerben.</p>
           </div>
 
           <div class="___guest flex flex-col">
@@ -171,12 +172,12 @@
           
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Adams Tchawodji</h4>
-            <p>kommt aus Lomé, Togo und ist seit seiner Kindheit tanzinteressiert. Seit 2003 beginnt sein professioneller Werdegang im Rahmen einer Ausbildung bei der Gruppe "Dagbeneva" in Kpalimé, Togo. Inhalte: Erstellen und Erlernen von Choreografien, diverse Auftritte vor hohem Publikum plus regelmäßigem Training. 2015 reist er mit einem tänzerischen Zertifikat im Bereich "westafrikanischer traditioneller Tanz" nach Deutschland, er unterrichtet seitdem diesen Tanz in der Tanzzentrale Leipzig und danach in Köln. Hier beginnt er mit der Organisation und Durchführung von Workshops, sowie mit dem selbständigen Projekt "TrommelTanz" für Kinder.</p>
+            <p>kommt aus Lomé, Togo. Seit 2003 professioneller Ausbildung bei der Gruppe "Dagbeneva" in Kpalimé, Togo. Seit 2015 vermittelt er "westafrikanischer traditioneller Tanz" in Deutschland in derTanzzentrale Leipzig und danach in Köln. Aktkuell heißt sein Projekt "TrommelTanz" für Kinder.</p>
           </div>
 
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Anna von Redéy</h4>
-            <p>sie lernte seit ihrer Kindheit ungarischen Folkloretanz, besuchte Tanzcamps u.a. in Jazz und Hip Hop. Während eines Aufenthaltes in Togo besuchte sie ein zertifiziertes Praktikum bei der Gruppe "Dagbeneva" im Bereich westafrikansicher traditioneller Tanz. Hier erlernte sie Choreografien, Soloeinsätze und nahm an regelmäßigen Trainings und Auftritten in Kpalimé teil. 2017 bginnt sie mit der tanzpädaogischen Ausbildung bei Tanzimpulse Köln, derzeit in der Diplomstufe. Hier wird "Moderner Tanz" ein weiterer tänzerischer Schwerpunkt und intensiv trainiert.Derzeit arbeitet sie an der Oranisation und Durchführung des selbständigen Kindertanzprojektes "TrommerlTanz" in Köln-Kalk.</p>
+            <p>Tanzpädagogin, Schwerpunkte sind Folkloretanz, Jazz, Hip Hop, Moderner Tanz;  dazu kommt nach einem Praktikum in Togo bei der Gruppe "Dagbeneva" der  westafrikansicher traditionelle Tanz. 2017 beginnt sie mit der tanzpädagogischen Ausbildung bei Tanzimpulse Köln, derzeit in der Diplomstufe. Das Kindertanzprojektes "TrommelTanz" führt sie mit Adams Tchawodji gemeinsam durch.</p>
           </div>
         </div>
       </DefaultCard>
