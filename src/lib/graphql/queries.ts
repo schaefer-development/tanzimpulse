@@ -15,6 +15,10 @@ export const seminarFragment = gql`
       handle
       mimeType
     }
+    dokumente {
+      url
+      fileName
+    }
     preis
     format
     kurzbeschreibung
