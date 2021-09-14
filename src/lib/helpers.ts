@@ -1,4 +1,4 @@
-export const dateFormat = new Intl.DateTimeFormat('de-DE');
+export const dateFormat = new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short'  });
 
 export function overbooked(seminar: Seminar) {
   if (!seminar.maximaleAnzahlTeilnehmer) return false;
