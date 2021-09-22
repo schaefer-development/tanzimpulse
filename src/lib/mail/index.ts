@@ -3,7 +3,7 @@ import registration from './registration';
 
 const defaults = {
   from: 'info@tanzimpulse.de',
-  cc: 'mail@joschaefer.com'
+  cc: 'mail@joschaefer.com',
 };
 
 export function waitingListMessage(teilnehmer: Teilnehmer, seminar: Seminar) {
