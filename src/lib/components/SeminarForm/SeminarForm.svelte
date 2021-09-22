@@ -42,7 +42,7 @@
         </label>
       </div>
     </div>
-    <Button buttonstyle={'blue'}>Anmelden</Button>
+    <Button buttonstyle={'blue'}>Kostenpflichtig Anmelden</Button>
 
     <!--
 
