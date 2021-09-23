@@ -27,7 +27,6 @@ Bürozeiten<br>
 Montag bis Freitag: 8:30 - 13:00 Uhr<br >
 Dienstags und Donnerstags: 20:30 - 22:00 Uhr
 </p>
-  
 `;
 
 const text = (teilnehmer: Teilnehmer, seminar: Seminar) => html(teilnehmer, seminar).replace(/(<([^>]+)>)/gi, '');
