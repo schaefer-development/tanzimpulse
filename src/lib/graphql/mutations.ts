@@ -7,6 +7,7 @@ export const UPSERT_TEILNEHMER = gql`
       id
       name
       email
+      adresse
       seminare(where: { url: $url }) {
         ...seminarFragment
         kategorien {
