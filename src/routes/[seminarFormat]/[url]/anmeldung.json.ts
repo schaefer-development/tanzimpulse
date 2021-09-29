@@ -34,8 +34,8 @@ const requestVariables = (request: ServerRequest<any, any>) => {
     email: request.body.get('email'),
     name: request.body.get('name'),
     adresse: request.body.get('adresse'),
+    anmerkung: request.body.get('anmerkung'),
     datenverarbeitung: toBool(request.body.get('datenverarbeitung')),
-    fotoveroeffentlichung: toBool(request.body.get('fotoveroeffentlichung')),
     newsletter: toBool(request.body.get('newsletter'))
   };
 };
@@ -54,3 +54,4 @@ export const post: RequestHandler<any, FormData> = async (request) => {
   const location = `/${seminarFormat}/${url}/anmeldung/${res.status}`;
   return { status: 303, headers: { location } };
 };
+ 

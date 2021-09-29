@@ -2,6 +2,7 @@ import { dateFormat } from '../helpers';
 const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   <p>Hallo ${teilnehmer.name},</p>
   <p>${teilnehmer.adresse}</p>
+  <p>${teilnehmer.anmerkung}</p>
   <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" am ${dateFormat.format(new Date(seminar.datum))}.
   <br>Damit Ihr Platz reserviert ist, überweisen Sie bitte innerhalb von 14 Tagen, spätestens jedoch bis zum Veranstaltungstermin, den Betrag von ${seminar.preis} Euro auf folgendes Konto:</p>
   <p>IBAN: 12345689<br>

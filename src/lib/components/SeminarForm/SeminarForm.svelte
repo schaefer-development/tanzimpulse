@@ -27,14 +27,15 @@
         <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="adresse" placeholder="Musterstrasse 42, 12345 Musterstadt" required />
       </label>
 
+      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+      >Anmerkung (optional)
+      <textarea class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="anmerkung" placeholder="Anmerkung zur Anmeldung" rows="4" />
+    </label>
+
       <div class="___registration checkboxes flex flex-col space-y-6 mb-8">
         <label class="flex mt-4">
           <input class="mr-4 h-6 w-6 block bg-white border-2 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0" type="checkbox" name="datenverarbeitung" required />
           <p>Ich habe die <a class="hyperlink" href="{base}/content/AGB_2020.pdf" target="_blank">AGBs</a>, die <a class="hyperlink" href="{base}/content/Widerrufsbelehrung_2020.pdf" target="_blank">Widerrufsbelehrung</a> sowie die Maßnahmen zum <a class="hyperlink" sveltekit:prefetch href="{base}/datenschutz">Datenschutz</a> gelesen und akzeptiert</p>
-        </label>
-        <label class="flex items-center">
-          <input class="mr-4 h-6 w-6 block bg-white border-2 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0" type="checkbox" name="fotoveroeffentlichung" />
-          Ich willige ein, dass Kursfotos von mir später auf der Webseite veröffentlicht werden dürfen
         </label>
         <label class="flex items-center">
           <input class="mr-4 h-6 w-6 block bg-white border-2 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0" type="checkbox" name="newsletter" />
