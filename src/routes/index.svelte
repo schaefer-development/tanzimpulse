@@ -62,7 +62,7 @@
       <div class="flex items-start">
         <div class="bg-ti_blue_mat p-4 md:p-6 lg:p-8 text-white shadow-ti hover:shadow-ti_hover transition duration-300 ease-in-out">
           <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide">Ausbildungen</h2>
-          <p class="py-4">Bilden Sie sich mit unseren Zusatzqualifikationen zur Tanzpädagogin oder zum Tanzpädagogen weiter. Weitere wichtige Tipps und Hinweise, die das Angebot schmackhaft machen.</p>
+          <p class="py-4">Werde Tanzpädagogin / Tanzpädagoge und integriere den Tanz in den Beruf oder vermittle Tanz neben- bzw. hauptberuflich – professionell und praxisnah geschult durch unser kompetentes Team.</p>
           <p class="py-4">
             <Button href="{base}/ausbildungen" buttonstyle={'blue'}>Mehr erfahren</Button>
           </p>
@@ -73,7 +73,7 @@
       <div class="flex items-start">
         <div class="bg-ti_cyan_mat p-4 md:p-6 lg:p-8 text-white shadow-ti hover:shadow-ti_hover transition duration-300 ease-in-out">
           <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide">Workshops</h2>
-          <p class="py-4">Integrieren Sie neue tanzpädagogischeImpulse in Ihren Arbeitsalltag.Ideal für Erzieher, Lehrer, Therapeuten, Übungsleiter und viele mehr!</p>
+          <p class="py-4">Immer top trainiert sein, Immer aktuell sein, mit Impulsen für die tanzpädagogische Praxis für alle Tanzinteressierten die mit  Kita-, Grundschulkindern, Jugendlichen und / oder Erwachsenen arbeiten.</p>
           <p class="py-4">
             <Button href="{base}/workshops" buttonstyle={'cyan'}>Mehr erfahren</Button>
           </p>
@@ -84,7 +84,7 @@
       <div class="flex items-start">
         <div class="bg-ti_green_mat flex flex-col p-8 text-white shadow-ti hover:shadow-ti_hover transition duration-300 ease-in-out">
           <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide">Tanzraum Vermietung</h2>
-          <p class="py-4">Alle Informationen zum Tanzraum. Den kann man nach Rücksprache auch mieten für Veranstaltungen, wie Lesungen, etc.</p>
+          <p class="py-4">Ein Raum mit angenehmer Atmosphäre für Weiterbildungen, Tanztrainings, Entspannung etc. mit Ausstattung für professionellen Unterricht.</p>
           <p class="py-4">
             <Button href="{base}/tanzraum" buttonstyle={'green'}>Mehr erfahren</Button>
           </p>
