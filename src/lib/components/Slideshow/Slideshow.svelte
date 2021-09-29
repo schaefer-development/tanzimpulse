@@ -18,7 +18,7 @@
       <img class="object-cover w-full shadow-ti" src="/images/slideshow/ausbildungen.jpg" alt="Ausbildungen bei Tanzimpulse" />
       <!-- text box -->
       <div class="absolute w-full h-full top-0 left-0">
-        <div class="slide_text_box absolute bottom-0 mx-20 mb-14 p-4">
+        <div class="slide_text_box absolute right-0 bottom-0 mx-20 mb-14 p-4">
           <div class="flex flex-row items-center">
             <div class="pr-6">
               <h2 class="text-xl md:text-2xl lg:text-3xl uppercase font-bold text-white tracking-wide">Ausbildungen</h2>
@@ -43,7 +43,7 @@
       <img class="object-cover w-full shadow-ti" src="/images/slideshow/workshops.jpg" alt="Workshops bei Tanzimpule" />
       <!-- text box -->
       <div class="absolute w-full h-full top-0 left-0">
-        <div class="slide_text_box absolute bottom-0 mx-20 mb-14 p-4">
+        <div class="slide_text_box absolute right-0 bottom-0 mx-20 mb-14 p-4">
           <div class="flex flex-row items-center">
             <div class="pr-6">
               <h2 class="text-xl md:text-2xl lg:text-3xl uppercase font-bold text-white tracking-wide">Workshops</h2>
@@ -68,7 +68,7 @@
       <img class="object-cover w-full shadow-ti" src="/images/slideshow/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
       <!-- text box -->
       <div class="absolute w-full h-full top-0 left-0">
-        <div class="slide_text_box absolute bottom-0 mx-20 mb-14 p-4">
+        <div class="slide_text_box absolute right-0 bottom-0 mx-20 mb-14 p-4">
           <div class="flex flex-row items-center">
             <div class="pr-6">
               <h2 class="text-xl md:text-2xl lg:text-3xl uppercase font-bold text-white tracking-wide">Tanzraum mieten</h2>
