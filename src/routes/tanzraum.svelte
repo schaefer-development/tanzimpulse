@@ -26,17 +26,38 @@
           </svg>
         </span>
 
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
+            <!-- single slide item -->
+            <div class="slide-content relative flex items-center">
+            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
+            </div>
+            <!-- -->
 
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
+            <!-- single slide item -->
+            <div class="slide-content relative flex items-center">
+            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum1.jpg" alt="Der Tanzraum von Tanzimpulse" />
+            </div>
+            <!-- -->
+
+            <!-- single slide item -->
+            <div class="slide-content relative flex items-center">
+            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2.jpg" alt="Der Tanzraum von Tanzimpulse" />
+            </div>
+            <!-- -->
+
+
+                  <!-- single slide item -->
+            <div class="slide-content relative flex items-center">
+            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum3.jpg" alt="Der Tanzraum von Tanzimpulse" />
+            </div>
+            <!-- -->
+
+
+            <!-- single slide item -->
+            <div class="slide-content relative flex items-center">
+            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum4.jpg" alt="Der Tanzraum von Tanzimpulse" />
+            </div>
+            <!-- -->
+
 
         <span class="control" slot="right-control">
           <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
