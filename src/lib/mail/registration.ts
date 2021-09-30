@@ -31,6 +31,10 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   Montag bis Freitag: 8:30 - 13:00 Uhr<br >
   Dienstags und Donnerstags: 20:30 - 22:00 Uhr
   </p>
+  <p>
+  <a href="https://www.tanzimpulse.de/content/AGB_2020.pdf" target="_blank">AGBs</a><br>
+  <a href="https://www.tanzimpulse.de/content/Widerrufsbelehrung_2020.pdf" target="_blank">Widerrufsbelehrung</a>
+  </p>
 `;
 
 const text = (teilnehmer: Teilnehmer, seminar: Seminar) => html(teilnehmer, seminar).replace(/(<([^>]+)>)/gi, '');
