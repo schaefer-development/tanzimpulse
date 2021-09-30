@@ -37,8 +37,10 @@
           51067 Köln<br />
           <br />
           <a href="{base}/impressum" aria-label="Impressum" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">Impressum</a><br />
-          <a href="{base}/datenschutz" aria-label="Datenschutz" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">Datenschutz</a>
-          <br /><br />
+          <a href="{base}/datenschutz" aria-label="Datenschutz" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">Datenschutz</a><br />
+          <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/AGB_2020.pdf" target="_blank">AGBs</a><br>
+          <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/Widerrufsbelehrung_2020.pdf" target="_blank">Widerrufsbelehrung</a>
+          <br />          <br />
           © 2021
         </p>
         <div class="___social_media_icons flex flex-wrap flex-row py-6 justify-center lg:justify-start">
