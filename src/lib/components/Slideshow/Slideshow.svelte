@@ -6,7 +6,7 @@
 </script>
 
 <div class="relative">
-  <Carousel perPage="1" autoplay="100000" easing="ease-in-out">
+  <Carousel perPage="1" autoplay="7000" easing="ease-in-out">
     <span class="control" slot="left-control">
       <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
