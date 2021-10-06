@@ -1,10 +1,10 @@
 name: Scheduled build
 on:
   schedule:
-  - cron: '* * * * *'
+    - cron: '* * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Trigger our build webhook on Netlify
-      run: curl -s -X POST ${{ secrets.NETLIFY_WEBHOOK_URL }}
+      - name: Trigger our build webhook on Netlify
+        run: curl -s -X POST ${{ secrets.NETLIFY_WEBHOOK_URL }}
