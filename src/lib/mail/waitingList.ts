@@ -27,7 +27,7 @@ Web: 	<a href="https://www.tanzimpulse.de" target="_blank">tanzimpulse.de</a>
 <p>
 Bürozeiten<br>
 Montag bis Freitag: 8:30 - 13:00 Uhr<br >
-Dienstags und Donnerstags: 20:30 - 22:00 Uhr
+Dienstags und Donnerstags: 18:00 - 19:30 Uhr
 </p>
 <p>
 <a href="https://www.tanzimpulse.de/content/AGB_2020.pdf" target="_blank">AGBs</a><br>

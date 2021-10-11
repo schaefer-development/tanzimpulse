@@ -3,12 +3,12 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   <p>Hallo ${teilnehmer.name},</p>
   <p>${teilnehmer.adresse}</p>
   <p>${teilnehmer.anmerkung}</p>
-  <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" am ${dateFormat.format(new Date(seminar.datum))}.
-  <br>Damit Ihr Platz reserviert ist, überweisen Sie bitte innerhalb von 14 Tagen, spätestens jedoch bis zum Veranstaltungstermin, den Betrag von ${seminar.preis} Euro auf folgendes Konto:</p>
-  <p>IBAN: 12345689<br>
-  Musterbank</p>
-  <p><strong>Erst nach Eingang der Kursgebühr auf unserem Konto ist Ihr Platz reserviert.</strong>
-  <br>Bitte haben Sie dafür Verständnis, dass bei Nichteingang des Betrages innerhalb der oben genannten Frist, wir Ihre Anfrage stornieren und den Platz wieder für andere Interessenten freigeben</p>
+  <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" am ${dateFormat.format(new Date(seminar.datum))} Uhr.
+  <br>Nach dieser Anmeldung ist die Kursgebühr innerhalb von 14 Tagen, spätestens jedoch bis zum Veranstaltungstermin zu entrichten. <br>
+  Überweisen Sie den Betrag von ${seminar.preis} Euro auf folgendes Konto:</p>
+  <p>IBAN: DE93 3707 0024 04637823 00
+  <br>Deutsche Bank</p>
+  <p>Für Anmeldungen zur Grund-, Aufbau- und Diplomstufe sind Ratenzahlungen möglich. Hierzu erhalten Sie eine Rechnung.</p>
   <p>Wir freuen uns auf Ihre Teilnahme und verbleiben mit freundlichen Grüßen</p>
   <p>Ihr Tanzimpulse-Team</p>
   <br>
@@ -29,7 +29,7 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   <p>
   Bürozeiten<br>
   Montag bis Freitag: 8:30 - 13:00 Uhr<br >
-  Dienstags und Donnerstags: 20:30 - 22:00 Uhr
+  Dienstags und Donnerstags: 18:00 - 19:30 Uhr
   </p>
   <p>
   <a href="https://www.tanzimpulse.de/content/AGB_2020.pdf" target="_blank">AGBs</a><br>
