@@ -49,7 +49,7 @@
 
         <hr class="block border border-coolGray-100 w-full my-4" />
 
-        <h2 class="ti_subheadline_blue_bold">5 Rhythmen NEU! 14tägig</h2>
+        <h2 class="ti_subheadline_blue_bold">5 Rhythmen (wöchentlich)</h2>
         <p class="ti_subheadline_blue_light">20:15 - 21:45 Uhr</p>
         <p>
           Referentin: Susanne Kehrein, Info:
@@ -74,21 +74,23 @@
         <h2 class="ti_subheadline_blue_bold">Jazz Dance Training & Choreos: Lyrical, Modern, Contemporary Style</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
         <p>Referentin: Susanne Krell, Anmeldung + Info: 0179 - 44 44 347</p>
-        <span class="text-3xl text-ti_red_accent uppercase font-bold tracking-wide hover:border-ti_red_accent">!!!!!</span><a class="hyperlink" href="http://www.gib.nrw.de/beratertool/" rel="noreferrer" target="_blank">falscher link</a>
+        <p>
+       <a class="hyperlink" href="https://naturheilpraxis-susanne-krell.de/cologne-jazz-dancer.html#features3-13" rel="noreferrer" target="_blank">naturheilpraxis-susanne-krell.de</a>
+      </p>
       </DefaultCard>
       <DefaultCard>
         <h2 class="ti_headline_blue_light pb-4">Mittwoch</h2>
 
         <h2 class="ti_subheadline_blue_bold">Sufi-Bewegungsmeditation 14tägig</h2>
         <p class="ti_subheadline_blue_light">8:30 - 9:45 Uhr</p>
-        <p class="pb-2">Referentin: Jutta Kuhlmann, Anmeldung+Info: <a class="hyperlink" rel="noreferrer" href="mailto:juttakuhlmann@freenet.de">juttakuhlmann@freenet.de</a></p>
+        <p class="pb-2">Referentin: Jutta Kuhlmann, Anmeldung + Info: <a class="hyperlink" rel="noreferrer" href="mailto:juttakuhlmann@freenet.de">juttakuhlmann@freenet.de</a></p>
         <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Fit in den Tag - Faszien-Fitness zum Wohlfühlen</h2>
         <p class="ti_subheadline_blue_light">10:00 - 11:00 Uhr</p>
         <p class="pb-2">Referentin: Nina Buttler, Info: <a class="hyperlink" rel="noreferrer" href="mailto:info@sichtartundweise.de">info@sichtartundweise.de</a></p>
         <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Kreativer Kindertanz für 4 bis 6jährige</h2>
-        <p class="ti_subheadline_blue_light">16:15 - 17:15 Uhr</p>
+        <p class="ti_subheadline_blue_light">16:00 - 17:00 Uhr und 17:00-18:00 Uhr</p>
         <p>Referentin: Stephanie Blömer, Anmeldung + Info</p>
         <p>
           <a rel="noreferrer" class="hyperlink" href="https://www.stephanie-bloemer.de/" target="_blank">stephanie-bloemer.de</a>
@@ -105,12 +107,10 @@
           <a rel="noreferrer" class="hyperlink" href="https://www.tanz-kommunikation.de/" target="_blank">tanz-kommunikation.de</a>
         </p>
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Afrikanischer Tanz mit Susanne + Christoph (Trommelbegleitung)</h2>
-        <p class="ti_subheadline_blue_light">derzeit pausiert</p>
-        <p>Gelegentliche Mini-Workshops. Referentin: Susanne Peters, Anmeldung + Info: 0160 - 94 65 98 94</p>
-        <p class="pt-2">
-          <a rel="noreferrer" class="hyperlink" href="http://www.praxis-susanne-peters.de/" target="_blank">praxis-susanne-peters.de</a>
-        </p>
+        <h2 class="ti_subheadline_blue_bold">Zeitgenössischer Tanz</h2>
+        <p class="ti_subheadline_blue_light">18:15 - 19:45 Uhr</p>
+        <p>Referentin: Suna Göncü, Anmeldung + Info: 0173 - 53 59 599, <br><a class="hyperlink" rel="noreferrer" href="mailto:suna@choreo-art.de ">suna@choreo-art.de</a></p>
+
       </DefaultCard>
 
       <DefaultCard>
@@ -119,9 +119,11 @@
         <p class="ti_subheadline_blue_light">17:30 - 18:30 Uhr</p>
         <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 68 02 729</p>
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Moderner Tanz - Training für Einsteiger/innen</h2>
-        <p class="ti_subheadline_blue_light">18:30 - 20:00 Uhr</p>
-        <p class="pb-2">Referentin: Suna Göncü, Anmeldung + Info: 0173 - 53 59 599</p>
+        <h2 class="ti_subheadline_blue_bold"><span class="text-ti_red_accent">NEU!</span> Yogilates mit Susanne</h2>
+        <p class="ti_subheadline_blue_light">18:45 - 19:45 Uhr vom 4.11. bis 16.12.2021</p>
+        <p class="pb-2">Referentin: Susanne Krell, Anmeldung + Info: 0179 - 44 44 347<br>
+          <a rel="noreferrer" class="hyperlink" href="https://naturheilpraxis-susanne-krell.de/yogilates-koeln.html" target="_blank">naturheilpraxis-susanne-krell.de</a>
+        </p>
         <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Moderner Tanz - Training für Fortgeschrittene</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
