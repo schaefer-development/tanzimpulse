@@ -96,7 +96,7 @@
           <a rel="noreferrer" class="hyperlink" href="https://www.stephanie-bloemer.de/" target="_blank">stephanie-bloemer.de</a>
         </p>
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Moderner Tanz- Training</h2>
+        <h2 class="ti_subheadline_blue_bold">Zeitgenössischer Tanz</h2>
         <p class="ti_subheadline_blue_light">18:15 - 19:45 Uhr</p>
         <p class="pb-2">Referentin: Suna Göncü, Anmeldung + Info: 0173 - 53 59 599</p>
         <hr class="block border border-coolGray-100 w-full my-4" />
@@ -125,7 +125,7 @@
           <a rel="noreferrer" class="hyperlink" href="https://naturheilpraxis-susanne-krell.de/yogilates-koeln.html" target="_blank">naturheilpraxis-susanne-krell.de</a>
         </p>
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Moderner Tanz - Training für Fortgeschrittene</h2>
+        <h2 class="ti_subheadline_blue_bold">Moderner Tanz - Training</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
         <p>Referentin: Suna Göncü, Anmeldung + Info: 0173 - 53 59 599</p>
       </DefaultCard>
