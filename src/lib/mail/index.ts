@@ -2,8 +2,8 @@ import waitingList from './waitingList';
 import registration from './registration';
 
 const defaults = {
-  from: 'info@tanzimpulse.de',
-  bcc: 'info@tanzimpulse.de',
+  from: 'info@tanzimpulse-koeln.de',
+  bcc: 'info@tanzimpulse-koeln.de',
 };
 
 export function waitingListMessage(teilnehmer: Teilnehmer, seminar: Seminar) {

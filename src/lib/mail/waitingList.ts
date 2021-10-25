@@ -21,8 +21,8 @@ Bettina Bierdümpel und Ute Luckey</p>
 <p>Kontakt<br>
 Tel:	0221 - 68 36 91<br>
 Fax: 	0221 - 689 77 97<br>
-E-Mail: <a href="mailto:info@tanzimpulse.de">info@tanzimpulse.de</a><br>
-Web: 	<a href="https://www.tanzimpulse.de" target="_blank">tanzimpulse.de</a>
+E-Mail: <a href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a><br>
+Web: 	<a href="https://www.tanzimpulse-koeln.de" target="_blank">tanzimpulse-koeln.de</a>
 </p>
 <p>
 Bürozeiten<br>
