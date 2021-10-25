@@ -62,7 +62,8 @@
       <div class="flex items-start">
         <div class="bg-ti_blue_mat p-4 md:p-6 lg:p-8 text-white shadow-ti hover:shadow-ti_hover transition duration-300 ease-in-out">
           <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide">Ausbildungen</h2>
-          <p class="py-4">Werde Tanzpädagogin / Tanzpädagoge und integriere den Tanz in den Beruf oder vermittle Tanz neben- bzw. hauptberuflich – professionell und praxisnah geschult durch unser kompetentes Team. Ausbildungsinfos und Übungsvideos werden bequem über eine Cloud zur Verfügung gestellt.</p>
+          <p class="py-4">Werde Tanzpädagogin/Tanzpädagoge, geschult durch unser kompetentes Team und integriere den Tanz in den Beruf.
+            Tanzvermittlung professionell und praxisnah. Beginn der Grundstufen zwei mal jährlich: im Frühjahr und im Herbst. Ausbildungsinfos und Übungsvideos werden bequem über eine Cloud zur Verfügung gestellt.</p>
           <p class="py-4">
             <Button href="{base}/ausbildungen" buttonstyle={'blue'}>Mehr erfahren</Button>
           </p>
