@@ -35,7 +35,6 @@
     "fuse.js": "^6.4.6",
     "leaflet": "^1.7.1",
     "nodemailer": "^6.6.2",
-    "siema": "^1.5.1",
-    "vue-cool-lightbox": "^2.7.4"
+    "siema": "^1.5.1"
   }
 }

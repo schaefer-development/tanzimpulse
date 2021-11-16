@@ -1,6 +1,5 @@
 <script context="module" lang="ts">
-  import CoolLightBox from '$lib/components/Lightbox/Lightbox.svelte';
-  import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css';
+
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
   import Button from '$lib/components/Button/Button.svelte';
@@ -148,8 +147,6 @@
         </p>
 
         <!-- lightbox -->
-
-        <CoolLightBox></CoolLightBox> 
 
 
         <!-- -->
