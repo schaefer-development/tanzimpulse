@@ -1,6 +1,7 @@
 <script context="module" lang="ts">
+  import CoolLightBox from '$lib/components/Lightbox/Lightbox.svelte';
+  import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
-
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
   import Button from '$lib/components/Button/Button.svelte';
   import { base } from '$app/paths';
@@ -10,6 +11,7 @@
     style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh;'
   };
   export const prerender = true;
+
 </script>
 
 <svelte:head>
@@ -19,72 +21,66 @@
 <section>
   <div class="container flex flex-col">
     <div class="relative">
-      <Carousel perPage="1" autoplay="7000" easing="ease-in-out">
+      <Carousel perPage="1" autoplay="12500" easing="ease-in-out">
         <span class="control" slot="left-control">
           <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
         </span>
 
-            <!-- single slide item -->
-            <div class="slide-content relative flex items-center">
-            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </div>
-            <!-- -->
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
-            <!-- single slide item -->
-            <div class="slide-content relative flex items-center">
-            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum1.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </div>
-            <!-- -->
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum1.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
-            <!-- single slide item -->
-            <div class="slide-content relative flex items-center">
-            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </div>
-            <!-- -->
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum3.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
-                  <!-- single slide item -->
-            <div class="slide-content relative flex items-center">
-            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum3.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </div>
-            <!-- -->
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum4.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum5.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
-            <!-- single slide item -->
-            <div class="slide-content relative flex items-center">
-            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum4.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </div>
-            <!-- -->
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum6.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum7.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
-             <!-- single slide item -->
-             <div class="slide-content relative flex items-center">
-              <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum5.jpg" alt="Der Tanzraum von Tanzimpulse" />
-              </div>
-              <!-- -->
-              
-              
-            <!-- single slide item -->
-            <div class="slide-content relative flex items-center">
-            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum6.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </div>
-            <!-- -->
-
-
-            <!-- single slide item -->
-            <div class="slide-content relative flex items-center">
-            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum7.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </div>
-             <!-- -->
-
-
-            <!-- single slide item -->
-            <div class="slide-content relative flex items-center">
-            <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum8.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </div>
-            <!-- -->
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum8.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
 
         <span class="control" slot="right-control">
           <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -150,6 +146,13 @@
         <p>
           <a sveltekit:prefetch href="{base}/kontakt"> <Button buttonstyle={'blue'}>Jetzt den Raum mieten</Button></a>
         </p>
+
+        <!-- lightbox -->
+
+        <CoolLightBox></CoolLightBox> 
+
+
+        <!-- -->
       </DefaultCard>
 
       <DefaultCard>
