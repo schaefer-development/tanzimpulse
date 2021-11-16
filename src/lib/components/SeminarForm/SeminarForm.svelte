@@ -15,13 +15,22 @@
 
     <div class="flex flex-col space-y-6 mb-8">
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-        >Name
-        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="name" placeholder="Max Mustermann" required />
+      >Vorname
+      <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="name" placeholder="Max" required />
+    </label>
+      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+        >Nachname
+        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="name" placeholder="Mustermann" required />
       </label>
+
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
         >E-Mail Adresse
         <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="email" name="email" placeholder="max@mustermann.de" required />
       </label>
+      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+      >Telefonnummer (optional)
+      <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="email" name="email" placeholder="0123456789"/>
+    </label>
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
         >Adresse
         <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="adresse" placeholder="Musterstrasse 42, 12345 Musterstadt" required />
@@ -44,12 +53,5 @@
       </div>
     </div>
     <Button buttonstyle={'blue'}>Kostenpflichtig Anmelden</Button>
-
-    <!--
-
-    TODO: wie kann man oben den 'type' übergeben?
-
-  <button type="submit" class="___default_button p-4 my-6 w-full rounded-full border-2 border-ti_blue_accent-dark text-ti_blue_accent-dark font-extrabold text-sm tracking-widest uppercase outline-none focus:outline-none hover:border-ti_blue_accent-light hover:text-ti_blue_accent-light hover:bg-white focus:border-ti_red_accent focus:text-ti_red_accent focus:bg-white focus:ring-0 transition duration-300 ease-in-out">Anmelden</button>
-  -->
   </form>
 </div>

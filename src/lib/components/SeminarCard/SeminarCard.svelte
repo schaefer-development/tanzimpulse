@@ -18,14 +18,13 @@
     <div class="seminar_card_content w-full flex-1 px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-6 md:py-8 lg:py-10">
       <h4 class="uppercase tracking-widest text-xs title-font font-medium text-gray-600 pb-1">- {seminar.format} -</h4>
       <h1 class="ti_headline_blue_bold">{seminar.titel}</h1>
-      <p class="ti_headline_blue_light">{dateFormat.format(new Date(seminar.datum))}</p>
+      <p class="ti_headline_blue_light">{dateFormat.format(new Date(seminar.datum))} Uhr</p>
 
       {#if overbooked(seminar)}
         <p class="font-bold text-lg prose-sm text-gray-600 py-4">Anmeldung zur Warteliste</p>
       {:else}
         <p class="text-ti_green_accent font-bold uppercase tracking-wide text-lg prose-sm py-4">Noch Plätze frei</p>
       {/if}
-      <hr class="block border border-coolGray-100 w-full mt-2 mb-4" />
 
       <div class="___pills py-2">
         {#each seminar.kategorien as kategorie (kategorie.id)}
@@ -34,11 +33,12 @@
           </span>
         {/each}
       </div>
-      <hr class="block border border-coolGray-100 w-full mt-2 mb-4" />
       <slot name="beschreibung">
         <p class="text-black pt-2 pb-4">
           {seminar.kurzbeschreibung}
         </p>
+        <p class="text-black py-2">
+          <span class="uppercase tracking-widest text-xs title-font font-medium text-gray-600">Dozent(en)</span><br />{seminar.referenten.name}</p>
         <p class="text-black py-2">
           <span class="uppercase tracking-widest text-xs title-font font-medium text-gray-600">Kursgebühr</span><br />{seminar.preis} Euro
         </p>
