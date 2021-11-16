@@ -1,7 +1,8 @@
 import { dateFormat } from '../helpers';
 const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
 <p>
-Hallo ${teilnehmer.name},</p>
+<p>Hallo ${teilnehmer.vorname} ${teilnehmer.nachname},</p>
+<p>${teilnehmer.telefon}</p>
 <p>${teilnehmer.adresse}</p>
 <p>${teilnehmer.anmerkung}</p>
 <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" am ${dateFormat.format(new Date(seminar.datum))}.<br>

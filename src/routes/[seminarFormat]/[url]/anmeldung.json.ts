@@ -32,7 +32,9 @@ const requestVariables = (request: ServerRequest<any, any>) => {
   const toBool = (cb: string) => !!{ on: true }[cb];
   return {
     email: request.body.get('email'),
-    name: request.body.get('name'),
+    vorname: request.body.get('vorname'),
+    nachname: request.body.get('nachname'),
+    telefon: request.body.get('telefon'),
     adresse: request.body.get('adresse'),
     anmerkung: request.body.get('anmerkung'),
     datenverarbeitung: toBool(request.body.get('datenverarbeitung')),
