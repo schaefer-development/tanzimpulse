@@ -6,7 +6,7 @@
 </script>
 
 <div class="relative">
-  <Carousel perPage="1" autoplay="10000" easing="ease-in-out">
+  <Carousel perPage="1" autoplay="7000" easing="ease-in-out">
     <span class="control" slot="left-control">
       <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -47,7 +47,7 @@
           <div class="flex flex-row items-center">
             <div class="pr-6">
               <h2 class="text-xl md:text-2xl lg:text-3xl uppercase font-bold text-white tracking-wide">Workshops</h2>
-              <p class="text-white pb-2 hidden md:inline-block">Gymnastik, Kindertanzen, Sufi – entdecken Sie unser Angebot</p>
+              <p class="text-white pb-2 hidden md:inline-block">Tanzpädagogische Fortbildungen für alle Altersstufen – entdecken Sie unser Angebot</p>
             </div>
             <a sveltekit:prefetch href="{base}/workshops">
               <Button buttonstyle={'white'}>

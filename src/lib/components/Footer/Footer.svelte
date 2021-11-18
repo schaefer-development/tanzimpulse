@@ -27,8 +27,8 @@
         E-Mail: <a href="mailto:info@tanzimpulse-koeln.de" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">info@tanzimpulse-koeln.de</a><br />
         <br />
         <span class="uppercase tracking-widest text-xs">Bürozeiten</span><br />
-        Montag bis Freitag: 8:30 - 13:00 Uhr<br />
-        Dienstags und Donnerstags: 18:00 - 19:30 Uhr
+        Montag bis Freitag: 9:00 - 13:00 Uhr<br />
+        Dienstags und Donnerstags: 18:00 - 20:00 Uhr
       </p>
       <div class="text-center md:text-left">
         <p>
@@ -38,8 +38,8 @@
           <br />
           <a href="{base}/impressum" aria-label="Impressum" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">Impressum</a><br />
           <a href="{base}/datenschutz" aria-label="Datenschutz" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">Datenschutz</a><br />
-          <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/AGB_2020.pdf" target="_blank">AGBs</a><br>
-          <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/Widerrufsbelehrung_2020.pdf" target="_blank">Widerrufsbelehrung</a>
+          <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/AGB.pdf" target="_blank">AGB</a><br>
+          <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/Widerrufsbelehrung.pdf" target="_blank">Widerrufsbelehrung</a>
           <br />          <br />
           © 2021
         </p>

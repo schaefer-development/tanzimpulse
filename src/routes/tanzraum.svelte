@@ -1,5 +1,9 @@
 <script context="module" lang="ts">
-
+   import { 
+        Lightbox,
+        LightboxImage,
+        LightboxGallery
+    } from 'svelte-lightbox';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
   import Button from '$lib/components/Button/Button.svelte';
@@ -9,6 +13,26 @@
     class: '',
     style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh;'
   };
+  const gallery = [
+     {
+      title: 'Cat is eating mouse',
+      description: 'Pretty cruel, ieurgv eoirhe hgioh vihvieh vn  if neib '
+     },
+     {
+      title: 'Bike is driven',
+      description: `LOL, What a sentence, eriugherheh ioghieo `
+     },
+     {
+      title: 'JS components are downloaded from npm',
+      description: 'Obviously, jrgoer iojre oigejgi heiruoiqevj eoirhjv ioehh ve'
+     },
+     {
+      title: 'This component is under development',
+      description: `So don't stake your life on it, but it should be pretty stable`
+     }
+    ];
+
+
   export const prerender = true;
 
 </script>
@@ -75,11 +99,6 @@
         </div>
         <!-- -->
 
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum8.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
 
         <span class="control" slot="right-control">
           <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -147,7 +166,20 @@
         </p>
 
         <!-- lightbox -->
-
+        <Lightbox {gallery}>
+          <!-- Important thing to mention: 
+          lightbox gallery needs some thumbnail, you can set it like this, dont worry, this image will be displayed within gallery
+           -->
+          <img slot="thumbnail" src="./image.png" alt="Simple lightbox">
+          <LightboxGallery>
+              <LightboxImage>
+                <img src="/images/slideshow/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
+              </LightboxImage>
+              <LightboxImage>
+                <img src="/images/slideshow/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
+              </LightboxImage>
+          </LightboxGallery>
+      </Lightbox>
 
         <!-- -->
       </DefaultCard>

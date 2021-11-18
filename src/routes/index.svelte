@@ -62,11 +62,13 @@
       <div class="flex items-start">
         <div class="bg-ti_blue_mat p-4 md:p-6 lg:p-8 text-white shadow-ti hover:shadow-ti_hover transition duration-300 ease-in-out">
           <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide">Ausbildungen</h2>
-          <p class="py-4">Werde Tanzpädagogin/Tanzpädagoge, geschult durch unser kompetentes Team und integriere den Tanz in den Beruf.
-            Tanzvermittlung professionell und praxisnah. Beginn der Grundstufen zwei mal jährlich: im Frühjahr und im Herbst. Ausbildungsinfos und Übungsvideos werden bequem über eine Cloud zur Verfügung gestellt.</p>
+          <p class="py-4">Werde Tanzpädagogin/ Tanzpädagoge, geschult durch unser kompetentes Team und integriere den Tanz in den Beruf.
+            Tanzvermittlung professionell und praxisnah. Beginn der Grundstufen zwei mal jährlich: im Frühjahr und im Herbst. </p>
           <p class="py-4">
-            <Button href="{base}/ausbildungen" buttonstyle={'blue'}>Mehr erfahren</Button>
+            <Button href="{base}/ausbildungen" buttonstyle={'blue'}>Alle Ausbildungen</Button>
           </p>
+          <p class="px-2 pb-2 uppercase tracking-wider font-bold text-sm text-ti_blue_accent text-center">Die nächsten drei Ausbildungen:</p>
+          <hr class="block border border-black w-full mb-2 opacity-20" />
           <SeminarPreviews seminare={kommende.ausbildungen} color="blue" />
         </div>
       </div>
@@ -74,10 +76,12 @@
       <div class="flex items-start">
         <div class="bg-ti_cyan_mat p-4 md:p-6 lg:p-8 text-white shadow-ti hover:shadow-ti_hover transition duration-300 ease-in-out">
           <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide">Workshops</h2>
-          <p class="py-4">Immer top trainiert sein, Immer aktuell sein, mit Impulsen für die tanzpädagogische Praxis für alle Tanzinteressierten die mit  Kita-, Grundschulkindern, Jugendlichen und / oder Erwachsenen arbeiten.</p>
+          <p class="py-4">Immer aktuell sein, mit Impulsen für die tanzpädagogische Praxis für alle Tanzinteressierten die mit  Kita-, Grundschulkindern, Jugendlichen und / oder Erwachsenen arbeiten.</p>
           <p class="py-4">
-            <Button href="{base}/workshops" buttonstyle={'cyan'}>Mehr erfahren</Button>
+            <Button href="{base}/workshops" buttonstyle={'cyan'}>Alle Workshops</Button>
           </p>
+          <p class="px-2 pb-2 uppercase tracking-wider font-bold text-sm text-ti_cyan_accent text-center">Die nächsten drei Workshops:</p>
+          <hr class="block border border-black w-full mb-2 opacity-20" />
           <SeminarPreviews seminare={kommende.workshops} color="cyan" />
         </div>
       </div>
