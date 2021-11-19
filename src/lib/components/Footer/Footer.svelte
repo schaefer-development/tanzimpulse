@@ -3,7 +3,7 @@
   import { base } from '$app/paths';
 </script>
 
-<footer class="relative text-white bg-ti_blue_mat-dark body-font z-10">
+<footer class="relative text-white bg-ti_blue_mat-dark body-font">
   <div class="container py-24 mx-auto flex flex-col">
     <div class="___logoandtitle pb-10">
       <a sveltekit:prefetch href="{base}/" class="outline-none focus:outline-none text-center text-ti_blue_accent hover:text-white transition duration-300 ease-in-out">

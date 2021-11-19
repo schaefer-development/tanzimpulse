@@ -1,5 +1,7 @@
 <script context="module" lang="ts">
-  import { Lightbox, LightboxImage, LightboxGallery } from 'svelte-lightbox';
+  import LightboxIndex from '$lib/components/Lightbox/LightboxIndex.svelte';
+
+
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
   import Button from '$lib/components/Button/Button.svelte';
@@ -9,24 +11,7 @@
     class: '',
     style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh;'
   };
-  const gallery = [
-    {
-      title: 'Cat is eating mouse',
-      description: 'Pretty cruel, ieurgv eoirhe hgioh vihvieh vn  if neib '
-    },
-    {
-      title: 'Bike is driven',
-      description: `LOL, What a sentence, eriugherheh ioghieo `
-    },
-    {
-      title: 'JS components are downloaded from npm',
-      description: 'Obviously, jrgoer iojre oigejgi heiruoiqevj eoirhjv ioehh ve'
-    },
-    {
-      title: 'This component is under development',
-      description: `So don't stake your life on it, but it should be pretty stable`
-    }
-  ];
+
 
   export const prerender = true;
 </script>
@@ -159,6 +144,15 @@
           51067 Köln<br />
         </p>
         <hr class="block border border-coolGray-100 w-full mt-8 mb-6" />
+        <!-- lightbox -->
+
+        <LightboxIndex>
+          
+        </LightboxIndex>
+
+
+        <hr class="block border border-coolGray-100 w-full mt-8 mb-6" />
+
 
         <h2 class="ti_headline_blue_bold">Anfahrt zum Tanzraum</h2>
         <h2 class="ti_headline_blue_light">Mit dem Auto</h2>
@@ -181,24 +175,6 @@
         <p>
           <a sveltekit:prefetch href="{base}/kontakt"> <Button buttonstyle={'blue'}>Jetzt den Raum mieten</Button></a>
         </p>
-
-        <!-- lightbox -->
-        <Lightbox {gallery}>
-          <!-- Important thing to mention: 
-          lightbox gallery needs some thumbnail, you can set it like this, dont worry, this image will be displayed within gallery
-           -->
-          <img slot="thumbnail" src="./image.png" alt="Simple lightbox" />
-          <LightboxGallery>
-            <LightboxImage>
-              <img src="/images/slideshow/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </LightboxImage>
-            <LightboxImage>
-              <img src="/images/slideshow/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
-            </LightboxImage>
-          </LightboxGallery>
-        </Lightbox>
-
-        <!-- -->
       </DefaultCard>
 
       <DefaultCard>
@@ -214,4 +190,7 @@
     min-height: 300px;
     max-height: 40vh;
   }
+
+
+
 </style>
