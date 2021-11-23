@@ -53,11 +53,6 @@
         </div>
         <!-- -->
 
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_07.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
 
         <!-- single slide item -->
         <div class="slide-content relative flex items-center shadow-ti">

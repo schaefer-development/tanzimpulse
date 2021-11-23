@@ -30,7 +30,7 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   <p>
   Bürozeiten<br>
   Montag bis Freitag: 9:00 - 13:00 Uhr<br >
-  Dienstags und Donnerstags: 18:00 - 20:00 Uhr
+  Dienstag: 18:00 - 20:00 Uhr
   </p>
   <p>
   <a href="https://www.tanzimpulse.de/content/AGB.pdf" target="_blank">AGBs</a><br>

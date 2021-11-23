@@ -28,7 +28,7 @@
         <br />
         <span class="uppercase tracking-widest text-xs">Bürozeiten</span><br />
         Montag bis Freitag: 9:00 - 13:00 Uhr<br />
-        Dienstags und Donnerstags: 18:00 - 20:00 Uhr
+        Dienstag: 18:00 - 20:00 Uhr
       </p>
       <div class="text-center md:text-left">
         <p>

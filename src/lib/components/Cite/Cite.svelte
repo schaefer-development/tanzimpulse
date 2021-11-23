@@ -17,7 +17,7 @@
     </div>
 
     <div class="w-10/12 p-6 md:p-12 lg:p-20 mx-auto relative text-center flex flex-col items-center">
-      <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic">„Denn ich denke gerade daran, mit wie viel Freude die Kinder immer mit mir in den Turnraum gegangen sind und auch schüchterne Kinder ganz anders wahrzunehmen waren.“ </cite>
+      <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic">„Ich denke gerade daran, mit wie viel Freude die Kinder immer mit mir in den Turnraum gegangen sind und auch schüchterne Kinder ganz anders wahrzunehmen waren.“ </cite>
 
       <p class="mx-auto pt-6 uppercase font-bold tracking-widest text-gray-500 text-sm">Frauke | Tanzpädagogin/Schwerpunkt Kindertanz + Kita-Leitung</p>
     </div>

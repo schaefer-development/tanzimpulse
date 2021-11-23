@@ -38,8 +38,8 @@
             </p>
             <p class="mb-8">
               <span class="uppercase tracking-widest text-xs">Bürozeiten</span><br />
-              Montag bis Freitag: 8:30 - 13:00 Uhr<br />
-              Dienstags und Donnerstags: 18:00 - 19:30 Uhr
+              Montag bis Freitag: 9:00 - 13:00 Uhr<br />
+              Dienstag: 18:00 - 20:00 Uhr
             </p>
             <h2 class="uppercase text-2xl lg:text-3xl tracking-wider font-extralight text-white">Tanzraum</h2>
             <p class="py-2">

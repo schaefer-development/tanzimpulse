@@ -49,8 +49,8 @@
 
         <hr class="block border border-coolGray-100 w-full my-4" />
 
-        <h2 class="ti_subheadline_blue_bold">5 Rhythmen (wöchentlich)</h2>
-        <p class="ti_subheadline_blue_light">20:15 - 21:45 Uhr</p>
+        <h2 class="ti_subheadline_blue_bold">5 Rhythmen</h2>
+        <p class="ti_subheadline_blue_light">19:30 - 21:45 Uhr</p>
         <p>
           Referentin: Susanne Kehrein, Info:
           <a rel="noreferrer" class="hyperlink" href="mailto:Susanlight@web.de">Susanlight@web.de</a>

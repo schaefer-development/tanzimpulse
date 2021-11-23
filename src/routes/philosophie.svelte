@@ -13,7 +13,7 @@
   <div class="container">
     <div class="flex w-full lg:w-1/2">
       <DefaultCard>
-        <h2 class="ti_headline_blue_bold mb-4">Unsere Arbeit – unser Ziel</h2>
+        <h2 class="ti_headline_blue_bold mb-4">Philosophie</h2>
         <p class="py-2">
           <Accordion id="1">
             <span slot="headline">Erfahrung seit 1994</span>

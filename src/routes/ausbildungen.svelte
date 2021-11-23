@@ -39,7 +39,8 @@
               <h3 class="font-bold py-4">b) Grundstufe/Schwerpunkt Kindertanz</h3>
               <p class="pb-4">für die Arbeit mit Kindern von U3 bis 11 Jahren</p>
               <p class="pb-4">In dieser einjährigen Qualifikation steht die ästhetisch-kulturelle Bildung im Mittelpunkt. Visuell, auditiv und kinästhetisch werden die Verknüpfungen von Musik, Sprache und Tanz zur Unterstützung der kindlichen Entwicklung eingesetzt. Ausgangspunkt ist eine Tanzpädagogik, die sich an der altersgemäßen Entwicklung der Kinder orientiert. Tanz verbindet das Erkennen und Erfahren mit Erleben und Empfinden!</p>
-              <p class="pb-4">Nach erfolgreichem Abschluss einer Grundstufe wird ein Zertifikat erteilt, in dem Umfang und Inhalte der Zusatzqualifikation detailliert aufgeführt sind. Dies berechtigt zur Teilnahme an der Aufbaustufe. Die Grundstufen a) + b) können unabhängig von den anderen Bausteinen als abgeschlossene Zusatzausbildung besucht werden.</p>
+              <p class="pb-4">Nach erfolgreichem Abschluss einer Grundstufe wird ein Zertifikat erteilt, in dem Umfang und Inhalte der Zusatzqualifikation detailliert aufgeführt sind. Dies berechtigt zur Teilnahme an der Aufbaustufe. </p>
+              <p class="pb-4">Die Grundstufen a) + b) können unabhängig von den anderen Bausteinen als abgeschlossene Zusatzausbildung besucht werden.</p>
               <p class="pb-4">Ausbildungsinfos und Übungsvideos werden bequem über eine Cloud zur Verfügung gestellt.</p>
               <p><a href="#ausbildungen" class="flex"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
