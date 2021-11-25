@@ -155,7 +155,7 @@
 
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Anna von Redéy</h4>
-            <p>Tanzpädagogin, Schwerpunkte sind Folkloretanz, Jazz, Hip Hop, Moderner Tanz; dazu kommt nach einem Praktikum in Togo bei der Gruppe "Dagbeneva" der westafrikansicher traditionelle Tanz. 2017 beginnt sie mit der tanzpädagogischen Ausbildung bei Tanzimpulse Köln, derzeit in der Diplomstufe. Das Kindertanzprojektes "TrommelTanz" führt sie mit Adams Tchawodji gemeinsam durch.</p>
+            <p>Tanzpädagogin, Schwerpunkte sind Folkloretanz, Jazz, Hip Hop, Moderner Tanz; westafrikansicher traditionelle Tanz. Das Kindertanzprojektes "TrommelTanz" führt sie mit Adams Tchawodji gemeinsam durch.</p>
           </div>
 
           <div class="___guest flex flex-col">

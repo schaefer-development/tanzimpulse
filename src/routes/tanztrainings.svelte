@@ -81,16 +81,16 @@
     <!--  <hr class="block border border-coolGray-100 w-full my-4" />
       <h2 class="ti_subheadline_blue_bold">Jazz Dance Training & Choreos: Lyrical, Modern, Contemporary Style</h2>
       <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
-      <p>Referentin: Susanne Krell, Anmeldung + Info: 0179 - 44 44 347</p>-->
+      <p>Referentin: Susanne Krell, Anmeldung + Info: 0179 - 44 44 347</p>
       <p>
         <p>
           <a class="hyperlink" href="https://naturheilpraxis-susanne-krell.de/cologne-jazz-dancer.html#features3-13" rel="noreferrer" target="_blank">naturheilpraxis-susanne-krell.de</a>
-          </p>
+          </p>-->
       </DefaultCard>
       <DefaultCard>
         <h2 class="ti_headline_blue_light pb-4">Mittwoch</h2>
 
-        <h2 class="ti_subheadline_blue_bold">Sufi-Bewegungsmeditation 14tägig</h2>
+        <h2 class="ti_subheadline_blue_bold">Sufi-Bewegungsmeditation</h2>
         <p class="ti_subheadline_blue_light">8:30 - 9:45 Uhr</p>
         <p class="pb-2">Referentin: Jutta Kuhlmann, Anmeldung + Info: <a class="hyperlink" rel="noreferrer" href="mailto:juttakuhlmann@freenet.de">juttakuhlmann@freenet.de</a></p>
         <hr class="block border border-coolGray-100 w-full my-4" />
