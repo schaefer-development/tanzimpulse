@@ -78,10 +78,10 @@
        <p>
       <a class="hyperlink" href="http://www.alexander-hauer.de/" rel="noreferrer" target="_blank">alexander-hauer.de</a>
       </p>
-      <hr class="block border border-coolGray-100 w-full my-4" />
+    <!--  <hr class="block border border-coolGray-100 w-full my-4" />
       <h2 class="ti_subheadline_blue_bold">Jazz Dance Training & Choreos: Lyrical, Modern, Contemporary Style</h2>
       <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
-      <p>Referentin: Susanne Krell, Anmeldung + Info: 0179 - 44 44 347</p>
+      <p>Referentin: Susanne Krell, Anmeldung + Info: 0179 - 44 44 347</p>-->
       <p>
         <p>
           <a class="hyperlink" href="https://naturheilpraxis-susanne-krell.de/cologne-jazz-dancer.html#features3-13" rel="noreferrer" target="_blank">naturheilpraxis-susanne-krell.de</a>
