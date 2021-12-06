@@ -10,7 +10,7 @@
 
 <section>
   <div class="container">
-    <div class="grid grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
       <DefaultCard>
         <h2 class="ti_headline_blue_bold">Mitgliedschaften</h2>
 
