@@ -64,7 +64,7 @@
         <p class="ti_subheadline_blue_light">9:30 - 10:30 Uhr</p>
         <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 68 02 729</p>
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Moderner Kindertanz für 7-10 jährige</h2>
+        <h2 class="ti_subheadline_blue_bold">Moderner Kindertanz (7 bis 10 Jahre)</h2>
         <p class="ti_subheadline_blue_light">16:15 - 17:15 Uhr</p>
         <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26
         </p>
@@ -98,7 +98,7 @@
         <p class="ti_subheadline_blue_light">10:00 - 11:00 Uhr</p>
         <p class="pb-2">Referentin: Nina Buttler, Info: <a class="hyperlink" rel="noreferrer" href="mailto:info@sichtartundweise.de">info@sichtartundweise.de</a></p>
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Kreativer Kindertanz für 4 bis 5 jährige</h2>
+        <h2 class="ti_subheadline_blue_bold">Kreativer Kindertanz (4 bis 5 Jahre)</h2>
         <p class="ti_subheadline_blue_light">16:00 - 17:00 Uhr</p>
         <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26</p>
         <p>
@@ -106,7 +106,7 @@
         </p>
 
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Kreativer Kindertanz für 5 bis 6 jährige</h2>
+        <h2 class="ti_subheadline_blue_bold">Kreativer Kindertanz (5 bis 6 Jahre)</h2>
         <p class="ti_subheadline_blue_light">17:00-18:00 Uhr</p>
         <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26</p>
         <p>
