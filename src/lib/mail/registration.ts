@@ -5,7 +5,7 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   <p>${teilnehmer.adresse}</p>
   <p>${teilnehmer.anmerkung}</p>
   <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" am ${dateFormat.format(new Date(seminar.datum))} Uhr.
-  <br>Nach dieser Anmeldung ist die Kursgebühr innerhalb von 14 Tagen, spätestens jedoch bis zum Veranstaltungstermin zu entrichten. <br>
+  <br>Nach dieser Anmeldung ist die Kursgebühr innerhalb von 14 Tagen zu entrichten.<br>
   Überweisen Sie den Betrag von ${seminar.preis} Euro auf folgendes Konto:</p>
   <p>IBAN: DE93 3707 0024 04637823 00
   <br>Deutsche Bank</p>
