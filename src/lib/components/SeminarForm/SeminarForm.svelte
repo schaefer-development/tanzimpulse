@@ -15,9 +15,9 @@
 
     <div class="flex flex-col space-y-6 mb-8">
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-      >Vorname
-      <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="vorname" placeholder="Max" required />
-    </label>
+        >Vorname
+        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="vorname" placeholder="Max" required />
+      </label>
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
         >Nachname
         <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="nachname" placeholder="Mustermann" required />
@@ -28,18 +28,18 @@
         <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="email" name="email" placeholder="max@mustermann.de" required />
       </label>
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-      >Telefonnummer
-      <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="tel" name="telefon" placeholder="0123456789" required/>
-    </label>
+        >Telefonnummer
+        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="tel" name="telefon" placeholder="0123456789" required />
+      </label>
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
         >Adresse
         <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="adresse" placeholder="Musterstrasse 42, 12345 Musterstadt" required />
       </label>
 
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-      >Anmerkung (optional)
-      <textarea class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="anmerkung" placeholder="Anmerkung zur Anmeldung" rows="4" />
-    </label>
+        >Anmerkung (optional)
+        <textarea class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="anmerkung" placeholder="Anmerkung zur Anmeldung" rows="4" />
+      </label>
 
       <div class="___registration checkboxes flex flex-col space-y-6 mb-8">
         <label class="flex mt-4">

@@ -56,4 +56,3 @@ export const post: RequestHandler<any, FormData> = async (request) => {
   const location = `/${seminarFormat}/${url}/anmeldung/${res.status}`;
   return { status: 303, headers: { location } };
 };
- 

@@ -38,7 +38,7 @@
 
   <div class="flex flex-col w-9/12 ">
     <!-- Gallery -->
-    <Slide image={image.imgurl} attr={image.attribution}  />
+    <Slide image={image.imgurl} attr={image.attribution} />
 
     <!-- Navigation -->
     <Caption on:prevClick={prevSlide} on:nextClick={nextSlide} />
@@ -47,13 +47,8 @@
 
 <style>
   .lightbox {
-    z-index:9999;
-    margin-top:25px;
+    z-index: 9999;
+    margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.9);
-
   }
-
-
-
-
 </style>

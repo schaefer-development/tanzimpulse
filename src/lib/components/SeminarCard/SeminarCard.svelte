@@ -38,7 +38,8 @@
           {seminar.kurzbeschreibung}
         </p>
         <p class="text-black py-2">
-          <span class="uppercase tracking-widest text-xs title-font font-medium text-gray-600">Dozentin/ Dozent</span><br />{seminar.referenten.map(referent => referent.name).join(", ")}</p>
+          <span class="uppercase tracking-widest text-xs title-font font-medium text-gray-600">Dozentin/ Dozent</span><br />{seminar.referenten.map((referent) => referent.name).join(', ')}
+        </p>
         <p class="text-black py-2">
           <span class="uppercase tracking-widest text-xs title-font font-medium text-gray-600">Kursgebühr</span><br />{seminar.preis} Euro
         </p>

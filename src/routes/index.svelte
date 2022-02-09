@@ -62,8 +62,7 @@
       <div class="flex items-start">
         <div class="bg-ti_blue_mat p-4 md:p-6 lg:p-8 text-white shadow-ti hover:shadow-ti_hover transition duration-300 ease-in-out">
           <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide">Ausbildungen</h2>
-          <p class="py-4">Werde Tanzpädagogin/ Tanzpädagoge, geschult durch unser kompetentes Team und integriere den Tanz in den Beruf.
-            Tanzvermittlung professionell und praxisnah. Beginn der Grundstufen zwei mal jährlich: im Frühjahr und im Herbst. </p>
+          <p class="py-4">Werde Tanzpädagogin/ Tanzpädagoge, geschult durch unser kompetentes Team und integriere den Tanz in den Beruf. Tanzvermittlung professionell und praxisnah. Beginn der Grundstufen zwei mal jährlich: im Frühjahr und im Herbst.</p>
           <p class="py-4">
             <Button href="{base}/ausbildungen" buttonstyle={'blue'}>Alle Ausbildungen</Button>
           </p>
@@ -76,7 +75,7 @@
       <div class="flex items-start">
         <div class="bg-ti_cyan_mat p-4 md:p-6 lg:p-8 text-white shadow-ti hover:shadow-ti_hover transition duration-300 ease-in-out">
           <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide">Workshops</h2>
-          <p class="py-4">Immer aktuell sein, mit Impulsen für die tanzpädagogische Praxis für alle Tanzinteressierten die mit  Kita-, Grundschulkindern, Jugendlichen und / oder Erwachsenen arbeiten.</p>
+          <p class="py-4">Immer aktuell sein, mit Impulsen für die tanzpädagogische Praxis für alle Tanzinteressierten die mit Kita-, Grundschulkindern, Jugendlichen und / oder Erwachsenen arbeiten.</p>
           <p class="py-4">
             <Button href="{base}/workshops" buttonstyle={'cyan'}>Alle Workshops</Button>
           </p>

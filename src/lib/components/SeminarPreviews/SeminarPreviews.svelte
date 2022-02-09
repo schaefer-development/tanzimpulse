@@ -8,7 +8,6 @@
 
 {#each seminare as seminar (seminar.id)}
   <div class="flex flex-col ">
-
     <div class="pt-2 pb-2 pl-2 pr-4">
       <p class="text-md font-bold uppercase tracking-wide leading-6 break-word">{seminar.titel}</p>
       <p class="text-md font-extralight">{dateFormat.format(new Date(seminar.datum))} Uhr</p>
@@ -18,8 +17,6 @@
       {:else}
         <span class="uppercase text-ti_green_accent-light font-bold text-sm tracking-wider pt-2">Noch Plätze frei</span>
       {/if}
-
-      
     </div>
 
     <div class="flex mx-auto items-center p-2">
@@ -29,8 +26,6 @@
         </svg></Button
       >
     </div>
-
-
   </div>
   <hr class="block border border-black w-full my-2 opacity-20" />
 {/each}

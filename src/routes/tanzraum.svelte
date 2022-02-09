@@ -1,7 +1,6 @@
 <script context="module" lang="ts">
   import LightboxIndex from '$lib/components/Lightbox/LightboxIndex.svelte';
 
-
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
   import Button from '$lib/components/Button/Button.svelte';
@@ -11,7 +10,6 @@
     class: '',
     style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh;'
   };
-
 
   export const prerender = true;
 </script>
@@ -146,13 +144,9 @@
         <hr class="block border border-coolGray-100 w-full mt-8 mb-6" />
         <!-- lightbox -->
 
-        <LightboxIndex>
-          
-        </LightboxIndex>
-
+        <LightboxIndex />
 
         <hr class="block border border-coolGray-100 w-full mt-8 mb-6" />
-
 
         <h2 class="ti_headline_blue_bold">Anfahrt zum Tanzraum</h2>
         <h2 class="ti_headline_blue_light">Mit dem Auto</h2>
@@ -190,7 +184,4 @@
     min-height: 300px;
     max-height: 40vh;
   }
-
-
-
 </style>

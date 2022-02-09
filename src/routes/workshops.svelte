@@ -22,14 +22,18 @@
         <h2 class="ti_headline_blue_bold">Workshops</h2>
         <h3 class="ti_headline_blue_light mb-4">Für Multiplikatoren/innen und Interessierte</h3>
         <p class="py-4">für Multiplikatoren/innen und Interessierte. Sie können unabhängig von einer Teilnahme an den Ausbildungsreihen besucht werden. Aktuelle Tanzthemen und zeitgemäße Unterrichtsmethoden werden von praxiserfahrenen Referentinnen und Referenten vermittelt.</p>
-        <p><a href="#workshops" class="flex"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg><span class="font-bold px-2">Workshops entdecken</span></a></p>
+        <p>
+          <a href="#workshops" class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg><span class="font-bold px-2">Workshops entdecken</span></a
+          >
+        </p>
       </DefaultCard>
     </div>
 
     <Cite />
   </div>
 </section>
-<span id="workshops"></span>
+<span id="workshops" />
 <SeminarDashboard {seminare} />
