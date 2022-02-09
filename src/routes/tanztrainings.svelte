@@ -42,13 +42,12 @@
 
     <div class="grid grid-cols-1 gap-10">
       <DefaultCard>
+        <h2 class="ti_headline_blue_light pb-4">Montag</h2>
         <h2 class="ti_subheadline_blue_bold">Phantasievoller Kindertanz (3-4 Jahre) für Jungen und Mädchen</h2>
         <p class="ti_subheadline_blue_light">15:45 - 16:30 Uhr</p>
         <p class="pb-2">Referenten: Agnieszka Moczadlo, Anmeldung + Info: 0178 - 8210732,<br /><a rel="noreferrer" class="hyperlink" href="mailto:koeln@greifmusic.de">koeln@greifmusic.de</a><br /><a class="hyperlink" href="https://greifmusic.de/" rel="noreferrer" target="_blank">greifmusic.de</a></p>
 
         <hr class="block border border-coolGray-100 w-full my-4" />
-
-        <h2 class="ti_headline_blue_light pb-4">Montag</h2>
         <h2 class="ti_subheadline_blue_bold">Moderner Tanz für Kinder + Jugendliche mit Behinderung</h2>
         <p class="ti_subheadline_blue_light">16:45 - 17:45 Uhr</p>
         <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 68 02 729</p>
