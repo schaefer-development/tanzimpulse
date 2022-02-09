@@ -42,6 +42,12 @@
 
     <div class="grid grid-cols-1 gap-10">
       <DefaultCard>
+        <h2 class="ti_subheadline_blue_bold">Phantasievoller Kindertanz (3-4 Jahre) für Jungen und Mädchen</h2>
+        <p class="ti_subheadline_blue_light">15:45 - 16:30 Uhr</p>
+        <p class="pb-2">Referenten: Agnieszka Moczadlo, Anmeldung + Info: 0178 - 8210732,<br /><a rel="noreferrer" class="hyperlink" href="mailto:koeln@greifmusic.de">koeln@greifmusic.de</a><br /><a class="hyperlink" href="https://greifmusic.de/" rel="noreferrer" target="_blank">greifmusic.de</a></p>
+
+        <hr class="block border border-coolGray-100 w-full my-4" />
+
         <h2 class="ti_headline_blue_light pb-4">Montag</h2>
         <h2 class="ti_subheadline_blue_bold">Moderner Tanz für Kinder + Jugendliche mit Behinderung</h2>
         <p class="ti_subheadline_blue_light">16:45 - 17:45 Uhr</p>
@@ -66,19 +72,18 @@
         <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Moderner Kindertanz (7 bis 10 Jahre)</h2>
         <p class="ti_subheadline_blue_light">16:15 - 17:15 Uhr</p>
-        <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26
-        </p>
+        <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26</p>
         <p>
           <a rel="noreferrer" class="hyperlink" href="https://www.stephanie-bloemer.de/" target="_blank">stephanie-bloemer.de</a>
         </p>
-       <hr class="block border border-coolGray-100 w-full my-4" />
-       <h2 class="ti_subheadline_blue_bold">Hatha-Yoga</h2>
-       <p class="ti_subheadline_blue_light">18:15 - 19:45 Uhr</p>
-       <p>Referent: Alexander Hauer, Anmeldung + Info: 0175 - 94 79 790</p>
-       <p>
-      <a class="hyperlink" href="http://www.alexander-hauer.de/" rel="noreferrer" target="_blank">alexander-hauer.de</a>
-      </p>
-    <!--  <hr class="block border border-coolGray-100 w-full my-4" />
+        <hr class="block border border-coolGray-100 w-full my-4" />
+        <h2 class="ti_subheadline_blue_bold">Hatha-Yoga</h2>
+        <p class="ti_subheadline_blue_light">18:15 - 19:45 Uhr</p>
+        <p>Referent: Alexander Hauer, Anmeldung + Info: 0175 - 94 79 790</p>
+        <p>
+          <a class="hyperlink" href="http://www.alexander-hauer.de/" rel="noreferrer" target="_blank">alexander-hauer.de</a>
+        </p>
+        <!--  <hr class="block border border-coolGray-100 w-full my-4" />
       <h2 class="ti_subheadline_blue_bold">Jazz Dance Training & Choreos: Lyrical, Modern, Contemporary Style</h2>
       <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
       <p>Referentin: Susanne Krell, Anmeldung + Info: 0179 - 44 44 347</p>
@@ -90,10 +95,6 @@
       <DefaultCard>
         <h2 class="ti_headline_blue_light pb-4">Mittwoch</h2>
 
-        <h2 class="ti_subheadline_blue_bold">Sufi-Bewegungsmeditation</h2>
-        <p class="ti_subheadline_blue_light">8:30 - 9:45 Uhr</p>
-        <p class="pb-2">Referentin: Jutta Kuhlmann, Anmeldung + Info: <a class="hyperlink" rel="noreferrer" href="mailto:juttakuhlmann@freenet.de">juttakuhlmann@freenet.de</a></p>
-        <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Fit in den Tag - Faszien-Fitness zum Wohlfühlen</h2>
         <p class="ti_subheadline_blue_light">10:00 - 11:00 Uhr</p>
         <p class="pb-2">Referentin: Nina Buttler, Info: <a class="hyperlink" rel="noreferrer" href="mailto:info@sichtartundweise.de">info@sichtartundweise.de</a></p>
@@ -124,7 +125,6 @@
         <p>
           <a rel="noreferrer" class="hyperlink" href="https://www.tanz-kommunikation.de/" target="_blank">tanz-kommunikation.de</a>
         </p>
-       
       </DefaultCard>
 
       <DefaultCard>
@@ -133,6 +133,16 @@
         <p class="ti_subheadline_blue_light">17:30 - 18:30 Uhr</p>
         <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 68 02 729</p>
         <hr class="block border border-coolGray-100 w-full my-4" />
+
+        <h2 class="ti_subheadline_blue_bold">Hatha-Yoga</h2>
+        <p class="ti_subheadline_blue_light">18:30 - 20:00 Uhr</p>
+        <p class="pb-2">
+          Referentin: Maria Albersmeier, Shiatsu, hawaiianische Massage, mobile Massage,<br />Anmeldung + Info: 0152 - 02 73 16 22<br />
+          <a rel="noreferrer" class="hyperlink" href="mailto:maria.albersmeier@gmx.de">maria.albersmeier@gmx.de</a>
+        </p>
+
+        <hr class="block border border-coolGray-100 w-full my-4" />
+
         <h2 class="ti_subheadline_blue_bold">Moderner Tanz - Training</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
         <p>Referentin: Suna Göncü, Anmeldung + Info: 0173 - 53 59 599</p>
