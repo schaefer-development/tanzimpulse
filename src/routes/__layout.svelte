@@ -8,6 +8,11 @@
   import Footer from '$lib/components/Footer/Footer.svelte';
   import '../app.css';
   import { base } from '$app/paths';
+
+  import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
+  let ready = false;
+  onMount(() => (ready = true));
 </script>
 
 <svelte:head>
@@ -31,31 +36,37 @@
   <meta name="theme-color" content="#ffffff" />
 </svelte:head>
 
-<Header />
-
-<main class="bg-warmGray-200 w-full top-0">
-  <div class="absolute w-full h-full opacity-30 z-0">
-    <img src="{base}/images/bg.svg" alt="background" />
-  </div>
-
-  <div class="___logoheader flex-1 h-2/5 flex bg-white pt-14 pb-48 ">
-    <div class="relative container mx-auto flex flex-col md:flex-row items-center px-0 md:px-6 z-10">
-      <div class="___logo w-48 md:w-64 mb-6 md:mb-0 ml-4">
-        <a aria-label="Logo Tanzimpulse - Institut für Tanzpädagogik" sveltekit:prefetch class="text-ti_blue_mat outline-none focus:outline-none focus:ring-0 hover:text-ti_blue_accent focus:text-ti_blue_accent transition duration-300 ease-in-out" href="{base}/"><Logo /></a>
+{#if !ready}
+  <div class="absolute top-0 left-0 w-full h-full bg-white grid content-center text-center" out:fade={{ duration: 500 }}><h2 class="text-xl text-ti_blue_mat">Laden ...</h2></div>
+{:else}
+  <div class="visible-on-mount" in:fade={{ duration: 500 }}>
+    <!-- content -->
+    <Header />
+    <main class="bg-warmGray-200 w-full top-0">
+      <div class="absolute w-full h-full opacity-30 z-0">
+        <img src="{base}/images/bg.svg" alt="background" />
       </div>
-      <div class="___title px-8">
-        <a aria-label="Logo Tanzimpulse - Institut für Tanzpädagogik" sveltekit:prefetch href="{base}/" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extralight uppercase text-ti_blue_mat tracking-wider hover:text-ti_blue_accent focus:text-ti_blue_accent outline-none focus:outline-none focus:ring-0 transition duration-300 ease-in-out">
-          <span class="font-bold">Tanzimpulse</span> – Institut für Tanzpädagogik
-          <span class="font-normal block normal-case text-base sm:text-lg md:text-xl lg:text-2xl text-ti_blue_accent tracking-wide">Staatlich anerkanntes Weiterbildungsinstitut</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="relative flex-grow container mx-auto z-10">
-    <div class="___inner_main -mt-32 mb-20 px-2 lg:px-6">
-      <slot />
-    </div>
-  </div>
-</main>
 
-<Footer />
+      <div class="___logoheader flex-1 h-2/5 flex bg-white pt-14 pb-48 ">
+        <div class="relative container mx-auto flex flex-col md:flex-row items-center px-0 md:px-6 z-10">
+          <div class="___logo w-48 md:w-64 mb-6 md:mb-0 ml-4">
+            <a aria-label="Logo Tanzimpulse - Institut für Tanzpädagogik" sveltekit:prefetch class="text-ti_blue_mat outline-none focus:outline-none focus:ring-0 hover:text-ti_blue_accent focus:text-ti_blue_accent transition duration-300 ease-in-out" href="{base}/"><Logo /></a>
+          </div>
+          <div class="___title px-8">
+            <a aria-label="Logo Tanzimpulse - Institut für Tanzpädagogik" sveltekit:prefetch href="{base}/" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extralight uppercase text-ti_blue_mat tracking-wider hover:text-ti_blue_accent focus:text-ti_blue_accent outline-none focus:outline-none focus:ring-0 transition duration-300 ease-in-out">
+              <span class="font-bold">Tanzimpulse</span> – Institut für Tanzpädagogik
+              <span class="font-normal block normal-case text-base sm:text-lg md:text-xl lg:text-2xl text-ti_blue_accent tracking-wide">Staatlich anerkanntes Weiterbildungsinstitut</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="relative flex-grow container mx-auto z-10">
+        <div class="___inner_main -mt-32 mb-20 px-2 lg:px-6">
+          <slot />
+        </div>
+      </div>
+    </main>
+    <Footer />
+    <!-- content-->
+  </div>
+{/if}
