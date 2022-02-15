@@ -36,11 +36,10 @@
   <meta name="theme-color" content="#ffffff" />
 </svelte:head>
 
-{#if !ready}
-  <div class="absolute top-0 left-0 w-full h-full bg-white grid content-center text-center" out:fade={{ duration: 500 }}><h2 class="text-xl text-ti_blue_mat">Laden ...</h2></div>
-{:else}
-  <div class="visible-on-mount" in:fade={{ duration: 500 }}>
-    <!-- content -->
+
+
+
+
     <Header />
     <main class="bg-warmGray-200 w-full top-0">
       <div class="absolute w-full h-full opacity-30 z-0">
@@ -67,6 +66,3 @@
       </div>
     </main>
     <Footer />
-    <!-- content-->
-  </div>
-{/if}
