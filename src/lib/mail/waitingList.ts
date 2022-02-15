@@ -2,8 +2,7 @@ import { dateFormat } from '../helpers';
 const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
 <p>
 <p>Hallo ${teilnehmer.vorname} ${teilnehmer.nachname},</p>
-<p>${teilnehmer.telefon}</p>
-<p>${teilnehmer.adresse}</p>
+<p>${teilnehmer.telefon}<br>${teilnehmer.strasse} ${teilnehmer.hausnummer}<br>${teilnehmer.plz} ${teilnehmer.ort}</p>
 <p>${teilnehmer.anmerkung}</p>
 <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" am ${dateFormat.format(new Date(seminar.datum))}.<br>
 Wir haben Sie auf die Warteliste gesetzt und werden Sie kontaktieren, wenn kurzfristig noch ein Platz frei werden sollte.

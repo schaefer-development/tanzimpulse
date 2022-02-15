@@ -35,7 +35,10 @@ const requestVariables = (request: ServerRequest<any, any>) => {
     vorname: request.body.get('vorname'),
     nachname: request.body.get('nachname'),
     telefon: request.body.get('telefon'),
-    adresse: request.body.get('adresse'),
+    strasse: request.body.get('strasse'),
+    hausnummer: request.body.get('hausnummer'),
+    plz: request.body.get('plz'),
+    ort: request.body.get('ort'),
     anmerkung: request.body.get('anmerkung'),
     datenverarbeitung: toBool(request.body.get('datenverarbeitung')),
     newsletter: toBool(request.body.get('newsletter'))

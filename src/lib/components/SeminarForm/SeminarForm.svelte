@@ -14,27 +14,53 @@
     <h2 class="ti_headline_blue_bold mb-4">Anmeldeformular</h2>
 
     <div class="flex flex-col space-y-6 mb-8">
-      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-        >Vorname
-        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="vorname" placeholder="Max" required />
-      </label>
-      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-        >Nachname
-        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="nachname" placeholder="Mustermann" required />
-      </label>
+      <div class="grid grid-cols-2 gap-4">
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+          >Vorname
+          <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="vorname" placeholder="Max" required />
+        </label>
 
-      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-        >E-Mail Adresse
-        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="email" name="email" placeholder="max@mustermann.de" required />
-      </label>
-      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-        >Telefonnummer
-        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="tel" name="telefon" placeholder="0123456789" required />
-      </label>
-      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
-        >Adresse
-        <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="adresse" placeholder="Musterstrasse 42, 12345 Musterstadt" required />
-      </label>
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+          >Nachname
+          <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="nachname" placeholder="Mustermann" required />
+        </label>
+      </div>
+
+      <div class="grid grid-cols-2 gap-x-6">
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+          >E-Mailadresse
+          <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="email" name="email" placeholder="max@mustermann.de" required />
+        </label>
+
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+          >Telefonnummer
+          <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="tel" name="telefon" placeholder="0123456789" required />
+        </label>
+      </div>
+
+      <div class="grid grid-cols-2 gap-x-6">
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat grow-1"
+          >Strasse
+          <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="strasse" placeholder="Musterstrasse" required />
+        </label>
+
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat grow-none"
+          >Hausnummer
+          <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="hausnummer" placeholder="123" required />
+        </label>
+      </div>
+
+      <div class="grid grid-cols-2 gap-x-6">
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+          >PLZ
+          <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="plz" placeholder="54321" required />
+        </label>
+
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+          >Ort
+          <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="ort" placeholder="Musterstadt" required />
+        </label>
+      </div>
 
       <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
         >Anmerkung (optional)
