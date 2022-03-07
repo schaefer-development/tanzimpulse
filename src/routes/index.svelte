@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
   import SeminarPreviews from '$lib/components/SeminarPreviews/SeminarPreviews.svelte';
+  import Skeleton from '$lib/components/Skeleton/Skeleton.svelte';
   import Slideshow from '$lib/components/Slideshow/Slideshow.svelte';
   import Button from '$lib/components/Button/Button.svelte';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
@@ -56,7 +57,12 @@
 
 <section>
   <div class="container flex flex-col">
-    <Slideshow />
+    <Skeleton>
+      <div slot="loading">
+        <h1 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide text-center">Die beste Slideshow der Welt wird geladen...</h1>
+      </div>
+      <Slideshow slot="mounted" />
+    </Skeleton>
 
     <div class="cards my-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div class="flex items-start">
