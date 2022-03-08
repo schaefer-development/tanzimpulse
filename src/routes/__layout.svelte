@@ -8,11 +8,6 @@
   import Footer from '$lib/components/Footer/Footer.svelte';
   import '../app.css';
   import { base } from '$app/paths';
-
-  import { onMount } from 'svelte';
-  import { fade } from 'svelte/transition';
-  let ready = false;
-  onMount(() => (ready = true));
 </script>
 
 <svelte:head>

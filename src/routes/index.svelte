@@ -43,6 +43,8 @@
     };
   };
 
+  import { fade } from 'svelte/transition';
+
   export const prerender = true;
 </script>
 
@@ -58,9 +60,6 @@
 <section>
   <div class="container flex flex-col">
     <Skeleton>
-      <div slot="loading">
-        <h1 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide text-center">Die beste Slideshow der Welt wird geladen...</h1>
-      </div>
       <Slideshow slot="mounted" />
     </Skeleton>
 
