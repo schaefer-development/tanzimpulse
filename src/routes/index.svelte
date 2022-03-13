@@ -68,9 +68,7 @@
       <img class="object-cover opacity-0" src="/images/slideshow/ausbildungen.jpg" alt="Ausbildungen bei Tanzimpulse" />
     </div>
 
-    <div id="MOUNTED" class="relative">
-      <Slideshow slot="mounted" />
-    </div>
+    <Slideshow slot="mounted"/>
   </Skeleton>
 </section>
 
