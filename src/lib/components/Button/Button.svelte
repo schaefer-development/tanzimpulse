@@ -1,6 +1,6 @@
 <script>
   export let buttonstyle = 'blue';
-  export let href;
+  export let href = null;
 
   const mapping = {
     blue: 'border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_mat-dark hover:text-ti_blue_accent-light focus:text-ti_blue_accent focus:bg-ti_blue_mat-dark focus:text-white',

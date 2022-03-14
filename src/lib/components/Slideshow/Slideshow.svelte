@@ -5,7 +5,7 @@
   import { base } from '$app/paths';
 </script>
 
-<div class="relative">
+<div class="slideshow relative">
   <Carousel perPage="1" autoplay="7000" easing="ease-in-out">
     <span class="control" slot="left-control">
       <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
