@@ -1,6 +1,8 @@
 <script lang="ts">
   import Logo from '$lib/components/Logo/Logo.svelte';
   import { base } from '$app/paths';
+
+  let date = new Date().getFullYear();
 </script>
 
 <footer class="relative text-white bg-ti_blue_mat-dark body-font">
@@ -41,7 +43,7 @@
           <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/AGB.pdf" target="_blank">AGB</a><br />
           <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/Widerrufsbelehrung.pdf" target="_blank">Widerrufsbelehrung</a>
           <br /> <br />
-          © 2021
+          © {date}
         </p>
         <div class="___social_media_icons flex flex-wrap flex-row py-6 justify-center lg:justify-start">
           <a rel="noreferrer" aria-label="Facebook" target="_blank" href="https://www.facebook.com/Tanzimpulse/" class="text-white mr-4 hover:text-ti_blue_accent ease-in-out transition-all duration-300">
