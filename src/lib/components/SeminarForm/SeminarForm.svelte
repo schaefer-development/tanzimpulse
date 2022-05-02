@@ -10,6 +10,10 @@
 </script>
 
 <div class="flex flex-col p-4 md:p-6 lg:p-8 overflow-hidden bg-white shadow-ti transition duration-300 ease-in-out">
+  <h1 class="ti_headline_blue_bold">Anmeldungen über die Webseite derzeit nicht möglich!</h1>
+  Bitte kontaktieren Sie uns direkt per E-Mail:<a class="hyperlink" href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a>
+
+  <!--
   <form {action} method="post" use:enhance={{ result, error, pending }}>
     <h2 class="ti_headline_blue_bold mb-4">Anmeldeformular</h2>
 
@@ -80,4 +84,6 @@
     </div>
     <Button buttonstyle={'blue'}>Kostenpflichtig Anmelden</Button>
   </form>
+
+-->
 </div>
