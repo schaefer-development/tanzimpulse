@@ -1,12 +1,18 @@
 import { api } from '$lib/graphql/api';
 import type { RequestHandler } from '@sveltejs/kit';
-import type { ServerRequest } from '@sveltejs/kit/types/endpoint';
+import type { ServerRequest } from '@sveltejs/kit/types/hooks';
 import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '$lib/graphql/mutations';
 import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD } from '$lib/env';
 import { dev } from '$app/env';
 import nodemailer from 'nodemailer';
 import { overbooked } from '$lib/helpers';
 import { waitingListMessage, registrationMessage } from '$lib/mail';
+import sanitizeHtml from 'sanitize-html';
+
+const sanitizeOptions = {
+  allowedTags: [],
+  allowedAttributes: {}
+};
 
 const transporter = nodemailer.createTransport({
   host: SMTP_HOST,
@@ -30,7 +36,7 @@ const sendConfirmation = async (teilnehmer: Teilnehmer) => {
 
 const requestVariables = (request: ServerRequest<any, any>) => {
   const toBool = (cb: string) => !!{ on: true }[cb];
-  return {
+  const result = {
     email: request.body.get('email'),
     vorname: request.body.get('vorname'),
     nachname: request.body.get('nachname'),
@@ -43,6 +49,10 @@ const requestVariables = (request: ServerRequest<any, any>) => {
     datenverarbeitung: toBool(request.body.get('datenverarbeitung')),
     newsletter: toBool(request.body.get('newsletter'))
   };
+  for (const [key, value] of Object.entries(result)) {
+    result[key] = sanitizeHtml(value, sanitizeOptions);
+  }
+  return result;
 };
 
 // POST /:seminarFormat/:url/anmeldung.json
