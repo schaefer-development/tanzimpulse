@@ -1,6 +1,6 @@
 import { GRAPHCMS_ENDPOINT, GRAPHCMS_API_TOKEN } from '$lib/env';
 
-export async function api(query: string, variables?: {}) {
+export async function api(query: string, variables?: Record<string, unknown>) {
   const headers = {
     'Content-Type': 'application/json',
     Accept: 'application/json'

@@ -2,7 +2,7 @@ import type { Load } from '@sveltejs/kit';
 import { addTransientSelected } from '$lib/helpers';
 
 export const loadSeminare =
-  (seminarFormat: string, limit?: number): Load =>
+  (seminarFormat: string, limit?: number): Load<Record<string, unknown>, { props: { seminare: unknown[] } }> =>
   async ({ page, fetch }) => {
     const searchParams = new URLSearchParams();
     if (limit) searchParams.set('limit', String(limit));

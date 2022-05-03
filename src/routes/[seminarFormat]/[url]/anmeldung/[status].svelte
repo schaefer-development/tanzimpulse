@@ -1,16 +1,17 @@
 <script context="module" lang="ts">
   import type { Load } from '@sveltejs/kit';
   import { loadSeminar } from '$lib/routes';
-  let success;
-  export const load: Load = ({ page, fetch }) => {
+  let success: boolean;
+  export const load: Load = (context) => {
+    const { page } = context;
     success = page.params.status === '200';
-    return loadSeminar({ page, fetch });
+    return loadSeminar(context);
   };
 </script>
 
 <script lang="ts">
   import SeminarAnmeldung from '$lib/components/SeminarAnmeldung/SeminarAnmeldung.svelte';
-  export let seminar: {};
+  export let seminar: Seminar;
 </script>
 
 <svelte:head>

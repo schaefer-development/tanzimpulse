@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { overbooked, dateFormat } from '$lib/helpers.ts';
+  import { overbooked, dateFormat } from '$lib/helpers';
   import Button from '$lib/components/Button/Button.svelte';
   import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
 
-  export let seminar: {};
+  export let seminar: Seminar;
   export let link = '#';
 </script>
 

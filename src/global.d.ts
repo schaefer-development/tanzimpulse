@@ -16,9 +16,29 @@ type Veranstaltungsort = {
 type Teilnehmer = {
   id: string;
   email: string;
-  name: string;
-  adresse: string;
+  vorname: string;
+  nachname: string;
+  strasse: string;
+  telefon: string;
+  hausnummer: string;
+  plz: string;
+  ort: string;
+  anmerkung: string;
   seminare: Seminar[];
+};
+
+type Bild = {
+  fileName: string;
+  medium: string;
+};
+
+type Referent = {
+  name: string;
+};
+
+type Dokument = {
+  fileName: string;
+  url: string;
 };
 
 type Seminar = {
@@ -26,11 +46,19 @@ type Seminar = {
   titel: string;
   datum: Date;
   kurzbeschreibung: string;
+  beschreibung: {
+    html: string;
+  };
+  dokumente: Dokument[];
   preis: number;
   maximaleAnzahlTeilnehmer?: number;
   teilnehmer: Teilnehmer[];
   kategorien: Kategorie[];
   veranstaltungsort: Veranstaltungsort;
+  format: string;
+  referenten: Referent[];
+  bild?: Bild;
+  url: string;
 };
 
 type Kategorie = {

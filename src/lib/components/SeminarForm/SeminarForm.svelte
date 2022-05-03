@@ -3,9 +3,11 @@
   import { enhance } from '$lib/form.ts';
   import Button from '$lib/components/Button/Button.svelte';
 
-  export let action;
-  export let result;
+  export let action: string;
+  export let result: (...args: unknown[]) => unknown;
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   export let error = () => {};
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   export let pending = () => {};
 </script>
 

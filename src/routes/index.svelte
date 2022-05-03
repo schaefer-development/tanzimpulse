@@ -1,11 +1,12 @@
 <script context="module" lang="ts">
+  import type { Load } from '@sveltejs/kit';
   import SeminarPreviews from '$lib/components/SeminarPreviews/SeminarPreviews.svelte';
   import Skeleton from '$lib/components/Skeleton/Skeleton.svelte';
   import Slideshow from '$lib/components/Slideshow/Slideshow.svelte';
   import Button from '$lib/components/Button/Button.svelte';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import { base } from '$app/paths';
-  const LoadNeuigkeiten: Load = async ({ page, fetch }) => {
+  const LoadNeuigkeiten: Load<Record<string, unknown>, { props: { neuigkeiten: unknown[] } }> = async ({ fetch }) => {
     const res = await fetch('/neuigkeiten.json');
     if (res.ok) {
       const {
@@ -28,16 +29,23 @@
 
   import { loadSeminare } from '$lib/routes';
 
-  export const load = async (request): Load => {
-    const loadAusbildungen = loadSeminare('ausbildung', 3);
-    const loadWorkshops = loadSeminare('workshop', 3);
+  export const load: Load = async (request) => {
     const [propsAusbildungen, propsWorkshops, propsNeuigkeiten] = await Promise.all([loadSeminare('ausbildung', 3)(request), loadSeminare('workshop', 3)(request), LoadNeuigkeiten(request)]);
+    const {
+      props: { neuigkeiten }
+    } = propsNeuigkeiten || { props: { neuigkeiten: [] } };
+    const {
+      props: { seminare: ausbildungen }
+    } = propsAusbildungen || { props: { seminare: [] } };
+    const {
+      props: { seminare: workshops }
+    } = propsWorkshops || { props: { seminare: [] } };
     return {
       props: {
-        neuigkeiten: propsNeuigkeiten.props.neuigkeiten,
+        neuigkeiten,
         kommende: {
-          ausbildungen: propsAusbildungen.props.seminare,
-          workshops: propsWorkshops.props.seminare
+          ausbildungen,
+          workshops
         }
       }
     };
