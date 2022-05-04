@@ -2,6 +2,8 @@
   import { base } from '$app/paths';
   import { enhance } from '$lib/form.ts';
   import Button from '$lib/components/Button/Button.svelte';
+  import HCaptcha  from 'svelte-hcaptcha'
+  import { HCAPTCHA_SITEKEY } from '$lib/env'
 
   export let action: string;
   export let result: (...args: unknown[]) => unknown;
@@ -9,6 +11,11 @@
   export let error = () => {};
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   export let pending = () => {};
+
+  let captcha;
+  const handleError = () => {
+    captcha.reset();
+  }
 </script>
 
 <div class="flex flex-col p-4 md:p-6 lg:p-8 overflow-hidden bg-white shadow-ti transition duration-300 ease-in-out">
@@ -80,6 +87,12 @@
         </label>
       </div>
     </div>
+    <HCaptcha
+      sitekey={HCAPTCHA_SITEKEY}
+      hl='de'
+      bind:this={captcha}
+      on:error={handleError}
+    />
     <Button buttonstyle={'blue'}>Kostenpflichtig Anmelden</Button>
   </form>
 </div>

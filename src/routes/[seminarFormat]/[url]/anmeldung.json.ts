@@ -8,6 +8,8 @@ import nodemailer from 'nodemailer';
 import { overbooked } from '$lib/helpers';
 import { waitingListMessage, registrationMessage } from '$lib/mail';
 import sanitizeHtml from 'sanitize-html';
+import { verify } from 'hcaptcha'
+import { HCAPTCHA_SECRET } from '$lib/env'
 
 const sanitizeOptions = {
   allowedTags: [],
@@ -34,7 +36,9 @@ const sendConfirmation = async (teilnehmer: Teilnehmer) => {
   return transporter.sendMail(message(teilnehmer, seminar));
 };
 
-const requestVariables = (request: ServerRequest<any, any>) => {
+const requestVariables = async (request: ServerRequest<any, any>) => {
+  const verificationData = await verify(HCAPTCHA_SECRET, request.body.get('h-captcha-response'))
+  if (!verificationData.success) throw new Error('HCaptcha Verification failed')
   const toBool = (cb: string) => !!{ on: true }[cb];
   const result = {
     email: request.body.get('email'),
@@ -46,20 +50,23 @@ const requestVariables = (request: ServerRequest<any, any>) => {
     plz: request.body.get('plz'),
     ort: request.body.get('ort'),
     anmerkung: request.body.get('anmerkung'),
-    datenverarbeitung: toBool(request.body.get('datenverarbeitung')),
-    newsletter: toBool(request.body.get('newsletter'))
+    datenverarbeitung: request.body.get('datenverarbeitung'),
+    newsletter: request.body.get('newsletter')
   };
   for (const [key, value] of Object.entries(result)) {
     result[key] = sanitizeHtml(value, sanitizeOptions);
   }
+  result.newsletter = toBool(result.newsletter)
+  result.datenverarbeitung = toBool(result.datenverarbeitung)
   return result;
 };
 
 // POST /:seminarFormat/:url/anmeldung.json
 export const post: RequestHandler<any, FormData> = async (request) => {
   const { seminarFormat, url } = request.params;
-  const res = await api(UPSERT_TEILNEHMER, { ...requestVariables(request), url });
-  await api(PUBLISH_TEILNEHMER, requestVariables(request));
+  const variables = await requestVariables(request)
+  const res = await api(UPSERT_TEILNEHMER, { ...variables, url });
+  await api(PUBLISH_TEILNEHMER, variables);
   if (res.ok) {
     await sendConfirmation(res.body.data.teilnehmer);
   }

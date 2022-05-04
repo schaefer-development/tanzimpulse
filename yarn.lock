@@ -981,6 +981,11 @@
   dependencies:
     "function-bind" "^1.1.1"
 
+"hcaptcha@^0.1.1":
+  "integrity" "sha512-iMrDmH2VpIEKOrcKWidVjI89FdDKTEdZ7PfPWkP27sTazIIkob8YfdY2ezaufAnWBiUUcvzsn0qF+dyXtBH2Vw=="
+  "resolved" "https://registry.npmjs.org/hcaptcha/-/hcaptcha-0.1.1.tgz"
+  "version" "0.1.1"
+
 "html-tags@^3.1.0":
   "integrity" "sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg=="
   "resolved" "https://registry.npmjs.org/html-tags/-/html-tags-3.1.0.tgz"
@@ -1688,6 +1693,11 @@
   "version" "7.2.0"
   dependencies:
     "has-flag" "^4.0.0"
+
+"svelte-hcaptcha@^0.1.1":
+  "integrity" "sha512-iFF3HwfrCRciJnDs4Y9/rpP/BM2U/5zt+vh+9d4tALPAHVkcANiJIKqYuS835pIaTm6gt+xOzjfFI3cgiRI29A=="
+  "resolved" "https://registry.npmjs.org/svelte-hcaptcha/-/svelte-hcaptcha-0.1.1.tgz"
+  "version" "0.1.1"
 
 "svelte-hmr@^0.14.4":
   "integrity" "sha512-pDrzgcWSoMaK6AJkBWkmgIsecW0GChxYZSZieIYfCP0v2oPyx2CYU/zm7TBIcjLVUPP714WxmViE9Thht4etog=="
