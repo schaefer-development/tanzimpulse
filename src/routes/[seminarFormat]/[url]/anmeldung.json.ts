@@ -5,7 +5,7 @@ import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '$lib/graphql/mutations';
 import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD } from '$lib/env';
 import { dev } from '$app/env';
 import nodemailer from 'nodemailer';
-import { overbooked } from '$lib/helpers';
+import { overbooked, graphQLError } from '$lib/helpers';
 import { waitingListMessage, registrationMessage } from '$lib/mail';
 import sanitizeHtml from 'sanitize-html';
 import { verify } from 'hcaptcha';
@@ -65,14 +65,28 @@ const requestVariables = async (request: ServerRequest<any, any>) => {
 export const post: RequestHandler<any, FormData> = async (request) => {
   const { seminarFormat, url } = request.params;
   const variables = await requestVariables(request);
-  const res = await api(UPSERT_TEILNEHMER, { ...variables, url });
-  await api(PUBLISH_TEILNEHMER, variables);
-  if (res.ok) {
-    await sendConfirmation(res.body.data.teilnehmer);
+  const upsertResponse = await api(UPSERT_TEILNEHMER, { ...variables, url });
+  if (!upsertResponse.ok) {
+    return {
+      ok: false,
+      status: 500,
+      body: { errors: [graphQLError] }
+    };
+  }
+  const publishResponse = await api(PUBLISH_TEILNEHMER, variables);
+  if (!publishResponse.ok) {
+    return {
+      ok: false,
+      status: 500,
+      body: { errors: [graphQLError] }
+    };
+  }
+  if (upsertResponse.ok) {
+    await sendConfirmation(upsertResponse.body.data.teilnehmer);
   }
 
-  if (request.headers.accept === 'application/json') return res;
+  if (request.headers.accept === 'application/json') return upsertResponse;
 
-  const location = `/${seminarFormat}/${url}/anmeldung/${res.status}`;
+  const location = `/${seminarFormat}/${url}/anmeldung/${upsertResponse.status}`;
   return { status: 303, headers: { location } };
 };

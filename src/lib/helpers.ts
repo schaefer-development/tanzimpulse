@@ -14,3 +14,5 @@ export function addTransientSelected(selectedIds?: string[]) {
 
 // A little silly, but offers graphQL syntax highlighting in the editor
 export const gql = String.raw;
+
+export const graphQLError = { message: 'GraphQL Fehler' };
