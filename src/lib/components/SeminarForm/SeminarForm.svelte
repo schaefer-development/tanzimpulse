@@ -4,6 +4,7 @@
   import Button from '$lib/components/Button/Button.svelte';
   import HCaptcha from 'svelte-hcaptcha';
   import { HCAPTCHA_SITEKEY } from '$lib/env';
+  import { browser } from '$app/env';
 
   export let action: string;
   export let result: (...args: unknown[]) => unknown;
@@ -89,7 +90,10 @@
     </div>
     <div class="pb-8 flex justify-center">
       <HCaptcha sitekey={HCAPTCHA_SITEKEY} hl="de" bind:this={captcha} on:error={handleError} />
+      <noscript> Sie benötigen einen JavaScript-fähigen Browser für die Anmeldung zu einem Seminar. </noscript>
     </div>
-    <Button buttonstyle={'blue'}>Kostenpflichtig Anmelden</Button>
+    {#if browser}
+      <Button buttonstyle={'blue'}>Kostenpflichtig Anmelden</Button>
+    {/if}
   </form>
 </div>
