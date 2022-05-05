@@ -6,7 +6,7 @@
 
 <script lang="ts">
   import SeminarAnmeldung from '$lib/components/SeminarAnmeldung/SeminarAnmeldung.svelte';
-  export let seminar: {};
+  export let seminar: Seminar;
 </script>
 
 <svelte:head>

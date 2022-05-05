@@ -4,3 +4,5 @@ export const SMTP_HOST = import.meta.env.VITE_SMTP_HOST as string;
 export const SMTP_PORT = import.meta.env.VITE_SMTP_PORT as string;
 export const SMTP_USERNAME = import.meta.env.VITE_SMTP_USERNAME as string;
 export const SMTP_PASSWORD = import.meta.env.VITE_SMTP_PASSWORD as string;
+export const HCAPTCHA_SITEKEY = import.meta.env.VITE_HCAPTCHA_SITEKEY as string;
+export const HCAPTCHA_SECRET = import.meta.env.VITE_HCAPTCHA_SECRET as string;

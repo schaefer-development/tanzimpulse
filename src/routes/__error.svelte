@@ -1,5 +1,4 @@
 <script context="module" lang="ts">
-  import { base } from '$app/paths';
   export function load({ error, status }) {
     return {
       props: {

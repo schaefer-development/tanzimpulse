@@ -10,7 +10,6 @@
   import { base } from '$app/paths';
 
   import { onMount } from 'svelte';
-  import { fade } from 'svelte/transition';
   let ready = false;
   onMount(() => (ready = true));
 </script>

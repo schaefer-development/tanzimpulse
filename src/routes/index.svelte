@@ -1,48 +1,13 @@
 <script context="module" lang="ts">
+  import type { Load } from '@sveltejs/kit';
   import SeminarPreviews from '$lib/components/SeminarPreviews/SeminarPreviews.svelte';
   import Skeleton from '$lib/components/Skeleton/Skeleton.svelte';
   import Slideshow from '$lib/components/Slideshow/Slideshow.svelte';
   import Button from '$lib/components/Button/Button.svelte';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import { base } from '$app/paths';
-  const LoadNeuigkeiten: Load = async ({ page, fetch }) => {
-    const res = await fetch('/neuigkeiten.json');
-    if (res.ok) {
-      const {
-        data: { neuigkeiten }
-      } = await res.json();
-      return {
-        props: { neuigkeiten }
-      };
-    }
-
-    const {
-      errors: [error]
-    } = await res.json();
-
-    return {
-      status: res.status,
-      error: new Error(error.message)
-    };
-  };
-
-  import { loadSeminare } from '$lib/routes';
-
-  export const load = async (request): Load => {
-    const loadAusbildungen = loadSeminare('ausbildung', 3);
-    const loadWorkshops = loadSeminare('workshop', 3);
-    const [propsAusbildungen, propsWorkshops, propsNeuigkeiten] = await Promise.all([loadSeminare('ausbildung', 3)(request), loadSeminare('workshop', 3)(request), LoadNeuigkeiten(request)]);
-    return {
-      props: {
-        neuigkeiten: propsNeuigkeiten.props.neuigkeiten,
-        kommende: {
-          ausbildungen: propsAusbildungen.props.seminare,
-          workshops: propsWorkshops.props.seminare
-        }
-      }
-    };
-  };
-
+  import { loadIndex } from '$lib/routes';
+  export const load: Load = loadIndex;
   export const prerender = true;
 </script>
 

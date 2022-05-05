@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  import Carousel from '$lib/components/Slideshow/Carousel.svelte';
+  import type { Load } from '@sveltejs/kit';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import Accordion from '$lib/components/Accordion/Accordion.svelte';
   import Cite from '$lib/components/Cite/Cite.svelte';
@@ -11,10 +11,6 @@
 <script lang="ts">
   import SeminarDashboard from '$lib/components/SeminarDashboard/SeminarDashboard.svelte';
   export let seminare = [];
-  const specificImgAttributes = {
-    src: '../images/employees/default.jpg',
-    alt: 'Tanzimpulse'
-  };
 </script>
 
 <svelte:head>

@@ -1,12 +1,34 @@
 import type { Load } from '@sveltejs/kit';
 import { addTransientSelected } from '$lib/helpers';
 
+export const loadIndex: Load<Record<string, unknown>, { props: { kommende: { workshops: unknown[]; ausbildungen: unknown[] }; neuigkeiten: unknown[] } }> = async ({ fetch }) => {
+  const searchParams = new URLSearchParams();
+  searchParams.set('limit', '3');
+  const res = await fetch(`/index.json?${searchParams.toString()}`);
+  if (res.ok) {
+    const {
+      data: { neuigkeiten, workshops, ausbildungen }
+    } = await res.json();
+
+    return {
+      props: { neuigkeiten, kommende: { workshops, ausbildungen } }
+    };
+  }
+
+  const {
+    errors: [error]
+  } = await res.json();
+
+  return {
+    status: res.status,
+    error: new Error(error.message)
+  };
+};
+
 export const loadSeminare =
-  (seminarFormat: string, limit?: number): Load =>
+  (seminarFormat: string): Load<Record<string, unknown>, { props: { seminare: unknown[] } }> =>
   async ({ page, fetch }) => {
-    const searchParams = new URLSearchParams();
-    if (limit) searchParams.set('limit', String(limit));
-    const res = await fetch(`/${seminarFormat}.json?${searchParams.toString()}`);
+    const res = await fetch(`/${seminarFormat}.json`);
     if (res.ok) {
       const {
         data: { seminare }

@@ -1,6 +1,7 @@
 import { GRAPHCMS_ENDPOINT, GRAPHCMS_API_TOKEN } from '$lib/env';
+import { graphQLError } from '$lib/helpers';
 
-export async function api(query: string, variables?: {}) {
+export async function api(query: string, variables?: Record<string, unknown>) {
   const headers = {
     'Content-Type': 'application/json',
     Accept: 'application/json'
@@ -17,6 +18,15 @@ export async function api(query: string, variables?: {}) {
 
   const { status, ok } = res;
   const body = await res.json();
+  const { errors } = body;
+  if (errors?.length) {
+    console.error(errors);
+    return {
+      ok: false,
+      status: 500,
+      body: { errors: [graphQLError] }
+    };
+  }
 
   return {
     status,
