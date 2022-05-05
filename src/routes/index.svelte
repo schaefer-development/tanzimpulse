@@ -6,51 +6,8 @@
   import Button from '$lib/components/Button/Button.svelte';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import { base } from '$app/paths';
-  const LoadNeuigkeiten: Load<Record<string, unknown>, { props: { neuigkeiten: unknown[] } }> = async ({ fetch }) => {
-    const res = await fetch('/neuigkeiten.json');
-    if (res.ok) {
-      const {
-        data: { neuigkeiten }
-      } = await res.json();
-      return {
-        props: { neuigkeiten }
-      };
-    }
-
-    const {
-      errors: [error]
-    } = await res.json();
-
-    return {
-      status: res.status,
-      error: new Error(error.message)
-    };
-  };
-
-  import { loadSeminare } from '$lib/routes';
-
-  export const load: Load = async (request) => {
-    const [propsAusbildungen, propsWorkshops, propsNeuigkeiten] = await Promise.all([loadSeminare('ausbildung', 3)(request), loadSeminare('workshop', 3)(request), LoadNeuigkeiten(request)]);
-    const {
-      props: { neuigkeiten }
-    } = propsNeuigkeiten || { props: { neuigkeiten: [] } };
-    const {
-      props: { seminare: ausbildungen }
-    } = propsAusbildungen || { props: { seminare: [] } };
-    const {
-      props: { seminare: workshops }
-    } = propsWorkshops || { props: { seminare: [] } };
-    return {
-      props: {
-        neuigkeiten,
-        kommende: {
-          ausbildungen,
-          workshops
-        }
-      }
-    };
-  };
-
+  import { loadIndex } from '$lib/routes';
+  export const load: Load = loadIndex;
   export const prerender = true;
 </script>
 

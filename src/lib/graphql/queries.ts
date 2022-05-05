@@ -57,7 +57,7 @@ export const SEMINAR = gql`
 export const SEMINARE = gql`
   ${seminarFragment}
 
-  query ($seminarFormat: SeminarFormat!, $limit: Int, $today: DateTime!) {
+  query ($seminarFormat: SeminarFormat!, $today: DateTime!) {
     seminare(orderBy: datum_ASC, where: { format: $seminarFormat, datum_gte: $today }, first: $limit) {
       ...seminarFragment
       kategorien {
@@ -79,6 +79,26 @@ export const NEUIGKEITEN = gql`
       inhalt {
         html
       }
+    }
+  }
+`;
+
+export const INDEX = gql`
+  ${seminarFragment}
+
+  query ($limit: Int, $today: DateTime!) {
+    neuigkeiten {
+      id
+      ueberschrift
+      inhalt {
+        html
+      }
+    }
+    workshops: seminare(orderBy: datum_ASC, where: { format: workshop, datum_gte: $today }, first: $limit) {
+      ...seminarFragment
+    }
+    ausbildungen: seminare(orderBy: datum_ASC, where: { format: ausbildung, datum_gte: $today }, first: $limit) {
+      ...seminarFragment
     }
   }
 `;

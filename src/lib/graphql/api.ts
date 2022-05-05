@@ -17,6 +17,14 @@ export async function api(query: string, variables?: Record<string, unknown>) {
 
   const { status, ok } = res;
   const body = await res.json();
+  const { errors } = body;
+  if (errors?.length) {
+    return {
+      ok: false,
+      status: 500,
+      body: { errors }
+    };
+  }
 
   return {
     status,
