@@ -19,10 +19,12 @@ export async function api(query: string, variables?: Record<string, unknown>) {
   const body = await res.json();
   const { errors } = body;
   if (errors?.length) {
+    const clientError = { message: 'GraphQL Fehler' }
+    console.error(errors)
     return {
       ok: false,
       status: 500,
-      body: { errors }
+      body: { errors: [clientError] }
     };
   }
 

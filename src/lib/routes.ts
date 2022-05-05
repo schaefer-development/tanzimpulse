@@ -1,7 +1,7 @@
 import type { Load } from '@sveltejs/kit';
 import { addTransientSelected } from '$lib/helpers';
 
-export const loadIndex: Load<Record<string, unknown>, { props: { kommende: { workshops: unknown[]; ausbildungen: unknown[] }; neuigkeiten: unknown[] } }> = async ({ page, fetch }) => {
+export const loadIndex: Load<Record<string, unknown>, { props: { kommende: { workshops: unknown[]; ausbildungen: unknown[] }; neuigkeiten: unknown[] } }> = async ({ fetch }) => {
   const searchParams = new URLSearchParams();
   searchParams.set('limit', '3');
   const res = await fetch(`/index.json?${searchParams.toString()}`);

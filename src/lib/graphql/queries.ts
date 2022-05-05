@@ -58,7 +58,7 @@ export const SEMINARE = gql`
   ${seminarFragment}
 
   query ($seminarFormat: SeminarFormat!, $today: DateTime!) {
-    seminare(orderBy: datum_ASC, where: { format: $seminarFormat, datum_gte: $today }, first: $limit) {
+    seminare(orderBy: datum_ASC, where: { format: $seminarFormat, datum_gte: $today }) {
       ...seminarFragment
       kategorien {
         id
