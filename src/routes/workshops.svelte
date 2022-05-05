@@ -1,4 +1,5 @@
 <script context="module" lang="ts">
+  import type { Load } from '@sveltejs/kit';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import Cite from '$lib/components/Cite/Cite.svelte';
   import { loadSeminare } from '$lib/routes';

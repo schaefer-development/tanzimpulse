@@ -5,7 +5,7 @@
   import Success from '$lib/components/Alerts/Success.svelte';
   import Error from '$lib/components/Alerts/Error.svelte';
   import { base } from '$app/paths';
-  export let seminar: {};
+  export let seminar: Seminar;
   export let errors = [];
   export let anmeldung = null;
 
@@ -63,7 +63,7 @@
             </div>
           {/if}
 
-          <VeranstaltungsOrt showMap="true" veranstaltungsort={seminar.veranstaltungsort} />
+          <VeranstaltungsOrt showMap={true} veranstaltungsort={seminar.veranstaltungsort} />
         </div>
       </SeminarCard>
     </div>

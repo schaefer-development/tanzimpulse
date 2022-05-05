@@ -7,7 +7,6 @@
 
   /* IMAGE TO SHOW */
   export let imageShowingIndex = 0;
-  $: console.log(imageShowingIndex);
   $: image = images[imageShowingIndex];
 
   const nextSlide = () => {
@@ -25,8 +24,6 @@
       imageShowingIndex -= 1;
     }
   };
-
-  const goToSlide = (slideID) => (imageShowingIndex = Number(slideID));
 </script>
 
 <section class="lightbox flex flex-col fixed top-0 left-0 overflow-auto	w-full h-full justify-center items-center" in:fly={{ x: -300 }} out:fade>
@@ -38,7 +35,7 @@
 
   <div class="flex flex-col w-9/12 ">
     <!-- Gallery -->
-    <Slide image={image.imgurl} attr={image.attribution} />
+    <Slide image={image.imgurl} title={image.attribution} alt="Der Tanzraum von Tanzimpulse" />
 
     <!-- Navigation -->
     <Caption on:prevClick={prevSlide} on:nextClick={nextSlide} />
