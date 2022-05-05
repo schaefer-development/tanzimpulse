@@ -44,17 +44,6 @@
       <DefaultCard>
         <h2 class="ti_headline_blue_light pb-4">Montag</h2>
 
-        <h2 class="ti_subheadline_blue_bold">Yogilates mit Susanne – Energie und Kraft für die Woche</h2>
-        <p class="ti_subheadline_blue_light">
-          9:30 - 10:30 Uhr<br />
-          neuer Kurs vom 25.04. bis zum 27.06.2022
-        </p>
-        <p class="pb-2">
-          Referentin: Susanne Jußen-Krell, Anmeldung + Info: 0179 - 44 44 347<br />
-          <a rel="noreferrer" class="hyperlink" href="https://www.sjk-praxis.de/fitness.html#gallery3-2y" target="_blank">sjk-praxis.de</a>
-        </p>
-        <hr class="block border border-coolGray-100 w-full my-4" />
-
         <h2 class="ti_subheadline_blue_bold">Phantasievoller Kindertanz (3-4 Jahre) für Jungen und Mädchen</h2>
         <p class="ti_subheadline_blue_light">15:45 - 16:30 Uhr</p>
         <p class="pb-2">Referenten: Agnieszka Moczadlo, Anmeldung + Info: 0178 - 8210732,<br /><a rel="noreferrer" class="hyperlink" href="mailto:koeln@greifmusic.de">koeln@greifmusic.de</a><br /><a class="hyperlink" href="https://greifmusic.de/" rel="noreferrer" target="_blank">greifmusic.de</a></p>
