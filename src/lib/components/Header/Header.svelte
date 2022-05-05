@@ -1,28 +1,10 @@
 <script lang="ts">
-  import { page } from '$app/stores';
   import { base } from '$app/paths';
-  import { browser } from '$app/env';
 
-  const linkClass = (path, pge) => {
-    const defaults = 'inline-block no-underline py-2 px-4';
-    const active = 'text-white';
-    const inactive = 'text-white';
-    return `${pge.path === path ? active : inactive} ${defaults}`;
-  };
-
-  let links = [
-    { path: `${base}/ueber-uns`, label: 'Über uns' },
-    { path: `${base}/workshops`, label: 'Workshops' },
-    { path: `${base}/ausbildungen`, label: 'Ausbildungen' }
-  ];
   let open = false;
   const toggleMenu = () => {
     open = !open;
   };
-
-  $: styledLinks = links.map((link) => {
-    return { ...link, class: linkClass(link.path, $page) };
-  });
 </script>
 
 <header class="sticky top-0 z-50 bg-ti_blue_mat shadow-ti_hover">
