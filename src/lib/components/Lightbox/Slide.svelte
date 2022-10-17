@@ -6,7 +6,7 @@
 
 <!-- Full-width images with number text -->
 <div class="mySlides flex justify-center">
-  <img src={image} alt={alt} title={title} />
+  <img src={image} {alt} {title} />
 </div>
 
 <style>

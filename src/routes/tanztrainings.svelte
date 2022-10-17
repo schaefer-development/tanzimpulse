@@ -100,8 +100,15 @@
         <p class="ti_subheadline_blue_light">10:00 - 11:00 Uhr</p>
         <p class="pb-2">Referentin: Nina Buttler, Info: <a class="hyperlink" rel="noreferrer" href="mailto:info@sichtartundweise.de">info@sichtartundweise.de</a></p>
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Kreativer Kindertanz (4 bis 5 Jahre)</h2>
-        <p class="ti_subheadline_blue_light">16:00 - 17:00 Uhr</p>
+        <h2 class="ti_subheadline_blue_bold">1. Kurs Kreativer Kindertanz (4 bis 5 Jahre)</h2>
+        <p class="ti_subheadline_blue_light">15:45 - 16:45 Uhr</p>
+        <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26</p>
+        <p>
+          <a rel="noreferrer" class="hyperlink" href="https://www.stephanie-bloemer.de/" target="_blank">stephanie-bloemer.de</a>
+        </p>
+        <hr class="block border border-coolGray-100 w-full my-4" />
+        <h2 class="ti_subheadline_blue_bold">2. Kurs Kreativer Kindertanz (4 bis 5 Jahre)</h2>
+        <p class="ti_subheadline_blue_light">16:45 - 17:45 Uhr</p>
         <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26</p>
         <p>
           <a rel="noreferrer" class="hyperlink" href="https://www.stephanie-bloemer.de/" target="_blank">stephanie-bloemer.de</a>
