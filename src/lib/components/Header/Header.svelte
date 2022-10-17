@@ -18,7 +18,7 @@
   </nav>
 </header>
 
-<aside id="drawer" style="opacity:1;" on:click={toggleMenu} class="{open ? 'translate-x-0' : 'translate-x-full'} transform bg-ti_blue_mat-dark top-0 left-0 w-full fixed h-full overflow-auto ease-in-out transition-all duration-300 z-50">
+<aside id="drawer" style="opacity:1; z-index:999999;" on:click={toggleMenu} class="{open ? 'translate-x-0' : 'translate-x-full'} transform bg-ti_blue_mat-dark top-0 left-0 w-full fixed h-full overflow-auto ease-in-out transition-all duration-300">
   <div class="container flex flex-col flex-wrap px-6 py-4 mx-auto w-full menu_points">
     <div class="flex justify-end w-full block">
       <button class="flex items-center px-2 py-2 focus:border-0 text-white uppercase font-bold tracking-wider hover:text-ti_blue_accent focus:ring-0 focus:outline-none focus:text-ti_blue_accent ">

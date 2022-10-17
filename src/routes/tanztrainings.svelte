@@ -115,14 +115,6 @@
         </p>
 
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Kreativer Kindertanz (5 bis 6 Jahre)</h2>
-        <p class="ti_subheadline_blue_light">17:00-18:00 Uhr</p>
-        <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26</p>
-        <p>
-          <a rel="noreferrer" class="hyperlink" href="https://www.stephanie-bloemer.de/" target="_blank">stephanie-bloemer.de</a>
-        </p>
-
-        <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Zeitgenössischer Tanz</h2>
         <p class="ti_subheadline_blue_light">18:15 - 19:45 Uhr</p>
         <p class="pb-2">Referentin: Suna Göncü, Anmeldung + Info: 0173 - 53 59 599</p>
