@@ -7,7 +7,7 @@
   };
 </script>
 
-<header class="sticky top-0 z-50 bg-ti_blue_mat shadow-ti_hover">
+<header style="z-index:9999;" class="sticky top-0 z-50 bg-ti_blue_mat shadow-ti_hover">
   <nav class="container flex items-center justify-end flex-wrap px-6 py-4 mx-auto w-full">
     <div class="block self-align-end">
       <button on:click={toggleMenu} class="flex items-center px-2 py-2 focus:border-0 text-white tracking-wider hover:text-ti_blue_accent focus:ring-0 focus:outline-none focus:text-ti_blue_accent ">
