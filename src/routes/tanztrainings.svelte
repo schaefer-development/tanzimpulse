@@ -144,14 +144,6 @@
         </p>
 
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">Hatha-Yoga</h2>
-        <p class="ti_subheadline_blue_light">18:30 - 20:00 Uhr</p>
-        <p class="pb-2">
-          Referentin: Maria Albersmeier, Shiatsu, hawaiianische Massage, mobile Massage,<br />Anmeldung + Info: 0152 - 02 73 16 22<br />
-          <a rel="noreferrer" class="hyperlink" href="mailto:maria.albersmeier@gmx.de">maria.albersmeier@gmx.de</a>
-        </p>
-
-        <hr class="block border border-coolGray-100 w-full my-4" />
 
         <h2 class="ti_subheadline_blue_bold">Moderner Tanz - Training</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
