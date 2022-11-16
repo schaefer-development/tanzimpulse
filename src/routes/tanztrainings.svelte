@@ -44,7 +44,7 @@
       <DefaultCard>
         <h2 class="ti_headline_blue_light pb-4">Montag</h2>
 
-        <h2 class="ti_subheadline_blue_bold">Phantasievoller Kindertanz (3-4 Jahre) für Jungen und Mädchen</h2>
+        <h2 class="ti_subheadline_blue_bold">Phantasievoller Kindertanz (4-5 Jahre) für Jungen und Mädchen</h2>
         <p class="ti_subheadline_blue_light">15:45 - 16:30 Uhr</p>
         <p class="pb-2">Referenten: Agnieszka Moczadlo, Anmeldung + Info: 0178 - 8210732,<br /><a rel="noreferrer" class="hyperlink" href="mailto:koeln@greifmusic.de">koeln@greifmusic.de</a><br /><a class="hyperlink" href="https://greifmusic.de/" rel="noreferrer" target="_blank">greifmusic.de</a></p>
 
@@ -134,6 +134,16 @@
         <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 68 02 729</p>
         <hr class="block border border-coolGray-100 w-full my-4" />
 
+        <p>Neuer Kurs ab dem 12.01.2023 – Anmeldung jetzt bereits möglich</p>
+        <h2 class="ti_subheadline_blue_bold">Yogilates mit Susanne – Yoga und Pilates vereint das Beste aus Beidem</h2>
+        <p class="ti_subheadline_blue_light">18:45 - 19:45 Uhr</p>
+        <p class="pb-2">
+          Referentin: Susanne Jußen-Krell, Anmeldung + Info: 0179 - 44 44 347
+          <br />
+          <a class="hyperlink" href="https://www.sjk-praxis.de/fitness.html#gallery3-2y" rel="noreferrer" target="_blank">sjk-praxis.de</a>
+        </p>
+
+        <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Hatha-Yoga</h2>
         <p class="ti_subheadline_blue_light">18:30 - 20:00 Uhr</p>
         <p class="pb-2">
