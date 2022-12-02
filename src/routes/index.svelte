@@ -1,6 +1,5 @@
 <script context="module" lang="ts">
   import type { Load } from '@sveltejs/kit';
-  import SeminarPreviews from '$lib/components/SeminarPreviews/SeminarPreviews.svelte';
   import Skeleton from '$lib/components/Skeleton/Skeleton.svelte';
   import Slideshow from '$lib/components/Slideshow/Slideshow.svelte';
   import Button from '$lib/components/Button/Button.svelte';
@@ -13,7 +12,6 @@
 
 <script lang="ts">
   export let neuigkeiten = [];
-  export let kommende = { ausbildungen: [], workshops: [] };
 </script>
 
 <svelte:head>
@@ -51,9 +49,6 @@
       <p class="py-4">
         <Button href="{base}/ausbildungen" buttonstyle={'blue'}>Alle Ausbildungen</Button>
       </p>
-      <p class="px-2 pb-2 uppercase tracking-wider font-bold text-sm text-ti_blue_accent text-center">Die nächsten drei Ausbildungen:</p>
-      <hr class="block border border-black w-full mb-2 opacity-20" />
-      <SeminarPreviews seminare={kommende.ausbildungen} color="blue" />
     </div>
   </div>
 
@@ -64,9 +59,6 @@
       <p class="py-4">
         <Button href="{base}/workshops" buttonstyle={'cyan'}>Alle Workshops</Button>
       </p>
-      <p class="px-2 pb-2 uppercase tracking-wider font-bold text-sm text-ti_cyan_accent text-center">Die nächsten drei Workshops:</p>
-      <hr class="block border border-black w-full mb-2 opacity-20" />
-      <SeminarPreviews seminare={kommende.workshops} color="cyan" />
     </div>
   </div>
 
@@ -92,18 +84,7 @@
       </div>
     </DefaultCard>
   {/each}
-  <DefaultCard>
-    <h2 class="ti_headline_blue_bold">Tanzimpulse stellt auf hybride Lehr- und Lernformate um</h2>
-    <p class="py-4">Hierfür erhalten wir eine Projekt-Förderung von:</p>
-    <div class="flex flex-col md:flex-row w-full justify-items-center ">
-      <div class="flex-1">
-        <img class="mx-auto" src="{base}/images/BKM_Web_de.gif" alt="Logo Die Bundesbeauftragte der Bundesregierung für Kultur und Medien" />
-      </div>
-      <div class="flex-1">
-        <img class="mx-auto" src="{base}/images/DVT.png" alt="Logo Dachverband Tanzen" />
-      </div>
-    </div>
-  </DefaultCard>
+
 </section>
 
 <style>
