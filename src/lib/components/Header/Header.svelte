@@ -1,6 +1,5 @@
 <script lang="ts">
   import { base } from '$app/paths';
-
   let open = false;
   const toggleMenu = () => {
     open = !open;
@@ -31,33 +30,24 @@
 
     <div class="animated flex flex-col">
       <hr class="border-black my-4" />
-
       <a sveltekit:prefetch href="{base}/" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Start</a>
-
       <hr class="border-black my-4" />
-      <h3 class="text-xs text-ti_blue_accent font-bold uppercase tracking-widest pb-2">Tanzpädagogik</h3>
-
+      <h3 class="text-xs text-white font-bold uppercase tracking-widest pb-2">Tanzpädagogik</h3>
       <a sveltekit:prefetch href="{base}/ausbildungen" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Ausbildungen</a>
       <a sveltekit:prefetch href="{base}/workshops" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Workshops</a>
       <a href="{base}/tanztrainings" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Tanztrainings</a>
-
       <hr class="border-black my-4" />
-      <h3 class="text-xs text-ti_blue_accent font-bold uppercase tracking-widest pb-2">Eindrücke</h3>
-
+      <a sveltekit:prefetch href="{base}/tanzraum" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Tanzraumvermietung</a>
+      <hr class="border-black my-4" />
+      <h3 class="text-xs text-white font-bold uppercase tracking-widest pb-2">Eindrücke</h3>
       <a href="{base}/fotogalerie" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Fotogalerie</a>
       <a href="{base}/videos" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Videos</a>
-
       <hr class="border-black my-4" />
-      <h3 class="text-xs text-ti_blue_accent font-bold uppercase tracking-widest pb-2">Tanzimpulse</h3>
-
+      <h3 class="text-xs text-white font-bold uppercase tracking-widest pb-2">Tanzimpulse</h3>
       <a href="{base}/kontakt" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Kontakt und Anfahrt</a>
       <a href="{base}/team" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Team</a>
       <a href="{base}/mitgliedschaften" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Mitgliedschaften</a>
       <a href="{base}/philosophie" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Philosophie</a>
-
-      <hr class="border-black my-4" />
-
-      <a sveltekit:prefetch href="{base}/tanzraum" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Tanzraumvermietung</a>
     </div>
   </div>
 </aside>
