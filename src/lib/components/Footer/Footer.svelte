@@ -20,7 +20,7 @@
     </div>
     <div class="grid grid-flow-col grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-10 lg:gap-32">
       <p class="text-center md:text-right">
-        <span class="uppercase font-extrabold tracking-widest text-xs text-ti_blue_accent">Das Büro</span><br />
+        <span class="uppercase font-extrabold tracking-widest text-xs text-white">Das Büro</span><br />
         Folwiese 20<br />
         51069 Köln<br />
         <br />
@@ -34,7 +34,7 @@
       </p>
       <div class="text-center md:text-left">
         <p>
-          <span class="uppercase font-extrabold tracking-widest text-xs text-ti_blue_accent">Der Tanzraum</span><br />
+          <span class="uppercase font-extrabold tracking-widest text-xs text-white">Der Tanzraum</span><br />
           Schweinheimer Straße 54<br />
           51067 Köln<br />
           <br />
