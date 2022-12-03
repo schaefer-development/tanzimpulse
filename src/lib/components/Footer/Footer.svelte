@@ -8,7 +8,7 @@
 <footer class="relative text-white bg-ti_blue_mat-dark body-font">
   <div class="container py-24 mx-auto flex flex-col">
     <div class="___logoandtitle pb-10">
-      <a sveltekit:prefetch href="{base}/" class="outline-none focus:outline-none text-center text-ti_blue_accent hover:text-white transition duration-300 ease-in-out">
+      <a sveltekit:prefetch href="{base}/" class="outline-none focus:outline-none text-center text-white hover:text-ti_blue_accent transition duration-300 ease-in-out">
         <div class="w-36 md:w-48 mb-10 mx-auto">
           <Logo />
         </div>
