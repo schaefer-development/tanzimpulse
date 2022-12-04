@@ -1,8 +1,5 @@
 <script context="module" lang="ts">
   import type { Load } from '@sveltejs/kit';
-  import SeminarPreviews from '$lib/components/SeminarPreviews/SeminarPreviews.svelte';
-  import Skeleton from '$lib/components/Skeleton/Skeleton.svelte';
-  import Slideshow from '$lib/components/Slideshow/Slideshow.svelte';
   import Button from '$lib/components/Button/Button.svelte';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import { base } from '$app/paths';
@@ -20,27 +17,6 @@
   <title>Start | Tanzimpulse</title>
 </svelte:head>
 
-<section class="relative w-full slide-content overflow-hidden">
-  <Skeleton>
-    <div id="LOADING" class="w-full slide-content bg-white flex items-center" slot="loading">
-      <img class="object-cover w-full opacity-0" src="/images/slideshow/ausbildungen.jpg" alt="Ausbildungen bei Tanzimpulse" />
-      <div class="absolute w-full">
-        <div class="flex justify-center">
-          <div class="leading-6 transition ease-in-out duration-150 flex">
-            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
-              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-            </svg>
-            Wird geladen ...
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <Slideshow slot="mounted" />
-  </Skeleton>
-</section>
-
 <!-- -->
 
 <section id="3CARDS" class="cards my-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -51,9 +27,6 @@
       <p class="py-4">
         <Button href="{base}/ausbildungen" buttonstyle={'blue'}>Alle Ausbildungen</Button>
       </p>
-      <p class="px-2 pb-2 uppercase tracking-wider font-bold text-sm text-ti_blue_accent text-center">Die nächsten drei Ausbildungen:</p>
-      <hr class="block border border-black w-full mb-2 opacity-20" />
-      <SeminarPreviews seminare={kommende.ausbildungen} color="blue" />
     </div>
   </div>
 
@@ -64,9 +37,6 @@
       <p class="py-4">
         <Button href="{base}/workshops" buttonstyle={'cyan'}>Alle Workshops</Button>
       </p>
-      <p class="px-2 pb-2 uppercase tracking-wider font-bold text-sm text-ti_cyan_accent text-center">Die nächsten drei Workshops:</p>
-      <hr class="block border border-black w-full mb-2 opacity-20" />
-      <SeminarPreviews seminare={kommende.workshops} color="cyan" />
     </div>
   </div>
 
@@ -92,24 +62,4 @@
       </div>
     </DefaultCard>
   {/each}
-  <DefaultCard>
-    <h2 class="ti_headline_blue_bold">Tanzimpulse stellt auf hybride Lehr- und Lernformate um</h2>
-    <p class="py-4">Hierfür erhalten wir eine Projekt-Förderung von:</p>
-    <div class="flex flex-col md:flex-row w-full justify-items-center ">
-      <div class="flex-1">
-        <img class="mx-auto" src="{base}/images/BKM_Web_de.gif" alt="Logo Die Bundesbeauftragte der Bundesregierung für Kultur und Medien" />
-      </div>
-      <div class="flex-1">
-        <img class="mx-auto" src="{base}/images/DVT.png" alt="Logo Dachverband Tanzen" />
-      </div>
-    </div>
-  </DefaultCard>
 </section>
-
-<style>
-  .slide-content {
-    width: 100%;
-    min-height: 300px;
-    max-height: 40vh;
-  }
-</style>
