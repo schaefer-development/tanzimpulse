@@ -4,6 +4,7 @@
 
 html {
   font-size: calc(12px + 0.25vw);
+  scroll-behavior: smooth;
 }
 
 .ti_headline_blue_bold {
