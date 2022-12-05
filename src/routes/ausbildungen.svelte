@@ -39,7 +39,7 @@
               <p class="pb-4">Die Grundstufen a) + b) können unabhängig von den anderen Bausteinen als abgeschlossene Zusatzausbildung besucht werden.</p>
               <p class="pb-4">Ausbildungsinfos und Übungsvideos werden bequem über eine Cloud zur Verfügung gestellt.</p>
               <p class="py-8">
-                <a href="#ausbildungen" aria-label="Mehr" class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Kurse entdecken</a>
+                <a href="#ausbildungen" aria-label="Mehr" class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Jetzt Kurse entdecken</a>
               </p>
             </div>
           </Accordion>
@@ -49,7 +49,7 @@
               <p>...dienen den Tanzpädagogen/innen sowie Quereinsteiger/innen dazu, ihre persönlichen tänzerischen Schwerpunkte (aus dem 1. Jahr) individuell zu bearbeiten und zu trainieren. Tanztheorie, Tanzwissenschaft, Anatomie + Körperarbeit werden vertieft; in einer Projektphase erprobt sich jede/r Teilnehmer/in als Tänzer/in, Choreograf/in oder Projektleitung.</p>
               <p class="py-2">Nach erfolgreichem Abschluss der Aufbaustufe wird ein Zertifikat erteilt, in dem Umfang und Inhalte der Tanzpädagogik-Ausbildung detailliert aufgeführt sind</p>
               <p class="py-8">
-                <a href="#ausbildungen" aria-label="Mehr" class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Kurse entdecken</a>
+                <a href="#ausbildungen" aria-label="Mehr" class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Jetzt Kurse entdecken</a>
               </p>
             </div>
           </Accordion>
@@ -59,7 +59,7 @@
               <p>...beinhaltet die Auseinandersetzung mit einem selbstgewählten tanzwissenschaftlichen Thema, mit der Entwicklung eines eigenen tanzpädagogischen Profils sowie der Planung, Durchführung und Reflexion eines Workshops. Sie schließt mit einer Diplomarbeit und einem Colloquium ab.</p>
               <p class="py-2">Nach erfolgreichem Abschluss der Aufbaustufe mit Diplom (TI) wird eine Diplomurkunde (TI) erteilt.</p>
               <p class="py-8">
-                <a href="#ausbildungen" aria-label="Mehr" class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Kurse entdecken</a>
+                <a href="#ausbildungen" aria-label="Mehr" class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Jetzt Kurse entdecken</a>
               </p>
             </div>
           </Accordion>
