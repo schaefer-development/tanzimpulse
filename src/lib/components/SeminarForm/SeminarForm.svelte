@@ -72,7 +72,7 @@
         </label>
       </div>
 
-      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
+      <label class="pl-4 flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
         >Anmerkung (optional)
         <textarea class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="anmerkung" placeholder="Anmerkung zur Anmeldung" rows="4" />
       </label>

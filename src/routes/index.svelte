@@ -1,12 +1,11 @@
 <script context="module" lang="ts">
   import type { Load } from '@sveltejs/kit';
-  import Button from '$lib/components/Button/Button.svelte';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import { base } from '$app/paths';
   import { loadIndex } from '$lib/routes';
   export const load: Load = loadIndex;
   export const prerender = true;
-  let motivausbildungen = ' /images/slideshow/tanzraum.jpg';
+  let motivausbildungen = ' /images/tanzraum.jpg';
 </script>
 
 <script lang="ts">
