@@ -25,54 +25,54 @@
 
     <div class="flex flex-col space-y-6 mb-8">
       <div class="grid grid-cols-2 gap-4">
-        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
           >Vorname
           <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="vorname" placeholder="Max" required />
         </label>
 
-        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
           >Nachname
           <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="nachname" placeholder="Mustermann" required />
         </label>
       </div>
 
       <div class="grid grid-cols-2 gap-x-6">
-        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
           >E-Mailadresse
           <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="email" name="email" placeholder="max@mustermann.de" required />
         </label>
 
-        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
           >Telefonnummer
           <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="tel" name="telefon" placeholder="0123456789" required />
         </label>
       </div>
 
       <div class="grid grid-cols-2 gap-x-6">
-        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat grow-1"
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black grow-1"
           >Strasse
           <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="strasse" placeholder="Musterstrasse" required />
         </label>
 
-        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat grow-none"
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black grow-none"
           >Hausnummer
           <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="hausnummer" placeholder="123" required />
         </label>
       </div>
 
       <div class="grid grid-cols-2 gap-x-6">
-        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
           >PLZ
           <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="plz" placeholder="54321" required />
         </label>
 
-        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+        <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
           >Ort
           <input class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="ort" placeholder="Musterstadt" required />
         </label>
       </div>
 
-      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-wider text-ti_blue_mat"
+      <label class="flex flex-col-reverse uppercase text-xs font-bold tracking-widest text-black"
         >Anmerkung (optional)
         <textarea class="block text-black bg-white border-2 p-4 border-coolGray-300 focus:border-2 focus:border-ti_red_accent outline-none focus:outline-none focus:bg-white focus:ring-0 placeholder-gray-400 mb-2 transition duration-300 ease-in-out" type="text" name="anmerkung" placeholder="Anmerkung zur Anmeldung" rows="4" />
       </label>
