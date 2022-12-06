@@ -31,17 +31,17 @@
 
     <div class="animated flex flex-col">
       <hr class="border-black my-4" />
-      <a sveltekit:prefetch href="{base}/" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Start</a>
+      <a sveltekit:prefetch href="{base}/" class="text-white hover:text-ti_blue_accent py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Start</a>
       <hr class="border-black my-4" />
       <h3 class="text-xs text-white uppercase tracking-widest pb-2">Tanzpädagogik</h3>
-      <a sveltekit:prefetch href="{base}/ausbildungen" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Ausbildungen</a>
+      <a sveltekit:prefetch href="{base}/ausbildungen" class="text-white hover:text-ti_blue_accent py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Ausbildungen</a>
       <a sveltekit:prefetch href="{base}/workshops" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Workshops</a>
       <a href="{base}/tanztrainings" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Tanztrainings</a>
       <hr class="border-black my-4" />
-      <a sveltekit:prefetch href="{base}/tanzraum" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Tanzraumvermietung</a>
+      <a sveltekit:prefetch href="{base}/tanzraum" class="text-white hover:text-ti_blue_accent py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Tanzraumvermietung</a>
       <hr class="border-black my-4" />
       <h3 class="text-xs text-white uppercase tracking-widest pb-2">Eindrücke</h3>
-      <a href="{base}/fotogalerie" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Fotogalerie</a>
+      <a href="{base}/fotogalerie" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Fotos</a>
       <a href="{base}/videos" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Videos</a>
       <hr class="border-black my-4" />
       <h3 class="text-xs text-white uppercase tracking-widest pb-2">Tanzimpulse</h3>
@@ -50,7 +50,7 @@
       <a href="{base}/mitgliedschaften" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Mitgliedschaften</a>
       <a href="{base}/philosophie" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Philosophie</a>
       <hr class="border-black my-4" />
-      <div class="___social_media_icons pt-2 flex flex-wrap flex-row justify-center lg:justify-start">
+      <div class="___social_media_icons pt-2 flex flex-wrap flex-row justify-start">
         <a rel="noreferrer" aria-label="Facebook" target="_blank" href="https://www.facebook.com/Tanzimpulse/" class="text-white mr-4 hover:text-ti_blue_accent ease-in-out transition-all duration-300">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
