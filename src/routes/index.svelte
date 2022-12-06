@@ -5,7 +5,9 @@
   import { loadIndex } from '$lib/routes';
   export const load: Load = loadIndex;
   export const prerender = true;
-  let motivausbildungen = ' /images/tanzraum.jpg';
+  let motifAusbildungen = ' /images/startpage/ausbildungen.jpg';
+  let motifWorkshops = ' /images/startpage/workshops.jpg';
+  let motifTanzraum = ' /images/startpage/tanzraum.jpg';
 </script>
 
 <script lang="ts">
@@ -22,8 +24,8 @@
   <div class="cardWrap grow">
     <div class="bg-ti_blue_mat hover:shadow-ti transition ease-in-out duration-300">
       <picture>
-        <source srcset={motivausbildungen.replace('.jpg', '.webp')} type="webp" />
-        <img src={motivausbildungen} class="w-full h-72 object-cover" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
+        <source srcset={motifAusbildungen.replace('.jpg', '.webp')} type="webp" class="w-full h-72 object-cover object-center" />
+        <img src={motifAusbildungen} class="w-full h-72 object-cover object-top" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
       </picture>
       <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide text-white px-8 pt-8 pb-4">Ausbildungen</h2>
       <p class="px-8 text-white">Werde Tanzpädagogin/ Tanzpädagoge, geschult durch unser kompetentes Team und integriere den Tanz in den Beruf. Tanzvermittlung professionell und praxisnah. Beginn der Grundstufen zwei mal jährlich: im Frühjahr und im Herbst.</p>
@@ -36,8 +38,8 @@
   <div class="cardWrap grow">
     <div class="bg-ti_cyan_mat hover:shadow-ti transition ease-in-out duration-300">
       <picture>
-        <source srcset={motivausbildungen.replace('.jpg', '.webp')} type="webp" />
-        <img src={motivausbildungen} class="w-full h-72 object-cover" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
+        <source srcset={motifWorkshops.replace('.jpg', '.webp')} type="webp" />
+        <img src={motifWorkshops} class="w-full h-72 object-cover object-top" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
       </picture>
       <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide text-white px-8 pt-8 pb-4">Workshops</h2>
       <p class="px-8 text-white">Immer aktuell sein, mit Impulsen für die tanzpädagogische Praxis für alle Tanzinteressierten die mit Kita-, Grundschulkindern, Jugendlichen und/ oder Erwachsenen arbeiten.</p>
@@ -50,10 +52,10 @@
   <div class="cardWrap grow">
     <div class="bg-ti_green_mat hover:shadow-ti transition ease-in-out duration-300">
       <picture>
-        <source srcset={motivausbildungen.replace('.jpg', '.webp')} type="webp" />
-        <img src={motivausbildungen} class="w-full h-72 object-cover" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
+        <source srcset={motifTanzraum.replace('.jpg', '.webp')} type="webp" />
+        <img src={motifTanzraum} class="w-full h-72 object-cover" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
       </picture>
-      <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide text-white px-8 pt-8 pb-4">Tanzraum Vermietung</h2>
+      <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide text-white px-8 pt-8 pb-4">Tanzraum mieten</h2>
       <p class="px-8 text-white">Ein Raum mit angenehmer Atmosphäre für Weiterbildungen, Tanztrainings, Entspannung etc. mit Ausstattung für professionellen Unterricht.</p>
       <p class="p-8">
         <a href="{base}/tanzraum" aria-label="Mehr" class="block text-center border-white text-white hover:bg-ti_green_accent hover:text-ti_green_mat-dark p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Zum Tanzraum</a>
