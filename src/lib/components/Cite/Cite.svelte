@@ -12,7 +12,7 @@
 
     <div class="w-10/12 p-6 md:p-12 lg:p-20 md mx-auto relative text-center flex flex-col items-center">
       <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic">
-        „Ich bin dankbar dieses Ausbildungsinstitut mit seinem wunderschönen Tanzraum gefunden zu haben. Die Ausbildung wird von sehr erfahrenen, authentischen und warmherzigen Dozentinnen geleitet, die jenseits ihres professionellen Unterrichts für jede Teilnehmerin ein offenes Ohr und gleichzeitig die gesamte Gruppe im Blick haben. Ich kann Tanzimpulse uneingeschränkt weiterempfehlen ...“
+        „Die Ausbildung wird von sehr erfahrenen, authentischen und warmherzigen Dozentinnen geleitet, die jenseits ihres professionellen Unterrichts für jede Teilnehmerin ein offenes Ohr und gleichzeitig die gesamte Gruppe im Blick haben. Ich kann Tanzimpulse uneingeschränkt weiterempfehlen ...“
         <p class="mx-auto pt-6 uppercase font-bold tracking-widest text-gray-500 text-sm">Ulrike R. | Kursteilnehmerin</p>
       </cite>
     </div>
