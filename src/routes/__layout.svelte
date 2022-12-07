@@ -38,7 +38,7 @@
 <div class="flex flex-col min-h-screen justify-between">
   <Header />
   <main class="relative mb-auto top-0 h-auto bg-warmGray-200">
-    <div id="BUBBLES" class="absolute w-full h-screen overflow-hidden opacity-30 z-0">
+    <div id="BUBBLES" class="absolute w-full h-full overflow-hidden opacity-30 z-0">
       <img src="{base}/images/bg.svg" alt="background" />
     </div>
     <div id="LOGO" class="bg-white pt-14 pb-48 ">
