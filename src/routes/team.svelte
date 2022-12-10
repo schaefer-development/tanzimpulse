@@ -33,6 +33,14 @@
       <DefaultCard>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div class="___single_employee flex flex-col py-4">
+            <img class="w-16 md:w-24 lg:w-32 h-16 md:h-24 lg:h-32 mx-auto rounded-full" src="{base}/images/employees/fontana.jpg" alt="Sonia Fontana | Tanzimpulse" />
+            <div class="pt-4">
+              <h2 class="ti_headline_blue_light text-center mb-4">Sonia Fontana</h2>
+              <p>Diplom-Tanzpädagogin (TI), absolvierte ihr Musicalstudium an der Universität für Musik und darstellende Kunst in Wien und arbeitet auf und hinter der Bühne als Schauspielerin, Sprecherin, Choreografin. Unterrichtserfahrung in der Tanz und Theaterpädagogik Ihr Thema in der Grundstufe ist Musical Jazz.</p>
+            </div>
+          </div>
+
+          <div class="___single_employee flex flex-col py-4">
             <img class="w-16 md:w-24 lg:w-32 h-16 md:h-24 lg:h-32 mx-auto rounded-full" src="{base}/images/employees/stefan_schick.jpg" alt="Nicole Stefan-Schick | Tanzimpulse" />
             <div class="pt-4">
               <h2 class="ti_headline_blue_light text-center mb-4">Nicole Stefan-Schick</h2>
@@ -121,19 +129,8 @@
           </div>
 
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Bettina Fleischer</h4>
-            <p>Diplom Tanzpädagogin (TI) und Erzieherin; leitet verschiedene fortlaufende Tanzgruppen, Tanzprojekte und Multiplikatoren Fortbildungen mit dem Schwerpunkt Kindertanz.</p>
-            <a class="hyperlink" rel="”noreferrer”" href="https://takt-gefuehl.jimdofree.com" target="_blank">takt-gefuehl.jimdofree.com</a>
-          </div>
-
-          <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Mayemouna Gaye</h4>
             <p>vermittelt traditionelle senegalesische Tänze aus dem Alltag westafrikanischer Frauen, meistens verbunden mit Liedern oder Geschichten.</p>
-          </div>
-
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Sonia Fontana</h4>
-            <p>Diplom Tanzpädagogin (TI), Musicaldarstellerin (Studium in Wien), Choreografin, Schauspielerin.</p>
           </div>
 
           <div class="___guest flex flex-col">
@@ -152,20 +149,36 @@
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Mônica Santos</h4>
             <p>Tänzerin, Tanzpädagogin mit Ausbildungen in Brasilien und Deutschland; Schwerpunkte Klassischer Tanz, Weiterbildung in Modern- und Jazz Dance, Improvisation und Tanz für Kinder.</p>
           </div>
+          <!-- -->
 
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Anna von Redéy</h4>
-            <p>Tanzpädagogin, Schwerpunkte sind Folkloretanz, Jazz, Hip Hop, Moderner Tanz; westafrikansicher traditionelle Tanz. Das Kindertanzprojektes "TrommelTanz" führt sie mit Adams Tchawodji gemeinsam durch.</p>
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Elena Giannakoudi</h4>
+            <p>Diplom Tanzpädagogin (TI), leitet seit vielen Jahren Tanzprojekte an Förder- und weiterführenden Schulen, kooperiert mit Musik- und Kunstschulen in Neunkirchen-Sellscheid und Waldbröl, führt Projekte für AndersTanzen e.V. durch über ChanceTanz "Kultur macht stark".</p>
           </div>
 
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Adams Tchawodji</h4>
-            <p>2003 professionelle Ausbildung bei "Dagbeneva" in Kpalimé, Togo. Schwerpunkt: westafrikanischer traditioneller Tanz und TrommelTanz für Kinder.</p>
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Claudia Neeten</h4>
+            <p>Musiktherapeutin (BMusT), Diplom Tanzpädagogin (TI), L.b.e Lern- und Entwicklungsbegleiterin; leitet verschiedene Kindertanzgruppen u.a. bei Tagespflegepersonen; inklusive Musik- und Tanzprojekte; Schwerpunkt Teilhabe und Inklusion, sowie Lern- und Entwicklungsförderung durch Tanz und Musik.</p>
           </div>
 
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Stefanie Wilczek</h4>
-            <p>Diplom Tanzpädagogin (TI), Pilates Trainerin (DTB), Lehrerin.</p>
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Constanz Moschner</h4>
+            <p>Musikpädagogin, Tanzpädagogin (TI), tätig an der Musikschule der Stadt Leverkusen im Elementarbereich musikalische und tänzerische Früherziehung sowie Klavier. Die enge Verbindung von Tanz und Musik ist ein Schwerpunkt ihrer Arbeit im kreativen Umgang mit Bewegung und Klängen besonderen Wert legt. Ihr musikpädagogisches Studium absolvierte sie an der Universität Köln sowie an der Folkwang-Universität der Künste in Essen. Sie ist freischaffend an verschiedenen Musik- und Tanzprojekten beteiligt.</p>
+          </div>
+
+          <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Nina Buttler</h4>
+            <p>Erzieherin, Tanzpädagogin & Fascial Fitness® Trainerin, systemischer & psychosozialer Coach (ECA) unterrichtet seit 1999 im Fitnessbereich und bietet seit 2016 den Schwerpunkt fasziale Körperarbeit in Ihren Trainings, Kursen und Seminaren an.</p>
+            <a class="hyperlink" rel="”noreferrer”" href="https://www.sichtartundweise.de/" target="_blank">sichtartundweise.de</a>
+          </div>
+
+          <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Jungeon Kim</h4>
+            <p>
+              Choreographin, Tanzpädagogin, Certified Laban Movement Analyst. Sie vermittelt Tanz in Bildungskontexten für Schüler*innen, Studierende, Erzieher*innen und Lehrer*innen, in Fortbildungskontexten für Tätige im Bereich Kunst- und Kultur-Vermittlung, sowie auch durch Kurse und Workshops für Tanzbegeisterte.<br />
+              MA Choreographie (Korea National University of Arts), MA Zeitgenössische Tanzpädagogik (Hochschule für Musik und Darstellende Kunst Frankfurt am Main).
+            </p>
+            <a class="hyperlink" rel="”noreferrer”" href="https://www.jungyeonkim.com/" target="_blank">jungyeonkim.com</a>
           </div>
         </div>
       </DefaultCard>
