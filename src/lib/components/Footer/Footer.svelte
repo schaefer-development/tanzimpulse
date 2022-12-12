@@ -8,7 +8,7 @@
 <footer class="relative text-white bg-ti_blue_mat-dark body-font">
   <div class="container py-24 mx-auto flex flex-col">
     <div class="___logoandtitle pb-10">
-      <a sveltekit:prefetch href="{base}/" class="outline-none focus:outline-none text-center text-ti_blue_accent hover:text-white transition duration-300 ease-in-out">
+      <a sveltekit:prefetch href="{base}/" class="outline-none focus:outline-none text-center text-white transition duration-300 ease-in-out">
         <div class="w-36 md:w-48 mb-10 mx-auto">
           <Logo />
         </div>
@@ -20,7 +20,7 @@
     </div>
     <div class="grid grid-flow-col grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-10 lg:gap-32">
       <p class="text-center md:text-right">
-        <span class="uppercase font-extrabold tracking-widest text-xs text-ti_blue_accent">Das Büro</span><br />
+        <span class="uppercase font-extrabold tracking-widest text-xs text-white">Das Büro</span><br />
         Folwiese 20<br />
         51069 Köln<br />
         <br />
@@ -34,7 +34,7 @@
       </p>
       <div class="text-center md:text-left">
         <p>
-          <span class="uppercase font-extrabold tracking-widest text-xs text-ti_blue_accent">Der Tanzraum</span><br />
+          <span class="uppercase font-extrabold tracking-widest text-xs text-white">Der Tanzraum</span><br />
           Schweinheimer Straße 54<br />
           51067 Köln<br />
           <br />

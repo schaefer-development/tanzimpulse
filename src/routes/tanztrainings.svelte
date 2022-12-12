@@ -46,7 +46,7 @@
 
         <h2 class="ti_subheadline_blue_bold">Phantasievoller Kindertanz (4-5 Jahre) für Jungen und Mädchen</h2>
         <p class="ti_subheadline_blue_light">15:45 - 16:30 Uhr</p>
-        <p class="pb-2">Referenten: Agnieszka Moczadlo, Anmeldung + Info: 0178 - 8210732,<br /><a rel="noreferrer" class="hyperlink" href="mailto:koeln@greifmusic.de">koeln@greifmusic.de</a><br /><a class="hyperlink" href="https://greifmusic.de/" rel="noreferrer" target="_blank">greifmusic.de</a></p>
+        <p class="pb-2">Referenten: Agnieszka Moczadlo, Anmeldung + Info: 0178 - 821 07 32,<br /><a rel="noreferrer" class="hyperlink" href="mailto:koeln@greifmusic.de">koeln@greifmusic.de</a><br /><a class="hyperlink" href="https://greifmusic.de/" rel="noreferrer" target="_blank">greifmusic.de</a></p>
 
         <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Moderner Tanz für Kinder + Jugendliche mit Behinderung</h2>
@@ -68,7 +68,7 @@
 
         <h2 class="ti_subheadline_blue_bold">Von Kopf bis Fuß - Gymnastik</h2>
         <p class="ti_subheadline_blue_light">9:30 - 10:30 Uhr</p>
-        <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 68 02 729</p>
+        <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 680 27 29</p>
         <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Moderner Kindertanz (7 bis 10 Jahre)</h2>
         <p class="ti_subheadline_blue_light">16:15 - 17:15 Uhr</p>
@@ -79,7 +79,7 @@
         <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Hatha-Yoga</h2>
         <p class="ti_subheadline_blue_light">18:00 - 19:30 Uhr</p>
-        <p>Referent: Alexander Hauer, Anmeldung + Info: 0175 - 94 79 790</p>
+        <p>Referent: Alexander Hauer, Anmeldung + Info: 0175 - 947 97 90</p>
         <p>
           <a class="hyperlink" href="http://www.alexander-hauer.de/" rel="noreferrer" target="_blank">alexander-hauer.de</a>
         </p>
@@ -121,7 +121,7 @@
         <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Jazzdance + Balancetraining</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
-        <p>Referentin: Sabrina Wöhler, Anmeldung + Info: 0175 - 41 94 029</p>
+        <p>Referentin: Sabrina Wöhler, Anmeldung + Info: 0175 - 419 40 29</p>
         <p>
           <a rel="noreferrer" class="hyperlink" href="https://www.tanz-kommunikation.de/" target="_blank">tanz-kommunikation.de</a>
         </p>
@@ -131,7 +131,7 @@
         <h2 class="ti_headline_blue_light pb-4">Donnerstag</h2>
         <h2 class="ti_subheadline_blue_bold">Von Kopf bis Fuß - Gymnastik</h2>
         <p class="ti_subheadline_blue_light">17:30 - 18:30 Uhr</p>
-        <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 68 02 729</p>
+        <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 680 27 29</p>
         <hr class="block border border-coolGray-100 w-full my-4" />
 
         <p>Neuer Kurs ab dem 12.01.2023 – Anmeldung jetzt bereits möglich</p>

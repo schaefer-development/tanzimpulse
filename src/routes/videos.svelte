@@ -11,6 +11,18 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
       <div class="shadow-ti">
         <div class="aspect-w-16 aspect-h-9">
+          <iframe title="NOR/M/AL Tanzprojekt" src="https://www.youtube.com/embed/Qzytic5rYkw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+        </div>
+      </div>
+
+      <div class="shadow-ti">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe title="Lebens(T)räume" src="https://www.youtube.com/embed/Ys5aLjN_QME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+        </div>
+      </div>
+
+      <div class="shadow-ti">
+        <div class="aspect-w-16 aspect-h-9">
           <iframe title="Wuppertal Tanzen" src="https://www.youtube.com/embed/cwjuiZZPtT0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
         </div>
       </div>

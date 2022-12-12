@@ -1,6 +1,8 @@
 <script context="module" lang="ts">
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
   export const prerender = true;
+
+  let fotos = [{ src: './images/fotogallery/foto_01.jpg' }, { src: './images/fotogallery/foto_02.jpg' }, { src: './images/fotogallery/foto_03.jpg' }, { src: './images/fotogallery/foto_04.jpg' }, { src: './images/fotogallery/foto_05.jpg' }, { src: './images/fotogallery/foto_06.jpg' }, { src: './images/fotogallery/foto_07.jpg' }, { src: './images/fotogallery/foto_08.jpg' }, { src: './images/fotogallery/foto_09.jpg' }, { src: './images/fotogallery/foto_10.jpg' }, { src: './images/fotogallery/foto_11.jpg' }];
 </script>
 
 <svelte:head>
@@ -17,125 +19,14 @@
           </svg>
         </span>
 
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_01.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_02.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_03.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_04.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_05.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_06.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_08.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_09.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_10.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_11.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_12.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_13.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_14.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_15.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_16.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_17.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_18.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_19.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_20.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center shadow-ti">
-          <img class="object-cover w-full" src="/images/fotogalery/fotogalerie_21.jpg" alt="Tanzimpulse" />
-        </div>
-        <!-- -->
+        {#each fotos as foto}
+          <div class="slide-content relative flex items-center shadow-ti">
+            <picture>
+              <source srcset={foto.src.replace('.jpg', '.webp')} type="image/webp" class="object-cover w-full" />
+              <img class="object-cover w-full" src={foto.src} alt="Tanzimpulse | Institut für Tanzpädagogik" />
+            </picture>
+          </div>
+        {/each}
 
         <span class="control" slot="right-control">
           <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full ti_slidehow_control transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
