@@ -107,7 +107,7 @@
           <a rel="noreferrer" class="hyperlink" href="https://www.stephanie-bloemer.de/" target="_blank">stephanie-bloemer.de</a>
         </p>
         <hr class="block border border-coolGray-100 w-full my-4" />
-        <h2 class="ti_subheadline_blue_bold">2. Kurs Kreativer Kindertanz (4 bis 5 Jahre)</h2>
+        <h2 class="ti_subheadline_blue_bold">2. Kurs Kreativer Kindertanz (6 bis 8 Jahre)</h2>
         <p class="ti_subheadline_blue_light">16:45 - 17:45 Uhr</p>
         <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26</p>
         <p>
@@ -148,6 +148,14 @@
         <h2 class="ti_subheadline_blue_bold">Moderner Tanz - Training</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
         <p>Referentin: Suna Göncü, Anmeldung + Info: 0173 - 53 59 599</p>
+      </DefaultCard>
+
+      <DefaultCard>
+        <h2 class="ti_headline_blue_light pb-4">Freitag</h2>
+        <h2 class="ti_subheadline_blue_bold">Zumba ab 6.1.23 Neu!</h2>
+        <p class="ti_subheadline_blue_light">18:30 - 19:30 Uhr</p>
+        <p class="pb-2">Referentin: Caroline Kraus, Info: <a class="hyperlink" rel="noreferrer" href="mailto:carolineannakraus@gmx.de">carolineannakraus@gmx.de</a></p>
+        <br />
       </DefaultCard>
     </div>
   </div>
