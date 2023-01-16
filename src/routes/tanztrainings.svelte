@@ -84,14 +84,14 @@
           <a class="hyperlink" href="http://www.alexander-hauer.de/" rel="noreferrer" target="_blank">alexander-hauer.de</a>
         </p>
 
-        <hr class="block border border-coolGray-100 w-full my-4" />
+        <!--  <hr class="block border border-coolGray-100 w-full my-4" />
         <h2 class="ti_subheadline_blue_bold">Solo-Dance mit Susanne – Jazz, Lyrical, Modern & zeitgenössischer Tanz</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
         <p>Referentin: Susanne Jußen-Krell, Anmeldung + Info: 0179 - 44 44 347</p>
         <p />
         <p>
           <a class="hyperlink" href="https://www.sjk-praxis.de/fitness.html#gallery3-2y" rel="noreferrer" target="_blank">sjk-praxis.de</a>
-        </p>
+        </p>-->
       </DefaultCard>
       <DefaultCard>
         <h2 class="ti_headline_blue_light pb-4">Mittwoch</h2>
@@ -134,7 +134,7 @@
         <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 680 27 29</p>
         <hr class="block border border-coolGray-100 w-full my-4" />
 
-        <p>Neuer Kurs ab dem 12.01.2023 – Anmeldung jetzt bereits möglich</p>
+        <!--    <p>Neuer Kurs ab dem 12.01.2023 – Anmeldung jetzt bereits möglich</p>
         <h2 class="ti_subheadline_blue_bold">Yogilates mit Susanne – Yoga und Pilates vereint das Beste aus Beidem</h2>
         <p class="ti_subheadline_blue_light">18:45 - 19:45 Uhr</p>
         <p class="pb-2">
@@ -143,7 +143,7 @@
           <a class="hyperlink" href="https://www.sjk-praxis.de/fitness.html#gallery3-2y" rel="noreferrer" target="_blank">sjk-praxis.de</a>
         </p>
 
-        <hr class="block border border-coolGray-100 w-full my-4" />
+        <hr class="block border border-coolGray-100 w-full my-4" />-->
 
         <h2 class="ti_subheadline_blue_bold">Moderner Tanz - Training</h2>
         <p class="ti_subheadline_blue_light">20:00 - 21:30 Uhr</p>
