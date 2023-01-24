@@ -65,11 +65,11 @@
 
       <DefaultCard>
         <h2 class="ti_headline_blue_light pb-4">Dienstag</h2>
-
+        <!--
         <h2 class="ti_subheadline_blue_bold">Von Kopf bis Fuß - Gymnastik</h2>
         <p class="ti_subheadline_blue_light">9:30 - 10:30 Uhr</p>
         <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 680 27 29</p>
-        <hr class="block border border-coolGray-100 w-full my-4" />
+        <hr class="block border border-coolGray-100 w-full my-4" />-->
         <h2 class="ti_subheadline_blue_bold">Moderner Kindertanz (7 bis 10 Jahre)</h2>
         <p class="ti_subheadline_blue_light">16:15 - 17:15 Uhr</p>
         <p>Referentin: Stephanie Blömer, Anmeldung + Info: 0177 - 784 66 26</p>
@@ -129,10 +129,10 @@
 
       <DefaultCard>
         <h2 class="ti_headline_blue_light pb-4">Donnerstag</h2>
-        <h2 class="ti_subheadline_blue_bold">Von Kopf bis Fuß - Gymnastik</h2>
+        <!--  <h2 class="ti_subheadline_blue_bold">Von Kopf bis Fuß - Gymnastik</h2>
         <p class="ti_subheadline_blue_light">17:30 - 18:30 Uhr</p>
         <p class="pb-2">Referentin: Ute Seddig, Anmeldung + Info: 0221 - 680 27 29</p>
-        <hr class="block border border-coolGray-100 w-full my-4" />
+        <hr class="block border border-coolGray-100 w-full my-4" />-->
 
         <!--    <p>Neuer Kurs ab dem 12.01.2023 – Anmeldung jetzt bereits möglich</p>
         <h2 class="ti_subheadline_blue_bold">Yogilates mit Susanne – Yoga und Pilates vereint das Beste aus Beidem</h2>
