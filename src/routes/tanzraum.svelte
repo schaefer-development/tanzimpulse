@@ -1,21 +1,16 @@
 <script context="module" lang="ts">
-  import LightboxIndex from '$lib/components/Lightbox/LightboxIndex.svelte';
-
+  import { base } from '$app/paths';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
-  import Button from '$lib/components/Button/Button.svelte';
-  import { base } from '$app/paths';
   import Map from '$lib/components/Map/Map.svelte';
   const mapAttributes = {
-    class: '',
     style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh;'
   };
-
   export const prerender = true;
 </script>
 
 <svelte:head>
-  <title>Tanzraumvermietung</title>
+  <title>Tanzraum</title>
 </svelte:head>
 
 <section>
@@ -109,72 +104,67 @@
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
-      <DefaultCard>
-        <h1 class="ti_headline_blue_bold">Tanzraumvermietung</h1>
-        <h2 class="ti_headline_blue_light mb-4">Raum für Tanzimpulse – ein Ort für Weiterbildung mit Erholungswert!</h2>
-        <p>Der Raum liegt im rechtsrheinischen Köln in ländlicher Umgebung in einem über 100jährigen Tanz- und Veranstaltungsgebäude und ist gut mit dem Auto, als auch mit öffentlichen Verkehrsmitteln erreichbar.</p>
-        <ul class="px-8 pt-8 pb-4 list-disc">
-          <li>140 qm Tanzbereich</li>
-          <li>Umkleidebereich</li>
-          <li>Aufenthaltsbereich mit Küchenzeile und Herd, Kaffeemaschine, Wasserkocher, Kühlschrank – auch Wasser und Schorle können erworben werden</li>
-          <li>Toiletten und Dusche</li>
-          <li>Garten für sonnige Pausen</li>
-        </ul>
+      <!-- start first column -->
+      <div>
+        <DefaultCard>
+          <h2 class="ti_headline_blue_bold pb-6">ES GEHT WEITER in den Räumen von Kooperationspartnern:</h2>
 
-        <p class="pt-4 pb-2">Ausstattung auch für theoretischen Unterricht geeignet:</p>
-        <ul class="px-8 py-2 list-disc">
-          <li>Musikanlage</li>
-          <li>WLAN mit Gastzugang</li>
-          <li>65 Zoll Monitor</li>
-          <li>Flipchart</li>
-          <li>Whiteboard</li>
-          <li>Bestuhlung des Tanzraums möglich</li>
-        </ul>
+          <Map {mapAttributes} coordinates={[50.79720988110121, 7.195870399340153]} />
+          <h3 class="ti_headline_blue_light pt-4 pb-2">Tanzfabrik Siegburg</h3>
+          <p class="pb-2">
+            Ulli Hartmann<br />
+            Lindenstraße 58-50<br />
+            53721 Siegburg
+          </p>
+          <a rel="noreferrer" class="hyperlink" href="https://www.tanzfabrik-siegburg.de/%C3%BCber-uns/tanzraum/" target="_blank">tanzfabrik-siegburg.de</a>
 
-        <p class="pt-4 pb-8">
-          Direkt nebenan gibt es eine Pizzeria für die Mittagsverpflegung.<br />
-          Bei Bedarf können wir nette Übernachtungsmöglichkeiten in der Nähe des Tanzraums nennen.
-        </p>
+          <Map {mapAttributes} coordinates={[50.79720988110121, 7.195870399340153]} />
 
-        <p class="font-bold">Anschrift</p>
-        <p class="py-2">
-          Schweinheimer Straße 54<br />
-          51067 Köln<br />
-        </p>
-        <hr class="block border border-coolGray-100 w-full mt-8 mb-6" />
-        <!-- lightbox -->
+          <h3 class="ti_headline_blue_light pt-10">neues lernen</h3>
+          <p class="pb-2">ADRESSE</p>
+          <p><a rel="noreferrer" class="hyperlink" href="https://www.neues-lernen.info/index.php?seite=raeume" target="_blank">neues-lernen.info</a></p>
+        </DefaultCard>
+      </div>
+      <!-- end second column -->
+      <!-- start second column -->
+      <div>
+        <DefaultCard>
+          <img class="py-2" src="{base}/images/abschied_gruppe1.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
+          <img class="py-2" src="{base}/images/abschied_gruppe2.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
 
-        <LightboxIndex />
+          <p class="py-4">
+            Abschied vom Raum für Tanzimpulse am 12.02.23 mit dem Ausbildungsteam, Referent/innen und Unterstützerinnen und mit sehr aufbauenden Worten, die uns nun positiv weitermachen lassen, denn wir nehmen die Erfahrungen aus diesem wunderbaren Tanzraum und seiner besonderen Atmosphäre mit.
+            <br /><br />
+            Wir bedanken uns bei Dr. Gabriele Förderer und Team für die Nutzungsmöglichkeit ihres Bewegungsraumes.
+          </p>
 
-        <hr class="block border border-coolGray-100 w-full mt-8 mb-6" />
+          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-4" />
 
-        <h2 class="ti_headline_blue_bold">Anfahrt zum Tanzraum</h2>
-        <h2 class="ti_headline_blue_light">Mit dem Auto</h2>
-        <p class="py-2">
-          A 3, Ausfahrt Bergisch Gladbach/Köln-Holweide/ Köln-Dellbrück<br />
-          A 4, Ausfahrt Köln-Merheim, Richtung Köln-Holweide
-        </p>
-        <p class="py-2 mb-6">
-          Direkt vor dem Tanzraum befinden sich 3 bis 4 hauseigene Stellplätze. <br />
-          Weitere Parkmöglichkeiten finden Sie in den angrenzenden Straßen: Kochwiesenstraße, Burgwiesenstraße oder Ferdinand-Stücker-Straße.
-        </p>
-        <h2 class="ti_headline_blue_light">Mit den öffentlichen Verkehrsmitteln</h2>
-        <p class="py-2">
-          Linie 18 ab Köln Hbf<br />
-          Linie 3 ab Bahnhof Deutz/Messe<br />
-          bis Haltestelle Maria-Himmelfahrt-Straße in Köln-Holweide
-        </p>
-        <p class="pt-2 pb-8">Von dort ca. 5 Min. bis zur Schweinheimer Straße 54, 51067 Köln-Holweide</p>
-        <hr class="block border border-coolGray-100 w-full my-2 mb-8" />
-        <p>
-          <a sveltekit:prefetch href="{base}/kontakt"> <Button buttonstyle={'blue'}>Jetzt den Raum mieten</Button></a>
-        </p>
-      </DefaultCard>
+          <h3 class="font-bold mb-4">Rückmeldungen zum Abschied</h3>
+          <p class="pt- text-sm">– Ulli Hartmann</p>
 
-      <DefaultCard>
-        <Map {mapAttributes} />
-      </DefaultCard>
+          <p class="pt-2 pb-10">Liebe Bettina, liebe Ute, es tut mir so unendlich leid, dass Euer toller Raum aufgegeben werden muss! Aber sehr gut kann ich „lieber ein Ende mit Schrecken, als ein Schrecken ohne Ende“ in eurem Fall nachvollziehen. Ohne Euch hätte ich niemals so viel gelernt und wäre ich niemals eine selbständige Tanzpädagogik geworden.</p>
+
+          <p class="pt-2 pb-4 text-sm">– Christine Heidenreich</p>
+          <img class="pb-6" src="{base}/images/goodbye.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
+
+          <p class="pt-6">Dieser Raum war ja schon irgendwie ein Stück "zu Hause", wenn ich mich an die Zeit dort entsinne.</p>
+          <p class="pt-2 pb-4 text-sm">– Mirjam Pies</p>
+
+          <p class="pt-6">
+            Liebe Bettina, liebe Ute,<br />
+            Das sind ja echt traurige Neuigkeiten. Das war der schönste Tanzsaal in dem ich je unterrichtet habe.
+          </p>
+          <p class="pt-2 pb-4 text-sm">– Nicola Belker</p>
+          <p class="pt-6">Was für eine traurige Neuigkeit. Dennoch waren und bleiben es wunderschöne Momente an diesem Ort, die ihr diesem und den Menschen dort geschenkt habt.</p>
+          <p class="pt-2 pb-4 text-sm">– Stefanie Wilczek</p>
+          <p class="pt-6">Dieser Ort der für alle dank euch ein Stück Heimat geworden ist, das ist so schade. Das Kölner Gefühl wird ein bisschen kleiner. Aber das schöne ist ja, dass es vor allem mit euch zu tun hat und ihr aus jedem Raum einen Ort des wunderbaren Tanzes und des Kölner Gefühls kreieren könnt.</p>
+          <p class="pt-2 pb-4 text-sm">– Ann-Kristin Pieters</p>
+        </DefaultCard>
+      </div>
     </div>
+
+    <!-- end second column -->
   </div>
 </section>
 
