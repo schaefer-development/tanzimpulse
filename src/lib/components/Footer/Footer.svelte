@@ -20,7 +20,7 @@
     </div>
     <div class="grid grid-flow-col grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-10 lg:gap-32">
       <p class="text-center md:text-right">
-        <span class="uppercase font-extrabold tracking-widest text-xs text-white">Das Büro</span><br />
+        <span class="uppercase font-extrabold tracking-widest text-xs text-white">Büro</span><br />
         Folwiese 20<br />
         51069 Köln<br />
         <br />
@@ -28,16 +28,12 @@
         Fax: +49 (0)221 - 68 97 797<br />
         E-Mail: <a href="mailto:info@tanzimpulse-koeln.de" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">info@tanzimpulse-koeln.de</a><br />
         <br />
-        <span class="uppercase tracking-widest text-xs">Bürozeiten</span><br />
+        <span class="uppercase font-extrabold tracking-widest text-xs text-white">Bürozeiten</span><br />
         Montag bis Freitag: 9:00 - 13:00 Uhr<br />
         Dienstag: 18:00 - 20:00 Uhr
       </p>
       <div class="text-center md:text-left">
         <p>
-          <span class="uppercase font-extrabold tracking-widest text-xs text-white">Der Tanzraum</span><br />
-          Schweinheimer Straße 54<br />
-          51067 Köln<br />
-          <br />
           <a href="{base}/impressum" aria-label="Impressum" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">Impressum</a><br />
           <a href="{base}/datenschutz" aria-label="Datenschutz" class="hover:text-ti_blue_accent ease-in-out transition-all duration-300">Datenschutz</a><br />
           <a class="hover:text-ti_blue_accent ease-in-out transition-all duration-300" href="{base}/content/AGB.pdf" target="_blank">AGB</a><br />
