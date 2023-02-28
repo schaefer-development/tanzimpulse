@@ -15,6 +15,7 @@
   ];
   export let zoom = 13;
   export let coordinates = [50.96745443190281, 7.049317359924316];
+  export let instance;
 
   export let mapAttributes = {
     style: 'width: 100%; height: 300px;'
