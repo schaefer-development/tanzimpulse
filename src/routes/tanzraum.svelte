@@ -57,14 +57,12 @@
 
           <p class="py-4">
             Abschied vom Raum für Tanzimpulse am 12.02.23 mit dem Ausbildungsteam, Referent/innen und Unterstützerinnen und mit sehr aufbauenden Worten, die uns nun positiv weitermachen lassen, denn wir nehmen die Erfahrungen aus diesem wunderbaren Tanzraum und seiner besonderen Atmosphäre mit.
-            <br /><br />
-            Wir bedanken uns bei Dr. Gabriele Förderer und Team für die Nutzungsmöglichkeit ihres Bewegungsraumes.
           </p>
 
           <hr class="block border border-coolGray-100 w-10/12 mx-auto my-4" />
 
           <h3 class="font-bold mb-4">Rückmeldungen zum Abschied</h3>
-          <p class="pt-2">Liebe Bettina, liebe Ute, es tut mir so unendlich leid, dass Euer toller Raum aufgegeben werden muss! Aber sehr gut kann ich „lieber ein Ende mit Schrecken, als ein Schrecken ohne Ende“ in eurem Fall nachvollziehen. Ohne Euch hätte ich niemals so viel gelernt und wäre ich niemals eine selbständige Tanzpädagogik geworden.</p>
+          <p class="pt-2">Liebe Bettina, liebe Ute, es tut mir so unendlich leid, dass Euer toller Raum aufgegeben werden muss! Ohne Euch hätte ich niemals so viel gelernt und wäre ich niemals eine selbständige Tanzpädagogin geworden.</p>
           <p class="pt-2 pb-4 text-sm">– Ulli Hartmann</p>
           <img class="pt-6" src="{base}/images/goodbye.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
 

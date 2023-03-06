@@ -56,7 +56,7 @@
         <img src={motifTanzraum} class="w-full h-72 object-cover" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
       </picture>
       <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide text-white px-8 pt-8 pb-4">Tanzraum</h2>
-      <p class="px-8 text-white">Unsere Veranstaltungen finden in diesen Räumen statt. Lorem ipsum.</p>
+      <p class="px-8 text-white">Unsere Veranstaltungen finden ab sofort in neuen Räumen statt.</p>
       <p class="p-8">
         <a href="{base}/tanzraum" aria-label="Mehr" class="block text-center border-white text-white hover:bg-ti_green_accent hover:text-ti_green_mat-dark p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Zum den Tanzräumen</a>
       </p>
