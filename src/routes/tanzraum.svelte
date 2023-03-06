@@ -18,6 +18,40 @@
 
 <section>
   <div class="container flex flex-col">
+    <div class="relative">
+      <Carousel perPage="1" autoplay="12500" easing="ease-in-out">
+        <span class="control" slot="left-control">
+          <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </span>
+
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2301.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
+
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2302.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
+
+        <!-- single slide item -->
+        <div class="slide-content relative flex items-center">
+          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2303.jpg" alt="Der Tanzraum von Tanzimpulse" />
+        </div>
+        <!-- -->
+
+        <span class="control" slot="right-control">
+          <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
+      </Carousel>
+    </div>
+
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
       <!-- start first column -->
       <div>
@@ -52,12 +86,13 @@
         <DefaultCard>
           <h2 class="ti_headline_blue_light pb-2">Abschied vom alten Tanzraum</h2>
 
+          <p class="w-11/12 mx-auto py-4 font-bold">"Wir können den Wind nicht ändern, aber die Segel anders setzen."</p>
+          <p class="text-right flex justify-end text-sm pb-4">Aristoteles</p>
+
           <img class="py-2" src="{base}/images/abschied_gruppe1.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
           <img class="py-2" src="{base}/images/abschied_gruppe2.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
 
-          <p class="py-4">
-            Abschied vom Raum für Tanzimpulse am 12.02.23 mit dem Ausbildungsteam, Referent/innen und Unterstützerinnen und mit sehr aufbauenden Worten, die uns nun positiv weitermachen lassen, denn wir nehmen die Erfahrungen aus diesem wunderbaren Tanzraum und seiner besonderen Atmosphäre mit.
-          </p>
+          <p class="py-4">Abschied vom Raum für Tanzimpulse am 12.02.23 mit dem Ausbildungsteam, Referent/innen und Unterstützer/innen und mit sehr aufbauenden Worten, die uns nun positiv weitermachen lassen, denn wir nehmen die Erfahrungen aus diesem wunderbaren Tanzraum und seiner besonderen Atmosphäre mit.</p>
 
           <hr class="block border border-coolGray-100 w-10/12 mx-auto my-4" />
 
@@ -89,7 +124,7 @@
 <style>
   .slide-content {
     width: 100%;
-    min-height: 300px;
+    min-height: 450px;
     max-height: 40vh;
   }
 </style>
