@@ -80,7 +80,7 @@
             Im Eichenforst 39<br />
             51069 Köln
           </p>
-          <p><a rel="noreferrer" class="hyperlink" href="https://www.neues-lernen.info/index.php?seite=raeume" target="_blank">neues-lernen.info</a></p>
+          <!--  <p><a rel="noreferrer" class="hyperlink" href="https://www.neues-lernen.info/index.php?seite=raeume" target="_blank">neues-lernen.info</a></p>-->
         </DefaultCard>
       </div>
       <!-- end second column -->
