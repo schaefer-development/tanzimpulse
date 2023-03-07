@@ -55,6 +55,14 @@
         <DefaultCard>
           <h2 class="ti_headline_blue_bold pb-6">Es geht weiter in den 3 Räumen von unseren Kooperationspartnern:</h2>
 
+          <Map3 coordinates={[50.98317629266272, 7.074287561255727]} />
+          <h3 class="ti_headline_blue_light pt-4 pb-2">Ballettstudio Leskanpark</h3>
+          <p class="pb-2">
+            Waltherstr. 49-51, Haus Nr. 67
+            <br />51069 Köln
+          </p>
+          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-12" />
+
           <Map1 coordinates={[50.944084819741974, 6.938695136069687]} />
           <h3 class="ti_headline_blue_light pt-4 pb-2">neues lernen</h3>
           <p class="pb-2">
@@ -72,15 +80,6 @@
             53721 Siegburg
           </p>
           <a rel="noreferrer" class="hyperlink" href="https://www.tanzfabrik-siegburg.de/%C3%BCber-uns/tanzraum/" target="_blank">tanzfabrik-siegburg.de</a>
-          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-12" />
-
-          <Map3 coordinates={[50.978432626006644, 7.0877161625034955]} />
-          <h3 class="ti_headline_blue_light pt-4 pb-2">Yogastudio</h3>
-          <p class="pb-2">
-            Im Eichenforst 39<br />
-            51069 Köln
-          </p>
-          <!--  <p><a rel="noreferrer" class="hyperlink" href="https://www.neues-lernen.info/index.php?seite=raeume" target="_blank">neues-lernen.info</a></p>-->
         </DefaultCard>
       </div>
       <!-- end second column -->
