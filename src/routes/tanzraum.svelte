@@ -2,12 +2,9 @@
   import { base } from '$app/paths';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
-  import Map from '$lib/components/Map/Map.svelte';
-  import Maptest from '$lib/components/Map/maptest.svelte';
-
-  const mapAttributes = {
-    style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh;'
-  };
+  import Map1 from '$lib/components/Map/map1.svelte';
+  import Map2 from '$lib/components/Map/map2.svelte';
+  import Map3 from '$lib/components/Map/map3.svelte';
 
   export const prerender = true;
 </script>
@@ -56,11 +53,18 @@
       <!-- start first column -->
       <div>
         <DefaultCard>
-          <h2 class="ti_headline_blue_bold pb-6">Es geht weiter in den [Zahl] Räumen von unseren Kooperationspartnern:</h2>
+          <h2 class="ti_headline_blue_bold pb-6">Es geht weiter in den 3 Räumen von unseren Kooperationspartnern:</h2>
 
-          <Maptest coordinates={[50.79720988110121, 7.195870399340153]} />
+          <Map1 coordinates={[50.944084819741974, 6.938695136069687]} />
+          <h3 class="ti_headline_blue_light pt-4 pb-2">neues lernen</h3>
+          <p class="pb-2">
+            Herwarthstraße 22<br />
+            50672 Köln
+          </p>
+          <p><a rel="noreferrer" class="hyperlink" href="https://www.neues-lernen.info/index.php?seite=raeume" target="_blank">neues-lernen.info</a></p>
+          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-12" />
 
-          <Map coordinates={[50.79720988110121, 7.195870399340153]} />
+          <Map2 coordinates={[50.79720988110121, 7.195870399340153]} />
           <h3 class="ti_headline_blue_light pt-4 pb-2">Tanzfabrik Siegburg</h3>
           <p class="pb-2">
             Ulli Hartmann<br />
@@ -68,14 +72,13 @@
             53721 Siegburg
           </p>
           <a rel="noreferrer" class="hyperlink" href="https://www.tanzfabrik-siegburg.de/%C3%BCber-uns/tanzraum/" target="_blank">tanzfabrik-siegburg.de</a>
-          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-4" />
+          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-12" />
 
-          <Map coordinates={[50.944023979724555, 6.938679039862339]} />
-
-          <h3 class="ti_headline_blue_light pt-4 pb-2">neues lernen</h3>
+          <Map3 coordinates={[50.978432626006644, 7.0877161625034955]} />
+          <h3 class="ti_headline_blue_light pt-4 pb-2">Yogastudio</h3>
           <p class="pb-2">
-            Herwarthstraße 22<br />
-            50672 Köln
+            Im Eichenforst 39<br />
+            51069 Köln
           </p>
           <p><a rel="noreferrer" class="hyperlink" href="https://www.neues-lernen.info/index.php?seite=raeume" target="_blank">neues-lernen.info</a></p>
         </DefaultCard>
