@@ -30,7 +30,7 @@
           <li><a class="hyperlink" href="https://dtho.de//" target="_blank">DTHO Thomas Latus</a></li>
         </ul>
         <p class="py-2">TANZIMPULSE sind nach § 9 AWBG als staatliches Weiterbildungs-Institut anerkannt. <a class="hyperlink" href="https://www.bildungsurlaub.de/bildungsurlaub_nrw.html" rel="noreferrer" target="_blank">Sonder- oder Bildungsurlaub</a> kann somit beantragt werden.</p>
-        <p class="py-2"><a class="hyperlink" href="{base}/content/Zertifikat_2021_IHK.pdf" target="_blank">Zertifikat der Qualitätsgemeinschaft Berufliche Bildung Region Köln e.V. (PDF, 1,3MB)</a></p>
+        <p class="py-2"><a class="hyperlink" href="{base}/content/Mitgliedsbescheinigung_Qualitaetsgemeinschaft_2023.pdf" target="_blank">Mitgliedsbescheinigung der Qualitätsgemeinschaft Berufliche Bildung Region Köln e.V. (PDF, 160KB)</a></p>
       </DefaultCard>
     </div>
   </div>

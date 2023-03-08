@@ -1,187 +1,97 @@
 <script context="module" lang="ts">
-  import LightboxIndex from '$lib/components/Lightbox/LightboxIndex.svelte';
-
-  import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
-  import Carousel from '$lib/components/Slideshow/Carousel.svelte';
-  import Button from '$lib/components/Button/Button.svelte';
   import { base } from '$app/paths';
-  import Map from '$lib/components/Map/Map.svelte';
-  const mapAttributes = {
-    class: '',
-    style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh;'
-  };
+  import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+  import Map1 from '$lib/components/Map/map1.svelte';
+  import Map2 from '$lib/components/Map/map2.svelte';
+  import Map3 from '$lib/components/Map/map3.svelte';
 
   export const prerender = true;
 </script>
 
 <svelte:head>
-  <title>Tanzraumvermietung</title>
+  <title>Tanzraum</title>
 </svelte:head>
 
 <section>
   <div class="container flex flex-col">
-    <div class="relative">
-      <Carousel perPage="1" autoplay="12500" easing="ease-in-out">
-        <span class="control" slot="left-control">
-          <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </span>
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum1.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum3.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum4.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum5.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum6.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum7.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum8.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum9.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum10.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum11.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <span class="control" slot="right-control">
-          <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </span>
-      </Carousel>
-    </div>
-
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
-      <DefaultCard>
-        <h1 class="ti_headline_blue_bold">Tanzraumvermietung</h1>
-        <h2 class="ti_headline_blue_light mb-4">Raum für Tanzimpulse – ein Ort für Weiterbildung mit Erholungswert!</h2>
-        <p>Der Raum liegt im rechtsrheinischen Köln in ländlicher Umgebung in einem über 100jährigen Tanz- und Veranstaltungsgebäude und ist gut mit dem Auto, als auch mit öffentlichen Verkehrsmitteln erreichbar.</p>
-        <ul class="px-8 pt-8 pb-4 list-disc">
-          <li>140 qm Tanzbereich</li>
-          <li>Umkleidebereich</li>
-          <li>Aufenthaltsbereich mit Küchenzeile und Herd, Kaffeemaschine, Wasserkocher, Kühlschrank – auch Wasser und Schorle können erworben werden</li>
-          <li>Toiletten und Dusche</li>
-          <li>Garten für sonnige Pausen</li>
-        </ul>
+      <!-- start first column -->
+      <div>
+        <DefaultCard>
+          <h2 class="ti_headline_blue_bold pb-6">Es geht weiter in den 3 Räumen von unseren Kooperationspartnern:</h2>
 
-        <p class="pt-4 pb-2">Ausstattung auch für theoretischen Unterricht geeignet:</p>
-        <ul class="px-8 py-2 list-disc">
-          <li>Musikanlage</li>
-          <li>WLAN mit Gastzugang</li>
-          <li>65 Zoll Monitor</li>
-          <li>Flipchart</li>
-          <li>Whiteboard</li>
-          <li>Bestuhlung des Tanzraums möglich</li>
-        </ul>
+          <Map3 coordinates={[50.98317629266272, 7.074287561255727]} />
+          <h3 class="ti_headline_blue_light pt-4 pb-2">Ballettstudio Leskanpark</h3>
+          <p class="pb-2">
+            Waltherstr. 49-51, Haus Nr. 67
+            <br />51069 Köln
+          </p>
+          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-12" />
 
-        <p class="pt-4 pb-8">
-          Direkt nebenan gibt es eine Pizzeria für die Mittagsverpflegung.<br />
-          Bei Bedarf können wir nette Übernachtungsmöglichkeiten in der Nähe des Tanzraums nennen.
-        </p>
+          <Map1 coordinates={[50.944084819741974, 6.938695136069687]} />
+          <h3 class="ti_headline_blue_light pt-4 pb-2">neues lernen</h3>
+          <p class="pb-2">
+            Herwarthstraße 22<br />
+            50672 Köln
+          </p>
+          <p><a rel="noreferrer" class="hyperlink" href="https://www.neues-lernen.info/index.php?seite=raeume" target="_blank">neues-lernen.info</a></p>
+          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-12" />
 
-        <p class="font-bold">Anschrift</p>
-        <p class="py-2">
-          Schweinheimer Straße 54<br />
-          51067 Köln<br />
-        </p>
-        <hr class="block border border-coolGray-100 w-full mt-8 mb-6" />
-        <!-- lightbox -->
+          <Map2 coordinates={[50.79720988110121, 7.195870399340153]} />
+          <h3 class="ti_headline_blue_light pt-4 pb-2">Tanzfabrik Siegburg</h3>
+          <p class="pb-2">
+            Ulli Hartmann<br />
+            Lindenstraße 58-50<br />
+            53721 Siegburg
+          </p>
+          <a rel="noreferrer" class="hyperlink" href="https://www.tanzfabrik-siegburg.de/%C3%BCber-uns/tanzraum/" target="_blank">tanzfabrik-siegburg.de</a>
+        </DefaultCard>
+      </div>
+      <!-- end second column -->
+      <!-- start second column -->
+      <div>
+        <DefaultCard>
+          <h2 class="ti_headline_blue_light pb-2">Abschied vom alten Tanzraum</h2>
 
-        <LightboxIndex />
+          <p class="w-11/12 mx-auto py-4 font-bold">"Wir können den Wind nicht ändern, aber die Segel anders setzen."</p>
+          <p class="text-right flex justify-end text-sm pb-4">Aristoteles</p>
 
-        <hr class="block border border-coolGray-100 w-full mt-8 mb-6" />
+          <img class="py-2" src="{base}/images/abschied_gruppe1.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
+          <img class="py-2" src="{base}/images/abschied_gruppe2.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
 
-        <h2 class="ti_headline_blue_bold">Anfahrt zum Tanzraum</h2>
-        <h2 class="ti_headline_blue_light">Mit dem Auto</h2>
-        <p class="py-2">
-          A 3, Ausfahrt Bergisch Gladbach/Köln-Holweide/ Köln-Dellbrück<br />
-          A 4, Ausfahrt Köln-Merheim, Richtung Köln-Holweide
-        </p>
-        <p class="py-2 mb-6">
-          Direkt vor dem Tanzraum befinden sich 3 bis 4 hauseigene Stellplätze. <br />
-          Weitere Parkmöglichkeiten finden Sie in den angrenzenden Straßen: Kochwiesenstraße, Burgwiesenstraße oder Ferdinand-Stücker-Straße.
-        </p>
-        <h2 class="ti_headline_blue_light">Mit den öffentlichen Verkehrsmitteln</h2>
-        <p class="py-2">
-          Linie 18 ab Köln Hbf<br />
-          Linie 3 ab Bahnhof Deutz/Messe<br />
-          bis Haltestelle Maria-Himmelfahrt-Straße in Köln-Holweide
-        </p>
-        <p class="pt-2 pb-8">Von dort ca. 5 Min. bis zur Schweinheimer Straße 54, 51067 Köln-Holweide</p>
-        <hr class="block border border-coolGray-100 w-full my-2 mb-8" />
-        <p>
-          <a sveltekit:prefetch href="{base}/kontakt"> <Button buttonstyle={'blue'}>Jetzt den Raum mieten</Button></a>
-        </p>
-      </DefaultCard>
+          <p class="py-4">Abschied vom Raum für Tanzimpulse am 12.02.23 mit dem Ausbildungsteam, Referent/innen und Unterstützer/innen und mit sehr aufbauenden Worten, die uns nun positiv weitermachen lassen, denn wir nehmen die Erfahrungen aus diesem wunderbaren Tanzraum und seiner besonderen Atmosphäre mit.</p>
 
-      <DefaultCard>
-        <Map {mapAttributes} />
-      </DefaultCard>
+          <hr class="block border border-coolGray-100 w-10/12 mx-auto my-4" />
+
+          <h3 class="font-bold mb-4">Rückmeldungen zum Abschied</h3>
+          <p class="pt-2">Liebe Bettina, liebe Ute, es tut mir so unendlich leid, dass Euer toller Raum aufgegeben werden muss! Ohne Euch hätte ich niemals so viel gelernt und wäre ich niemals eine selbständige Tanzpädagogin geworden.</p>
+          <p class="pt-2 pb-4 text-sm">– Ulli Hartmann</p>
+          <img class="pt-6" src="{base}/images/goodbye.jpg" alt="Abschied alter Tanzraum | Tanzimpulse" />
+
+          <p class="pt-2 pb-4 text-sm">– Christine Heidenreich</p>
+          <p class="pt-6">Dieser Raum war ja schon irgendwie ein Stück "zu Hause", wenn ich mich an die Zeit dort entsinne.</p>
+          <p class="pt-2 pb-4 text-sm">– Mirjam Pies</p>
+          <p class="pt-6">
+            Liebe Bettina, liebe Ute,<br />
+            Das sind ja echt traurige Neuigkeiten. Das war der schönste Tanzsaal in dem ich je unterrichtet habe.
+          </p>
+          <p class="pt-2 pb-4 text-sm">– Nicola Belker</p>
+          <p class="pt-6">Was für eine traurige Neuigkeit. Dennoch waren und bleiben es wunderschöne Momente an diesem Ort, die ihr diesem und den Menschen dort geschenkt habt.</p>
+          <p class="pt-2 pb-4 text-sm">– Stefanie Wilczek</p>
+          <p class="pt-6">Dieser Ort der für alle dank euch ein Stück Heimat geworden ist, das ist so schade. Das Kölner Gefühl wird ein bisschen kleiner. Aber das schöne ist ja, dass es vor allem mit euch zu tun hat und ihr aus jedem Raum einen Ort des wunderbaren Tanzes und des Kölner Gefühls kreieren könnt.</p>
+          <p class="pt-2 pb-4 text-sm">– Ann-Kristin Pieters</p>
+        </DefaultCard>
+      </div>
     </div>
+
+    <!-- end second column -->
   </div>
 </section>
 
 <style>
   .slide-content {
     width: 100%;
-    min-height: 300px;
+    min-height: 450px;
     max-height: 40vh;
   }
 </style>

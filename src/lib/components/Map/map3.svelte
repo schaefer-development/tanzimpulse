@@ -14,22 +14,21 @@
     }
   ];
   export let zoom = 13;
-  export let coordinates = [50.96745443190281, 7.049317359924316];
-  export let instance;
+  export let coordinates = null;
+  export let instance = null;
 
   export let mapAttributes = {
-    style: 'width: 100%; height: 300px;'
+    style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh' // fallback
   };
 
-  let map;
   onMount(async () => {
     await import('leaflet');
     const icon = L.icon(iconOptions);
-    const map = L.map('map', { scrollWheelZoom: false }).setView(coordinates, zoom);
-    L.tileLayer(...layerOptions).addTo(map);
-    L.marker(coordinates, { icon }).addTo(map);
+    const map3 = L.map('map3', { scrollWheelZoom: false }).setView(coordinates, zoom);
+    L.tileLayer(...layerOptions).addTo(map3);
+    L.marker(coordinates, { icon }).addTo(map3);
 
-    return () => map && map.remove();
+    return () => map3 && map3.remove();
   });
 </script>
 
@@ -37,4 +36,4 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 </svelte:head>
 
-<div id="map" {...mapAttributes} />
+<div id="map3" {...mapAttributes} />
