@@ -1,7 +1,6 @@
 <script context="module" lang="ts">
   import { base } from '$app/paths';
   import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
-  import Carousel from '$lib/components/Slideshow/Carousel.svelte';
   import Map1 from '$lib/components/Map/map1.svelte';
   import Map2 from '$lib/components/Map/map2.svelte';
   import Map3 from '$lib/components/Map/map3.svelte';
@@ -15,40 +14,6 @@
 
 <section>
   <div class="container flex flex-col">
-    <div class="relative">
-      <Carousel perPage="1" autoplay="12500" easing="ease-in-out">
-        <span class="control" slot="left-control">
-          <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </span>
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2301.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2302.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <!-- single slide item -->
-        <div class="slide-content relative flex items-center">
-          <img class="object-cover w-full shadow-ti" src="/images/slideshow_tanzraum/tanzraum2303.jpg" alt="Der Tanzraum von Tanzimpulse" />
-        </div>
-        <!-- -->
-
-        <span class="control" slot="right-control">
-          <svg xmlns="http://www.w3.org/2000/svg" class="relative w-10 h-10 p-2 text-white rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </span>
-      </Carousel>
-    </div>
-
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
       <!-- start first column -->
       <div>
