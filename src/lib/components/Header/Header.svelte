@@ -36,8 +36,6 @@
       <h3 class="text-xs text-white uppercase tracking-widest pb-2">Tanzpädagogik</h3>
       <a sveltekit:prefetch href="{base}/ausbildungen" class="text-white hover:text-ti_blue_accent py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Ausbildungen</a>
       <a sveltekit:prefetch href="{base}/workshops" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Workshops</a>
-      <a href="{base}/tanztrainings" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Tanztrainings</a>
-      <hr class="border-black my-4" />
       <a sveltekit:prefetch href="{base}/tanzraum" class="text-white hover:text-ti_blue_accent py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Tanzräume </a>
       <hr class="border-black my-4" />
       <h3 class="text-xs text-white uppercase tracking-widest pb-2">Eindrücke</h3>
