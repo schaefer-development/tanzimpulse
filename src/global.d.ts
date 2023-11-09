@@ -59,6 +59,7 @@ type Seminar = {
   referenten: Referent[];
   bild?: Bild;
   url: string;
+  linktovhs: string;
 };
 
 type Kategorie = {
