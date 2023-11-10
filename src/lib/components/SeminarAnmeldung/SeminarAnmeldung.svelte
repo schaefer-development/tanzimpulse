@@ -1,11 +1,6 @@
 <script lang="ts">
   import SeminarCard from '$lib/components/SeminarCard/SeminarCard.svelte';
-  import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
-
-  import SeminarForm from '$lib/components/SeminarForm/SeminarForm.svelte';
   import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
-  import Success from '$lib/components/Alerts/Success.svelte';
-  import Error from '$lib/components/Alerts/Error.svelte';
   import { base } from '$app/paths';
   export let seminar: Seminar;
   export let errors = [];
@@ -76,7 +71,7 @@
                 </svg>
               </div>
               <div class="w-9/12">
-                <p>Die Anmeldung erfolgt neuerdings auf der Webseite unseres Partners, der VHS.</p>
+                <p>Die Anmeldung erfolgt auf der Webseite unseres Kooperationspartners, der VHS.</p>
               </div>
             </div>
             <a href={seminar.linktovhs} target="_blank" aria-label="Link zur VHS" class="block text-center border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Jetzt diesen Kurs über die VHS buchen</a>
