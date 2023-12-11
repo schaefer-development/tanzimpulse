@@ -1,9 +1,6 @@
 <script lang="ts">
   import SeminarCard from '$lib/components/SeminarCard/SeminarCard.svelte';
-  import SeminarForm from '$lib/components/SeminarForm/SeminarForm.svelte';
   import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
-  import Success from '$lib/components/Alerts/Success.svelte';
-  import Error from '$lib/components/Alerts/Error.svelte';
   import { base } from '$app/paths';
   export let seminar: Seminar;
   export let errors = [];
@@ -32,7 +29,7 @@
 </script>
 
 <section>
-  <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+  <div class="container mx-auto grid grid-cols-2 lg:grid-cols-2 gap-10">
     <div class="__long_description">
       <SeminarCard {seminar}>
         <div slot="beschreibung">
@@ -63,29 +60,24 @@
             </div>
           {/if}
 
+          <p class="h-8 block" />
           <VeranstaltungsOrt showMap={true} veranstaltungsort={seminar.veranstaltungsort} />
+          <div class="pt-10 pb-6">
+            <h2 class="ti_headline_blue_bold">Anmeldung</h2>
+            <div class="flex py-6">
+              <div class="icon w-2/12 flex justify-center items-center text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                </svg>
+              </div>
+              <div class="w-9/12">
+                <p>Die Anmeldung erfolgt auf der Webseite unseres Kooperationspartners, der VHS.</p>
+              </div>
+            </div>
+            <a href={seminar.linktovhs} target="_blank" aria-label="Link zur VHS" class="block text-center border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white p-4 w-full rounded-full border-2 font-extrabold text-sm tracking-widest uppercase outline-none shadow-sm hover:shadow-ti focus:outline-none focus:ring-0 transition duration-300 ease-in-out">Jetzt diesen Kurs über die VHS buchen</a>
+          </div>
         </div>
       </SeminarCard>
-    </div>
-
-    <div class="__registration">
-      {#if errors.length}
-        <Error />
-      {:else if isPending}
-        <div class="flex justify-center items-center">
-          <p class="text-ti_blue_accent mr-4 py-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ti_animate-spin h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-          </p>
-          <h2 class="ti_headline_blue_bold">Lädt ...</h2>
-        </div>
-      {:else if anmeldung}
-        <Success />
-      {:else}
-        <SeminarForm {action} {result} {error} {pending} />
-      {/if}
     </div>
   </div>
 </section>
