@@ -11,7 +11,7 @@
   <div class="flex w-full flex-col items-start bg-white shadow-ti">
     <div class="seminar_card_img w-full flex-0">
       {#if seminar.bild}
-        <img class="h-32 sm:h-40 md:h-48 lg:h-60 w-full object-cover object-center" src={seminar.bild.medium} alt={seminar.bild.fileName || 'Fehlendes Bild'} />
+        <img class="h-32 sm:h-40 md:h-48 lg:h-60 xl:h-80 w-full object-cover object-center" src={seminar.bild.medium} alt={seminar.bild.fileName || 'Fehlendes Bild'} />
       {/if}
     </div>
 
