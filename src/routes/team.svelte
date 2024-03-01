@@ -123,48 +123,42 @@
             <p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
           </div>
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Gitta Barthel (Dr. Phil.)</h4>
-            <p>ist in der Kunst-, Vermittlungs- und Forschungspraxis tätig und lehrt zeitgenössischen Tanz und Choreografie. Sie ist Mitautorin des "Choreografischen Baukastens" (hg. v. Gabriele Klein, transcript 2011)</p>
-          </div>
-          <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Nina Buttler</h4>
             <p>Erzieherin, Tanzpädagogin & Fascial Fitness® Trainerin, systemischer & psychosozialer Coach (ECA) unterrichtet seit 1999 im Fitnessbereich und bietet seit 2016 den Schwerpunkt fasziale Körperarbeit in Ihren Trainings, Kursen und Seminaren an.</p>
             <a class="hyperlink" rel="”noreferrer”" href="https://www.sichtartundweise.de/" target="_blank">sichtartundweise.de</a>
           </div>
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Elena Giannakoudi</h4>
-            <p>Diplom Tanzpädagogin (TI), leitet seit vielen Jahren Tanzprojekte an Förder- und weiterführenden Schulen, kooperiert mit Musik- und Kunstschulen in Neunkirchen-Sellscheid und Waldbröl, führt Projekte für AndersTanzen e.V. durch über ChanceTanz "Kultur macht stark".</p>
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Ronja Frizen</h4>
+            <p>M.A. Tanz + B.A. Sportmanagement und Kommunikationan der DSHS Köln, vielfältige Projekt- und Bühnenerfahrung sowie Unterrichtstätigkeit</p>
           </div>
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Anne Grafweg</h4>
-            <p>Dipl. Tanzpädagogin, Ausbildung an der Hochschule der Künste (Arnheim), Schwerpunkte sind Moderner Tanz, Ballett, Jazzdance.</p>
-            <a class="hyperlink" rel="”noreferrer”" href="https://www.anne-grafweg.de" target="_blank">anne-grafweg.de</a>
-          </div>
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Jungeon Kim</h4>
-            <p>
-              Choreographin, Tanzpädagogin, Certified Laban Movement Analyst. Sie vermittelt Tanz in Bildungskontexten für Schüler*innen, Studierende, Erzieher*innen und Lehrer*innen, in Fortbildungskontexten für Tätige im Bereich Kunst- und Kultur-Vermittlung, sowie auch durch Kurse und Workshops für Tanzbegeisterte.<br />
-              MA Choreographie (Korea National University of Arts), MA Zeitgenössische Tanzpädagogik (Hochschule für Musik und Darstellende Kunst Frankfurt am Main).
-            </p>
-            <a class="hyperlink" rel="”noreferrer”" href="https://www.jungyeonkim.com/" target="_blank">jungyeonkim.com</a>
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Julia Meister</h4>
+            <p>Diplomtanzpädagogin (TI), unterrichtet seit 15 Jahren Kindertanz in Projekten in Kitas, Grundschulen und Erziehungsvereinen. Wöchentliche Angebote in kreativem Kindertanz und Hip Hop finden in Tanz-, sowie an einer OGS statt.</p>
           </div>
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Constanz Moschner</h4>
             <p>Musikpädagogin, Tanzpädagogin (TI), tätig an der Musikschule der Stadt Leverkusen im Elementarbereich musikalische und tänzerische Früherziehung sowie Klavier. Die enge Verbindung von Tanz und Musik ist ein Schwerpunkt ihrer Arbeit im kreativen Umgang mit Bewegung. Ihr musikpädagogisches Studium absolvierte sie an der Universität Köln sowie an der Folkwang-Universität der Künste in Essen. Sie ist freischaffend an verschiedenen Musik- und Tanzprojekten beteiligt.</p>
           </div>
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Claudia Neeten</h4>
-            <p>Musiktherapeutin (BMusT), Diplom Tanzpädagogin (TI), L.b.e Lern- und Entwicklungsbegleiterin; leitet verschiedene Kindertanzgruppen u.a. bei Tagespflegepersonen; inklusive Musik- und Tanzprojekte; Schwerpunkt Teilhabe und Inklusion, sowie Lern- und Entwicklungsförderung durch Tanz und Musik.</p>
-          </div>
-          <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Ursula Neumann</h4>
             <p>Dipl.-Soziologin, Unternehmensberaterin und Coach, Bratungs-Schwerpunkt: Freie Berufe, Kunst- und Kreativwirtschaft, soziale und alternative Unternehmen sowie Kitas.</p>
             <a class="hyperlink" rel="”noreferrer”" href="https://www.ursulaneumann.de" target="_blank">ursulaneumann.de</a>
           </div>
-
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Mônica Santos</h4>
             <p>Tänzerin, Tanzpädagogin mit Ausbildungen in Brasilien und Deutschland; Schwerpunkte Klassischer Tanz, Weiterbildung in Modern- und Jazz Dance, Improvisation und Tanz für Kinder.</p>
+          </div>
+          <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Andreas Schick</h4>
+            <p>Sport- und Mathematiklehrer, ist seit vielen Jahren leidenschaftlicher Lindy Hop Tänzer.</p>
+          </div>
+          <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Kathrin Steinert</h4>
+            <p>Diplom Tanzpädagogin (TI), Gesellschaftstanzlehrerin (DTHO), Orientalischen Tanz (Catt), Langjährige Tanzerfahrung in Salsa, Bachata und Kizomba durch die Teilnahme an internationalen Workshops, Studierte Grundschullehrerin</p>
+          </div>
+          <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Stefanie Wilczek</h4>
+            <p>Diplom Tanzpädagogin (TI), Pilates Trainerin (DTB) und Lehrerin für Deutsch, Englisch, Philosophie und Tanz an einer Kölner Schule. Tänzerischer Schwerpunkt ist die Projektarbeit mit Kindern und Jugendlichen im Bereich Tanztheater. Modern Dance, Hip Hop und kreativen Tanz wird dabei mit Sprache in Verbindung gesetzt.</p>
           </div>
           <!-- -->
         </div>
