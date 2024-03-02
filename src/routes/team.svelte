@@ -36,7 +36,7 @@
             <img class="w-16 md:w-24 lg:w-32 h-16 md:h-24 lg:h-32 mx-auto rounded-full" src="{base}/images/employees/fontana.jpg" alt="Sonia Fontana | Tanzimpulse" />
             <div class="pt-4">
               <h2 class="ti_headline_blue_light text-center mb-4">Sonia Fontana</h2>
-              <p>Diplom-Tanzpädagogin (TI), absolvierte ihr Musicalstudium an der Universität für Musik und darstellende Kunst in Wien und arbeitet auf und hinter der Bühne als Schauspielerin, Sprecherin, Choreografin. Unterrichtserfahrung in der Tanz- und Theaterpädagogik. Ihr Thema in der Grundstufe ist Musical Jazz.</p>
+              <p>Diplom-Tanzpädagogin (TI), absolvierte ihr Musicalstudium an der Universität für Musik und darstellende Kunst in Wien und arbeitet auf und hinter der Bühne als Schauspielerin, Sprecherin, Choreografin. Unterrichtserfahrung in der Tanz- und Theaterpädagogik. Ihr Thema in der Grund- und Aufbaustufe ist Musical Jazz.</p>
             </div>
           </div>
 
