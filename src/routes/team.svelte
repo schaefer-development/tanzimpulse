@@ -123,6 +123,11 @@
             <p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
           </div>
           <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Gudrun Alles</h4>
+            <p>Gudrun Alles ist Dipl.-Sozialpädagogin; als Tänzerin und Choreografin vermittelt sie seit 15 Jahren afrikanischen Tanz, gibt u.a. Seminare für Körperbewußtsein und Stressbewältiung</p>
+            <a class="hyperlink" rel="”noreferrer”" href="https://www.alles-tanzt-in-dir.de/" target="_blank">alles-tanzt-in-dir.de</a>
+          </div>
+          <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Nina Buttler</h4>
             <p>Erzieherin, Tanzpädagogin & Fascial Fitness® Trainerin, systemischer & psychosozialer Coach (ECA) unterrichtet seit 1999 im Fitnessbereich und bietet seit 2016 den Schwerpunkt fasziale Körperarbeit in Ihren Trainings, Kursen und Seminaren an.</p>
             <a class="hyperlink" rel="”noreferrer”" href="https://www.sichtartundweise.de/" target="_blank">sichtartundweise.de</a>
@@ -143,10 +148,6 @@
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Ursula Neumann</h4>
             <p>Dipl.-Soziologin, Unternehmensberaterin und Coach, Bratungs-Schwerpunkt: Freie Berufe, Kunst- und Kreativwirtschaft, soziale und alternative Unternehmen sowie Kitas.</p>
             <a class="hyperlink" rel="”noreferrer”" href="https://www.ursulaneumann.de" target="_blank">ursulaneumann.de</a>
-          </div>
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Mônica Santos</h4>
-            <p>Tänzerin, Tanzpädagogin mit Ausbildungen in Brasilien und Deutschland; Schwerpunkte Klassischer Tanz, Weiterbildung in Modern- und Jazz Dance, Improvisation und Tanz für Kinder.</p>
           </div>
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Andreas Schick</h4>

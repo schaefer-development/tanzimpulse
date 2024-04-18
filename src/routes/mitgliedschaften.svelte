@@ -30,7 +30,7 @@
           <li><a class="hyperlink" href="http://www.musenkuss-koeln.de/" rel="noreferrer" target="_blank">Musenkuss Köln</a></li>
         </ul>
         <p class="py-2">TANZIMPULSE sind nach § 9 AWBG als staatliches Weiterbildungs-Institut anerkannt. <a class="hyperlink" href="https://www.bildungsurlaub.de/bildungsurlaub_nrw.html" rel="noreferrer" target="_blank">Sonder- oder Bildungsurlaub</a> kann somit beantragt werden.</p>
-        <p class="py-2"><a class="hyperlink" href="{base}/content/Mitgliedsbescheinigung_Qualitaetsgemeinschaft_2023.pdf" target="_blank">Mitgliedsbescheinigung der Qualitätsgemeinschaft Berufliche Bildung Region Köln e.V. (PDF, 160KB)</a></p>
+        <p class="py-2"><a class="hyperlink" href="{base}/content/2024_Mitgliedsbescheinigung.pdf" target="_blank">Mitgliedsbescheinigung der Qualitätsgemeinschaft Berufliche Bildung Region Köln e.V. (PDF, 167KB)</a></p>
       </DefaultCard>
     </div>
   </div>
