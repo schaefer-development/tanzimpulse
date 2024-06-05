@@ -11,6 +11,12 @@
     <div class="pt-2 pb-2 pl-2 pr-4">
       <p class="text-md font-bold uppercase tracking-wide leading-6 break-word">{seminar.titel}</p>
       <p class="text-md font-extralight">{dateFormat.format(new Date(seminar.datum))} Uhr</p>
+
+      {#if overbooked(seminar)}
+        <span class="uppercase text-white text-sm font-bold tracking-wider pt-2">Anmeldung zur Warteliste</span>
+      {:else}
+        <span class="uppercase text-ti_green_accent-light font-bold text-sm tracking-wider pt-2">Noch Plätze frei</span>
+      {/if}
     </div>
 
     <div class="flex mx-auto items-center p-2">

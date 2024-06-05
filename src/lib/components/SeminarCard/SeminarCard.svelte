@@ -11,7 +11,7 @@
   <div class="flex w-full flex-col items-start bg-white shadow-ti">
     <div class="seminar_card_img w-full flex-0">
       {#if seminar.bild}
-        <img class="h-32 sm:h-40 md:h-48 lg:h-60 xl:h-80 w-full object-cover object-center" src={seminar.bild.medium} alt={seminar.bild.fileName || 'Fehlendes Bild'} />
+        <img class="h-32 sm:h-40 md:h-48 lg:h-60 w-full object-cover object-center" src={seminar.bild.medium} alt={seminar.bild.fileName || 'Fehlendes Bild'} />
       {/if}
     </div>
 
@@ -20,7 +20,13 @@
       <h1 class="ti_headline_blue_bold">{seminar.titel}</h1>
       <p class="ti_headline_blue_light">{dateFormat.format(new Date(seminar.datum))} Uhr</p>
 
-      <div class="___pills pt-4">
+      {#if overbooked(seminar)}
+        <p class="font-bold text-lg prose-sm text-gray-600 py-4">Anmeldung zur Warteliste</p>
+      {:else}
+        <p class="text-ti_green_accent font-bold uppercase tracking-wide text-lg prose-sm py-4">Noch Plätze frei</p>
+      {/if}
+
+      <div class="___pills py-2">
         {#each seminar.kategorien as kategorie (kategorie.id)}
           <span class="text-xs border border-gray-400 text-gray-600 inline-flex px-2 py-1 rounded-full mb-2 mr-2">
             {kategorie.name}
