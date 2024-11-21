@@ -11,6 +11,22 @@
     </span>
 
     <div class="w-10/12 p-6 md:p-12 lg:p-20 md mx-auto relative text-center flex flex-col items-center">
+      <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic"> „So viel Vielfalt, Austausch, Kreative Impulse, inspirierende Momente…. Schön, dass ich seit so einer langen Zeit ein Teil davon sein kann. Vielen Dank.“ </cite>
+    </div>
+
+    <div class="w-10/12 p-6 md:p-12 lg:p-20 md mx-auto relative text-center flex flex-col items-center">
+      <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic"> „Tanzimpulse ist wie nach Hause kommen...“</cite>
+    </div>
+
+    <div class="w-10/12 p-6 md:p-12 lg:p-20 md mx-auto relative text-center flex flex-col items-center">
+      <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic"> „Lasst Euch feiern : für wunderbare erlebnisreiche und Bildungsfördernde künstlerische und inspirierende Jahre.“</cite>
+    </div>
+
+    <div class="w-10/12 p-6 md:p-12 lg:p-20 md mx-auto relative text-center flex flex-col items-center">
+      <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic"> „Wir erinnern uns gerne an unsere gemeinsame Zeit zurück und wünschen Euch, dass ihr weiterhin mit Freude durchs Leben tanzt und Menschen bewegend miteinander verbindet-so wie ihr es mit uns gemacht habt.“</cite>
+    </div>
+
+    <div class="w-10/12 p-6 md:p-12 lg:p-20 md mx-auto relative text-center flex flex-col items-center">
       <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic">
         „Die Ausbildung wird von sehr erfahrenen, authentischen und warmherzigen Dozentinnen geleitet, die jenseits ihres professionellen Unterrichts für jede Teilnehmerin ein offenes Ohr und gleichzeitig die gesamte Gruppe im Blick haben. Ich kann Tanzimpulse uneingeschränkt weiterempfehlen.“
         <p class="mx-auto pt-6 uppercase font-bold tracking-widest text-gray-500 text-sm">Ulrike R. | Kursteilnehmerin</p>
@@ -41,11 +57,6 @@
     <div class="w-10/12 p-6 md:p-12 lg:p-20 md mx-auto relative text-center flex flex-col items-center">
       <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic">„Als ich 2002 mit der Ausbildung bei euch (Tanzimpulse-Grundstufe) begann, hätte ich im Leben nicht gedacht, welche Türen ich mir damit öffne. Rückblickend kann ich sagen, dass ich so ziemlich alle Bereiche, in der eine Tanzpädagogin tätig sein kann, erprobt habe und möchte keine davon missen.“</cite>
       <p class="mx-auto pt-6 uppercase font-bold tracking-widest text-gray-500 text-sm">Astrid | Kursteilnehmerin</p>
-    </div>
-
-    <div class="w-10/12 p-6 md:p-12 lg:p-20 md mx-auto relative text-center flex flex-col items-center">
-      <cite class="mx-auto py-6 text-ti_blue_mat text-2xl lg:text-3xl font-light not-italic">„Am Anfang der Ausbildung waren die Begrifflichkeiten Bewegung + Tanz für mich getrennt. Jetzt hat sich mein Blickwinkel geändert und ein fließender Übergang ist entstanden. Bewegung ist Tanz! / Tanz ist Musik! / Bewegung, Tanz + Musik ist Lebensfreude!“</cite>
-      <p class="mx-auto pt-6 uppercase font-bold tracking-widest text-gray-500 text-sm">Judith S. | Kursteilnehmerin</p>
     </div>
 
     <span class="control" slot="right-control">
