@@ -2,7 +2,7 @@
   import Carousel from '$lib/components/Slideshow/Carousel.svelte';
   export const prerender = true;
 
-  let fotos = [{ src: './images/fotogallery/foto_01.jpg' }, { src: './images/fotogallery/foto_02.jpg' }, { src: './images/fotogallery/foto_03.jpg' }, { src: './images/fotogallery/foto_04.jpg' }, { src: './images/fotogallery/foto_05.jpg' }, { src: './images/fotogallery/foto_06.jpg' }, { src: './images/fotogallery/foto_07.jpg' }, { src: './images/fotogallery/foto_08.jpg' }, { src: './images/fotogallery/foto_09.jpg' }, { src: './images/fotogallery/foto_10.jpg' }, { src: './images/fotogallery/foto_11.jpg' }, { src: './images/fotogallery/foto_12.jpg' }, { src: './images/fotogallery/foto_13.jpg' }, { src: './images/fotogallery/foto_14.jpg' }];
+  let fotos = [{ src: './images/fotogallery24/foto24_01.jpg' }, { src: './images/fotogallery24/foto24_02.jpg' }, { src: './images/fotogallery24/foto24_03.jpg' }, { src: './images/fotogallery24/foto24_04.jpg' }, { src: './images/fotogallery24/foto24_05.jpg' }, { src: './images/fotogallery24/foto24_06.jpg' }, { src: './images/fotogallery24/foto24_07.jpg' }, { src: './images/fotogallery24/foto24_08.jpg' }, { src: './images/fotogallery24/foto24_09.jpg' }, { src: './images/fotogallery24/foto24_10.jpg' }, { src: './images/fotogallery24/foto24_11.jpg' }];
 </script>
 
 <svelte:head>

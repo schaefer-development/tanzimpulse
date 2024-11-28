@@ -5,8 +5,8 @@
   import { loadIndex } from '$lib/routes';
   export const load: Load = loadIndex;
   export const prerender = true;
-  let motifAusbildungen = ' /images/startpage/ausbildungen.jpg';
-  let motifWorkshops = ' /images/startpage/workshops.jpg';
+  let motifAusbildungen = ' /images/startpage/ausbildungen24.jpg';
+  let motifWorkshops = ' /images/startpage/workshops24.jpg';
   let motifTanzraum = ' /images/startpage/tanzraum.jpg';
 </script>
 
@@ -39,7 +39,7 @@
     <div class="bg-ti_cyan_mat hover:shadow-ti transition ease-in-out duration-300">
       <picture>
         <source srcset={motifWorkshops.replace('.jpg', '.webp')} type="webp" />
-        <img src={motifWorkshops} class="w-full h-72 object-cover object-top" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
+        <img src={motifWorkshops} class="w-full h-72 object-cover object-center" alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse " />
       </picture>
       <h2 class="font-bold text-2xl lg:text-3xl uppercase tracking-wide text-white px-8 pt-8 pb-4">Workshops</h2>
       <p class="px-8 text-white">Immer aktuell sein, mit Impulsen für die tanzpädagogische Praxis für alle Tanzinteressierten die mit Kita-, Grundschulkindern, Jugendlichen und/ oder Erwachsenen arbeiten.</p>
