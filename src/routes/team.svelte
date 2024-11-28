@@ -119,37 +119,36 @@
         <h2 class="text-xl lg:text-2xl uppercase text-ti_blue_mat tracking-wide mb-8">Gastreferent/Innen</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Jindra Ackemann</h4>
-            <p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
-          </div>
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Gudrun Alles</h4>
-            <p>Gudrun Alles ist Dipl.-Sozialpädagogin; als Tänzerin und Choreografin vermittelt sie seit 15 Jahren afrikanischen Tanz, gibt u.a. Seminare für Körperbewußtsein und Stressbewältiung</p>
-            <a class="hyperlink" rel="”noreferrer”" href="https://www.alles-tanzt-in-dir.de/" target="_blank">alles-tanzt-in-dir.de</a>
-          </div>
-
-          <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Catharina Gadelha</h4>
             <p>ist Choreografin, Regisseurin und Tanz- und Theaterpädagogin. Zudem ist sie als Tanzvermittlerin im Kinder- und Jugendbereich international tätig. Anfang der 90er (1990—1994) absolvierte Gadelha eine Ausbildung in »Elementarer Tanzbei Graziella Padilla und studierte Bewegungstheater an der Deutschen Sporthochschule in Köln. Seit 1992 ist sie freischaffende Choreografin. 1994 realisierte sie ein Regie- und Inszenierungsprojekt bei Johann Kresnik in Wien.</p>
           </div>
-
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Ronja Frizen</h4>
-            <p>M.A. Tanz + B.A. Sportmanagement und Kommunikationan der DSHS Köln, vielfältige Projekt- und Bühnenerfahrung sowie Unterrichtstätigkeit</p>
-          </div>
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Julia Meister</h4>
-            <p>Diplomtanzpädagogin (TI), unterrichtet seit 15 Jahren Kindertanz in Projekten in Kitas, Grundschulen und Erziehungsvereinen. Wöchentliche Angebote in kreativem Kindertanz und Hip Hop finden in Tanz-, sowie an einer OGS statt.</p>
-          </div>
-
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Mônica Santos</h4>
             <p>Mônica Santos ist Tänzerin, Tanzpädagogin und Choreografin Tanz-Ausbildung in Brasilien (Conservatório Musical Santa Cecília, Academia de Dança Eleonora Oliosi). Pädagogische Ausbildung in Brasilien/Deutschland, Zusatzqualifikation als Choreographin (Academia de Dança Marian Guimarães, Deutscher Bundersverband Tanz e. V.). Regelmäßige choreographische Arbeit mit Jugendlichen bei verschiedenen nationalen und internationalen Tanzwettbewerben (Modern Dance, Lyrical).</p>
           </div>
 
           <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Julia Meister</h4>
+            <p>Diplomtanzpädagogin (TI), unterrichtet seit 15 Jahren Kindertanz in Projekten in Kitas, Grundschulen und Erziehungsvereinen. Wöchentliche Angebote in kreativem Kindertanz und Hip Hop finden in Tanzschulen sowie an einer OGS statt.</p>
+          </div>
+
+          <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Maike Stemmler</h4>
-            <p>Politische Bildnerin, Tanzpädagogin und Projektkoordinatorin bei Detox Identity. Ihre Ausbildung erhielt sie an den Universitäten in Mannheim und Bonn, und bei Tanzimpulse in Köln.</p>
+            <p>Politische Bildnerin, Tanzpädagogin und Projektkoordinatorin bei Detox Identity. Ihre Ausbildung erhielt sie an den Universitäten in Mannheim, Bonn und bei Tanzimpulse in Köln.</p>
+          </div>
+          <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Ronja Frizen</h4>
+            <p>M.A. Tanz + B.A. Sportmanagement und Kommunikationan an der DSHS Köln, vielfältige Projekt- und Bühnenerfahrung sowie Unterrichtstätigkeit</p>
+          </div>
+          <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Jindra Ackemann</h4>
+            <p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
+          </div>
+
+          <div class="___guest flex flex-col">
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Gudrun Alles</h4>
+            <p>Gudrun Alles ist Dipl.-Sozialpädagogin; als Tänzerin und Choreografin vermittelt sie seit 15 Jahren afrikanischen Tanz, gibt u.a. Seminare für Körperbewußtsein und Stressbewältiung</p>
+            <a class="hyperlink" rel="”noreferrer”" href="https://www.alles-tanzt-in-dir.de/" target="_blank">alles-tanzt-in-dir.de</a>
           </div>
         </div>
       </DefaultCard>
