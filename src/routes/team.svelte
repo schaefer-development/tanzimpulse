@@ -90,10 +90,10 @@
           </div>
 
           <div class="___single_employee flex flex-col py-4">
-            <img class="w-16 md:w-24 lg:w-32 h-16 md:h-24 lg:h-32 mx-auto rounded-full" src="{base}/images/employees/kampmann.jpg" alt="Renate Kampmann | Tanzimpulse" />
+            <img class="w-16 md:w-24 lg:w-32 h-16 md:h-24 lg:h-32 mx-auto rounded-full" src="{base}/images/employees/moschner.jpg" alt="Constanze Moschner | Tanzimpulse" />
             <div class="pt-4">
-              <h2 class="ti_headline_blue_light text-center mb-4">Renate Kampmann</h2>
-              <p>staatl. gepr. Musikschullehrerin für elementare Musikerziehung, Diplom Tanzpädagogin (TI); Ihr Thema in der Grundstufe mit Schwerpunkt Kindertanz ist die Vermittlung Musikalischer Grundlagen.</p>
+              <h2 class="ti_headline_blue_light text-center mb-4">Constanze Moschner</h2>
+              <p>Musikpädagogin, Tanzpädagogin (TI), tätig an der Musikschule der Stadt Leverkusen im Elementarbereich musikalische und tänzerische Früherziehung sowie Klavier. Die enge Verbindung von Tanz und Musik ist ein Schwerpunkt ihrer Arbeit im kreativen Umgang mit Bewegung. Ihr musikpädagogisches Studium absolvierte sie an der Universität Köln sowie an der Folkwang-Universität der Künste in Essen. Sie ist freischaffend an verschiedenen Musik- und Tanzprojekten beteiligt.</p>
             </div>
           </div>
 
@@ -127,11 +127,12 @@
             <p>Gudrun Alles ist Dipl.-Sozialpädagogin; als Tänzerin und Choreografin vermittelt sie seit 15 Jahren afrikanischen Tanz, gibt u.a. Seminare für Körperbewußtsein und Stressbewältiung</p>
             <a class="hyperlink" rel="”noreferrer”" href="https://www.alles-tanzt-in-dir.de/" target="_blank">alles-tanzt-in-dir.de</a>
           </div>
+
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Nina Buttler</h4>
-            <p>Erzieherin, Tanzpädagogin & Fascial Fitness® Trainerin, systemischer & psychosozialer Coach (ECA) unterrichtet seit 1999 im Fitnessbereich und bietet seit 2016 den Schwerpunkt fasziale Körperarbeit in Ihren Trainings, Kursen und Seminaren an.</p>
-            <a class="hyperlink" rel="”noreferrer”" href="https://www.sichtartundweise.de/" target="_blank">sichtartundweise.de</a>
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Catharina Gadelha</h4>
+            <p>ist Choreografin, Regisseurin und Tanz- und Theaterpädagogin. Zudem ist sie als Tanzvermittlerin im Kinder- und Jugendbereich international tätig. Anfang der 90er (1990—1994) absolvierte Gadelha eine Ausbildung in »Elementarer Tanzbei Graziella Padilla und studierte Bewegungstheater an der Deutschen Sporthochschule in Köln. Seit 1992 ist sie freischaffende Choreografin. 1994 realisierte sie ein Regie- und Inszenierungsprojekt bei Johann Kresnik in Wien.</p>
           </div>
+
           <div class="___guest flex flex-col">
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Ronja Frizen</h4>
             <p>M.A. Tanz + B.A. Sportmanagement und Kommunikationan der DSHS Köln, vielfältige Projekt- und Bühnenerfahrung sowie Unterrichtstätigkeit</p>
@@ -140,28 +141,16 @@
             <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Julia Meister</h4>
             <p>Diplomtanzpädagogin (TI), unterrichtet seit 15 Jahren Kindertanz in Projekten in Kitas, Grundschulen und Erziehungsvereinen. Wöchentliche Angebote in kreativem Kindertanz und Hip Hop finden in Tanz-, sowie an einer OGS statt.</p>
           </div>
+
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Constanz Moschner</h4>
-            <p>Musikpädagogin, Tanzpädagogin (TI), tätig an der Musikschule der Stadt Leverkusen im Elementarbereich musikalische und tänzerische Früherziehung sowie Klavier. Die enge Verbindung von Tanz und Musik ist ein Schwerpunkt ihrer Arbeit im kreativen Umgang mit Bewegung. Ihr musikpädagogisches Studium absolvierte sie an der Universität Köln sowie an der Folkwang-Universität der Künste in Essen. Sie ist freischaffend an verschiedenen Musik- und Tanzprojekten beteiligt.</p>
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Mônica Santos</h4>
+            <p>Mônica Santos ist Tänzerin, Tanzpädagogin und Choreografin Tanz-Ausbildung in Brasilien (Conservatório Musical Santa Cecília, Academia de Dança Eleonora Oliosi). Pädagogische Ausbildung in Brasilien/Deutschland, Zusatzqualifikation als Choreographin (Academia de Dança Marian Guimarães, Deutscher Bundersverband Tanz e. V.). Regelmäßige choreographische Arbeit mit Jugendlichen bei verschiedenen nationalen und internationalen Tanzwettbewerben (Modern Dance, Lyrical).</p>
           </div>
+
           <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Ursula Neumann</h4>
-            <p>Dipl.-Soziologin, Unternehmensberaterin und Coach, Bratungs-Schwerpunkt: Freie Berufe, Kunst- und Kreativwirtschaft, soziale und alternative Unternehmen sowie Kitas.</p>
-            <a class="hyperlink" rel="”noreferrer”" href="https://www.ursulaneumann.de" target="_blank">ursulaneumann.de</a>
+            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Maike Stemmler</h4>
+            <p>Politische Bildnerin, Tanzpädagogin und Projektkoordinatorin bei Detox Identity. Ihre Ausbildung erhielt sie an den Universitäten in Mannheim und Bonn, und bei Tanzimpulse in Köln.</p>
           </div>
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Andreas Schick</h4>
-            <p>Sport- und Mathematiklehrer, ist seit vielen Jahren leidenschaftlicher Lindy Hop Tänzer.</p>
-          </div>
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Kathrin Steinert</h4>
-            <p>Diplom Tanzpädagogin (TI), Gesellschaftstanzlehrerin (DTHO), Orientalischen Tanz (Catt), Langjährige Tanzerfahrung in Salsa, Bachata und Kizomba durch die Teilnahme an internationalen Workshops, Studierte Grundschullehrerin</p>
-          </div>
-          <div class="___guest flex flex-col">
-            <h4 class="uppercase text-ti_blue_mat tracking-wide mb-2">Stefanie Wilczek</h4>
-            <p>Diplom Tanzpädagogin (TI), Pilates Trainerin (DTB) und Lehrerin für Deutsch, Englisch, Philosophie und Tanz an einer Kölner Schule. Tänzerischer Schwerpunkt ist die Projektarbeit mit Kindern und Jugendlichen im Bereich Tanztheater. Modern Dance, Hip Hop und kreativen Tanz wird dabei mit Sprache in Verbindung gesetzt.</p>
-          </div>
-          <!-- -->
         </div>
       </DefaultCard>
     </div>
