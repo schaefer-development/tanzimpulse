@@ -59,6 +59,51 @@ h2 {
 	font-size: 1rem;
 }
 
+@theme {
+	--color-ti_blue_mat-light: #4C5B85;
+	--color-ti_blue_mat: #1F3266;
+	--color-ti_blue_mat-dark: #17264D;
+
+
+	--color-ti_blue_accent-light: #3381FF;
+	--color-ti_blue_accent: #0062FF;
+	--color-ti_blue_accent-dark: #004ABF;
+
+	--color-ti_cyan_mat-light: #4A798E;
+	--color-ti_cyan_mat: #1D5872;
+	--color-ti_cyan_mat-dark: #164256;
+
+    
+        --color-ti_cyan_accent-light: #33D0E0;
+        --color-ti_cyan_accent: #00C4D8;
+        --color-ti_cyan_accent-dark: '#0093A2;
+    
+			--color-ti_green_mat-light: #719947;
+			--color-ti_green_mat: #4E7F19;
+			--color-ti_green_mat-dark: #3B5F13;
+
+				--color-ti_green_accent-light: #98E217;
+				--color-ti_green_accent: #73CC00;
+				--color-ti_green_accent-dark: #569900;
+      
+
+        --color-ti_red_mat-light: #D1435E;
+        --color-ti_red_mat: #C61436;
+        --color-ti_red_mat-dark: #950F29;
+      
+  
+		--color-ti_red_accent-light: #FF3364;
+		--color-ti_red_accent: #FF003D;
+		--color-ti_red_accent-dark: #BF002E;
+    
+
+
+
+
+
+  }
+
+
 pre {
 	font-size: 16px;
 	font-family: var(--font-mono);
