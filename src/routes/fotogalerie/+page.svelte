@@ -1,7 +1,5 @@
 <script context="module" lang="ts">
 	import Carousel from '$lib/components/Slideshow/Carousel.svelte';
-	export const prerender = true;
-  
 	let fotos = [{ src: './images/fotogallery24/foto24_01.jpg' }, { src: './images/fotogallery24/foto24_02.jpg' }, { src: './images/fotogallery24/foto24_03.jpg' }, { src: './images/fotogallery24/foto24_04.jpg' }, { src: './images/fotogallery24/foto24_05.jpg' }, { src: './images/fotogallery24/foto24_06.jpg' }, { src: './images/fotogallery24/foto24_07.jpg' }, { src: './images/fotogallery24/foto24_08.jpg' }, { src: './images/fotogallery24/foto24_09.jpg' }, { src: './images/fotogallery24/foto24_10.jpg' }, { src: './images/fotogallery24/foto24_11.jpg' }];
   </script>
   
