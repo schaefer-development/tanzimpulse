@@ -1,5 +1,11 @@
 <script lang="ts">
+	import type { PageProps } from './$types';
+	import { base } from '$app/paths';
 	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+	let { data }: PageProps = $props();
+
+	let motifAusbildungen = ' /images/startpage/ausbildungen24.jpg';
+	let motifWorkshops = ' /images/startpage/workshops24.jpg';
 </script>
 
 <svelte:head>
@@ -70,7 +76,7 @@
 </section>
 
 <section id="CARDS" class="grid grid-cols-1 gap-10 lg:grid-cols-2">
-	{#each neuigkeiten as neuigkeit (neuigkeit.id)}
+	{#each data.neuigkeiten as neuigkeit (neuigkeit.id)}
 		<DefaultCard>
 			<div class="graphcms_card_startpage">
 				<h2 class="ti_headline_blue_bold pb-4">{neuigkeit.ueberschrift}</h2>
