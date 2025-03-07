@@ -9,7 +9,6 @@
 	<div class="container mx-auto flex flex-col py-24">
 		<div class="___logoandtitle pb-10">
 			<a
-				sveltekit:prefetch
 				href="{base}/"
 				class="text-center text-white transition duration-300 ease-in-out outline-none focus:outline-none"
 			>

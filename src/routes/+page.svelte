@@ -11,12 +11,12 @@
 		<div class="bg-ti_blue_mat hover:shadow-ti transition duration-300 ease-in-out">
 			<picture>
 				<source
-					srcset={motifAusbildungen.replace('.jpg', '.webp')}
+					srcset={motivAusbildungen.replace('.jpg', '.webp')}
 					type="webp"
 					class="h-72 w-full object-cover object-center"
 				/>
 				<img
-					src={motifAusbildungen}
+					src={motivAusbildungen}
 					class="h-72 w-full object-cover object-top"
 					alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse "
 				/>
