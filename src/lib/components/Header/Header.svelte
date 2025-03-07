@@ -31,13 +31,13 @@
 	style="opacity:1; z-index:999999;"
 	on:click={toggleMenu}
 	class="{open
-		? 'translate-x-0'
+		? 'open translate-x-0'
 		: 'translate-x-full'} bg-ti_blue_mat-dark fixed top-0 left-0 h-full w-full transform overflow-auto transition-all duration-300 ease-in-out"
 >
 	<div class="menu_points container mx-auto flex w-full flex-col flex-wrap px-6 py-4">
 		<div class="block flex w-full justify-end">
 			<button
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent flex items-center px-2 py-2 font-bold tracking-wider text-white uppercase focus:border-0 focus:ring-0 focus:outline-none"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent flex cursor-pointer items-center px-2 py-2 font-bold tracking-wider text-white uppercase focus:border-0 focus:ring-0 focus:outline-none"
 			>
 				<span class="px-2 font-bold uppercase">Schliessen</span>
 				<svg
@@ -154,3 +154,86 @@
 		</div>
 	</div>
 </aside>
+
+<style>
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	/* Standardmäßig sind die Elemente unsichtbar */
+	.animated > * {
+		opacity: 0;
+	}
+
+	/* Falls das Menü geöffnet ist, Animation starten */
+	.open .animated > * {
+		animation: fadeIn 0.5s ease-in-out forwards;
+	}
+
+	/* Verzögerte Animation für jedes Kind */
+	.open .animated > *:nth-child(1) {
+		animation-delay: 0.55s;
+	}
+	.open .animated > *:nth-child(2) {
+		animation-delay: 0.6s;
+	}
+	.open .animated > *:nth-child(3) {
+		animation-delay: 0.65s;
+	}
+	.open .animated > *:nth-child(4) {
+		animation-delay: 0.7s;
+	}
+	.open .animated > *:nth-child(5) {
+		animation-delay: 0.75s;
+	}
+	.open .animated > *:nth-child(6) {
+		animation-delay: 0.8s;
+	}
+	.open .animated > *:nth-child(7) {
+		animation-delay: 0.85s;
+	}
+	.open .animated > *:nth-child(8) {
+		animation-delay: 0.9s;
+	}
+	.open .animated > *:nth-child(9) {
+		animation-delay: 0.95s;
+	}
+	.open .animated > *:nth-child(10) {
+		animation-delay: 1s;
+	}
+	.open .animated > *:nth-child(11) {
+		animation-delay: 1.05s;
+	}
+	.open .animated > *:nth-child(12) {
+		animation-delay: 1.1s;
+	}
+	.open .animated > *:nth-child(13) {
+		animation-delay: 1.15s;
+	}
+	.open .animated > *:nth-child(14) {
+		animation-delay: 1.2s;
+	}
+	.open .animated > *:nth-child(15) {
+		animation-delay: 1.25s;
+	}
+	.open .animated > *:nth-child(16) {
+		animation-delay: 1.3s;
+	}
+	.open .animated > *:nth-child(17) {
+		animation-delay: 1.35s;
+	}
+	.open .animated > *:nth-child(18) {
+		animation-delay: 1.4s;
+	}
+	.open .animated > *:nth-child(19) {
+		animation-delay: 1.45s;
+	}
+	.open .animated > *:nth-child(20) {
+		animation-delay: 1.5s;
+	}
+</style>
