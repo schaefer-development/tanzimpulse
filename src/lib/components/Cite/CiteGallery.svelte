@@ -1,7 +1,8 @@
-<script context="module" lang="ts">
-	import Carousel from '$lib/components/Slideshow/Carousel.svelte';
+<script>
+	import { fade } from 'svelte/transition';
+	import { onMount, onDestroy } from 'svelte';
 
-	const testimonials = [
+	const quotes = [
 		{
 			text: '„So viel Vielfalt, Austausch, Kreative Impulse, inspirierende Momente…. Schön, dass ich seit so einer langen Zeit ein Teil davon sein kann. Vielen Dank.“',
 			author: 'Nicole S.-Sch.'
@@ -47,53 +48,109 @@
 			author: 'Astrid | Kursteilnehmerin'
 		}
 	];
+
+	let index = 0;
+	let maxHeight = 0;
+
+	const next = () => {
+		index = (index + 1) % quotes.length;
+	};
+
+	const previous = () => {
+		index = (index - 1 + quotes.length) % quotes.length;
+	};
+
+	const updateMaxHeight = () => {
+		if (typeof window !== 'undefined') {
+			const quoteContainers = document.querySelectorAll('.quote-hidden');
+			maxHeight = Math.max(...Array.from(quoteContainers).map((el) => el.offsetHeight));
+		}
+	};
+
+	onMount(() => {
+		if (typeof window !== 'undefined') {
+			updateMaxHeight();
+			window.addEventListener('resize', updateMaxHeight);
+		}
+	});
+
+	onDestroy(() => {
+		if (typeof window !== 'undefined') {
+			window.removeEventListener('resize', updateMaxHeight);
+		}
+	});
 </script>
 
-<div class="relative">
-	<Carousel perPage={1} autoplay={14000} easing="ease-in-out">
-		<span class="control" slot="left-control">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="ti_slidehow_control relative h-10 w-10 rounded-full p-2 text-white transition duration-300 ease-in-out"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-			>
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-			</svg>
-		</span>
+<div class="relative flex w-full items-center justify-center" style="min-height: {maxHeight}px">
+	{#each [quotes[index]] as quote (quote.text)}
+		<div
+			class="absolute flex w-3/4 flex-col items-center justify-center py-12 text-center"
+			transition:fade
+		>
+			<cite class="text-ti_blue_mat mx-auto py-6 text-2xl font-light not-italic lg:text-3xl"
+				>{quote.text}
+			</cite>
+			<p class="mx-auto text-sm font-bold tracking-widest text-gray-500 uppercase">
+				{quote.author}
+			</p>
+		</div>
+	{/each}
 
-		{#each testimonials as { text, author }}
-			<div
-				class="relative mx-auto flex w-10/12 flex-col items-center p-6 text-center md:p-12 lg:p-20"
-			>
-				<cite class="text-ti_blue_mat mx-auto py-6 text-2xl font-light not-italic lg:text-3xl"
-					>{text}</cite
-				>
-				<p class="mx-auto text-sm font-bold tracking-widest text-gray-500 uppercase">{author}</p>
-			</div>
-		{/each}
+	<!-- Unsichtbarer Bereich für Höhenberechnung -->
+	{#if typeof window !== 'undefined'}
+		<div class="pointer-events-none absolute opacity-0">
+			{#each [quotes[index]] as quote (quote.text)}
+				<div class="quote-hidden flex w-3/4 flex-col items-center justify-center py-12 text-center">
+					<cite class="text-ti_blue_mat mx-auto py-6 text-2xl font-light not-italic lg:text-3xl"
+						>{quote.text}
+					</cite>
+					<p class="mx-auto text-sm font-bold tracking-widest text-gray-500 uppercase">
+						{quote.author}
+					</p>
+				</div>
+			{/each}
+		</div>
+	{/if}
 
-		<span class="control" slot="right-control">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="ti_slidehow_control relative h-10 w-10 rounded-full p-2 text-white transition duration-300 ease-in-out"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-			>
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-			</svg>
-		</span>
-	</Carousel>
+	<button
+		aria-label="Zurück"
+		class="absolute left-5 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-neutral-400 text-white shadow-md hover:bg-neutral-600"
+		on:click={previous}
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="3"
+			stroke="currentColor"
+			class="h-6 w-6"
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+			/>
+		</svg>
+	</button>
+
+	<button
+		aria-label="Vor"
+		class="absolute right-5 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-neutral-400 text-white shadow-md hover:bg-neutral-600"
+		on:click={next}
+	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="3"
+			stroke="currentColor"
+			class="h-6 w-6"
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+			/>
+		</svg>
+	</button>
 </div>
-
-<style>
-	.ti_slidehow_control {
-		background: rgba(0, 0, 0, 0.25);
-	}
-
-	.ti_slidehow_control:hover {
-		background: rgba(0, 0, 0, 0.5);
-	}
-</style>

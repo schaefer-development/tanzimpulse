@@ -38,7 +38,7 @@
 
 <div class="flex min-h-screen flex-col justify-between">
 	<Header />
-	<main class="bg-warmGray-200 relative top-0 mb-auto h-auto">
+	<main class="relative top-0 mb-auto h-auto bg-neutral-100">
 		<div id="BUBBLES" class="absolute z-0 h-full w-full overflow-hidden opacity-30">
 			<img src="{base}/images/bg.svg" alt="background" />
 		</div>
@@ -49,7 +49,6 @@
 				<div class="mb-6 ml-4 w-48 md:mb-0 md:w-64">
 					<a
 						aria-label="Logo Tanzimpulse - Institut für Tanzpädagogik"
-						sveltekit:prefetch
 						class="text-ti_blue_mat hover:text-ti_blue_accent focus:text-ti_blue_accent transition duration-300 ease-in-out outline-none focus:ring-0 focus:outline-none"
 						href="{base}/"><Logo /></a
 					>
@@ -57,7 +56,6 @@
 				<div class="px-8">
 					<a
 						aria-label="Logo Tanzimpulse - Institut für Tanzpädagogik"
-						sveltekit:prefetch
 						href="{base}/"
 						class="text-ti_blue_mat hover:text-ti_blue_accent focus:text-ti_blue_accent text-xl font-extralight tracking-wider uppercase transition duration-300 ease-in-out outline-none focus:ring-0 focus:outline-none sm:text-2xl md:text-3xl lg:text-4xl"
 					>
