@@ -4,7 +4,7 @@
 	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
 	let { data }: PageProps = $props();
 
-	let motifAusbildungen = ' /images/startpage/ausbildungen24.jpg';
+	let motivAusbildungen = ' /images/startpage/ausbildungen24.jpg';
 	let motifWorkshops = ' /images/startpage/workshops24.jpg';
 </script>
 
