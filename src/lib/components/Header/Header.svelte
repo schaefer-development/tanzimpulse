@@ -172,68 +172,62 @@
 
 	/* Falls das Menü geöffnet ist, Animation starten */
 	.open .animated > * {
-		animation: fadeIn 0.5s ease-in-out forwards;
+		animation: fadeIn 0.2s ease-in-out forwards;
 	}
 
 	/* Verzögerte Animation für jedes Kind */
 	.open .animated > *:nth-child(1) {
-		animation-delay: 0.55s;
+		animation-delay: 0.24s;
 	}
 	.open .animated > *:nth-child(2) {
-		animation-delay: 0.6s;
+		animation-delay: 0.28s;
 	}
 	.open .animated > *:nth-child(3) {
-		animation-delay: 0.65s;
+		animation-delay: 0.32s;
 	}
 	.open .animated > *:nth-child(4) {
-		animation-delay: 0.7s;
+		animation-delay: 0.36s;
 	}
 	.open .animated > *:nth-child(5) {
-		animation-delay: 0.75s;
+		animation-delay: 0.4s;
 	}
 	.open .animated > *:nth-child(6) {
-		animation-delay: 0.8s;
+		animation-delay: 0.44s;
 	}
 	.open .animated > *:nth-child(7) {
-		animation-delay: 0.85s;
+		animation-delay: 0.48s;
 	}
 	.open .animated > *:nth-child(8) {
-		animation-delay: 0.9s;
+		animation-delay: 0.52s;
 	}
 	.open .animated > *:nth-child(9) {
-		animation-delay: 0.95s;
+		animation-delay: 0.56s;
 	}
 	.open .animated > *:nth-child(10) {
-		animation-delay: 1s;
+		animation-delay: 0.6s;
 	}
 	.open .animated > *:nth-child(11) {
-		animation-delay: 1.05s;
+		animation-delay: 0.64s;
 	}
 	.open .animated > *:nth-child(12) {
-		animation-delay: 1.1s;
+		animation-delay: 0.68s;
 	}
 	.open .animated > *:nth-child(13) {
-		animation-delay: 1.15s;
+		animation-delay: 0.72s;
 	}
 	.open .animated > *:nth-child(14) {
-		animation-delay: 1.2s;
+		animation-delay: 0.76s;
 	}
 	.open .animated > *:nth-child(15) {
-		animation-delay: 1.25s;
+		animation-delay: 0.8s;
 	}
 	.open .animated > *:nth-child(16) {
-		animation-delay: 1.3s;
+		animation-delay: 0.84s;
 	}
 	.open .animated > *:nth-child(17) {
-		animation-delay: 1.35s;
+		animation-delay: 0.88s;
 	}
 	.open .animated > *:nth-child(18) {
-		animation-delay: 1.4s;
-	}
-	.open .animated > *:nth-child(19) {
-		animation-delay: 1.45s;
-	}
-	.open .animated > *:nth-child(20) {
-		animation-delay: 1.5s;
+		animation-delay: 0.92s;
 	}
 </style>
