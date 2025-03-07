@@ -1,6 +1,10 @@
-<script context="module" lang="ts">
+<script lang="ts">
+	import type { PageProps } from './$types';
 	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
-	const now = new Date();
+	import Accordion from '$lib/components/Accordion/Accordion.svelte';
+	import Cite from '$lib/components/Cite/Cite.svelte';
+	import SeminarDashboard from '$lib/components/SeminarDashboard/SeminarDashboard.svelte';
+	let { data }: PageProps = $props();
 </script>
 
 <svelte:head>
@@ -125,4 +129,4 @@
 	</div>
 </section>
 <span id="ausbildungen" />
-<SeminarDashboard {seminare} />
+<SeminarDashboard seminare={data.seminare} />
