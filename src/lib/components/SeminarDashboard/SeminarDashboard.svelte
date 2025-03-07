@@ -5,7 +5,7 @@
 	import { onlyUnique } from '$lib/helpers';
 	import Fuse from 'fuse.js';
 
-	export let seminare: [];
+	export let seminare: Seminar[];
 	const searchOptions = {
 		keys: ['titel', 'datum', 'kurzbeschreibung', 'preis', 'kategorien.name'],
 		shouldSort: false

@@ -56,7 +56,7 @@
 								>Dokumente</span
 							><br />
 							<ul class="pt-2">
-								{#each seminar.dokumente as dokument}
+								{#each seminar.dokumente as dokument (dokument.id)}
 									<li class="flex flex-row items-center pb-4">
 										<a href={dokument.url} target="_blank" class="hyperlink"
 											><svg

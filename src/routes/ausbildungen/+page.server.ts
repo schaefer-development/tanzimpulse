@@ -1,5 +1,4 @@
 import type { PageServerLoad } from './$types';
-import { error } from '@sveltejs/kit';
 import { dev } from '$app/environment';
 import { addTransientSelected } from '$lib/helpers';
 import { api } from '$lib/graphql/api';

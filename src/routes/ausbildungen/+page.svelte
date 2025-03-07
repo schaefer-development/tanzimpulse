@@ -7,6 +7,7 @@
 
 	import SeminarDashboard from '$lib/components/SeminarDashboard/SeminarDashboard.svelte';
 	let { data }: PageProps = $props();
+	const { seminare } = data;
 
 	const ausbildungsstufen = [
 		{

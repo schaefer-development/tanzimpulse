@@ -1,6 +1,6 @@
 <script lang="ts">
 	import SeminarCard from '$lib/components/SeminarCard/SeminarCard.svelte';
-	export let seminare: [];
+	export let seminare: Seminar[];
 	import { base } from '$app/paths';
 </script>
 
