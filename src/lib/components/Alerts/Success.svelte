@@ -11,7 +11,6 @@
 		</p>
 		<p class="py-2 text-white">
 			Falls Sie wider Erwarten keine Bestätigung erhalten, <a
-				sveltekit:prefetch
 				class="hyperlink text-white hover:text-black"
 				href="{base}/kontakt">kontaktieren Sie uns</a
 			> bitte direkt.

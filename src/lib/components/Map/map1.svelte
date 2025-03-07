@@ -19,6 +19,7 @@
 	export let mapAttributes = {
 		style: 'width: 100%; height: 100%; min-height:500px; max-height:40vh' // fallback
 	};
+	let L;
 
 	onMount(async () => {
 		await import('leaflet');
@@ -40,4 +41,4 @@
 	/>
 </svelte:head>
 
-<div id="map1" {...mapAttributes} />
+<div id="map" {...mapAttributes}></div>

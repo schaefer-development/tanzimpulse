@@ -24,7 +24,7 @@
 				{seminar.format}
 			</h4>
 			<h2
-				class="text-ti_blue_accent text-lg font-bold tracking-wide break-words uppercase lg:text-xl"
+				class="text-ti_blue_accent text-lg font-bold tracking-wide break-words uppercase lg:text-2xl"
 			>
 				{seminar.titel}
 			</h2>

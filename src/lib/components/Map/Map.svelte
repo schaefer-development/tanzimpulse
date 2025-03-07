@@ -47,4 +47,4 @@
 	/>
 </svelte:head>
 
-<div id="map" {...mapAttributes} />
+<div id="map" {...mapAttributes}></div>

@@ -22,7 +22,6 @@
 {#if href}
 	<a
 		{href}
-		sveltekit:prefetch
 		aria-label="Mehr"
 		class="{mapping[
 			buttonstyle

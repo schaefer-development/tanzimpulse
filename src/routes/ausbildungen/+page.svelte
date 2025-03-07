@@ -137,5 +137,5 @@
 		<CiteGallery></CiteGallery>
 	</div>
 </section>
-<span id="ausbildungen" />
+<span id="ausbildungen"></span>
 <SeminarDashboard seminare={data.seminare} />
