@@ -5,6 +5,7 @@
 	import Cite from '$lib/components/Cite/Cite.svelte';
 	import SeminarDashboard from '$lib/components/SeminarDashboard/SeminarDashboard.svelte';
 	let { data }: PageProps = $props();
+	const { seminare } = data;
 </script>
 
 <svelte:head>

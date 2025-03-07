@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { enhance } from '$lib/form.ts';
+	import { enhance } from '$lib/form';
 	import Button from '$lib/components/Button/Button.svelte';
-	import HCaptcha from 'svelte-hcaptcha';
+	import HCaptcha from '$lib/components/HCaptcha/HCaptcha.svelte';
 	import { HCAPTCHA_SITEKEY } from '$lib/env';
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 
 	export let action: string;
 	export let result: (...args: unknown[]) => unknown;
@@ -13,7 +13,7 @@
 	// eslint-disable-next-line @typescript-eslint/no-empty-function
 	export let pending = () => {};
 
-	let captcha;
+	let captcha: HCaptcha;
 	const handleError = () => {
 		captcha.reset();
 	};
