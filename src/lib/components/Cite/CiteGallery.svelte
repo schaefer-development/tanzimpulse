@@ -82,7 +82,7 @@
 </script>
 
 <div class="relative flex w-full items-center justify-center" style="min-height: {maxHeight}px">
-	{#each [quotes[index]] as quote (index)}
+	{#each [quotes[index]] as quote (quote.text)}
 		<div
 			class="absolute flex w-3/4 flex-col items-center justify-center py-12 text-center"
 			transition:fade

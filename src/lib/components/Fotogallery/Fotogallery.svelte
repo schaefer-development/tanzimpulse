@@ -30,13 +30,13 @@
 <div class="relative flex h-[60vh] w-full items-center">
 	{#each [carouselPhotos[index]] as src (src)}
 		<div class="absolute flex h-[60vh] w-full justify-center">
-			<img class="h-[60vh] w-auto border-6 border-white shadow-lg" transition:fade {src} alt="" />
+			<img class="h-[60vh] w-auto border-6 border-white shadow-xl" transition:fade {src} alt="" />
 		</div>
 	{/each}
 
 	<button
 		aria-label="Zurück"
-		class="absolute left-0 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-neutral-400 text-white shadow-md hover:bg-neutral-600"
+		class="bg-ti_blue_mat hover:bg-ti_blue_accent absolute left-0 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full text-white shadow-md"
 		on:click={previous}
 	>
 		<svg
@@ -56,7 +56,7 @@
 	</button>
 	<button
 		aria-label="Vor"
-		class="absolute right-0 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-neutral-400 text-white shadow-md hover:bg-neutral-600"
+		class="bg-ti_blue_mat hover:bg-ti_blue_accent absolute right-0 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full text-white shadow-md"
 		on:click={next}
 	>
 		<svg

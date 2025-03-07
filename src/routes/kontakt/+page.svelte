@@ -7,7 +7,7 @@
 		<div class="grid grid-cols-1 gap-10">
 			<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
 				<div class="flex items-start">
-					<div class="bg-ti_green_mat shadow-ti w-full p-4 text-white sm:p-6 md:p-8 lg:p-10">
+					<div class="bg-ti_green_mat w-full p-4 text-white shadow-xl sm:p-6 md:p-8 lg:p-10">
 						<h2 class="mb-4 text-2xl font-bold tracking-wider text-white uppercase lg:text-3xl">
 							Anschrift
 						</h2>

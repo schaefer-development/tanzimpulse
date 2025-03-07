@@ -12,7 +12,7 @@
 		<div class="self-align-end block">
 			<button
 				on:click={toggleMenu}
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent flex items-center px-2 py-2 tracking-wider text-white focus:border-0 focus:ring-0 focus:outline-none"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent flex cursor-pointer items-center px-2 py-2 tracking-wider text-white focus:border-0 focus:ring-0 focus:outline-none"
 			>
 				<span class="px-2 font-bold uppercase">Menu</span>
 				<svg
@@ -58,28 +58,25 @@
 		</div>
 
 		<div class="animated flex flex-col">
-			<hr class="my-4 border-black" />
+			<hr class="my-4 border-blue-900" />
 			<a
-				sveltekit:prefetch
 				href="{base}/"
 				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
 				>Start</a
 			>
-			<hr class="my-4 border-black" />
+			<hr class="my-4 border-blue-900" />
 			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Tanzpädagogik</h3>
 			<a
-				sveltekit:prefetch
 				href="{base}/ausbildungen"
 				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
 				>Ausbildungen</a
 			>
 			<a
-				sveltekit:prefetch
 				href="{base}/workshops"
 				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
 				>Workshops</a
 			>
-			<hr class="my-4 border-black" />
+			<hr class="my-4 border-blue-900" />
 			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Eindrücke</h3>
 			<a
 				href="{base}/fotogalerie"
@@ -91,7 +88,7 @@
 				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
 				>Videos</a
 			>
-			<hr class="my-4 border-black" />
+			<hr class="my-4 border-blue-900" />
 			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Tanzimpulse</h3>
 			<a
 				href="{base}/kontakt"
@@ -113,7 +110,7 @@
 				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
 				>Philosophie</a
 			>
-			<hr class="my-4 border-black" />
+			<hr class="my-4 border-blue-900" />
 			<div class="___social_media_icons flex flex-row flex-wrap justify-start pt-2">
 				<a
 					rel="noreferrer"
