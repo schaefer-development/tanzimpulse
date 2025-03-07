@@ -85,10 +85,10 @@
 	<div class="relative flex w-full items-center justify-center" style="min-height: {maxHeight}px">
 		{#each [quotes[index]] as quote (quote.text)}
 			<div
-				class="absolute flex w-3/4 flex-col items-center justify-center text-center"
+				class="absolute flex w-7/12 flex-col items-center justify-center text-center lg:w-9/12"
 				transition:fade
 			>
-				<cite class="text-ti_blue_mat mx-auto py-6 text-2xl font-light not-italic lg:text-3xl"
+				<cite class="text-ti_blue_mat mx-auto py-6 text-xl font-light not-italic lg:text-3xl"
 					>{quote.text}
 				</cite>
 				<p class="mx-auto text-sm font-bold tracking-widest text-gray-500 uppercase">

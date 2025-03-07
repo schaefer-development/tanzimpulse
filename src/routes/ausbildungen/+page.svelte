@@ -113,10 +113,11 @@
 	<div class="container">
 		<div class="flex w-full lg:w-1/2">
 			<DefaultCard>
-				<h2 class="ti_title_blue_bold">Ausbildungen</h2>
-				<h3 class="ti_title_blue_light mb-4">
+				<h2 class="ti_headline_blue_bold">Ausbildungen</h2>
+				<h3 class="ti_headline_blue_light mb-4">
 					Zusatzqualifikation zur Tanzpädagogin / zum Tanzpädagogen
 				</h3>
+
 				<p class="py-4">
 					Unsere dreistufige Ausbildung zur Tanzpädagogin/zum Tanzpädagogen ist seit 1994 etabliert.
 					Als die Experten für Pädagogik im Tanz vermittelt das Team der TANZIMPULSE, wie der
