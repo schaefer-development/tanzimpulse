@@ -7,7 +7,7 @@
 	};
 </script>
 
-<header style="z-index:9999;" class="bg-ti_blue_mat shadow-xl_hover sticky top-0 z-50">
+<header style="z-index:9999;" class="bg-ti_blue_mat sticky top-0 z-50 shadow-xl">
 	<nav class="container mx-auto flex w-full flex-wrap items-center justify-end px-6 py-4">
 		<div class="self-align-end block">
 			<button
@@ -29,7 +29,6 @@
 <aside
 	id="drawer"
 	style="opacity:1; z-index:999999;"
-	on:click={toggleMenu}
 	class="{open
 		? 'open translate-x-0'
 		: 'translate-x-full'} bg-ti_blue_mat-dark fixed top-0 left-0 h-full w-full transform overflow-auto transition-all duration-300 ease-in-out"
@@ -37,6 +36,7 @@
 	<div class="menu_points container mx-auto flex w-full flex-col flex-wrap px-6 py-4">
 		<div class="block flex w-full justify-end">
 			<button
+				on:click={toggleMenu}
 				class="hover:text-ti_blue_accent focus:text-ti_blue_accent flex cursor-pointer items-center px-2 py-2 font-bold tracking-wider text-white uppercase focus:border-0 focus:ring-0 focus:outline-none"
 			>
 				<span class="px-2 font-bold uppercase">Schliessen</span>
@@ -60,64 +60,75 @@
 		<div class="animated flex flex-col">
 			<hr class="my-4 border-blue-900" />
 			<a
+				on:click={toggleMenu}
 				href="{base}/"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Start</a
 			>
 			<hr class="my-4 border-blue-900" />
 			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Tanzpädagogik</h3>
 			<a
+				on:click={toggleMenu}
 				href="{base}/ausbildungen"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Ausbildungen</a
 			>
 			<a
+				on:click={toggleMenu}
 				href="{base}/workshops"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Workshops</a
 			>
 			<hr class="my-4 border-blue-900" />
 			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Eindrücke</h3>
 			<a
+				on:click={toggleMenu}
 				href="{base}/fotogalerie"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Fotos</a
 			>
 			<a
+				on:click={toggleMenu}
 				href="{base}/videos"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Videos</a
 			>
 			<hr class="my-4 border-blue-900" />
 			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Tanzimpulse</h3>
 			<a
+				on:click={toggleMenu}
 				href="{base}/kontakt"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Kontakt</a
 			>
 			<a
+				on:click={toggleMenu}
 				href="{base}/team"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Team</a
 			>
 			<a
+				on:click={toggleMenu}
 				href="{base}/mitgliedschaften"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Mitgliedschaften</a
 			>
 			<a
+				on:click={toggleMenu}
 				href="{base}/philosophie"
-				class="hover:text-ti_blue_accent focus:text-ti_blue_accent py-1 text-base text-white focus:ring-0 focus:outline-none md:py-0 md:py-0 md:text-xl lg:text-2xl"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
 				>Philosophie</a
 			>
 			<hr class="my-4 border-blue-900" />
-			<div class="___social_media_icons flex flex-row flex-wrap justify-start pt-2">
+			<div
+				class="___social_media_icons flex flex-row flex-wrap justify-center gap-4 lg:justify-start"
+			>
 				<a
 					rel="noreferrer"
 					aria-label="Facebook"
 					target="_blank"
 					href="https://www.facebook.com/Tanzimpulse/"
-					class="hover:text-ti_blue_accent mr-4 text-white transition-all duration-300 ease-in-out"
+					class="hover:text-ti_blue_accent mr-4 flex h-12 w-12 items-center justify-center rounded-full border-2 text-white transition-all duration-300 ease-in-out"
 				>
 					<svg
 						fill="currentColor"
@@ -135,7 +146,7 @@
 					aria-label="Instagram"
 					target="_blank"
 					href="https://www.instagram.com/tanzimpulse_koeln/"
-					class="hover:text-ti_blue_accent ml-4 text-white transition-all duration-300 ease-in-out"
+					class="hover:text-ti_blue_accent mr-4 flex h-12 w-12 items-center justify-center rounded-full border-2 text-white transition-all duration-300 ease-in-out"
 				>
 					<svg
 						fill="none"

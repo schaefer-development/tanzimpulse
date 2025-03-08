@@ -1,40 +1,35 @@
+<script context="module" lang="ts">
+	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+</script>
+
 <svelte:head>
 	<title>Kontakt</title>
 </svelte:head>
 
 <section>
 	<div class="container">
-		<div class="grid grid-cols-1 gap-10">
-			<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
-				<div class="flex items-start">
-					<div class="bg-ti_green_mat w-full p-4 text-white shadow-xl sm:p-6 md:p-8 lg:p-10">
-						<h2 class="mb-4 text-2xl font-bold tracking-wider text-white uppercase lg:text-3xl">
-							Kontakt
-						</h2>
-						<p class="py-2">
-							Folwiese 20<br />
-							51069 Köln
-						</p>
+		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+			<DefaultCard>
+				<h2 class="ti_headline_blue_bold">Kontakt</h2>
+				<p class="py-2">
+					Folwiese 20<br />
+					51069 Köln
+				</p>
 
-						<p class="pt-2 pb-4">
-							Telefon: +49 (0)221 - 68 36 91
-							<br />
-							Fax: +49 (0)221 - 68 97 797
-							<br />
-							E-Mail:
-							<a
-								class="pt-2 text-xs font-bold tracking-widest uppercase transition-all duration-300 ease-in-out hover:text-black"
-								href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a
-							>
-						</p>
-						<p class="mb-8">
-							<span class="text-xs font-extrabold tracking-widest uppercase">Bürozeiten</span><br />
-							Montag bis Freitag: 9:00 - 13:00 Uhr<br />
-							Dienstag: 18:00 - 20:00 Uhr
-						</p>
-					</div>
-				</div>
-			</div>
+				<p class="pt-2 pb-4">
+					Telefon: +49 (0)221 - 68 36 91
+					<br />
+					Fax: +49 (0)221 - 68 97 797
+					<br />
+					E-Mail:
+					<a class="hyperlink" href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a>
+				</p>
+				<p class="mb-8">
+					<span class="text-xs font-extrabold tracking-widest uppercase">Bürozeiten</span><br />
+					Montag bis Freitag: 9:00 - 13:00 Uhr<br />
+					Dienstag: 18:00 - 20:00 Uhr
+				</p>
+			</DefaultCard>
 		</div>
 	</div>
 </section>

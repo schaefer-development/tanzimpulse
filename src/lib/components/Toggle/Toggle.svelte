@@ -12,8 +12,10 @@
 				bind:checked={kategorie.selected}
 				class="sr-only"
 			/>
-			<div class="dot-background bg-ti_red_mat block h-8 w-14 rounded-full border-2 transition" />
-			<div class="dot absolute top-1 left-1 h-6 w-6 rounded-full bg-white transition" />
+			<div
+				class="dot-background bg-ti_red_mat block h-8 w-14 rounded-full border-2 transition"
+			></div>
+			<div class="dot absolute top-1 left-1 h-6 w-6 rounded-full bg-white transition"></div>
 		</div>
 		<div
 			class="flex-1 text-2xl font-extralight tracking-wide text-white transition duration-300 ease-in-out"
