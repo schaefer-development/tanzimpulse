@@ -85,6 +85,7 @@
 		<DefaultCard>
 			<div class="graphcms_card_startpage">
 				<h2 class="ti_headline_blue_bold pb-4">{neuigkeit.ueberschrift}</h2>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html neuigkeit.inhalt.html}
 			</div>
 		</DefaultCard>

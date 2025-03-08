@@ -55,24 +55,9 @@
 				class="content-wrapper overflow-hidden transition-all duration-300 ease-in-out"
 				style="height: 0px;"
 			>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				<div class="pt-4 pb-6">{@html item.content}</div>
 			</div>
 		</details>
 	{/each}
 </div>
-
-<!-- 
-
-  <div class="tab w-full overflow-hidden pb-2">
-	<input class="absolute opacity-0" {id} type="checkbox" name="tabs" />
-	<label class="text-ti_blue_mat block cursor-pointer px-2 text-2xl leading-normal" for={id}
-		><slot name="headline" /></label
-	>
-	<div class="tab-content overflow-hidden leading-normal">
-		<div class="px-2 py-4">
-			
-				<slot name="content" />
-			
-		</div>
-	</div>
-</div>-->

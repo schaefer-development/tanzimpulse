@@ -38,6 +38,7 @@
 			<SeminarCard {seminar}>
 				<div slot="beschreibung">
 					<p class="py-6">
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html seminar.beschreibung.html}
 					</p>
 					<p class="py-2 text-black">
