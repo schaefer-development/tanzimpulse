@@ -25,7 +25,7 @@
 		aria-label="Mehr"
 		class="{mapping[
 			buttonstyle
-		]} hover:shadow-ti block w-full rounded-full border-2 p-4 text-center text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none focus:ring-0 focus:outline-none"
+		]} hover:shadow-ti block w-full cursor-pointer rounded-full border-2 p-4 text-center text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none focus:ring-0 focus:outline-none"
 	>
 		<slot />
 	</a>
@@ -35,7 +35,7 @@
 		aria-label="Mehr"
 		class="{mapping[
 			buttonstyle
-		]} hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none focus:ring-0 focus:outline-none"
+		]} hover:shadow-ti w-full cursor-pointer rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none focus:ring-0 focus:outline-none"
 	>
 		<slot />
 	</button>
