@@ -3,11 +3,11 @@
 	import SeminarForm from '$lib/components/SeminarForm/SeminarForm.svelte';
 	import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
 	import Success from '$lib/components/Alerts/Success.svelte';
-	import Error from '$lib/components/Alerts/Error.svelte';
+	import ErrorComponent from '$lib/components/Alerts/Error.svelte';
 	import { base } from '$app/paths';
 	export let seminar: Seminar;
-	export let errors = [];
-	export let anmeldung = null;
+	export let errors: Error[] = [];
+	export let anmeldung: unknown = null;
 
 	let isPending = false;
 
@@ -17,7 +17,8 @@
 	const error = async (res: Response, error: Error) => {
 		isPending = false;
 		errors.push(error);
-		if (res) errors.push(await res.text());
+		const text = await res.text();
+		if (res) errors.push(new Error(text));
 	};
 	const result = async (res: Response) => {
 		isPending = false;
@@ -87,7 +88,7 @@
 
 		<div class="__registration">
 			{#if errors.length}
-				<Error />
+				<ErrorComponent />
 			{:else if isPending}
 				<div class="flex items-center justify-center">
 					<p class="text-ti_blue_accent mr-4 py-4">

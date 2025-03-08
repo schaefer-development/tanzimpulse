@@ -7,11 +7,9 @@
 	import { browser } from '$app/environment';
 
 	export let action: string;
-	export let result: (...args: unknown[]) => unknown;
-	// eslint-disable-next-line @typescript-eslint/no-empty-function
-	export let error = () => {};
-	// eslint-disable-next-line @typescript-eslint/no-empty-function
-	export let pending = () => {};
+	export let result: (res: Response, form: HTMLFormElement) => void;
+	export let error: (res: Response, error: Error, form: HTMLFormElement) => void;
+	export let pending: (data: FormData, form: HTMLFormElement) => void;
 
 	let captcha: HCaptcha;
 	const handleError = () => {
