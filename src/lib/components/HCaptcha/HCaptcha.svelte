@@ -116,4 +116,4 @@
 	{/if}
 </svelte:head>
 
-<div id="h-captcha-{id}" />
+<div id="h-captcha-{id}"></div>

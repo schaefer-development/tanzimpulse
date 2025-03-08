@@ -55,7 +55,7 @@
 				class="content-wrapper overflow-hidden transition-all duration-300 ease-in-out"
 				style="height: 0px;"
 			>
-				<div class="pt-4 pb-6">{item.content}</div>
+				<div class="pt-4 pb-6">{@html item.content}</div>
 			</div>
 		</details>
 	{/each}

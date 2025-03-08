@@ -28,7 +28,7 @@
 </script>
 
 <div class="flex w-full flex-col items-start gap-10 lg:flex-row">
-	<div class="___red_card bg-ti_red_mat shadow-ti w-full p-4 text-black md:p-6 lg:w-1/2 lg:p-8">
+	<div class="___red_card bg-ti_red_mat w-full p-4 text-black shadow-xl md:p-6 lg:w-1/2 lg:p-8">
 		<Kategorien bind:kategorien />
 		<VolltextSuche bind:query />
 	</div>

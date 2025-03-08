@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex items-start">
-	<div class="shadow-ti flex w-full flex-col items-start bg-white">
+	<div class="flex w-full flex-col items-start border-neutral-100 bg-white shadow-lg">
 		<div class="seminar_card_img w-full flex-0">
 			{#if seminar.bild}
 				<img
@@ -19,21 +19,27 @@
 			{/if}
 		</div>
 
-		<div
-			class="seminar_card_content w-full flex-1 px-4 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 lg:px-10 lg:py-10"
-		>
+		<div class="seminar_card_content w-full flex-1 p-4 sm:p-4 md:p-5 xl:p-8">
 			<h4 class="title-font pb-1 text-xs tracking-widest text-gray-600 uppercase">
 				{seminar.format}
 			</h4>
-			<h1 class="ti_headline_blue_bold">{seminar.titel}</h1>
-			<p class="ti_headline_blue_light">{dateFormat.format(new Date(seminar.datum))} Uhr</p>
+			<h2
+				class="text-ti_blue_accent text-lg font-bold tracking-wide break-words uppercase lg:text-2xl"
+			>
+				{seminar.titel}
+			</h2>
+			<h3 class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
+				{dateFormat.format(new Date(seminar.datum))} Uhr
+			</h3>
 
 			{#if overbooked(seminar)}
-				<p class="prose-sm py-4 text-lg font-bold text-gray-600">Anmeldung zur Warteliste</p>
+				<span class="block py-2 text-lg font-bold tracking-wide text-gray-600 uppercase"
+					>Anmeldung zur Warteliste</span
+				>
 			{:else}
-				<p class="text-ti_green_accent prose-sm py-4 text-lg font-bold tracking-wide uppercase">
+				<span class="text-ti_green_accent block py-2 text-lg font-bold tracking-wide uppercase">
 					Noch Plätze frei
-				</p>
+				</span>
 			{/if}
 
 			<div class="___pills py-2">
