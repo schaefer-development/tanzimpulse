@@ -92,11 +92,9 @@ export const actions = {
 		if (!verificationData.success) return fail(400, { hcaptchaResponse, incorrect: true });
 		const variables = sanitizeFormValues(data);
 
-		const {
-			data: { teilnehmer }
-		} = await api(UPSERT_TEILNEHMER, { ...variables, url });
+		const upsertResponse = await api(UPSERT_TEILNEHMER, { ...variables, url });
 		await api(PUBLISH_TEILNEHMER, variables);
-		await sendConfirmation(teilnehmer);
-		return teilnehmer;
+		await sendConfirmation(upsertResponse.data.teilnehmer);
+		return upsertResponse;
 	}
 } satisfies Actions;

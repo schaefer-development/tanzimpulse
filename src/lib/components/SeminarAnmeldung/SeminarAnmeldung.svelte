@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { SubmitFunction } from '@sveltejs/kit';
 	import SeminarCard from '$lib/components/SeminarCard/SeminarCard.svelte';
 	import SeminarForm from '$lib/components/SeminarForm/SeminarForm.svelte';
 	import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
@@ -6,29 +7,21 @@
 	import ErrorComponent from '$lib/components/Alerts/Error.svelte';
 	import { base } from '$app/paths';
 	export let seminar: Seminar;
-	export let errors: Error[] = [];
-	export let anmeldung: unknown = null;
+	export let isError: boolean;
+	export let isSuccess: boolean;
 
 	let isPending = false;
 
-	const pending = () => {
+	const submitFunction: SubmitFunction = () => {
 		isPending = true;
+		return async ({ result, update }) => {
+			isPending = false;
+			isError = result.type === 'error' || result.type === 'failure';
+			isSuccess = result.type === 'success' || result.type === 'redirect';
+			return update();
+		};
 	};
-	const error = async (res: Response, error: Error) => {
-		isPending = false;
-		errors.push(error);
-		const text = await res.text();
-		if (res) errors.push(new Error(text));
-	};
-	const result = async (res: Response) => {
-		isPending = false;
-		const {
-			data: { teilnehmer },
-			errors: graphQLErrors
-		} = await res.json();
-		if (graphQLErrors) errors.push(...graphQLErrors);
-		anmeldung = teilnehmer;
-	};
+
 	const action = `${base}/${seminar.format}/${seminar.url}`;
 </script>
 
@@ -88,7 +81,7 @@
 		</div>
 
 		<div class="__registration">
-			{#if errors.length}
+			{#if isError}
 				<ErrorComponent />
 			{:else if isPending}
 				<div class="flex items-center justify-center">
@@ -116,10 +109,10 @@
 					</p>
 					<h2 class="ti_headline_blue_bold">Lädt ...</h2>
 				</div>
-			{:else if anmeldung}
+			{:else if isSuccess}
 				<Success />
 			{:else}
-				<SeminarForm {action} {result} {error} {pending} />
+				<SeminarForm {action} {submitFunction} />
 			{/if}
 		</div>
 	</div>

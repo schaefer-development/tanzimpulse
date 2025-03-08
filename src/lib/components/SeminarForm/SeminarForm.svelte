@@ -1,15 +1,14 @@
 <script lang="ts">
+	import type { SubmitFunction } from '@sveltejs/kit';
 	import { base } from '$app/paths';
-	import { enhance } from '$lib/form';
+	import { enhance } from '$app/forms';
 	import Button from '$lib/components/Button/Button.svelte';
 	import HCaptcha from '$lib/components/HCaptcha/HCaptcha.svelte';
 	import { HCAPTCHA_SITEKEY } from '$lib/env';
 	import { browser } from '$app/environment';
 
 	export let action: string;
-	export let result: (res: Response, form: HTMLFormElement) => void;
-	export let error: (res: Response, error: Error, form: HTMLFormElement) => void;
-	export let pending: (data: FormData, form: HTMLFormElement) => void;
+	export let submitFunction: SubmitFunction;
 
 	let captcha: HCaptcha;
 	const handleError = () => {
@@ -20,7 +19,7 @@
 <div
 	class="flex flex-col overflow-hidden border border-neutral-100 bg-white p-4 shadow-lg transition duration-300 ease-in-out md:p-6 lg:p-8"
 >
-	<form {action} method="post" use:enhance={{ result, error, pending }}>
+	<form {action} method="post" use:enhance={submitFunction}>
 		<h2 class="ti_headline_blue_bold mb-4">Anmeldeformular</h2>
 
 		<div class="mb-8 flex flex-col space-y-10">
