@@ -7,7 +7,7 @@
 	};
 </script>
 
-<header style="z-index:9999;" class="bg-ti_blue_mat shadow-ti_hover sticky top-0 z-50">
+<header style="z-index:9999;" class="bg-ti_blue_mat shadow-xl_hover sticky top-0 z-50">
 	<nav class="container mx-auto flex w-full flex-wrap items-center justify-end px-6 py-4">
 		<div class="self-align-end block">
 			<button

@@ -2,6 +2,8 @@
 	import Logo from '$lib/components/Logo/Logo.svelte';
 	import { base } from '$app/paths';
 
+	let certificate = './images/certificate.jpg';
+
 	let date = new Date().getFullYear();
 </script>
 
@@ -69,7 +71,7 @@
 						href="{base}/content/Widerrufsbelehrung.pdf"
 						target="_blank">Widerrufsbelehrung</a
 					>
-					<br /> <br />
+					<br />
 					© {date}
 				</p>
 				<div
@@ -80,7 +82,7 @@
 						aria-label="Facebook"
 						target="_blank"
 						href="https://www.facebook.com/Tanzimpulse/"
-						class="hover:text-ti_blue_accent mr-4 text-white transition-all duration-300 ease-in-out"
+						class="hover:text-ti_blue_accent mr-4 flex h-12 w-12 items-center justify-center rounded-full border-2 text-white transition-all duration-300 ease-in-out"
 					>
 						<svg
 							fill="currentColor"
@@ -98,7 +100,7 @@
 						aria-label="Instagram"
 						target="_blank"
 						href="https://www.instagram.com/tanzimpulse_koeln/"
-						class="hover:text-ti_blue_accent text-white transition-all duration-300 ease-in-out"
+						class="hover:text-ti_blue_accent mr-4 flex h-12 w-12 items-center justify-center rounded-full border-2 text-white transition-all duration-300 ease-in-out"
 					>
 						<svg
 							fill="none"
@@ -114,6 +116,20 @@
 						</svg>
 					</a>
 				</div>
+
+				<p class="pb-2">Seit 20 Jahren Mitglied:</p>
+				<picture>
+					<source
+						srcset={certificate.replace('.jpg', '.webp')}
+						type="webp"
+						class="h-24 w-auto object-cover object-center"
+					/>
+					<img
+						src={certificate}
+						class="h-24 w-auto object-cover object-top"
+						alt="TANZIMPULSE sind seit 20 Jahren Mitglied"
+					/>
+				</picture>
 			</div>
 		</div>
 	</div>
