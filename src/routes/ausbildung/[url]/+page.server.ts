@@ -92,26 +92,11 @@ export const actions = {
 		if (!verificationData.success) return fail(400, { hcaptchaResponse, incorrect: true });
 		const variables = sanitizeFormValues(data);
 
-		const upsertResponse = await api(UPSERT_TEILNEHMER, { ...variables, url });
-		if (!upsertResponse.ok) {
-			return {
-				ok: false,
-				status: 500,
-				body: { errors: [graphQLError] }
-			};
-		}
-		const publishResponse = await api(PUBLISH_TEILNEHMER, variables);
-		if (!publishResponse.ok) {
-			return {
-				ok: false,
-				status: 500,
-				body: { errors: [graphQLError] }
-			};
-		}
-		if (upsertResponse.ok) {
-			await sendConfirmation(upsertResponse.body.data.teilnehmer);
-		}
-
-		return upsertResponse;
+		const {
+			data: { teilnehmer }
+		} = await api(UPSERT_TEILNEHMER, { ...variables, url });
+		await api(PUBLISH_TEILNEHMER, variables);
+		await sendConfirmation(teilnehmer);
+		return teilnehmer;
 	}
 } satisfies Actions;

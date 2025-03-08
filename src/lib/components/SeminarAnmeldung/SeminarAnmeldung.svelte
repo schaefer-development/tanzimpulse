@@ -29,7 +29,7 @@
 		if (graphQLErrors) errors.push(...graphQLErrors);
 		anmeldung = teilnehmer;
 	};
-	const action = `${base}/${seminar.format}/${seminar.url}/anmeldung.json`;
+	const action = `${base}/${seminar.format}/${seminar.url}`;
 </script>
 
 <section>
