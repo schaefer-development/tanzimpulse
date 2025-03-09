@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { fade } from 'svelte/transition';
 	import { onMount, onDestroy } from 'svelte';
 
@@ -63,7 +63,7 @@
 	const updateMaxHeight = () => {
 		if (typeof window !== 'undefined') {
 			const quoteContainers = document.querySelectorAll('.quote-hidden');
-			maxHeight = Math.max(...Array.from(quoteContainers).map((el) => el.offsetHeight));
+			maxHeight = Math.max(...Array.from(quoteContainers).filter(el => !!(el instanceof HTMLElement)).map((el) => el.offsetHeight));
 		}
 	};
 

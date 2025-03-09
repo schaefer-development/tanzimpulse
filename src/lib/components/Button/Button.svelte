@@ -1,8 +1,5 @@
 <script lang="ts">
-	export let buttonstyle = 'blue';
-	export let href: string | null = null;
-
-	const mapping = {
+	const mapping: Record<ButtonColor, string> = {
 		/*    default: 'border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_mat-dark hover:text-ti_blue_accent-light focus:text-ti_blue_accent focus:bg-ti_blue_mat-dark focus:text-white',
 		 */
 		blue: 'border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:text-white',
@@ -17,6 +14,10 @@
 			'text-white border-white hover:bg-ti_red_mat-dark hover:text-white focus:bg-ti_red_mat-dark focus:text-white ',
 		gray: 'text-gray-400 border-gray-400 cursor-not-allowed hover:text-gray-400 focus:text-gray-400'
 	};
+
+	export let buttonstyle: ButtonColor = 'blue';
+	export let href: string | null = null;
+
 </script>
 
 {#if href}

@@ -3,7 +3,7 @@
 	import { overbooked, dateFormat } from '$lib/helpers';
 	import { base } from '$app/paths';
 	export let seminare: Seminar[] = [];
-	export let color = 'white';
+	export let color: ButtonColor = 'white';
 </script>
 
 {#each seminare as seminar (seminar.id)}

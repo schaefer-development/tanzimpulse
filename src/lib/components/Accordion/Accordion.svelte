@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let items: { title: string; content: string }[] = [];
 
-	let accordions: HTMLElement[] = [];
+	let accordions: HTMLDetailsElement[] = [];
 
 	function toggleAccordion(event: Event, index: number) {
 		const details = accordions[index];
