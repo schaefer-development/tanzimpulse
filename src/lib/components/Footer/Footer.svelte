@@ -2,7 +2,7 @@
 	import Logo from '$lib/components/Logo/Logo.svelte';
 	import { base } from '$app/paths';
 
-	let certificate = './images/certificate.jpg';
+	let certificate = '/images/certificate.jpg';
 
 	let date = new Date().getFullYear();
 </script>
@@ -116,6 +116,14 @@
 						</svg>
 					</a>
 				</div>
+				<p class="pb-2">Seit 20 Jahren Mitglied:</p>
+				<picture>
+					<img
+						src={certificate}
+						class="h-24 w-auto object-cover object-top"
+						alt="TANZIMPULSE sind seit 20 Jahren Mitglied"
+					/>
+				</picture>
 			</div>
 		</div>
 	</div>

@@ -63,7 +63,11 @@
 	const updateMaxHeight = () => {
 		if (typeof window !== 'undefined') {
 			const quoteContainers = document.querySelectorAll('.quote-hidden');
-			maxHeight = Math.max(...Array.from(quoteContainers).filter(el => !!(el instanceof HTMLElement)).map((el) => el.offsetHeight));
+			maxHeight = Math.max(
+				...Array.from(quoteContainers)
+					.filter((el) => !!(el instanceof HTMLElement))
+					.map((el) => el.offsetHeight)
+			);
 		}
 	};
 

@@ -3,7 +3,16 @@ interface Identifiable {
 	id: ID;
 }
 
-type ButtonColor = 'blue' | 'cyan' | 'green' | '_blue' | '_cyan' | '_green' | 'red' | 'white' | 'gray';
+type ButtonColor =
+	| 'blue'
+	| 'cyan'
+	| 'green'
+	| '_blue'
+	| '_cyan'
+	| '_green'
+	| 'red'
+	| 'white'
+	| 'gray';
 
 type Koordinaten = {
 	longitude: number;

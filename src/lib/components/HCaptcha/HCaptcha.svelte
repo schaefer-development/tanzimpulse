@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-// @ts-nocheck
+	// @ts-nocheck
 	declare global {
 		interface Window {
 			sitekey: string;
@@ -18,7 +18,7 @@
 </script>
 
 <script lang="ts">
-// @ts-nocheck
+	// @ts-nocheck
 	import { onDestroy, createEventDispatcher, onMount } from 'svelte';
 	const browser = import.meta.env.SSR === undefined ? true : !import.meta.env.SSR;
 
