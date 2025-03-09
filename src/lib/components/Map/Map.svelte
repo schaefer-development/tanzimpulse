@@ -1,36 +1,38 @@
 <script lang="ts">
+	import type Leaflet from 'leaflet';
 	import { onMount } from 'svelte';
 
-	export let iconOptions = {
+	export let iconOptions: Leaflet.IconOptions = {
 		iconUrl: '/images/mapmarker.png',
 		iconSize: [40, 50],
 		iconAnchor: [20, 50]
 	};
 
 	export let zoom = 13;
-	export let coordinates = [50.96745443190281, 7.049317359924316];
+	export let coordinates: Leaflet.LatLngExpression = [50.96745443190281, 7.049317359924316];
 
 	export let mapAttributes = {
 		style: 'width: 100%; height: 300px;'
 	};
 
-	let map;
+	let map: Leaflet.Map;
 
-	onMount(async () => {
-		const L = await import('leaflet');
+	onMount(() => {
+		import('leaflet').then((L) => {
+			map = L.map('map', { scrollWheelZoom: false }).setView(coordinates, zoom);
+
+			// Standard-Layout von OpenStreetMap laden
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: `&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>`,
+				maxZoom: 19
+			}).addTo(map);
+
+			// Marker hinzufügen
+			const icon = L.icon(iconOptions);
+			L.marker(coordinates, { icon }).addTo(map);
+		});
 
 		// Karte initialisieren
-		map = L.map('map', { scrollWheelZoom: false }).setView(coordinates, zoom);
-
-		// Standard-Layout von OpenStreetMap laden
-		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			attribution: `&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>`,
-			maxZoom: 19
-		}).addTo(map);
-
-		// Marker hinzufügen
-		const icon = L.icon(iconOptions);
-		L.marker(coordinates, { icon }).addTo(map);
 
 		return () => {
 			if (map) map.remove();

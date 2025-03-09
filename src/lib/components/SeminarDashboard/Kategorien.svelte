@@ -16,7 +16,7 @@
 			<hr class="border-ti_red_mat-dark focus:text-ti_red_mat-dark my-4 block w-full border" />
 		{/each}
 		<noscript>
-			<Button buttonstyle='white'>Seminare filtern</Button>
+			<Button buttonstyle="white">Seminare filtern</Button>
 		</noscript>
 	</form>
 {/if}

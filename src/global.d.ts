@@ -3,14 +3,14 @@ interface Identifiable {
 	id: ID;
 }
 
-type Location = {
+type Koordinaten = {
 	longitude: number;
 	latitude: number;
 };
 
 type Veranstaltungsort = {
 	adresse: string;
-	koordinaten: Location;
+	koordinaten: Koordinaten;
 };
 
 type Neuigkeit = {
@@ -45,6 +45,7 @@ type Referent = {
 };
 
 type Dokument = {
+	id: ID;
 	fileName: string;
 	url: string;
 };
