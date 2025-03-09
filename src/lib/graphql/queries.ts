@@ -85,29 +85,13 @@ export const NEUIGKEITEN = gql`
 `;
 
 export const INDEX = gql`
-	${seminarFragment}
-
-	query ($limit: Int, $today: DateTime!) {
+	query {
 		neuigkeiten {
 			id
 			ueberschrift
 			inhalt {
 				html
 			}
-		}
-		workshops: seminare(
-			orderBy: datum_ASC
-			where: { format: workshop, datum_gte: $today }
-			first: $limit
-		) {
-			...seminarFragment
-		}
-		ausbildungen: seminare(
-			orderBy: datum_ASC
-			where: { format: ausbildung, datum_gte: $today }
-			first: $limit
-		) {
-			...seminarFragment
 		}
 	}
 `;
