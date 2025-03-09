@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex items-start">
-	<div class="flex w-full flex-col items-start border-neutral-100 bg-white shadow-lg">
+	<div class="flex w-full flex-col items-start border-neutral-200 bg-white shadow-lg">
 		<div class="seminar_card_img w-full flex-0">
 			{#if seminar.bild}
 				<img

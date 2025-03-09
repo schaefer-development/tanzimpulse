@@ -44,7 +44,7 @@
 					>.
 				</p>
 				<p class="py-2">© TANZIMPULSE 2002 - {now.getFullYear()}</p>
-				<hr class="mt-4 mb-8 block w-full border border-neutral-100" />
+				<hr class="mt-4 mb-8 block w-full border border-neutral-200" />
 				<h2 class="ti_headline_blue_light mb-4">Haftungsausschluss</h2>
 				<p class="py-2">
 					Diese Webseite wurde mit größtmöglicher Sorgfalt zusammengestellt. Wir bemühen uns alle
@@ -59,7 +59,7 @@
 					Seiten. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber
 					verantwortlich.
 				</p>
-				<hr class="mt-4 mb-8 block w-full border border-neutral-100" />
+				<hr class="mt-4 mb-8 block w-full border border-neutral-200" />
 				<h3 class="font-bold">Webdesign und Entwicklung</h3>
 				<p class="py-2">
 					Robert und Jo Schäfer<br />
