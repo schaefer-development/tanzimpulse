@@ -4,7 +4,7 @@ import { error, fail } from '@sveltejs/kit';
 import { api } from '$lib/graphql/api';
 import { SEMINAR } from '$lib/graphql/queries';
 import { dev } from '$app/environment';
-import { overbooked, graphQLError } from '$lib/helpers';
+import { overbooked } from '$lib/helpers';
 import nodemailer from 'nodemailer';
 import { waitingListMessage, registrationMessage } from '$lib/mail';
 import sanitizeHtml from 'sanitize-html';
