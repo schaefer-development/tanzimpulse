@@ -1,7 +1,4 @@
 import type { Load } from '@sveltejs/kit';
-import { error } from '@sveltejs/kit';
-import { graphQLError } from '$lib/helpers';
-import { addTransientSelected } from '$lib/helpers';
 
 export const loadIndex: Load<
 	Record<string, unknown>,

@@ -116,20 +116,6 @@
 						</svg>
 					</a>
 				</div>
-
-				<p class="pb-2">Seit 20 Jahren Mitglied:</p>
-				<picture>
-					<source
-						srcset={certificate.replace('.jpg', '.webp')}
-						type="webp"
-						class="h-24 w-auto object-cover object-center"
-					/>
-					<img
-						src={certificate}
-						class="h-24 w-auto object-cover object-top"
-						alt="TANZIMPULSE sind seit 20 Jahren Mitglied"
-					/>
-				</picture>
 			</div>
 		</div>
 	</div>
