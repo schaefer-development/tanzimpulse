@@ -1,7 +1,9 @@
 <script lang="ts">
-	export let query;
-	const onInput = (e) => {
-		query = e.target.value;
+	export let query: string | null;
+	const onInput = (e: Event) => {
+    if (e.target instanceof HTMLInputElement) {
+      query = e.target.value;
+    }
 	};
 </script>
 

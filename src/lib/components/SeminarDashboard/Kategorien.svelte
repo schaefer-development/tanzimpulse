@@ -16,11 +16,7 @@
 			<hr class="border-ti_red_mat-dark focus:text-ti_red_mat-dark my-4 block w-full border" />
 		{/each}
 		<noscript>
-			<Button
-				buttonstyle={'white'}
-				type="submit"
-				class="rounded-md px-3 py-4 text-white focus:outline-none">Seminare filtern</Button
-			>
+			<Button buttonstyle='white'>Seminare filtern</Button>
 		</noscript>
 	</form>
 {/if}

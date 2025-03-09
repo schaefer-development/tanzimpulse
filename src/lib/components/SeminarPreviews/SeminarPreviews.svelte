@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Button from '$lib/components/Button/Button.svelte';
-	import { overbooked, dateFormat } from '$lib/helpers.ts';
+	import { overbooked, dateFormat } from '$lib/helpers';
 	import { base } from '$app/paths';
-	export let seminare = [];
+	export let seminare: Seminar[] = [];
 	export let color = 'white';
 </script>
 
