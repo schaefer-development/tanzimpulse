@@ -7,9 +7,8 @@
 	import ErrorComponent from '$lib/components/Alerts/Error.svelte';
 	import { base } from '$app/paths';
 	export let seminar: Seminar;
-	export let isError: boolean;
-	export let isSuccess: boolean;
-
+	let isError: boolean;
+	let isSuccess: boolean;
 	let isPending = false;
 
 	const submitFunction: SubmitFunction = () => {
