@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class="flex flex-col overflow-hidden border border-neutral-100 bg-white p-4 shadow-lg transition duration-300 ease-in-out md:p-6 lg:p-8"
+	class="flex flex-col overflow-hidden border border-neutral-200 bg-white p-4 shadow-lg transition duration-300 ease-in-out md:p-6 lg:p-8"
 >
 	<form {action} method="post" use:enhance={submitFunction}>
 		<h2 class="ti_headline_blue_bold mb-4">Anmeldeformular</h2>

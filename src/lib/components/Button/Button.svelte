@@ -17,7 +17,6 @@
 
 	export let buttonstyle: ButtonColor = 'blue';
 	export let href: string | null = null;
-
 </script>
 
 {#if href}
