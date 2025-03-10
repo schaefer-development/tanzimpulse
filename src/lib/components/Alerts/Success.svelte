@@ -11,7 +11,7 @@
 		</p>
 		<p class="py-2 text-white">
 			Falls Sie wider Erwarten keine Bestätigung erhalten, <a
-				class="hyperlink text-white hover:text-black"
+				class="hover:text-black; cursor-pointer text-xs font-bold tracking-wider text-white uppercase transition-all duration-300 ease-in-out hover:text-black"
 				href="{base}/kontakt">kontaktieren Sie uns</a
 			> bitte direkt.
 		</p>
