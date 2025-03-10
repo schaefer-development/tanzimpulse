@@ -10,8 +10,8 @@
 		<p class="py-2 text-white">
 			Bitte <a
 				class="hover:text-black; cursor-pointer text-xs font-bold tracking-wider text-white uppercase transition-all duration-300 ease-in-out hover:text-black"
-				href="{base}/kontakt">kontaktieren</a
-			> Sie uns direkt.
+				href="{base}/kontakt">kontaktieren Sie uns</a
+			> direkt.
 		</p>
 	</div>
 </div>
