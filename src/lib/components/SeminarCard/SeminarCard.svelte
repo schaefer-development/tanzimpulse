@@ -1,56 +1,78 @@
 <script lang="ts">
-  import { overbooked, dateFormat } from '$lib/helpers';
-  import Button from '$lib/components/Button/Button.svelte';
-  import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
+	import { overbooked, dateFormat } from '$lib/helpers';
+	import Button from '$lib/components/Button/Button.svelte';
+	import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
 
-  export let seminar: Seminar;
-  export let link = '#';
+	export let seminar: Seminar;
+	export let link = '#';
 </script>
 
 <div class="flex items-start">
-  <div class="flex w-full flex-col items-start bg-white shadow-ti">
-    <div class="seminar_card_img w-full flex-0">
-      {#if seminar.bild}
-        <img class="h-32 sm:h-40 md:h-48 lg:h-60 w-full object-cover object-center" src={seminar.bild.medium} alt={seminar.bild.fileName || 'Fehlendes Bild'} />
-      {/if}
-    </div>
+	<div class="flex w-full flex-col items-start border-neutral-200 bg-white shadow-lg">
+		<div class="seminar_card_img w-full flex-0">
+			{#if seminar.bild}
+				<img
+					class="h-32 w-full object-cover object-center sm:h-40 md:h-48 lg:h-60"
+					src={seminar.bild.medium}
+					alt={seminar.bild.fileName || 'Fehlendes Bild'}
+				/>
+			{/if}
+		</div>
 
-    <div class="seminar_card_content w-full flex-1 px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-6 md:py-8 lg:py-10">
-      <h4 class="uppercase tracking-widest text-xs title-font text-gray-600 pb-1">{seminar.format}</h4>
-      <h1 class="ti_headline_blue_bold">{seminar.titel}</h1>
-      <p class="ti_headline_blue_light">{dateFormat.format(new Date(seminar.datum))} Uhr</p>
+		<div class="seminar_card_content w-full flex-1 p-4 sm:p-4 md:p-5 xl:p-8">
+			<h4 class="title-font pb-1 text-xs tracking-widest text-gray-600 uppercase">
+				{seminar.format}
+			</h4>
+			<h2
+				class="text-ti_blue_accent text-lg font-bold tracking-wide break-words uppercase lg:text-2xl"
+			>
+				{seminar.titel}
+			</h2>
+			<h3 class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
+				{dateFormat.format(new Date(seminar.datum))} Uhr
+			</h3>
 
-      {#if overbooked(seminar)}
-        <p class="font-bold text-lg prose-sm text-gray-600 py-4">Anmeldung zur Warteliste</p>
-      {:else}
-        <p class="text-ti_green_accent font-bold uppercase tracking-wide text-lg prose-sm py-4">Noch Plätze frei</p>
-      {/if}
+			{#if overbooked(seminar)}
+				<span class="block py-2 text-lg font-bold tracking-wide text-gray-600 uppercase"
+					>Anmeldung zur Warteliste</span
+				>
+			{:else}
+				<span class="text-ti_green_accent block py-2 text-lg font-bold tracking-wide uppercase">
+					Noch Plätze frei
+				</span>
+			{/if}
 
-      <div class="___pills py-2">
-        {#each seminar.kategorien as kategorie (kategorie.id)}
-          <span class="text-xs border border-gray-400 text-gray-600 inline-flex px-2 py-1 rounded-full mb-2 mr-2">
-            {kategorie.name}
-          </span>
-        {/each}
-      </div>
-      <slot name="beschreibung">
-        <p class="text-black pt-2 pb-4">
-          {seminar.kurzbeschreibung}
-        </p>
-        <p class="text-black py-2">
-          <span class="uppercase tracking-widest text-xs title-font font-medium text-gray-600">Dozentin/ Dozent</span><br />{seminar.referenten.map((referent) => referent.name).join(', ')}
-        </p>
-        <p class="text-black py-2">
-          <span class="uppercase tracking-widest text-xs title-font font-medium text-gray-600">Kursgebühr</span><br />{seminar.preis} Euro
-        </p>
-        <VeranstaltungsOrt veranstaltungsort={seminar.veranstaltungsort} />
-      </slot>
+			<div class="___pills py-2">
+				{#each seminar.kategorien as kategorie (kategorie.id)}
+					<span
+						class="mr-2 mb-2 inline-flex rounded-full border border-gray-400 px-2 py-1 text-xs text-gray-600"
+					>
+						{kategorie.name}
+					</span>
+				{/each}
+			</div>
+			<slot name="beschreibung">
+				<p class="pt-2 pb-4 text-black">
+					{seminar.kurzbeschreibung}
+				</p>
+				<p class="py-2 text-black">
+					<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase"
+						>Dozentin/ Dozent</span
+					><br />{seminar.referenten.map((referent) => referent.name).join(', ')}
+				</p>
+				<p class="py-2 text-black">
+					<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase"
+						>Kursgebühr</span
+					><br />{seminar.preis} Euro
+				</p>
+				<VeranstaltungsOrt veranstaltungsort={seminar.veranstaltungsort} />
+			</slot>
 
-      <div class="seminar_card_content flex-0">
-        {#if link && link !== '#'}
-          <Button href={link} buttonstyle={'blue'}>Mehr erfahren</Button>
-        {/if}
-      </div>
-    </div>
-  </div>
+			<div class="seminar_card_content flex-0">
+				{#if link && link !== '#'}
+					<Button href={link} buttonstyle={'blue'}>Mehr erfahren</Button>
+				{/if}
+			</div>
+		</div>
+	</div>
 </div>

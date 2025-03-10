@@ -1,69 +1,89 @@
 /// <reference types="@sveltejs/kit" />
 interface Identifiable {
-  id: string;
+	id: ID;
 }
 
-type Location = {
-  longitude: number;
-  latitude: number;
+type ButtonColor =
+	| 'blue'
+	| 'cyan'
+	| 'green'
+	| '_blue'
+	| '_cyan'
+	| '_green'
+	| 'red'
+	| 'white'
+	| 'gray';
+
+type Koordinaten = {
+	longitude: number;
+	latitude: number;
 };
 
 type Veranstaltungsort = {
-  adresse: string;
-  koordinaten: Location;
+	adresse: string;
+	koordinaten: Koordinaten;
+};
+
+type Neuigkeit = {
+	id: ID;
+	ueberschrift: string;
+	inhalt: {
+		html: string;
+	};
 };
 
 type Teilnehmer = {
-  id: string;
-  email: string;
-  vorname: string;
-  nachname: string;
-  strasse: string;
-  telefon: string;
-  hausnummer: string;
-  plz: string;
-  ort: string;
-  anmerkung: string;
-  seminare: Seminar[];
+	id: ID;
+	email: string;
+	vorname: string;
+	nachname: string;
+	strasse: string;
+	telefon: string;
+	hausnummer: string;
+	plz: string;
+	ort: string;
+	anmerkung: string;
+	seminare: Seminar[];
 };
 
 type Bild = {
-  fileName: string;
-  medium: string;
+	fileName: string;
+	medium: string;
 };
 
 type Referent = {
-  name: string;
+	name: string;
 };
 
 type Dokument = {
-  fileName: string;
-  url: string;
+	id: ID;
+	fileName: string;
+	url: string;
 };
 
 type Seminar = {
-  id: string;
-  titel: string;
-  datum: Date;
-  kurzbeschreibung: string;
-  beschreibung: {
-    html: string;
-  };
-  dokumente: Dokument[];
-  preis: number;
-  maximaleAnzahlTeilnehmer?: number;
-  teilnehmer: Teilnehmer[];
-  kategorien: Kategorie[];
-  veranstaltungsort: Veranstaltungsort;
-  format: string;
-  referenten: Referent[];
-  bild?: Bild;
-  url: string;
-  linktovhs: string;
+	id: ID;
+	titel: string;
+	datum: Date;
+	kurzbeschreibung: string;
+	beschreibung: {
+		html: string;
+	};
+	dokumente: Dokument[];
+	preis: number;
+	maximaleAnzahlTeilnehmer?: number;
+	teilnehmer: Teilnehmer[];
+	kategorien: Kategorie[];
+	veranstaltungsort: Veranstaltungsort;
+	format: string;
+	referenten: Referent[];
+	bild?: Bild;
+	url: string;
+	linktovhs: string;
 };
 
 type Kategorie = {
-  id: string;
-  name: string;
-  selected?: boolean;
+	id: ID;
+	name: string;
+	selected?: boolean;
 };

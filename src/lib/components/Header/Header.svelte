@@ -1,65 +1,244 @@
 <script lang="ts">
-  import { base } from '$app/paths';
+	import { base } from '$app/paths';
 
-  let open = false;
-  const toggleMenu = () => {
-    open = !open;
-  };
+	let open = false;
+	const toggleMenu = () => {
+		open = !open;
+	};
 </script>
 
-<header style="z-index:9999;" class="sticky top-0 z-50 bg-ti_blue_mat shadow-ti_hover">
-  <nav class="container flex items-center justify-end flex-wrap px-6 py-4 mx-auto w-full">
-    <div class="block self-align-end">
-      <button on:click={toggleMenu} class="flex items-center px-2 py-2 focus:border-0 text-white tracking-wider hover:text-ti_blue_accent focus:ring-0 focus:outline-none focus:text-ti_blue_accent ">
-        <span class="uppercase font-bold px-2 ">Menu</span>
-        <svg class="fill-current h-6 w-6 text-ti_blue_accent" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
-      </button>
-    </div>
-  </nav>
+<header style="z-index:9999;" class="bg-ti_blue_mat sticky top-0 z-50 shadow-xl">
+	<nav class="container mx-auto flex w-full flex-wrap items-center justify-end px-6 py-4">
+		<div class="self-align-end block">
+			<button
+				on:click={toggleMenu}
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent flex cursor-pointer items-center px-2 py-2 tracking-wider text-white focus:border-0 focus:ring-0 focus:outline-none"
+			>
+				<span class="px-2 font-bold uppercase">Menu</span>
+				<svg
+					class="text-ti_blue_accent h-6 w-6 fill-current"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+					><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg
+				>
+			</button>
+		</div>
+	</nav>
 </header>
 
-<aside id="drawer" style="opacity:1; z-index:999999;" on:click={toggleMenu} class="{open ? 'translate-x-0' : 'translate-x-full'} transform bg-ti_blue_mat-dark top-0 left-0 w-full fixed h-full overflow-auto ease-in-out transition-all duration-300">
-  <div class="container flex flex-col flex-wrap px-6 py-4 mx-auto w-full menu_points">
-    <div class="flex justify-end w-full block">
-      <button class="flex items-center px-2 py-2 focus:border-0 text-white uppercase font-bold tracking-wider hover:text-ti_blue_accent focus:ring-0 focus:outline-none focus:text-ti_blue_accent ">
-        <span class="uppercase font-bold px-2">Schliessen</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current h-6 w-6 text-ti_blue_accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
+<aside
+	id="drawer"
+	style="opacity:1; z-index:999999;"
+	class="{open
+		? 'open translate-x-0'
+		: 'translate-x-full'} bg-ti_blue_mat-dark fixed top-0 left-0 h-full w-full transform overflow-auto transition-all duration-300 ease-in-out"
+>
+	<div class="menu_points container mx-auto flex w-full flex-col flex-wrap px-6 py-4">
+		<div class="block flex w-full justify-end">
+			<button
+				on:click={toggleMenu}
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent flex cursor-pointer items-center px-2 py-2 font-bold tracking-wider text-white uppercase focus:border-0 focus:ring-0 focus:outline-none"
+			>
+				<span class="px-2 font-bold uppercase">Schliessen</span>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="text-ti_blue_accent h-6 w-6 fill-current"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M6 18L18 6M6 6l12 12"
+					/>
+				</svg>
+			</button>
+		</div>
 
-    <div class="animated flex flex-col">
-      <hr class="border-black my-4" />
-      <a sveltekit:prefetch href="{base}/" class="text-white hover:text-ti_blue_accent py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Start</a>
-      <hr class="border-black my-4" />
-      <h3 class="text-xs text-white uppercase tracking-widest pb-2">Tanzpädagogik</h3>
-      <a sveltekit:prefetch href="{base}/ausbildungen" class="text-white hover:text-ti_blue_accent py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Ausbildungen</a>
-      <a sveltekit:prefetch href="{base}/workshops" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Workshops</a>
-      <hr class="border-black my-4" />
-      <h3 class="text-xs text-white uppercase tracking-widest pb-2">Eindrücke</h3>
-      <a href="{base}/fotogalerie" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Fotos</a>
-      <a href="{base}/videos" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Videos</a>
-      <hr class="border-black my-4" />
-      <h3 class="text-xs text-white uppercase tracking-widest pb-2">Tanzimpulse</h3>
-      <a href="{base}/kontakt" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Kontakt</a>
-      <a href="{base}/team" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Team</a>
-      <a href="{base}/mitgliedschaften" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Mitgliedschaften</a>
-      <a href="{base}/philosophie" class="text-white hover:text-ti_blue_accent  py-1 md:py-0 text-base md:text-xl lg:text-2xl focus:ring-0 focus:outline-none focus:text-ti_blue_accent md:py-0">Philosophie</a>
-      <hr class="border-black my-4" />
-      <div class="___social_media_icons pt-2 flex flex-wrap flex-row justify-start">
-        <a rel="noreferrer" aria-label="Facebook" target="_blank" href="https://www.facebook.com/Tanzimpulse/" class="text-white mr-4 hover:text-ti_blue_accent ease-in-out transition-all duration-300">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-          </svg>
-        </a>
-        <a rel="noreferrer" aria-label="Instagram" target="_blank" href="https://www.instagram.com/tanzimpulse_koeln/" class="ml-4 text-white hover:text-ti_blue_accent ease-in-out transition-all duration-300">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
+		<div class="animated flex flex-col">
+			<hr class="my-4 border-blue-900" />
+			<a
+				on:click={toggleMenu}
+				href="{base}/"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Start</a
+			>
+			<hr class="my-4 border-blue-900" />
+			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Tanzpädagogik</h3>
+			<a
+				on:click={toggleMenu}
+				href="{base}/ausbildungen"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Ausbildungen</a
+			>
+			<a
+				on:click={toggleMenu}
+				href="{base}/workshops"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Workshops</a
+			>
+			<hr class="my-4 border-blue-900" />
+			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Eindrücke</h3>
+			<a
+				on:click={toggleMenu}
+				href="{base}/fotogalerie"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Fotos</a
+			>
+			<a
+				on:click={toggleMenu}
+				href="{base}/videos"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Videos</a
+			>
+			<hr class="my-4 border-blue-900" />
+			<h3 class="pb-2 text-xs tracking-widest text-white uppercase">Tanzimpulse</h3>
+			<a
+				on:click={toggleMenu}
+				href="{base}/kontakt"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Kontakt</a
+			>
+			<a
+				on:click={toggleMenu}
+				href="{base}/team"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Team</a
+			>
+			<a
+				on:click={toggleMenu}
+				href="{base}/mitgliedschaften"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Mitgliedschaften</a
+			>
+			<a
+				on:click={toggleMenu}
+				href="{base}/philosophie"
+				class="hover:text-ti_blue_accent focus:text-ti_blue_accent w-fit text-white focus:ring-0 focus:outline-none md:text-xl lg:text-2xl"
+				>Philosophie</a
+			>
+			<hr class="my-4 border-blue-900" />
+			<div
+				class="___social_media_icons flex flex-row flex-wrap justify-center gap-4 lg:justify-start"
+			>
+				<a
+					rel="noreferrer"
+					aria-label="Facebook"
+					target="_blank"
+					href="https://www.facebook.com/Tanzimpulse/"
+					class="hover:text-ti_blue_accent mr-4 flex h-12 w-12 items-center justify-center rounded-full border-2 text-white transition-all duration-300 ease-in-out"
+				>
+					<svg
+						fill="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						class="h-5 w-5"
+						viewBox="0 0 24 24"
+					>
+						<path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+					</svg>
+				</a>
+				<a
+					rel="noreferrer"
+					aria-label="Instagram"
+					target="_blank"
+					href="https://www.instagram.com/tanzimpulse_koeln/"
+					class="hover:text-ti_blue_accent mr-4 flex h-12 w-12 items-center justify-center rounded-full border-2 text-white transition-all duration-300 ease-in-out"
+				>
+					<svg
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						class="h-5 w-5"
+						viewBox="0 0 24 24"
+					>
+						<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+						<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
 </aside>
+
+<style>
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	/* Standardmäßig sind die Elemente unsichtbar */
+	.animated > * {
+		opacity: 0;
+	}
+
+	/* Falls das Menü geöffnet ist, Animation starten */
+	.open .animated > * {
+		animation: fadeIn 0.2s ease-in-out forwards;
+	}
+
+	/* Verzögerte Animation für jedes Kind */
+	.open .animated > *:nth-child(1) {
+		animation-delay: 0.24s;
+	}
+	.open .animated > *:nth-child(2) {
+		animation-delay: 0.28s;
+	}
+	.open .animated > *:nth-child(3) {
+		animation-delay: 0.32s;
+	}
+	.open .animated > *:nth-child(4) {
+		animation-delay: 0.36s;
+	}
+	.open .animated > *:nth-child(5) {
+		animation-delay: 0.4s;
+	}
+	.open .animated > *:nth-child(6) {
+		animation-delay: 0.44s;
+	}
+	.open .animated > *:nth-child(7) {
+		animation-delay: 0.48s;
+	}
+	.open .animated > *:nth-child(8) {
+		animation-delay: 0.52s;
+	}
+	.open .animated > *:nth-child(9) {
+		animation-delay: 0.56s;
+	}
+	.open .animated > *:nth-child(10) {
+		animation-delay: 0.6s;
+	}
+	.open .animated > *:nth-child(11) {
+		animation-delay: 0.64s;
+	}
+	.open .animated > *:nth-child(12) {
+		animation-delay: 0.68s;
+	}
+	.open .animated > *:nth-child(13) {
+		animation-delay: 0.72s;
+	}
+	.open .animated > *:nth-child(14) {
+		animation-delay: 0.76s;
+	}
+	.open .animated > *:nth-child(15) {
+		animation-delay: 0.8s;
+	}
+	.open .animated > *:nth-child(16) {
+		animation-delay: 0.84s;
+	}
+	.open .animated > *:nth-child(17) {
+		animation-delay: 0.88s;
+	}
+	.open .animated > *:nth-child(18) {
+		animation-delay: 0.92s;
+	}
+</style>

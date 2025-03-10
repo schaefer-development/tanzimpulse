@@ -35,9 +35,10 @@ Dienstag: 18:00 - 20:00 Uhr
 </p>
 `;
 
-const text = (teilnehmer: Teilnehmer, seminar: Seminar) => html(teilnehmer, seminar).replace(/(<([^>]+)>)/gi, '');
+const text = (teilnehmer: Teilnehmer, seminar: Seminar) =>
+	html(teilnehmer, seminar).replace(/(<([^>]+)>)/gi, '');
 
 export default {
-  html,
-  text
+	html,
+	text
 };

@@ -37,9 +37,10 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   </p>
 `;
 
-const text = (teilnehmer: Teilnehmer, seminar: Seminar) => html(teilnehmer, seminar).replace(/(<([^>]+)>)/gi, '');
+const text = (teilnehmer: Teilnehmer, seminar: Seminar) =>
+	html(teilnehmer, seminar).replace(/(<([^>]+)>)/gi, '');
 
 export default {
-  html,
-  text
+	html,
+	text
 };
