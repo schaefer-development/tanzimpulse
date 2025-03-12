@@ -29,7 +29,7 @@
 		},
 		organizer: {
 			'@type': 'Organization',
-			name: seminar.referenten
+			name: seminar.referenten.map(referent => referent.name).join(", ")
 		}
 	};
 </script>
