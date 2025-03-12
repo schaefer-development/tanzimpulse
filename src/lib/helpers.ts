@@ -21,3 +21,8 @@ export function addTransientSelected(selectedIds?: string[]) {
 export const gql = String.raw;
 
 export const graphQLError = { message: 'GraphQL Fehler' };
+
+export function getDataGiveString(incomingData: Record<string, unknown>) {
+	const interpolierte_daten = `<script type="application/ld+json">${JSON.stringify(incomingData)}</script>`;
+	return interpolierte_daten;
+}

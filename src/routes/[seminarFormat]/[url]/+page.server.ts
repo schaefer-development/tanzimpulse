@@ -5,7 +5,7 @@ import { api } from '$lib/graphql/api';
 import { SEMINAR } from '$lib/graphql/queries';
 import { dev } from '$app/environment';
 import { overbooked } from '$lib/helpers';
-import * as SMTPTransport from "nodemailer/lib/smtp-transport";
+import * as SMTPTransport from 'nodemailer/lib/smtp-transport';
 import nodemailer from 'nodemailer';
 import { waitingListMessage, registrationMessage } from '$lib/mail';
 import sanitizeHtml from 'sanitize-html';
@@ -36,7 +36,7 @@ const transportOptions: SMTPTransport.Options = {
 	tls: {
 		rejectUnauthorized: !dev
 	}
-}
+};
 const transporter = nodemailer.createTransport(transportOptions);
 
 const sendConfirmation = async (teilnehmer: Teilnehmer) => {
