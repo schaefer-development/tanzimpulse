@@ -10,26 +10,29 @@
 		'@type': 'Event',
 		name: seminar.titel,
 		startDate: seminar.datum,
-		endDate: '2025-07-21T23:00-05:00',
 		eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
 		eventStatus: 'https://schema.org/EventScheduled',
 		location: {
 			'@type': 'Place',
-			name: seminar.veranstaltungsort.adresse
+			name: seminar.veranstaltungsort.adresse,
+			address: {
+				'@type': 'PostalAddress',
+				streetAddress: seminar.veranstaltungsort.adresse,
+				addressCountry: 'DE'
+			}
 		},
-		image: [seminar.bild?.filename],
+		image: seminar.bild?.medium,
 		description: seminar.kurzbeschreibung,
 		offers: {
 			'@type': 'Offer',
 			url: 'https://tanzimpulse.de/' + seminar.format + '/' + seminar.url,
 			price: seminar.preis,
 			priceCurrency: 'EUR',
-			availability: 'https://schema.org/InStock',
-			validFrom: '2024-05-21T12:00'
+			availability: 'https://schema.org/InStock'
 		},
 		organizer: {
 			'@type': 'Organization',
-			name: seminar.referenten.map(referent => referent.name).join(", ")
+			name: seminar.referenten.map((referent) => referent.name).join(', ')
 		}
 	};
 </script>
@@ -37,7 +40,7 @@
 <svelte:head>
 	<title>{seminar.titel}</title>
 
-	{@html getDataGiveString(seminardata)};
+	{@html getDataGiveString(seminardata)}
 </svelte:head>
 
 <SeminarAnmeldung {seminar} />
