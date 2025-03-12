@@ -16,9 +16,7 @@ import { verify } from 'hcaptcha';
 export const load: PageServerLoad = async ({ params }) => {
 	const { url } = params;
 	const body = await api(SEMINAR, { url });
-	const {
-		data: { seminar }
-	} = body;
+	const seminar: Seminar = body.data.seminar;
 	if (!seminar) {
 		error(404, 'Seminar nicht gefunden');
 	}

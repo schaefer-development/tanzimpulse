@@ -2,8 +2,6 @@
 	import type { PageProps } from './$types';
 	import SeminarAnmeldung from '$lib/components/SeminarAnmeldung/SeminarAnmeldung.svelte';
 	import { getDataGiveString } from '$lib/helpers';
-	import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
-	import { build, BuildEnvironment } from 'vite';
 	let { data }: PageProps = $props();
 	const { seminar } = data;
 
