@@ -75,7 +75,7 @@ type Seminar = {
 	teilnehmer: Teilnehmer[];
 	kategorien: Kategorie[];
 	veranstaltungsort: Veranstaltungsort;
-	format: string;
+	format: 'ausbildung' | 'workshop';
 	referenten: Referent[];
 	bild?: Bild;
 	url: string;

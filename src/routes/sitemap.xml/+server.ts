@@ -1,79 +1,45 @@
-import { json } from '@sveltejs/kit';
-import { HYGRAPH_ENDPOINT } from '$lib/config';
+import { SITEMAP } from '$lib/graphql/queries';
+import { api } from '$lib/graphql/api';
+import type { RequestHandler } from './$types';
 
-const SITE_URL = 'https://tanzimpulse.de'; // Live-Domain
-
-// GraphQL-Query für die dynamischen Inhalte aus Hygraph
-const QUERY = `
-    query {
-        ausbildungen {
-            slug
-            updatedAt
-        }
-        workshops {
-            slug
-            updatedAt
-        }
-    }
-`;
-
-export async function GET() {
+export const GET: RequestHandler = async ({ url }) => {
 	// Statische Seiten aus den Routen automatisch ermitteln
 	const pages = import.meta.glob('/src/routes/**/+page.svelte', { eager: true });
 	const staticPages = Object.keys(pages)
 		.map((file) => file.replace('/src/routes', '').replace('/+page.svelte', ''))
 		.filter((path) => !path.includes('[')); // Dynamische Routen ausschließen
 
-	// Dynamische Inhalte von Hygraph abrufen
-	let ausbildungen: { slug: string; updatedAt: string }[] = [];
-	let workshops: { slug: string; updatedAt: string }[] = [];
+	let seminare: Seminar[] = [];
 
-	try {
-		const response = await fetch(HYGRAPH_ENDPOINT, {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({ query: QUERY })
-		});
+	const today = new Date().toISOString();
+	const body = await api(SITEMAP, { today });
+	seminare = body.data.seminare;
 
-		const { data } = await response.json();
-		ausbildungen = data.ausbildungen || [];
-		workshops = data.workshops || [];
-	} catch (error) {
-		console.error('Fehler beim Abrufen der dynamischen Inhalte:', error);
-	}
+	const pluralization = {
+		ausbildung: 'ausbildungen',
+		workshop: 'workshops'
+	};
 
-	// XML Sitemap generieren
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${staticPages
 			.map(
 				(page) => `
         <url>
-            <loc>${SITE_URL}${page}</loc>
+            <loc>${new URL(page, url)}</loc>
             <priority>0.8</priority>
             <changefreq>weekly</changefreq>
         </url>`
 			)
 			.join('')}
-    ${ausbildungen
+    ${seminare
 			.map(
-				({ slug, updatedAt }) => `
+				(seminar) => `
         <url>
-            <loc>${SITE_URL}/ausbildungen/${slug}</loc>
+            <loc>${new URL(`/${pluralization[seminar.format]}/${seminar.url}`, url)}</loc>
             <priority>0.7</priority>
             <changefreq>weekly</changefreq>
-            <lastmod>${updatedAt}</lastmod>
-        </url>`
-			)
-			.join('')}
-    ${workshops
-			.map(
-				({ slug, updatedAt }) => `
-        <url>
-            <loc>${SITE_URL}/workshops/${slug}</loc>
-            <priority>0.7</priority>
-            <changefreq>weekly</changefreq>
-            <lastmod>${updatedAt}</lastmod>
+            <lastmod>${seminar.datum}</lastmod>
         </url>`
 			)
 			.join('')}
@@ -84,4 +50,4 @@ export async function GET() {
 			'Content-Type': 'application/xml'
 		}
 	});
-}
+};
