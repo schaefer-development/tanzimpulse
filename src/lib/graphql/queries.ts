@@ -72,6 +72,16 @@ export const SEMINARE = gql`
 	}
 `;
 
+export const SITEMAP = gql`
+	${seminarFragment}
+
+	query ($today: DateTime!) {
+		seminare(orderBy: datum_ASC, where: { datum_gte: $today }) {
+			...seminarFragment
+		}
+	}
+`;
+
 export const NEUIGKEITEN = gql`
 	{
 		neuigkeiten {

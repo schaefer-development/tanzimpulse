@@ -5,6 +5,7 @@ import { api } from '$lib/graphql/api';
 import { SEMINAR } from '$lib/graphql/queries';
 import { dev } from '$app/environment';
 import { overbooked } from '$lib/helpers';
+import * as SMTPTransport from 'nodemailer/lib/smtp-transport';
 import nodemailer from 'nodemailer';
 import { waitingListMessage, registrationMessage } from '$lib/mail';
 import sanitizeHtml from 'sanitize-html';
@@ -15,9 +16,7 @@ import { verify } from 'hcaptcha';
 export const load: PageServerLoad = async ({ params }) => {
 	const { url } = params;
 	const body = await api(SEMINAR, { url });
-	const {
-		data: { seminar }
-	} = body;
+	const seminar: Seminar = body.data.seminar;
 	if (!seminar) {
 		error(404, 'Seminar nicht gefunden');
 	}
@@ -25,9 +24,9 @@ export const load: PageServerLoad = async ({ params }) => {
 	return { seminar };
 };
 
-const transporter = nodemailer.createTransport({
+const transportOptions: SMTPTransport.Options = {
 	host: SMTP_HOST,
-	port: SMTP_PORT,
+	port: parseInt(SMTP_PORT),
 	auth: {
 		user: SMTP_USERNAME,
 		pass: SMTP_PASSWORD
@@ -35,7 +34,8 @@ const transporter = nodemailer.createTransport({
 	tls: {
 		rejectUnauthorized: !dev
 	}
-});
+};
+const transporter = nodemailer.createTransport(transportOptions);
 
 const sendConfirmation = async (teilnehmer: Teilnehmer) => {
 	const {
