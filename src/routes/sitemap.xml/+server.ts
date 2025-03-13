@@ -39,7 +39,6 @@ export const GET: RequestHandler = async ({ url }) => {
             <loc>${new URL(`/${pluralization[seminar.format]}/${seminar.url}`, url)}</loc>
             <priority>0.7</priority>
             <changefreq>weekly</changefreq>
-            <lastmod>${seminar.datum}</lastmod>
         </url>`
 			)
 			.join('')}
