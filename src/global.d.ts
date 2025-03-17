@@ -65,6 +65,7 @@ type Seminar = {
 	id: ID;
 	titel: string;
 	datum: Date;
+	endOfEvent: Date;
 	kurzbeschreibung: string;
 	beschreibung: {
 		html: string;

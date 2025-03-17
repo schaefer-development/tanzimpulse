@@ -28,8 +28,17 @@
 			>
 				{seminar.titel}
 			</h2>
+			<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase"
+						>Start</span
+					>
 			<h3 class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
 				{dateFormat.format(new Date(seminar.datum))} Uhr
+			</h3>
+			<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase"
+			>Ende</span
+		>
+			<h3 class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
+				{dateFormat.format(new Date(seminar.endOfEvent))} Uhr
 			</h3>
 
 			{#if overbooked(seminar)}
