@@ -32,7 +32,11 @@
 						>Start</span
 					>
 			<h3 class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
-				{dateFormat.format(new Date(seminar.datum))} Uhr
+				Start: {dateFormat.format(new Date(seminar.datum))} Uhr
+			</h3>
+
+			<h3 class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
+				Ende: {dateFormat.format(new Date(seminar.endOfEvent))} Uhr
 			</h3>
 			<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase"
 			>Ende</span
