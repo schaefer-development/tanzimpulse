@@ -10,6 +10,7 @@
 		'@type': 'Event',
 		name: seminar.titel,
 		startDate: seminar.datum,
+		endDate: seminar.endOfEvent,
 		eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
 		eventStatus: 'https://schema.org/EventScheduled',
 		location: {
@@ -36,7 +37,7 @@
 		},
 		organizer: {
 			'@type': 'Organization',
-			name: seminar.referenten.map((referent) => referent.name).join(', '),
+			name: 'TANZIMPULSE – Institut für Tanzpädagogik',
 			url: 'https://tanzimpulse.de/'
 		}
 	};

@@ -6,6 +6,7 @@ export const seminarFragment = gql`
 		url
 		maximaleAnzahlTeilnehmer
 		datum
+		endOfEvent
 		bild {
 			medium: url(transformation: { image: { resize: { width: 480 } } })
 			fileName

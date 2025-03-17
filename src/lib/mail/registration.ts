@@ -3,7 +3,7 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   <p>Hallo ${teilnehmer.vorname} ${teilnehmer.nachname},</p>
   <p>${teilnehmer.telefon}<br>${teilnehmer.strasse} ${teilnehmer.hausnummer}<br>${teilnehmer.plz} ${teilnehmer.ort}</p>
   <p>${teilnehmer.anmerkung}</p>
-  <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" am ${dateFormat.format(new Date(seminar.datum))} Uhr.
+  <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" vom ${dateFormat.format(new Date(seminar.datum))} bis ${dateFormat.format(new Date(seminar.endOfEvent))} Uhr.
   <br>Nach dieser Anmeldung ist die Kursgebühr innerhalb von 14 Tagen zu entrichten.<br>
   Überweisen Sie den Betrag von ${seminar.preis} Euro auf folgendes Konto:</p>
   <p>IBAN: DE93 3707 0024 04637823 00

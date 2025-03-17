@@ -4,7 +4,7 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
 <p>Hallo ${teilnehmer.vorname} ${teilnehmer.nachname},</p>
 <p>${teilnehmer.telefon}<br>${teilnehmer.strasse} ${teilnehmer.hausnummer}<br>${teilnehmer.plz} ${teilnehmer.ort}</p>
 <p>${teilnehmer.anmerkung}</p>
-<p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" am ${dateFormat.format(new Date(seminar.datum))}.<br>
+<p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" vom ${dateFormat.format(new Date(seminar.datum))} bis ${dateFormat.format(new Date(seminar.endOfEvent))} Uhr.<br>
 Wir haben Sie auf die Warteliste gesetzt und werden Sie kontaktieren, wenn kurzfristig noch ein Platz frei werden sollte.
 </p>
 <p>Mit freundlichen Grüßen</p>
