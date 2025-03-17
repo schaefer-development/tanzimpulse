@@ -30,9 +30,14 @@
 			priceCurrency: 'EUR',
 			availability: 'https://schema.org/InStock'
 		},
+		performer: {
+			'@type': 'PerformingGroup',
+			name: seminar.referenten.map((referent) => referent.name).join(', ')
+		},
 		organizer: {
 			'@type': 'Organization',
-			name: seminar.referenten.map((referent) => referent.name).join(', ')
+			name: seminar.referenten.map((referent) => referent.name).join(', '),
+			url: 'https://tanzimpulse.de/'
 		}
 	};
 </script>
