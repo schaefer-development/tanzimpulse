@@ -138,7 +138,7 @@
 						name="datenverarbeitung"
 						required
 					/>
-					<p>
+					<span>
 						Ich habe die <a class="hyperlink" href="{base}/content/AGB.pdf" target="_blank">AGBs</a
 						>, die
 						<a class="hyperlink" href="{base}/content/Widerrufsbelehrung.pdf" target="_blank"
@@ -146,7 +146,7 @@
 						>
 						sowie die Maßnahmen zum
 						<a class="hyperlink" href="{base}/datenschutz">Datenschutz</a> gelesen und akzeptiert
-					</p>
+					</span>
 				</label>
 				<label class="flex items-center">
 					<input
