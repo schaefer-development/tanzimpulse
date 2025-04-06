@@ -2,6 +2,8 @@ import { SITEMAP } from '$lib/graphql/queries';
 import { api } from '$lib/graphql/api';
 import type { RequestHandler } from './$types';
 
+const now = new Date().toISOString();
+
 export const GET: RequestHandler = async ({ url }) => {
 	// Statische Seiten aus den Routen automatisch ermitteln
 	const pages = import.meta.glob('/src/routes/**/+page.svelte', { eager: true });
@@ -27,8 +29,9 @@ export const GET: RequestHandler = async ({ url }) => {
 				(page) => `
         <url>
             <loc>${new URL(page, url)}</loc>
-            <priority>0.8</priority>
+            <priority>0.6</priority>
             <changefreq>weekly</changefreq>
+			<lastmod>${now}</lastmod>
         </url>`
 			)
 			.join('')}
@@ -37,8 +40,9 @@ export const GET: RequestHandler = async ({ url }) => {
 				(seminar) => `
         <url>
             <loc>${new URL(`/${pluralization[seminar.format]}/${seminar.url}`, url)}</loc>
-            <priority>0.7</priority>
-            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+            <changefreq>daily</changefreq>
+			<lastmod>${now}</lastmod>
         </url>`
 			)
 			.join('')}
