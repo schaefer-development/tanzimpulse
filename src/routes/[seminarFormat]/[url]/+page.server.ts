@@ -1,6 +1,6 @@
 import type { Actions } from './$types';
 import type { PageServerLoad } from './$types';
-import { error, fail } from '@sveltejs/kit';
+import { error, fail, redirect } from '@sveltejs/kit';
 import { api } from '$lib/graphql/api';
 import { SEMINAR } from '$lib/graphql/queries';
 import { dev } from '$app/environment';
@@ -12,21 +12,24 @@ import sanitizeHtml from 'sanitize-html';
 import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, HCAPTCHA_SECRET } from '$lib/env';
 import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '$lib/graphql/mutations';
 import { verify } from 'hcaptcha';
-import { redirect } from '@sveltejs/kit';
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, url: requestUrl }) => {
 	const { url } = params;
 	const body = await api(SEMINAR, { url });
 	const seminar: Seminar = body.data.seminar;
+
 	if (!seminar) {
-		if (url.startsWith('workshops/')) {
+		const path = requestUrl.pathname;
+
+		if (path.startsWith('/workshops')) {
 			throw redirect(301, '/workshops');
 		}
-		if (url.startsWith('ausbildungen/')) {
+		if (path.startsWith('/ausbildungen')) {
 			throw redirect(301, '/ausbildungen');
 		}
 		throw redirect(301, '/');
 	}
+
 	return { seminar };
 };
 
@@ -60,6 +63,7 @@ const sanitizeString = (str: FormDataEntryValue | null) => {
 	if (!str || str instanceof File) return '';
 	return sanitizeHtml(str, sanitizeOptions);
 };
+
 type SanitizedFormValues = {
 	email: string;
 	vorname: string;
@@ -73,6 +77,7 @@ type SanitizedFormValues = {
 	datenverarbeitung: boolean;
 	newsletter: boolean;
 };
+
 const sanitizeFormValues: (data: FormData) => SanitizedFormValues = (data) => ({
 	email: sanitizeString(data.get('email')),
 	vorname: sanitizeString(data.get('vorname')),
@@ -94,8 +99,10 @@ export const actions = {
 		const data = await event.request.formData();
 		const hcaptchaResponse = data.get('h-captcha-response') || '';
 		if (hcaptchaResponse instanceof File) return fail(400, { hcaptchaResponse, incorrect: true });
+
 		const verificationData = await verify(HCAPTCHA_SECRET, hcaptchaResponse);
 		if (!verificationData.success) return fail(400, { hcaptchaResponse, incorrect: true });
+
 		const variables = sanitizeFormValues(data);
 
 		const upsertResponse = await api(UPSERT_TEILNEHMER, { ...variables, url });
