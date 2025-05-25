@@ -12,15 +12,21 @@ import sanitizeHtml from 'sanitize-html';
 import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, HCAPTCHA_SECRET } from '$lib/env';
 import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '$lib/graphql/mutations';
 import { verify } from 'hcaptcha';
+import { redirect } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { url } = params;
 	const body = await api(SEMINAR, { url });
 	const seminar: Seminar = body.data.seminar;
 	if (!seminar) {
-		error(404, 'Seminar nicht gefunden');
+		if (url.startsWith('workshops/')) {
+			throw redirect(301, '/workshops');
+		}
+		if (url.startsWith('ausbildungen/')) {
+			throw redirect(301, '/ausbildungen');
+		}
+		throw redirect(301, '/');
 	}
-
 	return { seminar };
 };
 
