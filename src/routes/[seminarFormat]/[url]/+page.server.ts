@@ -21,10 +21,10 @@ export const load: PageServerLoad = async ({ params, url: requestUrl }) => {
 	if (!seminar) {
 		const path = requestUrl.pathname;
 
-		if (path.startsWith('/workshops')) {
+		if (path.startsWith('/workshop')) {
 			throw redirect(301, '/workshops');
 		}
-		if (path.startsWith('/ausbildungen')) {
+		if (path.startsWith('/ausbildung')) {
 			throw redirect(301, '/ausbildungen');
 		}
 		throw redirect(301, '/');
