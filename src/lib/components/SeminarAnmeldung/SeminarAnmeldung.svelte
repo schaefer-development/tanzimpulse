@@ -115,7 +115,14 @@
 			{:else if isSuccess}
 				<Success />
 			{:else if isExpired(seminar)}
-				<p>Dieses Seminar ist bereits abgelaufen. Eine Anmeldung ist nicht mehr möglich.</p>
+				<div class="bg-ti_red_mat p-12 shadow-md">
+					<h2
+						class="pb-4 text-lg font-bold tracking-wide break-words text-white uppercase lg:text-2xl"
+					>
+						Das Seminar hat bereits stattgefunden.
+					</h2>
+					<p class="text-white">Eine Anmeldung ist nicht mehr möglich.</p>
+				</div>
 			{:else}
 				<SeminarForm {action} {submitFunction} />
 			{/if}
