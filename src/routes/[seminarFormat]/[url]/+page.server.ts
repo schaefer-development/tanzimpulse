@@ -1,6 +1,6 @@
 import type { Actions } from './$types';
 import type { PageServerLoad } from './$types';
-import { error, fail, redirect } from '@sveltejs/kit';
+import { error, fail } from '@sveltejs/kit';
 import { api } from '$lib/graphql/api';
 import { SEMINAR } from '$lib/graphql/queries';
 import { dev } from '$app/environment';
@@ -13,21 +13,12 @@ import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, HCAPTCHA_SECRET } f
 import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '$lib/graphql/mutations';
 import { verify } from 'hcaptcha';
 
-export const load: PageServerLoad = async ({ params, url: requestUrl }) => {
+export const load: PageServerLoad = async ({ params }) => {
 	const { url } = params;
 	const body = await api(SEMINAR, { url });
 	const seminar: Seminar = body.data.seminar;
-
 	if (!seminar) {
-		const path = requestUrl.pathname;
-
-		if (path.startsWith('/workshop')) {
-			throw redirect(301, '/workshops');
-		}
-		if (path.startsWith('/ausbildung')) {
-			throw redirect(301, '/ausbildungen');
-		}
-		throw redirect(301, '/');
+		error(404, 'Seminar nicht gefunden');
 	}
 
 	return { seminar };
@@ -63,7 +54,6 @@ const sanitizeString = (str: FormDataEntryValue | null) => {
 	if (!str || str instanceof File) return '';
 	return sanitizeHtml(str, sanitizeOptions);
 };
-
 type SanitizedFormValues = {
 	email: string;
 	vorname: string;
@@ -77,7 +67,6 @@ type SanitizedFormValues = {
 	datenverarbeitung: boolean;
 	newsletter: boolean;
 };
-
 const sanitizeFormValues: (data: FormData) => SanitizedFormValues = (data) => ({
 	email: sanitizeString(data.get('email')),
 	vorname: sanitizeString(data.get('vorname')),
@@ -99,10 +88,8 @@ export const actions = {
 		const data = await event.request.formData();
 		const hcaptchaResponse = data.get('h-captcha-response') || '';
 		if (hcaptchaResponse instanceof File) return fail(400, { hcaptchaResponse, incorrect: true });
-
 		const verificationData = await verify(HCAPTCHA_SECRET, hcaptchaResponse);
 		if (!verificationData.success) return fail(400, { hcaptchaResponse, incorrect: true });
-
 		const variables = sanitizeFormValues(data);
 
 		const upsertResponse = await api(UPSERT_TEILNEHMER, { ...variables, url });

@@ -21,6 +21,10 @@
 		};
 	};
 
+	const isExpired = (seminar: Seminar) => {
+		return new Date(seminar.endOfEvent) < new Date();
+	};
+
 	const action = `${base}/${seminar.format}/${seminar.url}`;
 </script>
 
@@ -110,6 +114,8 @@
 				</div>
 			{:else if isSuccess}
 				<Success />
+			{:else if isExpired(seminar)}
+				<p>Dieses Seminar ist bereits abgelaufen. Eine Anmeldung ist nicht mehr möglich.</p>
 			{:else}
 				<SeminarForm {action} {submitFunction} />
 			{/if}
