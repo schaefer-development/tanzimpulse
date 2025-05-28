@@ -13,15 +13,19 @@
 		endDate: seminar.endOfEvent,
 		eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
 		eventStatus: 'https://schema.org/EventScheduled',
-		location: {
-			'@type': 'Place',
-			name: seminar.veranstaltungsort.adresse,
-			address: {
-				'@type': 'PostalAddress',
-				streetAddress: seminar.veranstaltungsort.adresse,
-				addressCountry: 'DE'
-			}
-		},
+		...(seminar.veranstaltungsort
+			? {
+					location: {
+						'@type': 'Place',
+						name: seminar.veranstaltungsort.adresse,
+						address: {
+							'@type': 'PostalAddress',
+							streetAddress: seminar.veranstaltungsort.adresse,
+							addressCountry: 'DE'
+						}
+					}
+				}
+			: {}),
 		image: seminar.bild?.medium,
 		description: seminar.kurzbeschreibung,
 		offers: {
