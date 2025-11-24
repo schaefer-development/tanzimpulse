@@ -42,7 +42,35 @@
 		<div id="BUBBLES" class="absolute z-0 h-full w-full overflow-hidden opacity-30">
 			<img src="{base}/images/bg.svg" alt="background" />
 		</div>
+
 		<div id="LOGO" class="bg-white pt-14 pb-48">
+			<div class="relative z-10 container mx-auto flex items-center gap-24 px-0 md:px-6">
+				<div class="flex aspect-video w-6/12 flex-col items-center justify-center">
+					<div class="flex grow items-end justify-center">
+						<img class="relative h-auto w-6/12" src="images/logo_ik.jpg" alt="background" />
+					</div>
+					<div class="flex h-20 w-full flex-col items-center justify-center">
+						<span class="text-center font-bold text-purple-900 lg:text-2xl">interKultur Bonn</span>
+						<span class="lg:text-xl">staatlich anerkannte Einrichtung der Weiterbildung</span>
+					</div>
+				</div>
+
+				<div class="flex aspect-video w-6/12 flex-col items-center justify-center">
+					<div class=" text-ti_blue_mat flex aspect-video w-5/12 grow items-center">
+						<Logo></Logo>
+					</div>
+
+					<div class="flex h-20 w-full flex-col items-center justify-center">
+						<span class="text-ti_blue_mat text-center font-bold lg:text-2xl"
+							>Tanzimpulse bei interKultur</span
+						>
+						<span class="lg:text-xl">Institut für Tanzpädagogik</span>
+					</div>
+				</div>
+			</div>
+
+			<!--
+
 			<div
 				class="relative z-10 container mx-auto flex flex-col items-center px-0 md:flex-row md:px-6"
 			>
@@ -67,7 +95,11 @@
 					</a>
 				</div>
 			</div>
+
+
+		-->
 		</div>
+
 		<div id="CONTENT">
 			<div class="relative container mx-auto -mt-32 mb-20 px-2 lg:px-6">
 				{@render children()}
