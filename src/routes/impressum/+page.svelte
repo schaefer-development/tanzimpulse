@@ -14,7 +14,7 @@
 				<h2 class="ti_headline_blue_bold">Impressum</h2>
 
 				<h2 class="ti_headline_blue_light">Tanzimpulse bei Bildungswerk interKultur Bonn</h2>
-				<p class="py-2">Herausgeber: Anete Göbel</p>
+				<p class="py-2">Herausgeber: Aneta Göbel</p>
 				<p class="py-2">
 					Friesdorfer Straße 151<br />
 
