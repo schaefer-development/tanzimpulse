@@ -44,28 +44,40 @@
 		</div>
 
 		<div id="LOGO" class="bg-white pt-14 pb-48">
-			<div class="relative z-10 container mx-auto flex items-center gap-24 px-0 md:px-6">
-				<div class="flex aspect-video w-6/12 flex-col items-center justify-center">
-					<div class="flex grow items-end justify-center">
-						<img class="relative h-auto w-6/12" src="images/logo_ik.jpg" alt="background" />
-					</div>
-					<div class="flex h-20 w-full flex-col items-center justify-center">
+			<div
+				class="relative z-10 container mx-auto flex flex-col items-center gap-x-24 gap-y-10 px-0 md:flex-row md:px-6"
+			>
+				<div class="flex aspect-video w-6/12 flex-col items-center justify-center gap-y-2">
+					<a href="/" class="flex grow items-end justify-center"
+						><img
+							class="relative h-auto w-6/12 max-w-[700px] min-w-[200px]"
+							src="images/logo_ik.jpg"
+							alt="Logo interKultur Bonn"
+						/></a
+					>
+
+					<a href="/" class="flex h-20 w-full flex-col items-center justify-center">
 						<span class="text-center font-bold text-purple-900 lg:text-2xl">interKultur Bonn</span>
-						<span class="lg:text-xl">staatlich anerkannte Einrichtung der Weiterbildung</span>
-					</div>
+						<span class="text-center lg:text-xl"
+							>staatlich anerkannte Einrichtung der Weiterbildung</span
+						>
+					</a>
 				</div>
 
-				<div class="flex aspect-video w-6/12 flex-col items-center justify-center">
-					<div class=" text-ti_blue_mat flex aspect-video w-5/12 grow items-center">
+				<div class="flex aspect-video w-6/12 flex-col items-center justify-center gap-y-2">
+					<a
+						href="/"
+						class=" text-ti_blue_mat flex aspect-video w-5/12 max-w-[700px] min-w-[200px] grow items-center"
+					>
 						<Logo></Logo>
-					</div>
+					</a>
 
-					<div class="flex h-20 w-full flex-col items-center justify-center">
+					<a href="/" class="flex h-20 w-full flex-col items-center justify-center">
 						<span class="text-ti_blue_mat text-center font-bold lg:text-2xl"
 							>Tanzimpulse bei interKultur</span
 						>
-						<span class="lg:text-xl">Institut für Tanzpädagogik</span>
-					</div>
+						<span class="text-center lg:text-xl">Institut für Tanzpädagogik</span>
+					</a>
 				</div>
 			</div>
 

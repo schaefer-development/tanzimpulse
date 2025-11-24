@@ -16,7 +16,11 @@
 			>
 				<div class="flex w-full flex-col items-center gap-x-24 gap-y-10 pb-10 lg:flex-row">
 					<div class="flex w-6/12 justify-center lg:justify-end">
-						<img class="max-h-48 bg-white p-4" src="images/logo_ik.jpg" />
+						<img
+							alt="Logo interKultur Bonn"
+							class="max-h-48 bg-white p-4"
+							src="images/logo_ik.jpg"
+						/>
 					</div>
 
 					<div class="flex w-6/12 justify-center lg:justify-start">
