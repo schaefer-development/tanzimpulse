@@ -5,7 +5,7 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   <p>${teilnehmer.anmerkung}</p>
   <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" vom ${dateFormat.format(new Date(seminar.datum))} bis ${dateFormat.format(new Date(seminar.endOfEvent))} Uhr.
   <br>Nach dieser Anmeldung ist die Kursgebühr innerhalb von 14 Tagen zu entrichten.<br>
-  Überweisen Sie den Betrag von ${seminar.preis} Euro auf folgendes Konto:</p>
+  Überweisen Sie den Betrag von ${seminar.preis} Euro auf folgendes Konto von interKultur:</p>
   <p><strong>IBAN: DE71 3705 0198 1902 2833 06
   <br>BIC: COLSDE33XXX
 
@@ -23,7 +23,7 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   51069 Köln<br>
   Bettina Bierdümpel</p>
   <p>Kontakt<br>
-  Tel:	0163 6836910<br>
+  Tel:	0163 - 68 36 910<br>
   E-Mail: <a href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a><br>
   Web: 	<a href="https://www.tanzimpulse.de" target="_blank">tanzimpulse-koeln.de</a>
   </p>

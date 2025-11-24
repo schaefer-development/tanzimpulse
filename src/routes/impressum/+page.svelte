@@ -21,9 +21,7 @@
 					53175 Bonn
 				</p>
 				<p class="py-2">
-					Telefon: 0228 - 433 14 61
-					<br />
-					Fax: 0228 - 433 14 62
+					Telefon: 0163 - 68 36 910
 					<br />
 					E-Mail:
 					<a class="hyperlink" href="mailto:info@ik-bonn.de">info@ik-bonn.de</a>

@@ -100,7 +100,7 @@
 				<p class="py-2">
 					E-Mail: <a class="hyperlink" href="mailto:info@ik-bonn.de">info@ik-bonn.de</a>
 					<br />
-					oder telefonisch: 0228 - 433 14 61
+					oder telefonisch: 0163 - 68 36 910
 				</p>
 			</DefaultCard>
 		</div>

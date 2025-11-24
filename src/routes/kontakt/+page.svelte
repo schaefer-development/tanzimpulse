@@ -17,17 +17,10 @@
 				</p>
 
 				<p class="pt-2 pb-4">
-					Telefon: +49 (0)221 - 68 36 91
-					<br />
-					Fax: +49 (0)221 - 68 97 797
+					Telefon: 0163 - 68 36 910
 					<br />
 					E-Mail:
 					<a class="hyperlink" href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a>
-				</p>
-				<p class="mb-8">
-					<span class="text-xs font-extrabold tracking-widest uppercase">Bürozeiten</span><br />
-					Montag bis Freitag: 9:00 - 13:00 Uhr<br />
-					Dienstag: 18:00 - 20:00 Uhr
 				</p>
 			</DefaultCard>
 		</div>
