@@ -51,7 +51,7 @@
 					<a href="/" class="flex grow items-end justify-center"
 						><img
 							class="relative h-auto w-6/12 max-w-[700px] min-w-[200px]"
-							src="images/logo_ik.jpg"
+							src="{base}/images/logo_ik.jpg"
 							alt="Logo interKultur Bonn"
 						/></a
 					>

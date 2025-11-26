@@ -6,9 +6,11 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   <p>vielen Dank für Ihr Interesse zum Seminar "${seminar.titel}" vom ${dateFormat.format(new Date(seminar.datum))} bis ${dateFormat.format(new Date(seminar.endOfEvent))} Uhr.
   <br>Nach dieser Anmeldung ist die Kursgebühr innerhalb von 14 Tagen zu entrichten.<br>
   Überweisen Sie den Betrag von ${seminar.preis} Euro auf folgendes Konto von interKultur:</p>
-  <p><strong>IBAN: DE71 3705 0198 1902 2833 06
-  <br>BIC: COLSDE33XXX
-  <br>Sparkasse KölnBonn</strong></p>
+  <p><strong>
+  Sparkasse KölnBonn<br>  
+  IBAN: DE71 3705 0198 1902 2833 06<br>
+BIC: COLSDE33XXX
+</strong></p>
   <p>Für Anmeldungen zur Grund-, Aufbau- und Diplomstufe sind Ratenzahlungen möglich. Hierzu erhalten Sie eine Rechnung.</p>
   <p>Wir freuen uns auf Ihre Teilnahme und verbleiben mit freundlichen Grüßen</p>
   <p>Ihr Tanzimpulse-Team</p>
