@@ -60,11 +60,7 @@
 							target="_blank">Tanzvermittlung | Landesbüro Tanz NRW</a
 						>
 					</li>
-					<li>
-						<a class="hyperlink" href="https://ursulaneumann.de" rel="noreferrer" target="_blank"
-							>Ursula Neumann | Unternehmensberatung</a
-						>
-					</li>
+
 					<li>
 						<a
 							class="hyperlink"
@@ -73,17 +69,38 @@
 							target="_blank">Musenkuss Köln</a
 						>
 					</li>
+
+					<!-- -->
+
 					<li>
 						<a
 							class="hyperlink"
-							href="https://www.vhs-gl.de/index.php"
+							href="https://www.tanzfabrik-siegburg.de/"
 							rel="noreferrer"
-							target="_blank">Volkshochschule Bergisch Gladbach</a
+							target="_blank">Tanzfabrik Siegburg</a
+						>
+					</li>
+
+					<li>
+						<a
+							class="hyperlink"
+							href="https://www.meine-tanzschule-koeln.de/"
+							rel="noreferrer"
+							target="_blank">Tanzschule Auftakt</a
+						>
+					</li>
+
+					<li>
+						<a
+							class="hyperlink"
+							href="https://www.sichtartundweise.de/"
+							rel="noreferrer"
+							target="_blank">Sicht Art+Weise</a
 						>
 					</li>
 				</ul>
 				<p class="py-2">
-					TANZIMPULSE sind nach § 9 AWBG als staatliches Weiterbildungs-Institut anerkannt. <a
+					TANZIMPULSE sind nach § 9 AWBG als staatliche Weiterbildungs-Einrichtung anerkannt. <a
 						class="hyperlink"
 						href="https://www.bildungsurlaub.de/bildungsurlaub_nrw.html"
 						rel="noreferrer"

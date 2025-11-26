@@ -42,7 +42,7 @@
 					Bildungswerk interKultur Bonn<br />
 					Künstlerische Leitung: Bettina Bierdümpel <br />
 					Büroanschrift: Friesdorfer Straße 151<br />
-					<span class="text-pink-500">Gerichtsstand: Köln</span><br />
+					<span class="">Gerichtsstand: Köln</span><br />
 				</p>
 				<h3 class="ti_headline_blue_light py-4">2.) Allgemeines zur Datenverarbeitung</h3>
 				<p class="font-bold">a) Umfang der Verarbeitung personenbezogener Daten</p>
@@ -100,7 +100,7 @@
 				<p class="py-2">
 					E-Mail: <a class="hyperlink" href="mailto:info@ik-bonn.de">info@ik-bonn.de</a>
 					<br />
-					oder telefonisch: 0163 - 68 36 910
+					oder telefonisch: 0228 - 433 14 61
 				</p>
 			</DefaultCard>
 		</div>

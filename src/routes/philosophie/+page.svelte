@@ -59,9 +59,7 @@
 					Wir freuen uns, auf einen regen Austausch und interessante Tanzerlebnisse mit allen
 					Weiterbildungs- und Tanzinteressierten (m/w/d).
 				</p>
-				<p class="pt-4">
-					Bettina Bierdümpel (Künstlerische Leitung) und Ute Luckey (Geschäftsführung)
-				</p>
+				<p class="pt-4">Bettina Bierdümpel (Künstlerische Leitung)</p>
 			</DefaultCard>
 		</div>
 	</div>

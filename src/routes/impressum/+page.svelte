@@ -31,11 +31,10 @@
 				<p class="py-2">
 					Fotonachweise: Bettina Bierdümpel, Maria Luckey, weitere Porträtfotos privat
 				</p>
-				<p class="py-2 text-pink-500">
-					TANZIMPULSE sind nach § 9 AWBG als staatliches Weiterbildungs-Institut anerkannt. Sonder-
-					oder Bildungsurlaub kann somit beantragt werden. Bildungsscheck im Rahmen neuer
-					Förderrichtlinien! Die gesamte Ausbildungsgebühr wird in der Regel von den Finanzämtern
-					als Steuer mindernde Ausgaben anerkannt.
+				<p class="py-2">
+					TANZIMPULSE sind nach § 9 AWBG als staatliche Weiterbildungs-Einrichtung anerkannt.
+					Sonder- oder Bildungsurlaub kann somit beantragt werden. Die gesamte Ausbildungsgebühr
+					wird in der Regel von den Finanzämtern als Steuer mindernde Ausgaben anerkannt.
 				</p>
 				<p class="py-2">
 					Zu den <a

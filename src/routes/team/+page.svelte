@@ -11,7 +11,7 @@
 	<div class="container flex flex-col">
 		<div class="grid grid-cols-1 gap-10">
 			<DefaultCard>
-				<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+				<div class="grid-cols21 grid">
 					<div class="flex flex-col py-4">
 						<img
 							class="mx-auto h-24 w-24 rounded-full md:h-32 md:w-32 lg:h-48 lg:w-48"
@@ -20,25 +20,11 @@
 						/>
 						<div class="pt-4">
 							<h2 class="ti_headline_blue_bold mb-4 text-center">Bettina Bierdümpel</h2>
-							<p>
+							<p class="mx-auto max-w-4xl text-center">
 								Künstlerische Leitung der TANZIMPULSE. Tanzpädagogin und Diplom-Sozialarbeiterin,
 								langjährige wiss. Mitarbeiterin an der Technischen Hochschule Köln, Fakultät für
 								Angewandte Sozialwissenschaften. Gründungsmitglied der TANZIMPULSE und künstlerische
 								Leitung des Instituts seit 1994.
-							</p>
-						</div>
-					</div>
-					<div class="flex flex-col py-4">
-						<img
-							class="mx-auto h-24 w-24 rounded-full md:h-32 md:w-32 lg:h-48 lg:w-48"
-							src="{base}/images/employees/luckey.jpg"
-							alt="Ute Luckey | Tanzimpulse"
-						/>
-						<div class="pt-4">
-							<h2 class="ti_headline_blue_bold mb-4 text-center">Ute Luckey</h2>
-							<p>
-								Geschäftsführerin und Leitung des Büro der TANZIMPULSE. Mit Rat und Tat unterstützt
-								sie als ehemalige Verwaltungsbeamtin die TANZIMPULSE seit der Gründung.
 							</p>
 						</div>
 					</div>
@@ -263,38 +249,52 @@
 					</div>
 
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Maike Stemmler</h4>
-						<p>
-							Politische Bildnerin, Tanzpädagogin und Projektkoordinatorin bei Detox Identity. Ihre
-							Ausbildung erhielt sie an den Universitäten in Mannheim, Bonn und bei Tanzimpulse in
-							Köln.
-						</p>
-					</div>
-					<div class="___guest flex flex-col">
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Ronja Frizen</h4>
 						<p>
 							M.A. Tanz + B.A. Sportmanagement und Kommunikationan an der DSHS Köln, vielfältige
 							Projekt- und Bühnenerfahrung sowie Unterrichtstätigkeit
 						</p>
 					</div>
+
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Jindra Ackemann</h4>
-						<p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Nina Buttler</h4>
+						<p>
+							Systemische Beraterin und psychosozialer Coach (ECA), Tanzpädagogin und Fascial
+							Fitness® Trainerin. Bietet seit 2014 Systemisches Coaching für Menschen in
+							Veränderungsprozessen, sozialen Einrichtungen, Führungs- und Fachkräften an.
+							Unterrichtet seit 1999 im Fitnessbereich und seit 2016 fasziale Körperarbeit/ Faszien
+							Fitness für mehr Beweglichkeit und Wohlbefinden.
+						</p>
 					</div>
 
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Gudrun Alles</h4>
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Verena Tarnai</h4>
 						<p>
-							Gudrun Alles ist Dipl.-Sozialpädagogin; als Tänzerin und Choreografin vermittelt sie
-							seit 15 Jahren afrikanischen Tanz, gibt u.a. Seminare für Körperbewußtsein und
-							Stressbewältiung
+							Dipl.-Tanzpädagogin (TI) und Erzieherin. Seit 2012 Selbständig als Tanzpädagogin.
+							Meine Schwerpunkte sind der Kreative Kindertanz und Hip Hop- Funky Jazz für Kinder im
+							Kindergarten- und Grundschulalter. Ich leite eigene Kindertanzkurse, Tanz-AGs und
+							Tanzprojekte. Bei meinen Tanzstunden liegt mir besonders am Herzen, die natürliche
+							Bewegungsfreude und Kreativität der Kinder zu fördern und ihr Selbstvertrauen zu
+							stärken.
 						</p>
-						<a
-							class="hyperlink"
-							rel="”noreferrer”"
-							href="https://www.alles-tanzt-in-dir.de/"
-							target="_blank">alles-tanzt-in-dir.de</a
-						>
+					</div>
+
+					<div class="___guest flex flex-col">
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Birgit Götz</h4>
+						<p>
+							Sie arbeitet als Choreografin, Performerin und Tänzerin für Bühne und Raum.
+							Zeitgenössischer Tanz wird kombiniert mit anderen Kunstformen, als Schwerpunkt ihres
+							künstlerischen Wirkens. Als Dozentin ist sie an theaterpädagogischen Zentren in Essen,
+							Hamm und an der FH Dortmund. Als Tanzvermittlerin für ist sie spartenübergreifende
+							Projekte an unterschiedlichen Bildungseinrichtungen für „Kultur und Schule“ sowie
+							„Jekits“ tätig. Planung und Gestaltung des Bereichs „Junge Szene“ ist ihr Thema am
+							„Theater im Depot“ in Dortmund. Vielfach ausgezeichnet. Zuletzt erhielt sie 2025 den
+							Jugendkulturpreis mit der LAG NRW für das Projekt „Urbanize“.
+						</p>
+					</div>
+					<div class="___guest flex flex-col">
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Jindra Ackemann</h4>
+						<p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
 					</div>
 				</div>
 			</DefaultCard>
