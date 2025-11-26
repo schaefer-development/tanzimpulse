@@ -8,7 +8,6 @@ const html = (teilnehmer: Teilnehmer, seminar: Seminar) => `
   Überweisen Sie den Betrag von ${seminar.preis} Euro auf folgendes Konto von interKultur:</p>
   <p><strong>IBAN: DE71 3705 0198 1902 2833 06
   <br>BIC: COLSDE33XXX
-
   <br>Sparkasse KölnBonn</strong></p>
   <p>Für Anmeldungen zur Grund-, Aufbau- und Diplomstufe sind Ratenzahlungen möglich. Hierzu erhalten Sie eine Rechnung.</p>
   <p>Wir freuen uns auf Ihre Teilnahme und verbleiben mit freundlichen Grüßen</p>
