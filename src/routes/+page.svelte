@@ -4,8 +4,8 @@
 	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
 	let { data }: PageProps = $props();
 
-	let motivAusbildungen = ' /images/startpage/ausbildungen24.jpg';
-	let motifWorkshops = ' /images/startpage/workshops24.jpg';
+	let motivAusbildungen = ' /images/startpage/ausbildungen25.jpg';
+	let motifWorkshops = ' /images/startpage/workshops25.jpg';
 </script>
 
 <svelte:head>
@@ -19,11 +19,11 @@
 				<source
 					srcset={motivAusbildungen.replace('.jpg', '.webp')}
 					type="webp"
-					class="h-72 w-full object-cover object-center"
+					class="aspect-video w-full object-cover object-center"
 				/>
 				<img
 					src={motivAusbildungen}
-					class="h-72 w-full object-cover object-top"
+					class="aspect-video w-full object-cover object-top"
 					alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse "
 				/>
 			</picture>
@@ -54,7 +54,7 @@
 				<source srcset={motifWorkshops.replace('.jpg', '.webp')} type="webp" />
 				<img
 					src={motifWorkshops}
-					class="h-72 w-full object-cover object-center"
+					class="aspect-video w-full object-cover object-center"
 					alt="Werde Tanzpädagogin/ Tanzpädagoge bei Tanzimpulse "
 				/>
 			</picture>
