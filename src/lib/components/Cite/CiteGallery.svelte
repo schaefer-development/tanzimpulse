@@ -4,6 +4,10 @@
 
 	const quotes = [
 		{
+			text: '„Liebes Team, in der Aufbaustufe waren bisher alle Wochenenden mit den entsprechenden Tanzstilen eine besondere Erfahrung und Bereicherung für mich. Alle Inhalte wurden mit viel Begeisterung und Gestaltungskraft vermittelt; es wurde motiviert und gelobt. Mit großer Tanzfreude erlebe ich ein erfüllendes Gefühl, dem Tanzen bewusst soviel Zeit und Fokussierung zukommen zu lassen.“',
+			author: 'Karolin M.'
+		},
+		{
 			text: '„So viel Vielfalt, Austausch, Kreative Impulse, inspirierende Momente…. Schön, dass ich seit so einer langen Zeit ein Teil davon sein kann. Vielen Dank.“',
 			author: 'Nicole S.-Sch.'
 		},
