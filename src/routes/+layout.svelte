@@ -45,70 +45,51 @@
 
 		<div id="LOGO" class="bg-white pt-14 pb-48">
 			<div
-				class="relative z-10 container mx-auto flex flex-col items-center gap-x-24 gap-y-10 px-0 md:flex-row md:px-6"
+				class="relative z-10 container mx-auto flex flex-col items-center justify-center px-0 md:px-6"
 			>
-				<div class="flex aspect-video w-6/12 flex-col items-center justify-center gap-y-6">
-					<a href="/" class="flex grow items-end justify-center"
-						><img
-							class="relative h-auto w-6/12 max-w-[700px] min-w-[200px]"
-							src="{base}/images/logo_ik.jpg"
-							alt="Logo interKultur Bonn"
-						/></a
-					>
-
-					<a href="/" class="flex h-20 w-full flex-col items-center">
-						<span class="text-center font-bold text-purple-900 lg:text-2xl">interKultur Bonn</span>
-						<span class="text-center lg:text-xl"
-							>staatlich anerkannte Einrichtung der Weiterbildung</span
+				<div
+					class="relative z-10 container mx-auto flex flex-col items-center gap-x-24 gap-y-10 px-0 md:flex-row md:px-6"
+				>
+					<div class="flex aspect-video w-6/12 flex-col items-center justify-center gap-y-6">
+						<a href="/" class="flex grow items-end justify-center"
+							><img
+								class="relative h-auto w-6/12 max-w-[700px] min-w-[200px]"
+								src="{base}/images/logo_ik.jpg"
+								alt="Logo interKultur Bonn"
+							/></a
 						>
-					</a>
+
+						<a href="/" class="flex h-14 w-full flex-col items-center">
+							<span class="text-center font-bold text-purple-900 lg:text-2xl">interKultur Bonn</span
+							>
+						</a>
+					</div>
+
+					<div class="flex aspect-video w-6/12 flex-col items-center justify-center gap-y-6">
+						<a
+							href="/"
+							class=" text-ti_blue_mat flex aspect-video w-5/12 max-w-[700px] min-w-[200px] grow items-center"
+						>
+							<Logo></Logo>
+						</a>
+
+						<a href="/" class="flex h-14 w-full flex-col">
+							<span class="text-ti_blue_mat text-center font-bold lg:text-2xl"
+								>Tanzimpulse bei interKultur</span
+							>
+							<br />
+
+							<span class="text-ti_blue_mat text-center tracking-wide uppercase"
+								>Tanzpädagogik – Zusatzausbildung und Fortbildung</span
+							>
+						</a>
+					</div>
 				</div>
 
-				<div class="flex aspect-video w-6/12 flex-col items-center justify-center gap-y-6">
-					<a
-						href="/"
-						class=" text-ti_blue_mat flex aspect-video w-5/12 max-w-[700px] min-w-[200px] grow items-center"
-					>
-						<Logo></Logo>
-					</a>
-
-					<a href="/" class="flex h-20 w-full flex-col">
-						<span class="text-ti_blue_mat text-center font-bold lg:text-2xl"
-							>Tanzimpulse bei interKultur</span
-						>
-					</a>
+				<div class="flex h-32 items-center justify-center tracking-wider uppercase lg:text-xl">
+					staatlich anerkannte Einrichtung der Weiterbildung
 				</div>
 			</div>
-
-			<!--
-
-			<div
-				class="relative z-10 container mx-auto flex flex-col items-center px-0 md:flex-row md:px-6"
-			>
-				<div class="mb-6 ml-4 w-48 md:mb-0 md:w-64">
-					<a
-						aria-label="Logo Tanzimpulse - Institut für Tanzpädagogik"
-						class="text-ti_blue_mat hover:text-ti_blue_accent focus:text-ti_blue_accent transition duration-300 ease-in-out outline-none focus:ring-0 focus:outline-none"
-						href="{base}/"><Logo /></a
-					>
-				</div>
-				<div class="px-8">
-					<a
-						aria-label="Logo Tanzimpulse - Institut für Tanzpädagogik"
-						href="{base}/"
-						class="text-ti_blue_mat hover:text-ti_blue_accent focus:text-ti_blue_accent text-xl font-extralight tracking-wider uppercase transition duration-300 ease-in-out outline-none focus:ring-0 focus:outline-none sm:text-2xl md:text-3xl lg:text-4xl"
-					>
-						<span class="font-bold">Tanzimpulse</span> – Institut für Tanzpädagogik
-						<span
-							class="text-ti_blue_accent block text-base font-normal tracking-wide normal-case sm:text-lg md:text-xl lg:text-2xl"
-							>Staatlich anerkanntes Weiterbildungsinstitut</span
-						>
-					</a>
-				</div>
-			</div>
-
-
-		-->
 		</div>
 
 		<div id="CONTENT">
