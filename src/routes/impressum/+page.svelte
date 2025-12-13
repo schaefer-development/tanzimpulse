@@ -29,7 +29,7 @@
 					<a class="hyperlink" href="mailto:info@ik-bonn.de">info@ik-bonn.de</a>
 				</p>
 				<p class="py-2">
-					Fotonachweise: Bettina Bierdümpel, Maria Luckey, weitere Porträtfotos privat
+					Fotonachweise: Hauke Wintjen, Sascha Etzbach, Bettina Bierdümpel und Maria Luckey
 				</p>
 				<p class="py-2">
 					TANZIMPULSE sind nach § 9 AWBG als staatliche Weiterbildungs-Einrichtung anerkannt.

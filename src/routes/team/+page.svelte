@@ -11,16 +11,16 @@
 	<div class="container flex flex-col">
 		<div class="grid grid-cols-1 gap-10">
 			<DefaultCard>
-				<div class="grid-cols21 grid">
-					<div class="flex flex-col py-4">
+				<div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+					<div class="___single_employee flex flex-col py-4">
 						<img
-							class="mx-auto h-24 w-24 rounded-full md:h-32 md:w-32 lg:h-48 lg:w-48"
+							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
 							src="{base}/images/employees/bierduempel.jpg"
 							alt="Bettina Bierdümpel | Tanzimpulse"
 						/>
 						<div class="pt-4">
-							<h2 class="ti_headline_blue_bold mb-4 text-center">Bettina Bierdümpel</h2>
-							<p class="mx-auto max-w-4xl text-center">
+							<h2 class="ti_headline_blue_light mb-4 text-center">Bettina Bierdümpel</h2>
+							<p>
 								Künstlerische Leitung der TANZIMPULSE. Tanzpädagogin und Diplom-Sozialarbeiterin,
 								langjährige wiss. Mitarbeiterin an der Technischen Hochschule Köln, Fakultät für
 								Angewandte Sozialwissenschaften. Gründungsmitglied der TANZIMPULSE und künstlerische
@@ -28,11 +28,24 @@
 							</p>
 						</div>
 					</div>
-				</div>
-			</DefaultCard>
 
-			<DefaultCard>
-				<div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+					<div class="___single_employee flex flex-col py-4">
+						<img
+							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
+							src="{base}/images/employees/cacutalua_tujek.jpg"
+							alt="Astrid Cacutalua-Tujek | Tanzimpulse"
+						/>
+						<div class="pt-4">
+							<h2 class="ti_headline_blue_light mb-4 text-center">Astrid Cacutalua-Tujek</h2>
+							<p>
+								Diplom-Tanzpädagogin (TI), Erzieherin und Fachkraft für elementarpäd.
+								Sprachförderung. Ihren Schwerpunkt: „Sprachförderung und Tanz“ sowie „Rhythmische
+								Bewegungförderung für U3 Kinder“, unterrichtet sie in der Grundstufe mit Schwerpunkt
+								Kindertanz.
+							</p>
+						</div>
+					</div>
+
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
@@ -46,23 +59,6 @@
 								Musik und darstellende Kunst in Wien und arbeitet auf und hinter der Bühne als
 								Schauspielerin, Sprecherin, Choreografin. Unterrichtserfahrung in der Tanz- und
 								Theaterpädagogik. Ihr Thema in der Grund- und Aufbaustufe ist Musical Jazz.
-							</p>
-						</div>
-					</div>
-
-					<div class="___single_employee flex flex-col py-4">
-						<img
-							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/stefan_schick.jpg"
-							alt="Nicole Stefan-Schick | Tanzimpulse"
-						/>
-						<div class="pt-4">
-							<h2 class="ti_headline_blue_light mb-4 text-center">Nicole Stefan-Schick</h2>
-							<p>
-								Tanzpädagogin, Choreografin, Diplom Sportlehrerin studierte Elementaren Tanz bei
-								Graziella Padilla, Bewegungstheater bei Anne und Wolfgang Tiedt und zeitgenössischen
-								Tanz am Centre National de Dance in Angers, Frankreich. Seit 1993 unterrichtet sie
-								Tanz.
 							</p>
 						</div>
 					</div>
@@ -98,65 +94,6 @@
 							</p>
 						</div>
 					</div>
-
-					<div class="___single_employee flex flex-col py-4">
-						<img
-							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/cacutalua_tujek.jpg"
-							alt="Astrid Cacutalua-Tujek | Tanzimpulse"
-						/>
-						<div class="pt-4">
-							<h2 class="ti_headline_blue_light mb-4 text-center">Astrid Cacutalua-Tujek</h2>
-							<p>
-								Diplom-Tanzpädagogin (TI), Erzieherin und Fachkraft für elementarpäd.
-								Sprachförderung. Ihren Schwerpunkt: „Sprachförderung und Tanz“ sowie „Rhythmische
-								Bewegungförderung für U3 Kinder“, unterrichtet sie in der Grundstufe mit Schwerpunkt
-								Kindertanz.
-							</p>
-						</div>
-					</div>
-
-					<div class="___single_employee flex flex-col py-4">
-						<img
-							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/wrobel.jpg"
-							alt="Heike Wrobel | Tanzimpulse"
-						/>
-						<div class="pt-4">
-							<h2 class="ti_headline_blue_light mb-4 text-center">Heike Wrobel</h2>
-							<p>
-								Diplom-Tanzpädagogin (TI), Entspannungspädagogin AT und Erzieherin. Ihr
-								tanzpädagogischer Schwerpunkt liegt in der Vermittlung von Kindertanz, in Projekten
-								und Fortbildungen und in der ErzieherInnen-Ausbildung. Ihr Thema ist die kindgemäße
-								Entspannung in der Grundstufe mit Schwerpunkt Kindertanz.
-							</p>
-						</div>
-					</div>
-
-					<div class="___single_employee flex flex-col py-4">
-						<img
-							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/woehler.jpg"
-							alt="Sabrina Wöhler | Tanzimpulse"
-						/>
-						<div class="pt-4">
-							<h2 class="ti_headline_blue_light mb-4 text-center">Sabrina Wöhler</h2>
-							<p>
-								Diplom-Tanzpädagogin (TI), Choreografin und Kommunikationswirtin. Durch die
-								Zusatzausbildung zur Diplom-Tanzpädagogin entwickelte sich die Verbindung von
-								Tanzkunst + Kommunikation. Seitdem leitet sie Tanz- und Choreografieprojekte mit
-								Kindern, Jugendlichen und Erwachsenen. Das Thema Tanzprojekte unterrichtet sie in
-								der Grundstufe mit Schwerpunkt Kindertanz.
-							</p>
-							<a
-								class="hyperlink"
-								rel="”noreferrer”"
-								href="https://www.tanz-kommunikation.de"
-								target="_blank">tanz-kommunikation.de</a
-							>
-						</div>
-					</div>
-
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
@@ -196,6 +133,22 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
+							src="{base}/images/employees/stefan_schick.jpg"
+							alt="Nicole Stefan-Schick | Tanzimpulse"
+						/>
+						<div class="pt-4">
+							<h2 class="ti_headline_blue_light mb-4 text-center">Nicole Stefan-Schick</h2>
+							<p>
+								Tanzpädagogin, Choreografin, Diplom Sportlehrerin studierte Elementaren Tanz bei
+								Graziella Padilla, Bewegungstheater bei Anne und Wolfgang Tiedt und zeitgenössischen
+								Tanz am Centre National de Dance in Angers, Frankreich. Seit 1993 unterrichtet sie
+								Tanz.
+							</p>
+						</div>
+					</div>
+					<div class="___single_employee flex flex-col py-4">
+						<img
+							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
 							src="{base}/images/employees/wolff.jpg"
 							alt="Uta Wolff | Tanzimpulse"
 						/>
@@ -208,6 +161,47 @@
 							</p>
 						</div>
 					</div>
+
+					<div class="___single_employee flex flex-col py-4">
+						<img
+							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
+							src="{base}/images/employees/woehler.jpg"
+							alt="Sabrina Wöhler | Tanzimpulse"
+						/>
+						<div class="pt-4">
+							<h2 class="ti_headline_blue_light mb-4 text-center">Sabrina Wöhler</h2>
+							<p>
+								Diplom-Tanzpädagogin (TI), Choreografin und Kommunikationswirtin. Durch die
+								Zusatzausbildung zur Diplom-Tanzpädagogin entwickelte sich die Verbindung von
+								Tanzkunst + Kommunikation. Seitdem leitet sie Tanz- und Choreografieprojekte mit
+								Kindern, Jugendlichen und Erwachsenen. Das Thema Tanzprojekte unterrichtet sie in
+								der Grundstufe mit Schwerpunkt Kindertanz.
+							</p>
+							<a
+								class="hyperlink"
+								rel="”noreferrer”"
+								href="https://www.tanz-kommunikation.de"
+								target="_blank">tanz-kommunikation.de</a
+							>
+						</div>
+					</div>
+
+					<div class="___single_employee flex flex-col py-4">
+						<img
+							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
+							src="{base}/images/employees/wrobel.jpg"
+							alt="Heike Wrobel | Tanzimpulse"
+						/>
+						<div class="pt-4">
+							<h2 class="ti_headline_blue_light mb-4 text-center">Heike Wrobel</h2>
+							<p>
+								Diplom-Tanzpädagogin (TI), Entspannungspädagogin AT und Erzieherin. Ihr
+								tanzpädagogischer Schwerpunkt liegt in der Vermittlung von Kindertanz, in Projekten
+								und Fortbildungen und in der ErzieherInnen-Ausbildung. Ihr Thema ist die kindgemäße
+								Entspannung in der Grundstufe mit Schwerpunkt Kindertanz.
+							</p>
+						</div>
+					</div>
 				</div>
 			</DefaultCard>
 
@@ -217,45 +211,9 @@
 				</h2>
 				<div class="grid grid-cols-1 gap-10 md:grid-cols-2">
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Catharina Gadelha</h4>
-						<p>
-							ist Choreografin, Regisseurin und Tanz- und Theaterpädagogin. Zudem ist sie als
-							Tanzvermittlerin im Kinder- und Jugendbereich international tätig. Anfang der 90er
-							(1990—1994) absolvierte Gadelha eine Ausbildung in »Elementarer Tanzbei Graziella
-							Padilla und studierte Bewegungstheater an der Deutschen Sporthochschule in Köln. Seit
-							1992 ist sie freischaffende Choreografin. 1994 realisierte sie ein Regie- und
-							Inszenierungsprojekt bei Johann Kresnik in Wien.
-						</p>
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Jindra Ackemann</h4>
+						<p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
 					</div>
-					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Mônica Santos</h4>
-						<p>
-							Mônica Santos ist Tänzerin, Tanzpädagogin und Choreografin Tanz-Ausbildung in
-							Brasilien (Conservatório Musical Santa Cecília, Academia de Dança Eleonora Oliosi).
-							Pädagogische Ausbildung in Brasilien/Deutschland, Zusatzqualifikation als
-							Choreographin (Academia de Dança Marian Guimarães, Deutscher Bundersverband Tanz e.
-							V.). Regelmäßige choreographische Arbeit mit Jugendlichen bei verschiedenen nationalen
-							und internationalen Tanzwettbewerben (Modern Dance, Lyrical).
-						</p>
-					</div>
-
-					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Julia Meister</h4>
-						<p>
-							Diplomtanzpädagogin (TI), unterrichtet seit 15 Jahren Kindertanz in Projekten in
-							Kitas, Grundschulen und Erziehungsvereinen. Wöchentliche Angebote in kreativem
-							Kindertanz und Hip Hop finden in Tanzschulen sowie an einer OGS statt.
-						</p>
-					</div>
-
-					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Ronja Frizen</h4>
-						<p>
-							M.A. Tanz + B.A. Sportmanagement und Kommunikationan an der DSHS Köln, vielfältige
-							Projekt- und Bühnenerfahrung sowie Unterrichtstätigkeit
-						</p>
-					</div>
-
 					<div class="___guest flex flex-col">
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Nina Buttler</h4>
 						<p>
@@ -268,17 +226,24 @@
 					</div>
 
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Verena Tarnai</h4>
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Ronja Frizen</h4>
 						<p>
-							Dipl.-Tanzpädagogin (TI) und Erzieherin. Seit 2012 Selbständig als Tanzpädagogin.
-							Meine Schwerpunkte sind der Kreative Kindertanz und Hip Hop- Funky Jazz für Kinder im
-							Kindergarten- und Grundschulalter. Ich leite eigene Kindertanzkurse, Tanz-AGs und
-							Tanzprojekte. Bei meinen Tanzstunden liegt mir besonders am Herzen, die natürliche
-							Bewegungsfreude und Kreativität der Kinder zu fördern und ihr Selbstvertrauen zu
-							stärken.
+							M.A. Tanz + B.A. Sportmanagement und Kommunikationan an der DSHS Köln, vielfältige
+							Projekt- und Bühnenerfahrung sowie Unterrichtstätigkeit
 						</p>
 					</div>
 
+					<div class="___guest flex flex-col">
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Catharina Gadelha</h4>
+						<p>
+							ist Choreografin, Regisseurin und Tanz- und Theaterpädagogin. Zudem ist sie als
+							Tanzvermittlerin im Kinder- und Jugendbereich international tätig. Anfang der 90er
+							(1990—1994) absolvierte Gadelha eine Ausbildung in »Elementarer Tanzbei Graziella
+							Padilla und studierte Bewegungstheater an der Deutschen Sporthochschule in Köln. Seit
+							1992 ist sie freischaffende Choreografin. 1994 realisierte sie ein Regie- und
+							Inszenierungsprojekt bei Johann Kresnik in Wien.
+						</p>
+					</div>
 					<div class="___guest flex flex-col">
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Birgit Götz</h4>
 						<p>
@@ -292,9 +257,38 @@
 							Jugendkulturpreis mit der LAG NRW für das Projekt „Urbanize“.
 						</p>
 					</div>
+
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Jindra Ackemann</h4>
-						<p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Julia Meister</h4>
+						<p>
+							Diplomtanzpädagogin (TI), unterrichtet seit 15 Jahren Kindertanz in Projekten in
+							Kitas, Grundschulen und Erziehungsvereinen. Wöchentliche Angebote in kreativem
+							Kindertanz und Hip Hop finden in Tanzschulen sowie an einer OGS statt.
+						</p>
+					</div>
+
+					<div class="___guest flex flex-col">
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Mônica Santos</h4>
+						<p>
+							Mônica Santos ist Tänzerin, Tanzpädagogin und Choreografin Tanz-Ausbildung in
+							Brasilien (Conservatório Musical Santa Cecília, Academia de Dança Eleonora Oliosi).
+							Pädagogische Ausbildung in Brasilien/Deutschland, Zusatzqualifikation als
+							Choreographin (Academia de Dança Marian Guimarães, Deutscher Bundersverband Tanz e.
+							V.). Regelmäßige choreographische Arbeit mit Jugendlichen bei verschiedenen nationalen
+							und internationalen Tanzwettbewerben (Modern Dance, Lyrical).
+						</p>
+					</div>
+
+					<div class="___guest flex flex-col">
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Verena Tarnai</h4>
+						<p>
+							Dipl.-Tanzpädagogin (TI) und Erzieherin. Seit 2012 Selbständig als Tanzpädagogin.
+							Meine Schwerpunkte sind der Kreative Kindertanz und Hip Hop- Funky Jazz für Kinder im
+							Kindergarten- und Grundschulalter. Ich leite eigene Kindertanzkurse, Tanz-AGs und
+							Tanzprojekte. Bei meinen Tanzstunden liegt mir besonders am Herzen, die natürliche
+							Bewegungsfreude und Kreativität der Kinder zu fördern und ihr Selbstvertrauen zu
+							stärken.
+						</p>
 					</div>
 				</div>
 			</DefaultCard>
