@@ -2,18 +2,16 @@
 	import { fade } from 'svelte/transition';
 
 	const carouselPhotos = [
-		'./images/fotogallery24/foto24_01.jpg',
-		'./images/fotogallery24/foto24_02.jpg',
-		'./images/fotogallery24/foto24_03.jpg',
-		'./images/fotogallery24/foto24_04.jpg',
-		'./images/fotogallery24/foto24_05.jpg',
-		'./images/fotogallery24/foto24_06.jpg',
-		'./images/fotogallery24/foto24_07.jpg',
-		'./images/fotogallery24/foto24_08.jpg',
-		'./images/fotogallery24/foto24_09.jpg',
-		'./images/fotogallery24/foto24_10.jpg',
-		'./images/fotogallery24/foto24_11.jpg',
-		'./images/fotogallery24/foto24_09.jpg'
+		'./images/fotogallery25/foto25_01.jpg',
+		'./images/fotogallery25/foto25_02.jpg',
+		'./images/fotogallery25/foto25_03.jpg',
+		'./images/fotogallery25/foto25_04.jpg',
+		'./images/fotogallery25/foto25_05.jpg',
+		'./images/fotogallery25/foto24_04.jpg',
+		'./images/fotogallery25/foto24_05.jpg',
+		'./images/fotogallery25/foto24_06.jpg',
+		'./images/fotogallery25/foto24_08.jpg',
+		'./images/fotogallery25/foto24_10.jpg'
 	];
 
 	let index = 0;

@@ -39,7 +39,7 @@
 				<p class="py-2">
 					Zu den <a
 						class="hyperlink"
-						href="https://www.bildungsurlaub.de/bildungsurlaub_nrw.html"
+						href="https://www.bildungsurlaub.de/bildungsurlaub-angebote/grundstufe-tanzpaedagogik/148025"
 						rel="noreferrer"
 						target="_blank">Fördermöglichkeiten</a
 					>.
