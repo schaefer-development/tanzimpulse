@@ -139,10 +139,15 @@
 						required
 					/>
 					<span>
-						Ich habe die <a class="hyperlink" href="{base}/content/AGB.pdf" target="_blank">AGBs</a
+						Ich habe die <a
+							class="hyperlink"
+							href="{base}/content/AGB_tanzimpulse_interkultur.pdf"
+							target="_blank">AGB</a
 						>, die
-						<a class="hyperlink" href="{base}/content/Widerrufsbelehrung.pdf" target="_blank"
-							>Widerrufsbelehrung</a
+						<a
+							class="hyperlink"
+							href="{base}/content/widerrufsbelehrung_tanzimpulse_bei_interkultur.pdf"
+							target="_blank">Widerrufsbelehrung</a
 						>
 						sowie die Maßnahmen zum
 						<a class="hyperlink" href="{base}/datenschutz">Datenschutz</a> gelesen und akzeptiert

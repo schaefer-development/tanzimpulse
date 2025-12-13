@@ -80,12 +80,12 @@
 					><br />
 					<a
 						class="hover:text-ti_blue_accent transition-all duration-300 ease-in-out"
-						href="{base}/content/AGB.pdf"
+						href="{base}/content/AGB_tanzimpulse_interkultur.pdf"
 						target="_blank">AGB</a
 					><br />
 					<a
 						class="hover:text-ti_blue_accent transition-all duration-300 ease-in-out"
-						href="{base}/content/Widerrufsbelehrung.pdf"
+						href="{base}/content/widerrufsbelehrung_tanzimpulse_bei_interkultur.pdf"
 						target="_blank">Widerrufsbelehrung</a
 					>
 					<br />

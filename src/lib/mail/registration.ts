@@ -29,8 +29,8 @@ BIC: COLSDE33XXX
   Web: 	<a href="https://www.tanzimpulse.de" target="_blank">tanzimpulse-koeln.de</a>
   </p>
   <p>
-  <a href="https://www.tanzimpulse.de/content/AGB.pdf" target="_blank">AGBs</a><br>
-  <a href="https://www.tanzimpulse.de/content/Widerrufsbelehrung.pdf" target="_blank">Widerrufsbelehrung</a>
+  <a href="https://www.tanzimpulse.de/content/AGB_tanzimpulse_interkultur.pdf" target="_blank">AGB</a><br>
+  <a href="https://www.tanzimpulse.de/content/widerrufsbelehrung_tanzimpulse_bei_interkultur.pdf" target="_blank">Widerrufsbelehrung</a>
   </p>
 `;
 
