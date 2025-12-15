@@ -102,7 +102,7 @@
 				<p class="py-2">
 					TANZIMPULSE sind nach § 9 AWBG als staatliche Weiterbildungs-Einrichtung anerkannt. <a
 						class="hyperlink"
-						href="https://www.bildungsurlaub.de/bildungsurlaub_nrw.html"
+						href="https://www.bildungsurlaub.de/bildungsurlaub-angebote/grundstufe-tanzpaedagogik/148025"
 						rel="noreferrer"
 						target="_blank">Sonder- oder Bildungsurlaub</a
 					> kann somit beantragt werden.

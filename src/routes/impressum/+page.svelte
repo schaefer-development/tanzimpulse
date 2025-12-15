@@ -26,7 +26,7 @@
 					Fax: 0228 - 433 14 62
 					<br />
 					E-Mail:
-					<a class="hyperlink" href="mailto:info@ik-bonn.de">info@ik-bonn.de</a>
+					<a class="hyperlink" href="mailto:tanzimpulse@ik-bonn.de">tanzimpulse@ik-bonn.de</a>
 				</p>
 				<p class="py-2">
 					Fotonachweise: Hauke Wintjen, Sascha Etzbach, Bettina Bierdümpel und Maria Luckey

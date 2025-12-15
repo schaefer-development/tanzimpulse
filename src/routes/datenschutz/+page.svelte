@@ -24,9 +24,9 @@
 					Fax: 0228 - 433 14 62
 					<br />
 					E-Mail:
-					<a class="hyperlink" href="mailto:info@ik-bonn.de">info@ik-bonn.de</a>
+					<a class="hyperlink" href="mailto:tanzimpulse@ik-bonn.de">tanzimpulse@ik-bonn.de</a>
 				</p>
-				<h3 class="ti_headline_blue_light py-4">1.) Name und Abschrift des Verantwortlichen</h3>
+				<h3 class="ti_headline_blue_light py-4">1.) Name und Anschrift des Verantwortlichen</h3>
 				<p>
 					Mit dem 25. Mai 2018 gilt die neue EU-Datenschutzgrundverordnung (DSGVO). Durch die DSGVO
 					werden Ihre Datenschutzrechte weiter gestärkt. Wichtig ist die Erhöhung der Transparenz
@@ -40,9 +40,14 @@
 				</p>
 				<p class="mb-4 py-2">
 					Bildungswerk interKultur Bonn<br />
-					Künstlerische Leitung: Bettina Bierdümpel <br />
-					Büroanschrift: Friesdorfer Straße 151<br />
-					<span class="">Gerichtsstand: Köln</span><br />
+					Künstlerische Leitung: Bettina Bierdümpel
+				</p>
+				<p class="mb-4 py-2">
+					Büroanschrift:<br />
+					Friesdorfer Straße 151<br />
+					53175 Bonn<br />
+					Telefon: 0228 - 43 31 461<br />
+					Gerichtsstand: Bonn
 				</p>
 				<h3 class="ti_headline_blue_light py-4">2.) Allgemeines zur Datenverarbeitung</h3>
 				<p class="font-bold">a) Umfang der Verarbeitung personenbezogener Daten</p>
@@ -84,7 +89,7 @@
 					Daten beantragen (Art. 17 DSGVO), sofern keine Notwendigkeit für eine Speicherung besteht.
 					<br />
 					Bitte E-Mail an:
-					<a class="hyperlink" href="mailto:info@ik-bonn.de">info@ik-bonn.de</a>
+					<a class="hyperlink" href="mailto:tanzimpulse@ik-bonn.de">tanzimpulse@ik-bonn.de</a>
 				</p>
 				<p class="mt-6 font-bold">f) Weitergabe personenbezogener Daten</p>
 				<p class="py-2">
@@ -98,7 +103,9 @@
 					Sollten Sie Fragen haben, können Sie sich jederzeit mit uns in Verbindung setzen:
 				</p>
 				<p class="py-2">
-					E-Mail: <a class="hyperlink" href="mailto:info@ik-bonn.de">info@ik-bonn.de</a>
+					E-Mail: <a class="hyperlink" href="mailto:tanzimpulse@ik-bonn.de"
+						>tanzimpulse@ik-bonn.de</a
+					>
 					<br />
 					oder telefonisch: 0228 - 433 14 61
 				</p>
