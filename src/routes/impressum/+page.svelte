@@ -12,52 +12,53 @@
 		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
 			<DefaultCard>
 				<h2 class="ti_headline_blue_bold">Impressum</h2>
-				<h2 class="ti_headline_blue_light mb-4">TANZIMPULSE – Institut für Tanzpädagogik</h2>
-				<p class="py-2">Herausgeber: Bettina Bierdümpel und Ute Luckey</p>
+
+				<h2 class="ti_headline_blue_light">Tanzimpulse bei Bildungswerk interKultur Bonn</h2>
+				<p class="py-2">Herausgeber: Aneta Göbel</p>
 				<p class="py-2">
-					Folwiese 20<br />
-					51069 Köln
+					Friesdorfer Straße 151<br />
+
+					53175 Bonn
 				</p>
 				<p class="py-2">
-					Telefon: +49 (0)221 - 68 36 91
+					Telefon: 0228 - 433 14 61
 					<br />
-					Fax: +49 (0)221 - 68 97 797
+					Fax: 0228 - 433 14 62
 					<br />
 					E-Mail:
-					<a class="hyperlink" href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a>
+					<a class="hyperlink" href="mailto:tanzimpulse@ik-bonn.de">tanzimpulse@ik-bonn.de</a>
 				</p>
 				<p class="py-2">
-					Fotonachweise: Bettina Bierdümpel, Maria Luckey, weitere Porträtfotos privat
+					Fotonachweise: Hauke Wintjen, Sascha Etzbach, Bettina Bierdümpel und Maria Luckey
 				</p>
 				<p class="py-2">
-					TANZIMPULSE sind nach § 9 AWBG als staatliches Weiterbildungs-Institut anerkannt. Sonder-
-					oder Bildungsurlaub kann somit beantragt werden. Bildungsscheck im Rahmen neuer
-					Förderrichtlinien! Die gesamte Ausbildungsgebühr wird in der Regel von den Finanzämtern
-					als Steuer mindernde Ausgaben anerkannt.
+					TANZIMPULSE sind nach § 9 AWBG als staatliche Weiterbildungs-Einrichtung anerkannt.
+					Sonder- oder Bildungsurlaub kann somit beantragt werden. Die gesamte Ausbildungsgebühr
+					wird in der Regel von den Finanzämtern als Steuer mindernde Ausgaben anerkannt.
 				</p>
 				<p class="py-2">
 					Zu den <a
 						class="hyperlink"
-						href="https://www.bildungsurlaub.de/bildungsurlaub_nrw.html"
+						href="https://www.bildungsurlaub.de/bildungsurlaub-angebote/grundstufe-tanzpaedagogik/148025"
 						rel="noreferrer"
 						target="_blank">Fördermöglichkeiten</a
 					>.
 				</p>
-				<p class="py-2">© TANZIMPULSE 2002 - {now.getFullYear()}</p>
+				<p class="py-2">© Bildungswerk interKultur Bonn 2002 - {now.getFullYear()}</p>
 				<hr class="mt-4 mb-8 block w-full border border-neutral-200" />
 				<h2 class="ti_headline_blue_light mb-4">Haftungsausschluss</h2>
 				<p class="py-2">
 					Diese Webseite wurde mit größtmöglicher Sorgfalt zusammengestellt. Wir bemühen uns alle
 					Angaben stets auf dem aktuellen Stand zu halten. Eine Haftung oder Garantie für die
 					Richtigkeit und Vollständigkeit der zur Verfügung gestellten Informationen und Daten kann
-					aber nicht gegeben werden. Tanzimpulse schließt jegliche Haftung für Schäden, die direkt
-					oder indirekt aus der Benutzung dieser Website entstehen, aus.
+					aber nicht gegeben werden. Bildungswerk interKultur Bonn schließt jegliche Haftung für
+					Schäden, die direkt oder indirekt aus der Benutzung dieser Website entstehen, aus.
 				</p>
 				<p class="py-2">
 					Gemäß dem Urteil vom 12. Mai 1998 "Haftung für Links" (312 O 85/98) des Landgerichts
-					Hamburg distanziert sich Tanzimpulse ausdrücklich von allen Inhalten sämtlicher gelinkter
-					Seiten. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber
-					verantwortlich.
+					Hamburg distanziert sich Bildungswerk interKultur Bonn ausdrücklich von allen Inhalten
+					sämtlicher gelinkter Seiten. Für den Inhalt der verlinkten Seiten sind ausschließlich
+					deren Betreiber verantwortlich.
 				</p>
 				<hr class="mt-4 mb-8 block w-full border border-neutral-200" />
 				<h3 class="font-bold">Webdesign und Entwicklung</h3>

@@ -14,16 +14,29 @@
 				href="{base}/"
 				class="text-center text-white transition duration-300 ease-in-out outline-none focus:outline-none"
 			>
-				<div class="mx-auto mb-10 w-36 md:w-48">
-					<Logo />
+				<div class="flex w-full flex-col items-center gap-x-24 gap-y-10 pb-10 lg:flex-row">
+					<div class="flex w-6/12 justify-center lg:justify-end">
+						<img
+							alt="Logo interKultur Bonn"
+							class="max-h-48 bg-white p-4"
+							src="images/logo_ik.jpg"
+						/>
+					</div>
+
+					<div class="flex w-6/12 justify-center lg:justify-start">
+						<div class="w-6/12 max-w-[250px] min-w-[150px] lg:w-5/12">
+							<Logo></Logo>
+						</div>
+					</div>
 				</div>
+
 				<h1
 					class="text-xl font-extralight tracking-wider uppercase sm:text-xl md:text-2xl lg:text-3xl"
 				>
-					<span class="font-bold">Tanzimpulse</span> – Institut für Tanzpädagogik
+					<span class="font-bold">Tanzimpulse bei interKultur </span>
 				</h1>
 				<p class="text-base tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-					Staatlich anerkanntes Weiterbildungsinstitut
+					staatlich anerkannte Einrichtung der Weiterbildung
 				</p>
 			</a>
 		</div>
@@ -31,24 +44,28 @@
 			class="grid grid-flow-col grid-cols-1 grid-rows-2 gap-10 md:grid-cols-2 md:grid-rows-1 lg:gap-32"
 		>
 			<p class="text-center md:text-right">
-				<span class="text-xs font-extrabold tracking-widest text-white uppercase">Büro</span><br />
-				Folwiese 20<br />
-				51069 Köln<br />
-				<br />
-				Telefon: +49 (0)221 - 68 36 91<br />
-				Fax: +49 (0)221 - 68 97 797<br />
+				Friesdorfer Straße 151<br />
+
+				53175 Bonn
+				<br /><br />
+				Telefon: 0163 - 68 36 910<br />
 				E-Mail:
 				<a
 					href="mailto:info@tanzimpulse-koeln.de"
 					class="hover:text-ti_blue_accent transition-all duration-300 ease-in-out"
 					>info@tanzimpulse-koeln.de</a
 				><br />
-				<br />
-				<span class="text-xs font-extrabold tracking-widest text-white uppercase">Bürozeiten</span
-				><br />
-				Montag bis Freitag: 9:00 - 13:00 Uhr<br />
-				Dienstag: 18:00 - 20:00 Uhr
+
+				<span class="block pt-12 pb-2">Seit 20 Jahren Mitglied:</span>
+				<picture class="flex justify-center md:justify-end">
+					<img
+						src={certificate}
+						class="h-24 w-auto object-cover object-top"
+						alt="TANZIMPULSE sind seit 20 Jahren Mitglied"
+					/>
+				</picture>
 			</p>
+
 			<div class="text-center md:text-left">
 				<p>
 					<a
@@ -63,12 +80,12 @@
 					><br />
 					<a
 						class="hover:text-ti_blue_accent transition-all duration-300 ease-in-out"
-						href="{base}/content/AGB.pdf"
+						href="{base}/content/AGB_tanzimpulse_interkultur.pdf"
 						target="_blank">AGB</a
 					><br />
 					<a
 						class="hover:text-ti_blue_accent transition-all duration-300 ease-in-out"
-						href="{base}/content/Widerrufsbelehrung.pdf"
+						href="{base}/content/widerrufsbelehrung_tanzimpulse_bei_interkultur.pdf"
 						target="_blank">Widerrufsbelehrung</a
 					>
 					<br />
@@ -116,14 +133,6 @@
 						</svg>
 					</a>
 				</div>
-				<p class="pb-2">Seit 20 Jahren Mitglied:</p>
-				<picture>
-					<img
-						src={certificate}
-						class="h-24 w-auto object-cover object-top"
-						alt="TANZIMPULSE sind seit 20 Jahren Mitglied"
-					/>
-				</picture>
 			</div>
 		</div>
 	</div>
