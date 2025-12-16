@@ -2,7 +2,7 @@ import waitingList from './waitingList';
 import registration from './registration';
 
 const defaults = {
-	from: 'tanzimpulse@ik-bonn.de',
+	from: 'info@tanzimpulse-koeln.de',
 	bcc: ['info@tanzimpulse-koeln.de', 'tanzimpulse@ik-bonn.de']
 };
 
