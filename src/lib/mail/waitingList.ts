@@ -20,8 +20,8 @@ Folwiese 20<br>
 Bettina Bierdümpel</p>
 <p>Kontakt<br>
 Tel:	0163 - 68 36 910<br>
-E-Mail: <a href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a><br>
-Web: 	<a href="https://www.tanzimpulse.de" target="_blank">tanzimpulse-koeln.de</a>
+E-Mail:	<a href="mailto:tanzimpulse@ik-bonn.de">tanzimpulse@ik-bonn.de</a><br>
+Web:	<a href="https://www.tanzimpulse.de" target="_blank">tanzimpulse-koeln.de</a>
 </p>
 <p>
 <p>
