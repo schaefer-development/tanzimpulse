@@ -12,7 +12,7 @@
 		<div class="seminar_card_img w-full flex-0">
 			{#if seminar.bild}
 				<img
-					class="h-32 w-full object-cover object-center sm:h-40 md:h-48 lg:h-60"
+					class="aspect-3/2 w-full object-cover object-center"
 					src={seminar.bild.medium}
 					alt={seminar.bild.fileName || 'Fehlendes Bild'}
 				/>
