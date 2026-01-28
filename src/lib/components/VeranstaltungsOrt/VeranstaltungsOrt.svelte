@@ -59,10 +59,17 @@
 						</svg>
 
 						<p>
+<<<<<<< HEAD
 							Die Karte wird erst angezeigt, wenn der Nutzung externer Karten <a
 								class="hyperlink"
 								href="https://leafletjs.com/">(Leaflet)</a
 							> zugestimmt wird.
+=======
+							Die Karte wird erst angezeigt, wenn du der Nutzung externer Karten <a
+								class="hyperlink"
+								href="https://leafletjs.com/">(Leaflet)</a
+							> zustimmst.
+>>>>>>> 174f422b475f6804a69cac40126afb795cd535bb
 						</p>
 					</div>
 
