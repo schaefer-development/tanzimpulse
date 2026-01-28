@@ -59,18 +59,20 @@
 				</p>
 
 				<p class="text-center md:text-right">
-					<span class="block pt-12">Gütesiegelverbund Weiterbildung e.V.</span>
-					<span class="block pb-4">
-						Aus der Praxis für die Praxis der Weiterbildung <br />Qualitätsentwicklung und
-						Zertifizierung
-					</span>
-					<picture class="flex justify-center md:justify-end">
-						<img
-							src={certificate}
-							class="h-32 w-auto object-cover object-top"
-							alt="Gütesiegelverbund Weiterbildung e.V."
-						/>
-					</picture>
+					<a target="_blank" href="/content/2809-403_Zertifikat_interKultur.pdf">
+						<span class="block pt-12">Gütesiegelverbund Weiterbildung e.V.</span>
+						<span class="block pb-4">
+							Aus der Praxis für die Praxis der Weiterbildung <br />Qualitätsentwicklung und
+							Zertifizierung
+						</span>
+						<picture class="flex justify-center md:justify-end">
+							<img
+								src={certificate}
+								class="h-32 w-auto object-cover object-top"
+								alt="Gütesiegelverbund Weiterbildung e.V."
+							/>
+						</picture>
+					</a>
 				</p>
 			</div>
 

@@ -20,14 +20,6 @@
 						>
 					</li>
 					<li>
-						<a
-							class="hyperlink"
-							href="http://www.weiterbildung-koeln.de/"
-							rel="noreferrer"
-							target="_blank">Qualitätsgemeinschaft Berufliche Bildung Region Köln e.V.</a
-						>
-					</li>
-					<li>
 						<a class="hyperlink" href="https://aktiontanz.de/" rel="noreferrer" target="_blank">
 							AktionTanz - Bundesverband Tanz in Bildung und Gesellschaft e.V.</a
 						>
