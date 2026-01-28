@@ -39,7 +39,7 @@
 			{:else}
 				<!-- Consent-Box liegt absolut über der Bühne -->
 				<div
-					class="absolute inset-0 flex flex-col items-center justify-center gap-y-6 border border-gray-200 p-6 text-center"
+					class="absolute inset-0 flex flex-col items-center justify-center gap-y-6 border border-gray-200 bg-gray-100 p-6 text-center"
 					transition:fade={{ duration: 300 }}
 				>
 					<div class="flex flex-col flex-row items-center gap-x-6 px-12 text-left">
@@ -59,17 +59,10 @@
 						</svg>
 
 						<p>
-<<<<<<< HEAD
 							Die Karte wird erst angezeigt, wenn der Nutzung externer Karten <a
 								class="hyperlink"
 								href="https://leafletjs.com/">(Leaflet)</a
 							> zugestimmt wird.
-=======
-							Die Karte wird erst angezeigt, wenn du der Nutzung externer Karten <a
-								class="hyperlink"
-								href="https://leafletjs.com/">(Leaflet)</a
-							> zustimmst.
->>>>>>> 174f422b475f6804a69cac40126afb795cd535bb
 						</p>
 					</div>
 
