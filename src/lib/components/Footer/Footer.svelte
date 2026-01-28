@@ -19,7 +19,7 @@
 						<img
 							alt="Logo interKultur Bonn"
 							class="max-h-48 bg-white p-4"
-							src="images/logo_ik.jpg"
+							src="/images/logo_ik.jpg"
 						/>
 					</div>
 
