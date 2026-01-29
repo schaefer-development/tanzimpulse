@@ -2,7 +2,7 @@
 	import Logo from '$lib/components/Logo/Logo.svelte';
 	import { base } from '$app/paths';
 
-	let certificate = '/images/certificate.jpg';
+	let certificate = '/images/logo_guetesiegelverbund.png';
 
 	let date = new Date().getFullYear();
 </script>
@@ -19,7 +19,7 @@
 						<img
 							alt="Logo interKultur Bonn"
 							class="max-h-48 bg-white p-4"
-							src="images/logo_ik.jpg"
+							src="/images/logo_ik.jpg"
 						/>
 					</div>
 
@@ -43,28 +43,38 @@
 		<div
 			class="grid grid-flow-col grid-cols-1 grid-rows-2 gap-10 md:grid-cols-2 md:grid-rows-1 lg:gap-32"
 		>
-			<p class="text-center md:text-right">
-				Friesdorfer Straße 151<br />
+			<div>
+				<p class="text-center md:text-right">
+					Friesdorfer Straße 151<br />
 
-				53175 Bonn
-				<br /><br />
-				Telefon: 0163 - 68 36 910<br />
-				E-Mail:
-				<a
-					href="mailto:info@tanzimpulse-koeln.de"
-					class="hover:text-ti_blue_accent transition-all duration-300 ease-in-out"
-					>info@tanzimpulse-koeln.de</a
-				><br />
+					53175 Bonn
+					<br /><br />
+					Telefon: 0163 - 68 36 910<br />
+					E-Mail:
+					<a
+						href="mailto:info@tanzimpulse-koeln.de"
+						class="hover:text-ti_blue_accent transition-all duration-300 ease-in-out"
+						>info@tanzimpulse-koeln.de</a
+					>
+				</p>
 
-				<span class="block pt-12 pb-2">Seit 20 Jahren Mitglied:</span>
-				<picture class="flex justify-center md:justify-end">
-					<img
-						src={certificate}
-						class="h-24 w-auto object-cover object-top"
-						alt="TANZIMPULSE sind seit 20 Jahren Mitglied"
-					/>
-				</picture>
-			</p>
+				<p class="text-center md:text-right">
+					<a target="_blank" href="/content/2809-403_Zertifikat_interKultur.pdf">
+						<span class="block pt-12">Gütesiegelverbund Weiterbildung e.V.</span>
+						<span class="block pb-4">
+							Aus der Praxis für die Praxis der Weiterbildung <br />Qualitätsentwicklung und
+							Zertifizierung
+						</span>
+						<picture class="flex justify-center md:justify-end">
+							<img
+								src={certificate}
+								class="h-32 w-auto object-cover object-top"
+								alt="Gütesiegelverbund Weiterbildung e.V."
+							/>
+						</picture>
+					</a>
+				</p>
+			</div>
 
 			<div class="text-center md:text-left">
 				<p>

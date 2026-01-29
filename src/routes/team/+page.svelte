@@ -59,6 +59,8 @@
 								Musik und darstellende Kunst in Wien und arbeitet auf und hinter der Bühne als
 								Schauspielerin, Sprecherin, Choreografin. Unterrichtserfahrung in der Tanz- und
 								Theaterpädagogik. Ihr Thema in der Grund- und Aufbaustufe ist Musical Jazz.
+								<br />
+								Außerdem ist sie im Orga-Team der Tanzimpulse u.a. für die Öffentlichkeitsarbeit zuständig.
 							</p>
 						</div>
 					</div>
@@ -94,6 +96,26 @@
 							</p>
 						</div>
 					</div>
+
+					<div class="___single_employee flex flex-col py-4">
+						<img
+							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
+							src="{base}/images/employees/heipel.jpg"
+							alt="Sabrina Wöhler | Tanzimpulse"
+						/>
+						<div class="pt-4">
+							<h2 class="ti_headline_blue_light mb-4 text-center">Angelika Heipel</h2>
+							<p>
+								Sozialpädagogin/ Sozialarbeiterin mit staatlicher Anerkennung. Tanzpädagogin (TI)
+								für den Elementar-, Primar-, Sekundarbereich, in der Erwachsenenbildung und mit
+								Schwerpunkt Kindertanz. Vielfältige Berufserfahrungen im Kultur- und Sozialbereich.
+								Studentin im Master Kulturpädagogik und Kulturmanagement an der Hochschule
+								Niederrhein. Für die Tanzimpulse ist sie für den Bereich der Öffentlichkeitsarbeit
+								und Akquise zuständig.
+							</p>
+						</div>
+					</div>
+
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
@@ -226,6 +248,16 @@
 					</div>
 
 					<div class="___guest flex flex-col">
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Mara Dewenter</h4>
+						<p>
+							ist Kultur- und Tanzpädagogin (TI) und unterrichtet Tanz seit 2015. Sie leitet
+							Kreative Kindertanz- und Eltern-Kind-Tanzkurse und arbeitet in Kitas sowie in
+							Tanzprojekten an Schulen und in außerschulischen Bildungsstätten. Im Mittelpunkt ihrer
+							Arbeit stehen Bewegungsfreude, Kreativität und ein ganzheitlicher Zugang zum eigenen
+							Körper.
+						</p>
+					</div>
+					<div class="___guest flex flex-col">
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Ronja Frizen</h4>
 						<p>
 							M.A. Tanz + B.A. Sportmanagement und Kommunikationan an der DSHS Köln, vielfältige
@@ -255,15 +287,6 @@
 							„Jekits“ tätig. Planung und Gestaltung des Bereichs „Junge Szene“ ist ihr Thema am
 							„Theater im Depot“ in Dortmund. Vielfach ausgezeichnet. Zuletzt erhielt sie 2025 den
 							Jugendkulturpreis mit der LAG NRW für das Projekt „Urbanize“.
-						</p>
-					</div>
-
-					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Julia Meister</h4>
-						<p>
-							Diplomtanzpädagogin (TI), unterrichtet seit 15 Jahren Kindertanz in Projekten in
-							Kitas, Grundschulen und Erziehungsvereinen. Wöchentliche Angebote in kreativem
-							Kindertanz und Hip Hop finden in Tanzschulen sowie an einer OGS statt.
 						</p>
 					</div>
 

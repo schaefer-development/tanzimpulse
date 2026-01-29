@@ -32,7 +32,7 @@
 		{
 			title: 'Bewährte Qualitätskriterien',
 			content:
-				'Als Mitglied der Qualitätsgemeinschaft Berufliche Bildung Region Köln e.V. haben wir uns den Qualitätsstandards der Qualitätsgemeinschaft Berufliche Bildung Region Köln verpflichtet. Die geeigneten Qualitätsverfahren werden bei Tanzimpulse und in unseren Weiterbildungen eingesetzt. Hierzu erfolgen in unregelmäßigen Abständen Überprüfungen.'
+				'Wir verstehen uns als lernende Organisation und sind bemüht, unser Angebot kontinuierlich zu verbessern. Dabei sind wir auf Ihre Unterstützung angewiesen und freuen uns über Anregungen, Lob und Kritik.<br /><br />Rufen Sie uns an: 0163 - 68 36 910 schicken Sie uns eine Mail an:<br /> <a class="hyperlink" href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a> oder fragen Sie in unserer Anmeldung nach dem Feedback-Bogen. Auch anonym haben Sie die Möglichkeit, Ihr Anliegen mitzuteilen. Ihre Eindrücke sind für uns wertvolle Impulse, unsere Arbeit zu verbessern und weiterzuentwickeln.<br /><a class="hyperlink" target="_blank" href="https://ik-bonn.de/">ik-bonn.de</a><br /><a class="hyperlink" target="_blank" href="/content/2809-403_Philosophie_interKultur-1.pdf">Qualität nach GütesieGelverbund (428KB, PDF)</a>'
 		},
 		{
 			title: 'Netzwerke',
@@ -51,6 +51,21 @@
 		<div class="flex w-full lg:w-1/2">
 			<DefaultCard>
 				<h2 class="ti_headline_blue_bold mb-4">Philosophie</h2>
+
+				<!--	<p>
+					Wir verstehen uns als lernende Organisation und sind bemüht, unser Angebot kontinuierlich
+					zu verbessern. Dabei sind wir auf Ihre Unterstützung angewiesen und freuen uns über
+					Anregungen, Lob und Kritik.<br />
+					Rufen Sie uns an: 0163 - 68 36 910 schicken Sie uns eine Mail an:<br />
+					<a class="hyperlink" href="mailto:info@tanzimpulse-koeln.de">info@tanzimpulse-koeln.de</a> oder
+					fragen Sie in unserer Anmeldung nach dem Feedback-Bogen.
+				</p>
+
+				<p class="pt-6 pb-12">
+					Auch anonym haben Sie die Möglichkeit, Ihr Anliegen mitzuteilen. Ihre Eindrücke sind für
+					uns wertvolle Impulse, unsere Arbeit zu verbessern und weiterzuentwickeln.<br />
+					<a class="hyperlink" href="https://ik-bonn.de/">ik-bonn.de</a>
+				</p>-->
 				<p>
 					<Accordion items={faqItems} />
 				</p>

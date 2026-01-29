@@ -20,14 +20,6 @@
 						>
 					</li>
 					<li>
-						<a
-							class="hyperlink"
-							href="http://www.weiterbildung-koeln.de/"
-							rel="noreferrer"
-							target="_blank">Qualitätsgemeinschaft Berufliche Bildung Region Köln e.V.</a
-						>
-					</li>
-					<li>
 						<a class="hyperlink" href="https://aktiontanz.de/" rel="noreferrer" target="_blank">
 							AktionTanz - Bundesverband Tanz in Bildung und Gesellschaft e.V.</a
 						>
@@ -106,12 +98,6 @@
 						rel="noreferrer"
 						target="_blank">Sonder- oder Bildungsurlaub</a
 					> kann somit beantragt werden.
-				</p>
-				<p class="py-2">
-					<a class="hyperlink" href="{base}/content/2025_Mitgliedsbescheinigung.pdf" target="_blank"
-						>Mitgliedsbescheinigung der Qualitätsgemeinschaft Berufliche Bildung Region Köln e.V.
-						(PDF, 383KB)</a
-					>
 				</p>
 			</DefaultCard>
 		</div>
