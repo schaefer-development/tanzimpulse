@@ -11,15 +11,33 @@
 	import '../app.css';
 
 	import { asset, resolve } from '$app/paths';
+	import { page } from '$app/state';
+	import { pageMetadata, SITE_NAME } from '#lib/seo';
 
 	let { children } = $props();
+	let seo = $derived(pageMetadata(page.url.pathname, page.data.seminar));
 </script>
 
 <svelte:head>
-	<meta
-		name="description"
-		content="Tanzimpulse bieten eine Berufs begleitende Zusatzqualifikation zur Tanzpädagogin / zum Tanzpädagogen an – eine Weiterbildung für LehrerInnen aller Schulformen, für ErzieherInnen, SozialpädagogInnen und alle, die als therapeutisch tätig sind, wie beispielsweise Logopäden, Physiotherapeuten, Tanztherapeuten oder Übungsleiter aus Vereinen, Referenten aus der Erwachsenenbildung, die Tanz in ihre Arbeit einbeziehen."
-	/>
+	<title>{seo.title}</title>
+	<meta name="description" content={seo.description} />
+	<link rel="canonical" href={seo.canonical} />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="de_DE" />
+	<meta property="og:site_name" content={SITE_NAME} />
+	<meta property="og:title" content={seo.title} />
+	<meta property="og:description" content={seo.description} />
+	<meta property="og:url" content={seo.canonical} />
+	<meta property="og:image" content={seo.image} />
+	<meta property="og:image:alt" content={seo.imageAlt} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={seo.title} />
+	<meta name="twitter:description" content={seo.description} />
+	<meta name="twitter:image" content={seo.image} />
+	<meta name="twitter:image:alt" content={seo.imageAlt} />
+	{#if page.status >= 400}
+		<meta name="robots" content="noindex, follow" />
+	{/if}
 
 	<link rel="apple-touch-icon" sizes="57x57" href={asset('icons/apple-icon-57x57.png')} />
 	<link rel="apple-touch-icon" sizes="60x60" href={asset('icons/apple-icon-60x60.png')} />

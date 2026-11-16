@@ -42,15 +42,11 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Philosophie</title>
-</svelte:head>
-
 <section>
 	<div class="container">
 		<div class="flex w-full lg:w-1/2">
 			<DefaultCard>
-				<h2 class="ti_headline_blue_bold mb-4">Philosophie</h2>
+				<h1 class="ti_headline_blue_bold mb-4">Philosophie</h1>
 
 				<!--	<p>
 					Wir verstehen uns als lernende Organisation und sind bemüht, unser Angebot kontinuierlich
@@ -66,9 +62,9 @@
 					uns wertvolle Impulse, unsere Arbeit zu verbessern und weiterzuentwickeln.<br />
 					<a class="hyperlink" href="https://ik-bonn.de/">ik-bonn.de</a>
 				</p>-->
-				<p>
+				<div>
 					<Accordion items={faqItems} />
-				</p>
+				</div>
 
 				<p class="pt-10">
 					Wir freuen uns, auf einen regen Austausch und interessante Tanzerlebnisse mit allen

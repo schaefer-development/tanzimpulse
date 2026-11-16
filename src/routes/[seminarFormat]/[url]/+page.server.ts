@@ -1,6 +1,7 @@
 import type { Actions } from './$types';
 import type { PageServerLoad } from './$types';
-import { error, fail } from '@sveltejs/kit';
+import { error, fail, redirect } from '@sveltejs/kit';
+import { resolve } from '$app/paths';
 import { api } from '#lib/graphql/api';
 import { SEMINAR } from '#lib/graphql/queries';
 import { DEV } from 'esm-env';
@@ -13,12 +14,21 @@ import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, HCAPTCHA_SECRET } f
 import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '#lib/graphql/mutations';
 import { verify } from 'hcaptcha';
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, url: requestUrl }) => {
 	const { url } = params;
 	const body = await api(SEMINAR, { url });
 	const seminar: Seminar = body.data.seminar;
 	if (!seminar) {
 		error(404, 'Seminar nicht gefunden');
+	}
+	if (params.seminarFormat !== seminar.format) {
+		redirect(
+			308,
+			resolve('/[seminarFormat]/[url]', {
+				seminarFormat: seminar.format,
+				url: seminar.url
+			}) + requestUrl.search
+		);
 	}
 
 	return { seminar };

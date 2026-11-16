@@ -2,15 +2,11 @@
 	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
 
-<svelte:head>
-	<title>Impressum</title>
-</svelte:head>
-
 <section>
 	<div class="container">
 		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
 			<DefaultCard>
-				<h2 class="ti_headline_blue_bold">Impressum</h2>
+				<h1 class="ti_headline_blue_bold">Impressum</h1>
 
 				<h2 class="ti_headline_blue_light">Bildungswerk interKultur</h2>
 				<p class="pt-2 pb-6">staatlich anerkannte Einrichtung der Weiterbildung</p>

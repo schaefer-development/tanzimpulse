@@ -3,9 +3,7 @@
 	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
 
-<svelte:head>
-	<title>Team</title>
-</svelte:head>
+<h1 class="ti_headline_blue_bold mb-8">Unser Team für Tanzpädagogik</h1>
 
 <section>
 	<div class="container flex flex-col">

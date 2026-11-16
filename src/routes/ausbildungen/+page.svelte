@@ -105,15 +105,11 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Ausbildungen</title>
-</svelte:head>
-
 <section>
 	<div class="container">
 		<div class="flex w-full lg:w-1/2">
 			<DefaultCard>
-				<h2 class="ti_headline_blue_bold">Ausbildungen</h2>
+				<h1 class="ti_headline_blue_bold">Ausbildungen</h1>
 				<h3 class="ti_headline_blue_light mb-4">
 					Zusatzqualifikation zur Tanzpädagogin / zum Tanzpädagogen
 				</h3>

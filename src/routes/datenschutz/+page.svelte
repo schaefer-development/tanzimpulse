@@ -2,15 +2,11 @@
 	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
 
-<svelte:head>
-	<title>Datenschutz</title>
-</svelte:head>
-
 <section>
 	<div class="container">
 		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
 			<DefaultCard>
-				<h2 class="ti_headline_blue_bold mb-6">Datenschutz</h2>
+				<h1 class="ti_headline_blue_bold mb-6">Datenschutz</h1>
 
 				<p>
 					Wir freuen uns sehr über Ihr Interesse an unserer Einrichtung und an unserem Bildungs- und

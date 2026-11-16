@@ -1,6 +1,4 @@
-<svelte:head>
-	<title>Videos</title>
-</svelte:head>
+<h1 class="ti_headline_blue_bold mb-8">Tanzprojekte und Videos</h1>
 
 <section>
 	<div class="container flex flex-col">

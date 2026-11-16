@@ -23,17 +23,17 @@
 					</div>
 
 					<div class="flex w-6/12 justify-center lg:justify-start">
-						<div class="w-6/12 max-w-[250px] min-w-[150px] text-white lg:w-5/12">
+						<div class="w-4/12 max-w-[250px] min-w-[150px] text-white">
 							<Logo />
 						</div>
 					</div>
 				</div>
 
-				<h1
+				<p
 					class="text-xl font-extralight tracking-wider uppercase sm:text-xl md:text-2xl lg:text-3xl"
 				>
 					<span class="font-bold">Tanzimpulse bei interKultur </span>
-				</h1>
+				</p>
 				<p class="text-base tracking-wide sm:text-lg md:text-xl lg:text-2xl">
 					staatlich anerkannte Einrichtung der Weiterbildung
 				</p>

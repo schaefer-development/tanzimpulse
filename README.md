@@ -36,3 +36,17 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## SEO
+
+Page titles, descriptions, the public site URL and event structured data are maintained in
+`src/lib/seo.ts`. The root layout renders these as HTML metadata, including canonical URLs and
+social previews. Seminar URLs use `/workshop/<slug>` or `/ausbildung/<slug>`; other prefixes
+redirect permanently to the matching URL.
+
+The sitemap includes static pages and seminars that have not ended. Its seminar modification
+dates come from the CMS; static pages omit `lastmod` when no reliable date is available.
+Free-text venue addresses are split into postal fields only when their structure is clear.
+
+Run `npm test` for the URL, sitemap and structured data regression tests, followed by
+`npm run lint` and `npm run check`.

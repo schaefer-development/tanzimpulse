@@ -12,9 +12,7 @@
 	const motivWorkshopsWebp = asset('images/startpage/workshops25.webp');
 </script>
 
-<svelte:head>
-	<title>Start | Tanzimpulse</title>
-</svelte:head>
+<h1 class="ti_headline_blue_bold mb-8">Tanzpädagogik: Ausbildung und Fortbildung</h1>
 
 <section class="relative grid grid-cols-1 gap-12 pb-12 lg:grid-cols-2">
 	<div class="cardWrap grow">

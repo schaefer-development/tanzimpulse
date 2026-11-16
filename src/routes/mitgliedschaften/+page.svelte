@@ -2,15 +2,11 @@
 	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
 
-<svelte:head>
-	<title>Mitgliedschaften</title>
-</svelte:head>
-
 <section>
 	<div class="container">
 		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
 			<DefaultCard>
-				<h2 class="ti_headline_blue_bold">Mitgliedschaften</h2>
+				<h1 class="ti_headline_blue_bold">Mitgliedschaften</h1>
 
 				<ul class="mb-4 py-4">
 					<li>

@@ -46,12 +46,12 @@
 <section>
 	<div class="container mx-auto grid grid-cols-1 gap-10 lg:grid-cols-2">
 		<div class="__long_description border border-neutral-200 shadow-xl">
-			<SeminarCard {seminar}>
+			<SeminarCard {seminar} headingLevel="h1">
 				<div slot="beschreibung">
-					<p class="py-6">
+					<div class="py-6">
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html seminar.beschreibung.html}
-					</p>
+					</div>
 
 					<p class="py-2 text-black">
 						<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase">
