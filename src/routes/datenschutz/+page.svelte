@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
 
 <svelte:head>
@@ -536,7 +536,14 @@
 				<p class="my-6 border-t border-gray-300 py-6">
 					Weitere Dokumente des Vereins für Weiterbildung und Friedensarbeit:
 					<br />
-					<a href="" class="hyperlink" target="_blank">Facebook-Datenschutzerklärung</a><br />
+					<a
+						href="https://www.facebook.com/privacy/policy/"
+						class="hyperlink"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Facebook-Datenschutzerklärung
+					</a><br />
 					<a
 						href="https://www.bf-bonn.de/index.php/datenschutzerklaerung.html?view=article&id=77:facebook-impressum&catid=15:bildungsforum-lernwelten"
 						class="hyperlink"

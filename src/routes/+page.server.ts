@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types';
 
-import { api } from '$lib/graphql/api';
-import { INDEX } from '$lib/graphql/queries';
+import { api } from '#lib/graphql/api';
+import { INDEX } from '#lib/graphql/queries';
 
 export const prerender = true;
 

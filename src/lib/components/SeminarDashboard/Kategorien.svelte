@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let kategorien;
-	import Toggle from '$lib/components/Toggle/Toggle.svelte';
-	import Button from '$lib/components/Button/Button.svelte';
+	import Toggle from '#lib/components/Toggle/Toggle.svelte';
+	import Button from '#lib/components/Button/Button.svelte';
 </script>
 
 <h2 class="text-2xl font-bold tracking-wider text-white uppercase">

@@ -1,11 +1,14 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
-	import SeminarAnmeldung from '$lib/components/SeminarAnmeldung/SeminarAnmeldung.svelte';
-	import { getDataGiveString } from '$lib/helpers';
-	let { data }: PageProps = $props();
-	const { seminar } = data;
 
-	const seminardata = {
+	import SeminarAnmeldung from '#lib/components/SeminarAnmeldung/SeminarAnmeldung.svelte';
+	import { getDataGiveString } from '#lib/helpers';
+
+	let { data }: PageProps = $props();
+
+	let seminar = $derived(data.seminar);
+
+	let seminardata = $derived({
 		'@context': 'https://schema.org',
 		'@type': 'Event',
 		name: seminar.titel,
@@ -44,12 +47,13 @@
 			name: 'TANZIMPULSE – Institut für Tanzpädagogik',
 			url: 'https://tanzimpulse.de/'
 		}
-	};
+	});
 </script>
 
 <svelte:head>
 	<title>{seminar.titel}</title>
 
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -- getDataGiveString escapes HTML delimiters in JSON-LD. -->
 	{@html getDataGiveString(seminardata)}
 </svelte:head>
 

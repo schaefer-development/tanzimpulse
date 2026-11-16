@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
 
 <svelte:head>

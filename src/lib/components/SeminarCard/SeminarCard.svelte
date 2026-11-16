@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { overbooked, dateFormat } from '$lib/helpers';
-	import Button from '$lib/components/Button/Button.svelte';
-	import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
+	import type { ResolvedPathname } from '$app/types';
+	import { overbooked, dateFormat } from '#lib/helpers';
+	import Button from '#lib/components/Button/Button.svelte';
+	import VeranstaltungsOrt from '#lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
 
 	export let seminar: Seminar;
-	export let link = '#';
+	export let link: ResolvedPathname | null = null;
 </script>
 
 <div class="flex items-start">
@@ -74,8 +75,8 @@
 			</slot>
 
 			<div class="seminar_card_content flex-0">
-				{#if link && link !== '#'}
-					<Button href={link} buttonstyle={'blue'}>Mehr erfahren</Button>
+				{#if link}
+					<Button href={link} buttonstyle="blue">Mehr erfahren</Button>
 				{/if}
 			</div>
 		</div>

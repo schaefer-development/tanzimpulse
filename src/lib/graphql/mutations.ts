@@ -1,4 +1,4 @@
-import { gql } from '$lib/helpers';
+import { gql } from '#lib/helpers';
 import { seminarFragment } from './queries';
 export const UPSERT_TEILNEHMER = gql`
 	${seminarFragment}

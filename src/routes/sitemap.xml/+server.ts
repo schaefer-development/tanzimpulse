@@ -1,5 +1,5 @@
-import { SITEMAP } from '$lib/graphql/queries';
-import { api } from '$lib/graphql/api';
+import { SITEMAP } from '#lib/graphql/queries';
+import { api } from '#lib/graphql/api';
 import type { RequestHandler } from './$types';
 
 const now = new Date().toISOString();

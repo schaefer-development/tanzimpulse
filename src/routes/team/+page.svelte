@@ -1,6 +1,6 @@
-<script context="module" lang="ts">
-	import { base } from '$app/paths';
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+<script lang="ts">
+	import { asset } from '$app/paths';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/bierduempel.jpg"
+							src={asset('images/employees/bierduempel.jpg')}
 							alt="Bettina Bierdümpel | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -32,7 +32,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/cacutalua_tujek.jpg"
+							src={asset('images/employees/cacutalua_tujek.jpg')}
 							alt="Astrid Cacutalua-Tujek | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -49,7 +49,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/fontana.jpg"
+							src={asset('images/employees/fontana.jpg')}
 							alt="Sonia Fontana | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -68,7 +68,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/goencue.jpg"
+							src={asset('images/employees/goencue.jpg')}
 							alt="Suna Göncü | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -84,7 +84,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/grossberg.jpg"
+							src={asset('images/employees/grossberg.jpg')}
 							alt="Bettina Grossberg | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -100,8 +100,8 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/heipel.jpg"
-							alt="Sabrina Wöhler | Tanzimpulse"
+							src={asset('images/employees/heipel.jpg')}
+							alt="Angelika Heipel | Tanzimpulse"
 						/>
 						<div class="pt-4">
 							<h2 class="ti_headline_blue_light mb-4 text-center">Angelika Heipel</h2>
@@ -119,7 +119,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/moschner.jpg"
+							src={asset('images/employees/moschner.jpg')}
 							alt="Constanze Moschner | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -138,7 +138,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/peters.jpg"
+							src={asset('images/employees/peters.jpg')}
 							alt="Susanne Peters | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -155,7 +155,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/stefan_schick.jpg"
+							src={asset('images/employees/stefan_schick.jpg')}
 							alt="Nicole Stefan-Schick | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -168,10 +168,11 @@
 							</p>
 						</div>
 					</div>
+
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/wolff.jpg"
+							src={asset('images/employees/wolff.jpg')}
 							alt="Uta Wolff | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -187,7 +188,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/woehler.jpg"
+							src={asset('images/employees/woehler.jpg')}
 							alt="Sabrina Wöhler | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -201,7 +202,7 @@
 							</p>
 							<a
 								class="hyperlink"
-								rel="”noreferrer”"
+								rel="noopener noreferrer"
 								href="https://www.tanz-kommunikation.de"
 								target="_blank">tanz-kommunikation.de</a
 							>
@@ -211,7 +212,7 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src="{base}/images/employees/wrobel.jpg"
+							src={asset('images/employees/wrobel.jpg')}
 							alt="Heike Wrobel | Tanzimpulse"
 						/>
 						<div class="pt-4">
@@ -231,11 +232,13 @@
 				<h2 class="text-ti_blue_mat mb-8 text-xl tracking-wide uppercase lg:text-2xl">
 					Gastreferent/Innen
 				</h2>
+
 				<div class="grid grid-cols-1 gap-10 md:grid-cols-2">
 					<div class="___guest flex flex-col">
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Jindra Ackemann</h4>
 						<p>Diplom Tanzpädagogin (TI), Erzieherin, Hipp Hop Trainerin von Jugendgruppen</p>
 					</div>
+
 					<div class="___guest flex flex-col">
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Nina Buttler</h4>
 						<p>
@@ -257,6 +260,7 @@
 							Körper.
 						</p>
 					</div>
+
 					<div class="___guest flex flex-col">
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Ronja Frizen</h4>
 						<p>
@@ -276,6 +280,7 @@
 							Inszenierungsprojekt bei Johann Kresnik in Wien.
 						</p>
 					</div>
+
 					<div class="___guest flex flex-col">
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Birgit Götz</h4>
 						<p>
@@ -306,9 +311,9 @@
 						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Verena Tarnai</h4>
 						<p>
 							Dipl.-Tanzpädagogin (TI) und Erzieherin. Seit 2012 Selbständig als Tanzpädagogin.
-							Meine Schwerpunkte sind der Kreative Kindertanz und Hip Hop- Funky Jazz für Kinder im
+							Meine Schwerpunkte sind der Kreative Kindertanz und Hip Hop- Funky Jazz für Kinder im
 							Kindergarten- und Grundschulalter. Ich leite eigene Kindertanzkurse, Tanz-AGs und
-							Tanzprojekte. Bei meinen Tanzstunden liegt mir besonders am Herzen, die natürliche
+							Tanzprojekte. Bei meinen Tanzstunden liegt mir besonders am Herzen, die natürliche
 							Bewegungsfreude und Kreativität der Kinder zu fördern und ihr Selbstvertrauen zu
 							stärken.
 						</p>

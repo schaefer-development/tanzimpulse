@@ -1,7 +1,7 @@
 <script lang="ts">
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 
-	import Accordion from '$lib/components/Accordion/Accordion.svelte';
+	import Accordion from '#lib/components/Accordion/Accordion.svelte';
 
 	const faqItems = [
 		{

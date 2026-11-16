@@ -4,15 +4,7 @@ interface Identifiable {
 }
 
 type ButtonColor =
-	| 'blue'
-	| 'cyan'
-	| 'green'
-	| '_blue'
-	| '_cyan'
-	| '_green'
-	| 'red'
-	| 'white'
-	| 'gray';
+	'blue' | 'cyan' | 'green' | '_blue' | '_cyan' | '_green' | 'red' | 'white' | 'gray';
 
 type Koordinaten = {
 	longitude: number;

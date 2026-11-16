@@ -23,6 +23,7 @@ export const gql = String.raw;
 export const graphQLError = { message: 'GraphQL Fehler' };
 
 export function getDataGiveString(incomingData: Record<string, unknown>) {
-	const interpolierte_daten = `<script type="application/ld+json">${JSON.stringify(incomingData)}</script>`;
-	return interpolierte_daten;
+	// Prevent CMS text containing </script> from breaking out of the JSON-LD script element.
+	const json = JSON.stringify(incomingData).replace(/</g, '\\u003c');
+	return `<script type="application/ld+json">${json}</script>`;
 }

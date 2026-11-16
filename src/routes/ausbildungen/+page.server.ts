@@ -1,12 +1,12 @@
 import type { PageServerLoad } from './$types';
-import { dev } from '$app/environment';
-import { addTransientSelected } from '$lib/helpers';
-import { api } from '$lib/graphql/api';
-import { SEMINARE } from '$lib/graphql/queries';
+import { DEV } from 'esm-env';
+import { addTransientSelected } from '#lib/helpers';
+import { api } from '#lib/graphql/api';
+import { SEMINARE } from '#lib/graphql/queries';
 
 // we don't need any JS on this page, though we'll load
 // it in dev so that we get hot module replacement
-export const csr = dev;
+export const csr = DEV;
 
 export const prerender = false;
 

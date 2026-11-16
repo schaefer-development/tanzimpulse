@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types';
-import { addTransientSelected } from '$lib/helpers';
-import { api } from '$lib/graphql/api';
-import { SEMINARE } from '$lib/graphql/queries';
+import { addTransientSelected } from '#lib/helpers';
+import { api } from '#lib/graphql/api';
+import { SEMINARE } from '#lib/graphql/queries';
 export const prerender = false;
 
 const seminarFormat = 'workshop';

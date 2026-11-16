@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 </script>
 
 <div role="alert">
@@ -10,7 +10,7 @@
 		<p class="py-2 text-white">
 			Bitte <a
 				class="hover:text-black; cursor-pointer text-xs font-bold tracking-wider text-white uppercase transition-all duration-300 ease-in-out hover:text-black"
-				href="{base}/kontakt">kontaktieren Sie uns</a
+				href={resolve('/kontakt')}>kontaktieren Sie uns</a
 			> direkt.
 		</p>
 	</div>

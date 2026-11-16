@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
-	import CiteGallery from '$lib/components/Cite/CiteGallery.svelte';
-	import SeminarDashboard from '$lib/components/SeminarDashboard/SeminarDashboard.svelte';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
+	import CiteGallery from '#lib/components/Cite/CiteGallery.svelte';
+	import SeminarDashboard from '#lib/components/SeminarDashboard/SeminarDashboard.svelte';
 	let { data }: PageProps = $props();
 </script>
 

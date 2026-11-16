@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
-	import Accordion from '$lib/components/Accordion/Accordion.svelte';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
+	import Accordion from '#lib/components/Accordion/Accordion.svelte';
 
-	import CiteGallery from '$lib/components/Cite/CiteGallery.svelte';
+	import CiteGallery from '#lib/components/Cite/CiteGallery.svelte';
 
-	import SeminarDashboard from '$lib/components/SeminarDashboard/SeminarDashboard.svelte';
+	import SeminarDashboard from '#lib/components/SeminarDashboard/SeminarDashboard.svelte';
 	let { data }: PageProps = $props();
 
 	const ausbildungsstufen = [

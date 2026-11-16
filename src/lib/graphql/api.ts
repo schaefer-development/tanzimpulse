@@ -1,5 +1,5 @@
-import { GRAPHCMS_ENDPOINT, GRAPHCMS_API_TOKEN } from '$lib/env';
-import { graphQLError } from '$lib/helpers';
+import { GRAPHCMS_ENDPOINT, GRAPHCMS_API_TOKEN } from '#lib/env';
+import { graphQLError } from '#lib/helpers';
 import { error } from '@sveltejs/kit';
 
 export async function api(query: string, variables?: Record<string, unknown>) {

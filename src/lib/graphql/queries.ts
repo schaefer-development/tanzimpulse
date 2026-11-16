@@ -1,4 +1,4 @@
-import { gql } from '$lib/helpers';
+import { gql } from '#lib/helpers';
 export const seminarFragment = gql`
 	fragment seminarFragment on Seminar {
 		id

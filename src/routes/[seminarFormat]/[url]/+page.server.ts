@@ -1,16 +1,16 @@
 import type { Actions } from './$types';
 import type { PageServerLoad } from './$types';
 import { error, fail } from '@sveltejs/kit';
-import { api } from '$lib/graphql/api';
-import { SEMINAR } from '$lib/graphql/queries';
-import { dev } from '$app/environment';
-import { overbooked } from '$lib/helpers';
+import { api } from '#lib/graphql/api';
+import { SEMINAR } from '#lib/graphql/queries';
+import { DEV } from 'esm-env';
+import { overbooked } from '#lib/helpers';
 import * as SMTPTransport from 'nodemailer/lib/smtp-transport';
 import nodemailer from 'nodemailer';
-import { waitingListMessage, registrationMessage } from '$lib/mail';
+import { waitingListMessage, registrationMessage } from '#lib/mail';
 import sanitizeHtml from 'sanitize-html';
-import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, HCAPTCHA_SECRET } from '$lib/env';
-import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '$lib/graphql/mutations';
+import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, HCAPTCHA_SECRET } from '#lib/env';
+import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '#lib/graphql/mutations';
 import { verify } from 'hcaptcha';
 
 export const load: PageServerLoad = async ({ params }) => {
@@ -32,7 +32,7 @@ const transportOptions: SMTPTransport.Options = {
 		pass: SMTP_PASSWORD
 	},
 	tls: {
-		rejectUnauthorized: !dev
+		rejectUnauthorized: !DEV
 	}
 };
 const transporter = nodemailer.createTransport(transportOptions);
