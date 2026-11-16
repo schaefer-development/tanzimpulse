@@ -3,12 +3,12 @@
 	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
 
-<h1 class="ti_headline_blue_bold mb-8">Unser Team für Tanzpädagogik</h1>
-
 <section>
 	<div class="container flex flex-col">
 		<div class="grid grid-cols-1 gap-10">
 			<DefaultCard>
+				<h1 class="ti_headline_blue_bold my-8 text-center">Unser Team bei Tanzimpulse</h1>
+
 				<div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
 					<div class="___single_employee flex flex-col py-4">
 						<img

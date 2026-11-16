@@ -12,8 +12,6 @@
 	const motivWorkshopsWebp = asset('images/startpage/workshops25.webp');
 </script>
 
-<h1 class="ti_headline_blue_bold mb-8">Tanzpädagogik: Ausbildung und Fortbildung</h1>
-
 <section class="relative grid grid-cols-1 gap-12 pb-12 lg:grid-cols-2">
 	<div class="cardWrap grow">
 		<div class="bg-ti_blue_mat shadow-xl transition duration-300 ease-in-out">
@@ -27,9 +25,9 @@
 			</picture>
 
 			<div class="py-8">
-				<h2 class="px-8 pb-4 text-2xl font-bold tracking-wide text-white uppercase lg:text-3xl">
+				<h1 class="px-8 pb-4 text-2xl font-bold tracking-wide text-white uppercase lg:text-3xl">
 					Ausbildungen
-				</h2>
+				</h1>
 
 				<p class="px-8 text-white">
 					Werde Tanzpädagogin/ Tanzpädagoge, geschult durch unser kompetentes Team und integriere
@@ -62,9 +60,9 @@
 			</picture>
 
 			<div class="py-8">
-				<h2 class="px-8 pb-4 text-2xl font-bold tracking-wide text-white uppercase lg:text-3xl">
+				<h1 class="px-8 pb-4 text-2xl font-bold tracking-wide text-white uppercase lg:text-3xl">
 					Workshops
-				</h2>
+				</h1>
 
 				<p class="px-8 text-white">
 					Immer aktuell sein, mit Impulsen für die tanzpädagogische Praxis für alle

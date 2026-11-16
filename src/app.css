@@ -90,9 +90,65 @@ a:hover {
 
 .graphcms_card_startpage a,
 .hyperlink {
-	@apply text-ti_blue_accent cursor-pointer text-xs font-bold tracking-wider uppercase transition-all duration-300 ease-in-out hover:text-black;
+	@apply text-ti_blue_accent cursor-pointer text-sm font-bold tracking-wider uppercase transition-all duration-300 ease-in-out hover:text-black;
 }
 
 .ti_animate-spin {
 	animation: spin 3s linear infinite;
+}
+
+.___default_card a {
+	position: relative;
+	margin-left: 0.75em;
+	display: inline-block;
+}
+
+.___default_card a:before {
+	content: '';
+	position: relative;
+	display: inline-block;
+	bottom: 0%;
+	transform: translateY(-0%) rotate(45deg) scale(0.9);
+	left: -0.4em;
+	width: 0.7em;
+	height: 0.7em;
+	border-right: 2px solid #0062ff;
+	border-top: 2px solid #0062ff;
+	transition: 0.25s;
+}
+
+.___default_card a:hover:before {
+	left: -0.25em;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+.___default_card a:after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	bottom: calc(49% - 1px);
+	left: -0.6em;
+	width: 0.85em;
+	height: 2px;
+	background-color: #0062ff;
+	transition: 0.25s;
+}
+
+.___default_card a:hover:after {
+	left: -0.45em;
+	background-color: #000;
+}
+
+a.button {
+	margin-left: 0;
+	display: block;
+	text-align: center;
+}
+
+a.button:before,
+a.button:after {
+	width: 0;
+	height: 0;
+	border: 0;
 }

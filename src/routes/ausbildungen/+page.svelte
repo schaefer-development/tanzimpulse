@@ -46,7 +46,7 @@
         <a
           href="#ausbildungen"
           aria-label="Mehr"
-          class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
+          class="button border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
         >
           Jetzt Kurse entdecken
         </a>
@@ -71,7 +71,7 @@
         <a
           href="#ausbildungen"
           aria-label="Mehr"
-          class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
+          class="button border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
         >
           Jetzt Kurse entdecken
         </a>
@@ -95,7 +95,7 @@
         <a
           href="#ausbildungen"
           aria-label="Mehr"
-          class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
+          class="button border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
         >
           Jetzt Kurse entdecken
         </a>
