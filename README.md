@@ -50,3 +50,10 @@ Free-text venue addresses are split into postal fields only when their structure
 
 Run `npm test` for the URL, sitemap and structured data regression tests, followed by
 `npm run lint` and `npm run check`.
+
+## Dependency updates
+
+`ncu` respects installed peer dependencies through `.ncurc.cjs`. TypeScript major upgrades
+require compatible releases of both `svelte-check` and `typescript-eslint`.
+Node type definitions receive updates within the runtime major configured in `.tool-versions`.
+Nodemailer includes its own TypeScript declarations, so `@types/nodemailer` is not needed.
