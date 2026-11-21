@@ -5,11 +5,11 @@
 
 	let { data }: PageProps = $props();
 
-	const motivAusbildungen = asset('images/startpage/ausbildungen25.jpg');
-	const motivAusbildungenWebp = asset('images/startpage/ausbildungen25.webp');
+	const motivAusbildungen = asset('images/startpage/ausbildungen26.jpg');
+	const motivAusbildungenWebp = asset('images/startpage/ausbildungen26.webp');
 
-	const motivWorkshops = asset('images/startpage/workshops25.jpg');
-	const motivWorkshopsWebp = asset('images/startpage/workshops25.webp');
+	const motivWorkshops = asset('images/startpage/workshops26.jpg');
+	const motivWorkshopsWebp = asset('images/startpage/workshops26.webp');
 </script>
 
 <section class="relative grid grid-cols-1 gap-12 pb-12 lg:grid-cols-2">

@@ -4,16 +4,32 @@
 
 	const quotes = [
 		{
+			text: '„Tanzimpulse bedeutet für mich Ankommen: unter Gleichgesinnten und bei mir. Ich habe so viel Neues dazugelernt: tänzerisch, pädagogisch und auch über mich selbst. Die Wochenenden  waren sehr abwechslungsreich und die Dozentinnen waren mit Leidenschaft und Herzblut dabei. Während der Ausbildung habe ich mich vielen Herausforderungen gestellt, an denen ich gewachsen bin. Ein besonderes Highlight war das Abschlusswochenende der Aufbaustufe. Nun bin ich in der Diplomstufe und dankbar für die Zeit bei Tanzimpulse.“',
+			author: 'Cornelia R.'
+		},
+
+		{
+			text: '„Die Ausbildung bei Euch ist wirklich genau die Richtige für mich. Ich bin mit so viel Freude in der Rolle der Lernenden und habe wirklich schon unglaublich viel Inspiration, Technik und und "Werkzeug" mitgenommen. Herzlichen Dank.“',
+			author: 'Irit I.'
+		},
+
+		{
+			text: '„Durch die Weiterbildung im Bereich Tanz habe ich viele wertvolle Erfahrungen gemacht und es kommen ständig neue hinzu. Jedes Zusammentreffen mit Menschen, die die Liebe zum Tanz teilen, ist eine Bereicherung. Euer Leitgedanke, den Tanz in die Welt zu bringen, durch ein unterstützendes Miteinander umzusetzen, ist ein erfüllendes Erlebnis. Ich bin sehr dankbar, ein Teil davon sein zu dürfen!“',
+			author: 'Karolin M.'
+		},
+
+		{
+			text: '„Seit 2012 bin ich in unterschiedlichen Zusammenhängen Teilnehmerin bei den Tanzimpulsen und es liegt mir  am Herzen, euch mitzuteilen, wie sehr ich eure Arbeit schätze, denn jede von euch ist einzigartig in ihrem Fachgebiet. Ihr seid ein starkes, kompetentes und menschlich außergewöhnliches Team. Jede einzelne Stunde, die ich in den Workshops und Ausbildungsstufen mit euch verbracht habe, war eine wunderbare Erfahrung und Bereicherung für mich.“',
+			author: 'Alexandra T.'
+		},
+
+		{
 			text: '„Liebes Team, in der Aufbaustufe waren bisher alle Wochenenden mit den entsprechenden Tanzstilen eine besondere Erfahrung und Bereicherung für mich. Alle Inhalte wurden mit viel Begeisterung und Gestaltungskraft vermittelt; es wurde motiviert und gelobt. Mit großer Tanzfreude erlebe ich ein erfüllendes Gefühl, dem Tanzen bewusst soviel Zeit und Fokussierung zukommen zu lassen.“',
 			author: 'Karolin M.'
 		},
 		{
 			text: '„So viel Vielfalt, Austausch, Kreative Impulse, inspirierende Momente…. Schön, dass ich seit so einer langen Zeit ein Teil davon sein kann. Vielen Dank.“',
 			author: 'Nicole S.-Sch.'
-		},
-		{
-			text: '"Das war eine wunderbar inspirierende und motivierende Auftaktveranstaltung zur Grundausbildung Tanzpädagogik! Ich freue mich schon jetzt sehr auf das nächste Modul!"',
-			author: 'Brigitte B.'
 		},
 		{
 			text: '„Tanzimpulse ist wie nach Hause kommen...“',
@@ -34,10 +50,6 @@
 		{
 			text: '„Die Ausbildungsjahre bei den Tanzimpulsen haben mich persönlich geprägt und meine Arbeit an der Schule als Lehrerin positiv beeinflusst und bereichert. Besonders die Improvisation ermöglicht es den Schülerinnen und Schülern kreativ, ideenreich und rücksichtsvoll gemeinsam oder alleine das Erarbeitete darzustellen.“',
 			author: 'Beate | Kursteilnehmerin'
-		},
-		{
-			text: '„Ich denke gerade daran, mit wie viel Freude die Kinder immer mit mir in den Turnraum gegangen sind und auch schüchterne Kinder ganz anders wahrzunehmen waren.“',
-			author: 'Frauke | Tanzpädagogin/Schwerpunkt Kindertanz + Kita-Leitung'
 		},
 		{
 			text: '„Ein riesengroßes Dankeschön für eure geleistete Arbeit im Vorfeld und euren Einsatz an dem Wochenende, für eure Liebe zur Tanzvermittlung und euren wertschätzenden Umgang mit uns Teilnehmerinnen.“',

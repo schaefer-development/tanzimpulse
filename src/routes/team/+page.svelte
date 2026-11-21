@@ -21,25 +21,8 @@
 							<p>
 								Künstlerische Leitung der TANZIMPULSE. Tanzpädagogin und Diplom-Sozialarbeiterin,
 								langjährige wiss. Mitarbeiterin an der Technischen Hochschule Köln, Fakultät für
-								Angewandte Sozialwissenschaften. Gründungsmitglied der TANZIMPULSE und künstlerische
-								Leitung des Instituts seit 1994.
-							</p>
-						</div>
-					</div>
-
-					<div class="___single_employee flex flex-col py-4">
-						<img
-							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src={asset('images/employees/cacutalua_tujek.jpg')}
-							alt="Astrid Cacutalua-Tujek | Tanzimpulse"
-						/>
-						<div class="pt-4">
-							<h2 class="ti_headline_blue_light mb-4 text-center">Astrid Cacutalua-Tujek</h2>
-							<p>
-								Diplom-Tanzpädagogin (TI), Erzieherin und Fachkraft für elementarpäd.
-								Sprachförderung. Ihren Schwerpunkt: „Sprachförderung und Tanz“ sowie „Rhythmische
-								Bewegungförderung für U3 Kinder“, unterrichtet sie in der Grundstufe mit Schwerpunkt
-								Kindertanz.
+								Angewandte Sozialwissenschaften. Gründungsmitglied der TANZIMPULSE und Leitung des
+								Instituts seit 1994.
 							</p>
 						</div>
 					</div>
@@ -117,6 +100,24 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
+							src={asset('images/employees/meyer.jpg')}
+							alt="Anne Meyer | Tanzimpulse"
+						/>
+						<div class="pt-4">
+							<h2 class="ti_headline_blue_light mb-4 text-center">Anne Meyer</h2>
+							<p>
+								Diplom-Tanzpädagogin (TI) und Diplom-Pädagogin, sie ist in der außerschulischen
+								Bildung und Beratung tätig und führt Tanzprojekte für Kinder und Jugendliche durch.
+								Sie unterrichtet die Kleinsten beim Eltern-Kind-Tanz, vermittelt Freude an Bewegung
+								und Fantasie im kreativen Kindertanz und Kinderyoga. Bei Tanzimpulse unterrichtet
+								sie mit Schwerpunkt Kindertanz.
+							</p>
+						</div>
+					</div>
+
+					<div class="___single_employee flex flex-col py-4">
+						<img
+							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
 							src={asset('images/employees/moschner.jpg')}
 							alt="Constanze Moschner | Tanzimpulse"
 						/>
@@ -136,23 +137,6 @@
 					<div class="___single_employee flex flex-col py-4">
 						<img
 							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
-							src={asset('images/employees/peters.jpg')}
-							alt="Susanne Peters | Tanzimpulse"
-						/>
-						<div class="pt-4">
-							<h2 class="ti_headline_blue_light mb-4 text-center">Susanne Peters</h2>
-							<p>
-								Physiotherapeutin mit eigener Praxis und Dozentin für Bewegung und Tanz, bringt
-								physiotherapeutische + tänzerische Erfahrungen zusammen, die sie in der Grundstufe
-								mit Schwerpunkt Kindertanz bei der Vermittlung von Physiologie und Anatomie
-								einbringt.
-							</p>
-						</div>
-					</div>
-
-					<div class="___single_employee flex flex-col py-4">
-						<img
-							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
 							src={asset('images/employees/stefan_schick.jpg')}
 							alt="Nicole Stefan-Schick | Tanzimpulse"
 						/>
@@ -163,6 +147,26 @@
 								Graziella Padilla, Bewegungstheater bei Anne und Wolfgang Tiedt und zeitgenössischen
 								Tanz am Centre National de Dance in Angers, Frankreich. Seit 1993 unterrichtet sie
 								Tanz.
+							</p>
+						</div>
+					</div>
+
+					<div class="___single_employee flex flex-col py-4">
+						<img
+							class="mx-auto h-16 w-16 rounded-full md:h-24 md:w-24 lg:h-32 lg:w-32"
+							src={asset('images/employees/von_redey.jpg')}
+							alt="Anna von Rédey | Tanzimpulse"
+						/>
+						<div class="pt-4">
+							<h2 class="ti_headline_blue_light mb-4 text-center">Anna von Rédey</h2>
+							<p>
+								Diplom-Tanzpädagogin und Sozialarbeiterin, tätig an der Schnittstelle beider
+								Bereiche. Freiberuflich arbeitet sie mehrheitlich mit Kindern jeder Altersklasse,
+								zunehmend aber auch mit Jugendlichen und Erwachsenen in eigener Projektgestaltung.
+								Ihre tanzpädagogischen Konzepte entstehen an der Schnittstelle von Körper,
+								Gesellschaft und Transformation. Tänzerisch arbeitet sie vor allem mit den Techniken
+								der Improvisation und der Körperarbeit. Bei Tanzimpulse unterrichtet sie mit
+								Schwerpunkt Kindertanz.
 							</p>
 						</div>
 					</div>
@@ -249,13 +253,30 @@
 					</div>
 
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Mara Dewenter</h4>
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Lisa Grafen</h4>
 						<p>
-							ist Kultur- und Tanzpädagogin (TI) und unterrichtet Tanz seit 2015. Sie leitet
-							Kreative Kindertanz- und Eltern-Kind-Tanzkurse und arbeitet in Kitas sowie in
-							Tanzprojekten an Schulen und in außerschulischen Bildungsstätten. Im Mittelpunkt ihrer
-							Arbeit stehen Bewegungsfreude, Kreativität und ein ganzheitlicher Zugang zum eigenen
-							Körper.
+							Diplom-Tanzpädagogin (TI) und Modedesignerin. Seit ihrer Kindheit ist Lisa mit der
+							israelischen Folklore verbunden. Besonders faszinieren sie die Vielfalt der Musik, die
+							unterschiedlichen Rhythmen und die Möglichkeit, durch den Folkloretanz andere Kulturen
+							zu entdecken. Ihre langjährige Tanzerfahrung ist geprägt von europäischen und
+							internationalen Einflüssen. Eine besondere Liebe gilt dem argentinischen Tango, der
+							auch ihre Begeisterung für die vielfältigen Folkloretänze Argentiniens geweckt hat.
+							Die Freude an der Musik, der Bewegung und am kulturellen Austausch begleitet sie bis
+							heute.
+						</p>
+					</div>
+
+					<div class="___guest flex flex-col">
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Elke Fischer</h4>
+						<p>
+							Die Begeisterung für die traditionellen Tänze Südosteuropas entstand durch zahlreiche
+							Reisen nach Griechenland und die Faszination für die dortige Tanzkultur. Seit 1991
+							gehört der internationale Tanz zu ihrem Leben. Neben der langjährigen Teilnahme an
+							Workshops für griechische Tänze bei Nikos Thanos und Leonidas Efthymiadis in Köln ist
+							sie seit März 2016 als Übungsleiterin für internationale Tänze beim TV Höhenhaus Köln
+							tätig. Mit viel Freude am Tanzen und an der Gemeinschaft leitet sie die
+							Donnerstagsgruppe in Holweide und gibt ihre Begeisterung für die Vielfalt
+							internationaler Tänze weiter.
 						</p>
 					</div>
 
@@ -268,28 +289,28 @@
 					</div>
 
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Catharina Gadelha</h4>
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Manuel Kramer</h4>
 						<p>
-							ist Choreografin, Regisseurin und Tanz- und Theaterpädagogin. Zudem ist sie als
-							Tanzvermittlerin im Kinder- und Jugendbereich international tätig. Anfang der 90er
-							(1990—1994) absolvierte Gadelha eine Ausbildung in »Elementarer Tanzbei Graziella
-							Padilla und studierte Bewegungstheater an der Deutschen Sporthochschule in Köln. Seit
-							1992 ist sie freischaffende Choreografin. 1994 realisierte sie ein Regie- und
-							Inszenierungsprojekt bei Johann Kresnik in Wien.
+							Seit 1997 ist er als Trainer, Lehrer und Ausbilder in den Bereichen Bewegung,
+							Gesundheit und persönliche Entwicklung tätig. Seine Arbeit verbindet Tanz, Yoga,
+							Pilates und ganzheitliche Mind-Body-Konzepte. Im Mittelpunkt stehen die Verbindung von
+							Musik, Bewegung und Atem sowie individuelle Körpererfahrung und persönlicher Ausdruck.
+							Er ist Referent und Ausbilder beim BTB, internationaler Yogalehrer und AntiGravity®
+							Yoga Master Trainer, Aerial-Yoga-Ausbilder, Tanzpädagoge (TI), Pilates- und
+							Reformer-Instructor sowie internationaler Presenter.
 						</p>
 					</div>
 
 					<div class="___guest flex flex-col">
-						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Birgit Götz</h4>
+						<h4 class="text-ti_blue_mat mb-2 tracking-wide uppercase">Frederico Mendes Teixeira</h4>
 						<p>
-							Sie arbeitet als Choreografin, Performerin und Tänzerin für Bühne und Raum.
-							Zeitgenössischer Tanz wird kombiniert mit anderen Kunstformen, als Schwerpunkt ihres
-							künstlerischen Wirkens. Als Dozentin ist sie an theaterpädagogischen Zentren in Essen,
-							Hamm und an der FH Dortmund. Als Tanzvermittlerin für ist sie spartenübergreifende
-							Projekte an unterschiedlichen Bildungseinrichtungen für „Kultur und Schule“ sowie
-							„Jekits“ tätig. Planung und Gestaltung des Bereichs „Junge Szene“ ist ihr Thema am
-							„Theater im Depot“ in Dortmund. Vielfach ausgezeichnet. Zuletzt erhielt sie 2025 den
-							Jugendkulturpreis mit der LAG NRW für das Projekt „Urbanize“.
+							Er stammt aus Belo Horizonte, Brasilien, und lebt seit 2017 in Essen. Er absolvierte
+							den Master in Tanzkomposition sowie ein Studium der Tanzpädagogik mit Schwerpunkt
+							Moderner Tanz an der Folkwang Universität, wo er von 2023 bis 2026 Kinetographie Laban
+							unterrichtete. Aktuell vertieft er seine Studien in Cinétographie am Conservatoire
+							National Supérieur de Musique et de Danse de Paris. Als Tänzer arbeitete er mit
+							Künstler:innen und Compagnien wie Sasha Waltz & Guests, Marina Abramović und YiBu
+							Dance. Zudem unterrichtet er Modern Dance und Workshops in NRW.
 						</p>
 					</div>
 
