@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { PageProps } from './$types';
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
-	import Accordion from '$lib/components/Accordion/Accordion.svelte';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
+	import Accordion from '#lib/components/Accordion/Accordion.svelte';
 
-	import CiteGallery from '$lib/components/Cite/CiteGallery.svelte';
+	import CiteGallery from '#lib/components/Cite/CiteGallery.svelte';
 
-	import SeminarDashboard from '$lib/components/SeminarDashboard/SeminarDashboard.svelte';
+	import SeminarDashboard from '#lib/components/SeminarDashboard/SeminarDashboard.svelte';
 	let { data }: PageProps = $props();
 
 	const ausbildungsstufen = [
@@ -46,7 +46,7 @@
         <a
           href="#ausbildungen"
           aria-label="Mehr"
-          class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
+          class="button border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
         >
           Jetzt Kurse entdecken
         </a>
@@ -71,7 +71,7 @@
         <a
           href="#ausbildungen"
           aria-label="Mehr"
-          class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
+          class="button border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
         >
           Jetzt Kurse entdecken
         </a>
@@ -95,7 +95,7 @@
         <a
           href="#ausbildungen"
           aria-label="Mehr"
-          class="border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
+          class="button border-ti_blue_accent text-ti_blue_accent hover:bg-ti_blue_accent hover:shadow-ti w-full rounded-full border-2 p-4 text-sm font-extrabold tracking-widest uppercase shadow-sm transition duration-300 ease-in-out outline-none hover:text-white focus:ring-0 focus:outline-none"
         >
           Jetzt Kurse entdecken
         </a>
@@ -105,15 +105,11 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Ausbildungen</title>
-</svelte:head>
-
 <section>
 	<div class="container">
 		<div class="flex w-full lg:w-1/2">
 			<DefaultCard>
-				<h2 class="ti_headline_blue_bold">Ausbildungen</h2>
+				<h1 class="ti_headline_blue_bold">Ausbildungen</h1>
 				<h3 class="ti_headline_blue_light mb-4">
 					Zusatzqualifikation zur Tanzpädagogin / zum Tanzpädagogen
 				</h3>

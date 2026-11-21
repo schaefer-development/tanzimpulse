@@ -1,63 +1,91 @@
 <script lang="ts">
-	import type { SubmitFunction } from '@sveltejs/kit';
-	import SeminarCard from '$lib/components/SeminarCard/SeminarCard.svelte';
-	import SeminarForm from '$lib/components/SeminarForm/SeminarForm.svelte';
-	import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
-	import Success from '$lib/components/Alerts/Success.svelte';
-	import ErrorComponent from '$lib/components/Alerts/Error.svelte';
-	import { base } from '$app/paths';
-	export let seminar: Seminar;
-	let isError: boolean;
-	let isSuccess: boolean;
-	let isPending = false;
+	import { enhance } from '$app/forms';
+	import { resolve } from '$app/paths';
+
+	import SeminarCard from '#lib/components/SeminarCard/SeminarCard.svelte';
+	import SeminarForm from '#lib/components/SeminarForm/SeminarForm.svelte';
+	import VeranstaltungsOrt from '#lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
+	import Success from '#lib/components/Alerts/Success.svelte';
+	import ErrorComponent from '#lib/components/Alerts/Error.svelte';
+
+	type SubmitFunction = NonNullable<Parameters<typeof enhance>[1]>;
+
+	let { seminar }: { seminar: Seminar } = $props();
+
+	let isError = $state(false);
+	let isSuccess = $state(false);
+	let isPending = $state(false);
 
 	const submitFunction: SubmitFunction = () => {
 		isPending = true;
+		isError = false;
+		isSuccess = false;
+
 		return async ({ result, update }) => {
 			isPending = false;
+
 			isError = result.type === 'error' || result.type === 'failure';
 			isSuccess = result.type === 'success' || result.type === 'redirect';
-			return update();
+
+			await update();
 		};
 	};
 
-	const isExpired = (seminar: Seminar) => {
+	const isExpired = (seminar: Seminar): boolean => {
 		return new Date(seminar.endOfEvent) < new Date();
 	};
 
-	const action = `${base}/${seminar.format}/${seminar.url}`;
+	let action = $derived(
+		resolve('/[seminarFormat]/[url]', {
+			seminarFormat: seminar.format,
+			url: seminar.url
+		})
+	);
 </script>
 
 <section>
 	<div class="container mx-auto grid grid-cols-1 gap-10 lg:grid-cols-2">
 		<div class="__long_description border border-neutral-200 shadow-xl">
-			<SeminarCard {seminar}>
+			<SeminarCard {seminar} headingLevel="h1">
 				<div slot="beschreibung">
-					<p class="py-6">
+					<div class="py-6">
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html seminar.beschreibung.html}
-					</p>
+					</div>
+
 					<p class="py-2 text-black">
-						<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase"
-							>Dozentin/ Dozent</span
-						><br />{seminar.referenten.map((referent) => referent.name).join(', ')}
+						<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase">
+							Dozentin/ Dozent
+						</span>
+						<br />
+						{seminar.referenten.map((referent) => referent.name).join(', ')}
 					</p>
+
 					<p class="py-2 text-black">
-						<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase"
-							>Kursgebühr</span
-						><br />{seminar.preis} Euro
+						<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase">
+							Kursgebühr
+						</span>
+						<br />
+						{seminar.preis} Euro
 					</p>
 
 					{#if seminar.dokumente.length}
 						<div class="py-2">
-							<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase"
-								>Dokumente</span
-							><br />
+							<span class="title-font text-xs font-medium tracking-widest text-gray-600 uppercase">
+								Dokumente
+							</span>
+							<br />
+
 							<ul class="pt-2">
 								{#each seminar.dokumente as dokument (dokument.id)}
 									<li class="flex flex-row items-center pb-4">
-										<a href={dokument.url} target="_blank" class="hyperlink"
-											><svg
+										<a
+											href={dokument.url}
+											target="_blank"
+											rel="external noopener noreferrer"
+											class="hyperlink"
+										>
+											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												class="mr-1 inline-block h-6 w-6"
 												fill="none"
@@ -70,8 +98,9 @@
 													stroke-width="2"
 													d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
 												/>
-											</svg>{dokument.fileName}</a
-										>
+											</svg>
+											{dokument.fileName}
+										</a>
 									</li>
 								{/each}
 							</ul>
@@ -110,6 +139,7 @@
 							/>
 						</svg>
 					</p>
+
 					<h2 class="ti_headline_blue_bold">Lädt ...</h2>
 				</div>
 			{:else if isSuccess}
@@ -121,6 +151,7 @@
 					>
 						Das Seminar hat bereits stattgefunden.
 					</h2>
+
 					<p class="text-white">Eine Anmeldung ist nicht mehr möglich.</p>
 				</div>
 			{:else}

@@ -1,10 +1,8 @@
 <script context="module" lang="ts">
-	import Fotogallery from '$lib/components/Fotogallery/Fotogallery.svelte';
+	import Fotogallery from '#lib/components/Fotogallery/Fotogallery.svelte';
 </script>
 
-<svelte:head>
-	<title>Fotogalerie</title>
-</svelte:head>
+<h1 class="ti_headline_blue_bold mb-8 text-center">Fotogalerie</h1>
 
 <section>
 	<div class="container">

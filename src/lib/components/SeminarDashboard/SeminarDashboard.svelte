@@ -1,8 +1,8 @@
 <script lang="ts">
-	import SeminarDeck from '$lib/components/SeminarDeck/SeminarDeck.svelte';
+	import SeminarDeck from '#lib/components/SeminarDeck/SeminarDeck.svelte';
 	import Kategorien from './Kategorien.svelte';
 	import VolltextSuche from './VolltextSuche.svelte';
-	import { onlyUnique } from '$lib/helpers';
+	import { onlyUnique } from '#lib/helpers';
 	import Fuse from 'fuse.js';
 
 	export let seminare: Seminar[];

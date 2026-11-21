@@ -1,30 +1,39 @@
 import type { Actions } from './$types';
 import type { PageServerLoad } from './$types';
-import { error, fail } from '@sveltejs/kit';
-import { api } from '$lib/graphql/api';
-import { SEMINAR } from '$lib/graphql/queries';
-import { dev } from '$app/environment';
-import { overbooked } from '$lib/helpers';
-import * as SMTPTransport from 'nodemailer/lib/smtp-transport';
-import nodemailer from 'nodemailer';
-import { waitingListMessage, registrationMessage } from '$lib/mail';
+import { error, fail, redirect } from '@sveltejs/kit';
+import { resolve } from '$app/paths';
+import { api } from '#lib/graphql/api';
+import { SEMINAR } from '#lib/graphql/queries';
+import { DEV } from 'esm-env';
+import { overbooked } from '#lib/helpers';
+import nodemailer, { type SMTPTransportOptions } from 'nodemailer';
+import { waitingListMessage, registrationMessage } from '#lib/mail';
 import sanitizeHtml from 'sanitize-html';
-import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, HCAPTCHA_SECRET } from '$lib/env';
-import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '$lib/graphql/mutations';
+import { SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, HCAPTCHA_SECRET } from '#lib/env';
+import { UPSERT_TEILNEHMER, PUBLISH_TEILNEHMER } from '#lib/graphql/mutations';
 import { verify } from 'hcaptcha';
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, url: requestUrl }) => {
 	const { url } = params;
 	const body = await api(SEMINAR, { url });
 	const seminar: Seminar = body.data.seminar;
 	if (!seminar) {
 		error(404, 'Seminar nicht gefunden');
 	}
+	if (params.seminarFormat !== seminar.format) {
+		redirect(
+			308,
+			resolve('/[seminarFormat]/[url]', {
+				seminarFormat: seminar.format,
+				url: seminar.url
+			}) + requestUrl.search
+		);
+	}
 
 	return { seminar };
 };
 
-const transportOptions: SMTPTransport.Options = {
+const transportOptions: SMTPTransportOptions = {
 	host: SMTP_HOST,
 	port: parseInt(SMTP_PORT),
 	auth: {
@@ -32,7 +41,7 @@ const transportOptions: SMTPTransport.Options = {
 		pass: SMTP_PASSWORD
 	},
 	tls: {
-		rejectUnauthorized: !dev
+		rejectUnauthorized: !DEV
 	}
 };
 const transporter = nodemailer.createTransport(transportOptions);

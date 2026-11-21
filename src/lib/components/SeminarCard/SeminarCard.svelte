@@ -1,10 +1,12 @@
 <script lang="ts">
-	import { overbooked, dateFormat } from '$lib/helpers';
-	import Button from '$lib/components/Button/Button.svelte';
-	import VeranstaltungsOrt from '$lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
+	import type { ResolvedPathname } from '$app/types';
+	import { overbooked, dateFormat } from '#lib/helpers';
+	import Button from '#lib/components/Button/Button.svelte';
+	import VeranstaltungsOrt from '#lib/components/VeranstaltungsOrt/VeranstaltungsOrt.svelte';
 
 	export let seminar: Seminar;
-	export let link = '#';
+	export let link: ResolvedPathname | null = null;
+	export let headingLevel: 'h1' | 'h2' = 'h2';
 </script>
 
 <div class="flex items-start">
@@ -14,28 +16,29 @@
 				<img
 					class="aspect-3/2 w-full object-cover object-center"
 					src={seminar.bild.medium}
-					alt={seminar.bild.fileName || 'Fehlendes Bild'}
+					alt={seminar.titel}
 				/>
 			{/if}
 		</div>
 
 		<div class="seminar_card_content w-full flex-1 p-4 sm:p-4 md:p-5 xl:p-8">
-			<h4 class="title-font pb-1 text-xs tracking-widest text-gray-600 uppercase">
+			<p class="title-font pb-1 text-xs tracking-widest text-gray-600 uppercase">
 				{seminar.format}
-			</h4>
-			<h2
+			</p>
+			<svelte:element
+				this={headingLevel}
 				class="text-ti_blue_accent text-lg font-bold tracking-wide break-words uppercase lg:text-2xl"
 			>
 				{seminar.titel}
-			</h2>
+			</svelte:element>
 
-			<h3 class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
+			<p class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
 				Start: {dateFormat.format(new Date(seminar.datum))} Uhr
-			</h3>
+			</p>
 
-			<h3 class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
+			<p class="pb-1 text-lg font-light tracking-wide break-words uppercase lg:text-xl">
 				Ende: {dateFormat.format(new Date(seminar.endOfEvent))} Uhr
-			</h3>
+			</p>
 
 			{#if overbooked(seminar)}
 				<span class="block py-2 text-lg font-bold tracking-wide text-gray-600 uppercase"
@@ -74,8 +77,8 @@
 			</slot>
 
 			<div class="seminar_card_content flex-0">
-				{#if link && link !== '#'}
-					<Button href={link} buttonstyle={'blue'}>Mehr erfahren</Button>
+				{#if link}
+					<Button href={link} buttonstyle="blue">Mehr erfahren</Button>
 				{/if}
 			</div>
 		</div>

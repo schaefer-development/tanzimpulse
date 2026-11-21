@@ -1,16 +1,12 @@
 <script context="module" lang="ts">
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 </script>
-
-<svelte:head>
-	<title>Datenschutz</title>
-</svelte:head>
 
 <section>
 	<div class="container">
 		<div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
 			<DefaultCard>
-				<h2 class="ti_headline_blue_bold mb-6">Datenschutz</h2>
+				<h1 class="ti_headline_blue_bold mb-6">Datenschutz</h1>
 
 				<p>
 					Wir freuen uns sehr über Ihr Interesse an unserer Einrichtung und an unserem Bildungs- und
@@ -536,7 +532,14 @@
 				<p class="my-6 border-t border-gray-300 py-6">
 					Weitere Dokumente des Vereins für Weiterbildung und Friedensarbeit:
 					<br />
-					<a href="" class="hyperlink" target="_blank">Facebook-Datenschutzerklärung</a><br />
+					<a
+						href="https://www.facebook.com/privacy/policy/"
+						class="hyperlink"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Facebook-Datenschutzerklärung
+					</a><br />
 					<a
 						href="https://www.bf-bonn.de/index.php/datenschutzerklaerung.html?view=article&id=77:facebook-impressum&catid=15:bildungsforum-lernwelten"
 						class="hyperlink"

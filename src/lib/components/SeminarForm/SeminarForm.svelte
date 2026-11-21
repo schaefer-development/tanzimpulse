@@ -1,18 +1,32 @@
 <script lang="ts">
-	import type { SubmitFunction } from '@sveltejs/kit';
-	import { base } from '$app/paths';
+	import { onMount } from 'svelte';
+	import { resolve, asset } from '$app/paths';
 	import { enhance } from '$app/forms';
-	import Button from '$lib/components/Button/Button.svelte';
-	import HCaptcha from '$lib/components/HCaptcha/HCaptcha.svelte';
-	import { HCAPTCHA_SITEKEY } from '$lib/env';
-	import { browser } from '$app/environment';
 
-	export let action: string;
-	export let submitFunction: SubmitFunction;
+	import Button from '#lib/components/Button/Button.svelte';
+	import HCaptcha from '#lib/components/HCaptcha/HCaptcha.svelte';
+	import { HCAPTCHA_SITEKEY } from '#lib/env';
+
+	type SubmitFunction = NonNullable<Parameters<typeof enhance>[1]>;
+
+	let {
+		action,
+		submitFunction
+	}: {
+		action: string;
+		submitFunction: SubmitFunction;
+	} = $props();
 
 	let captcha: HCaptcha;
+
+	let mounted = $state(false);
+
+	onMount(() => {
+		mounted = true;
+	});
+
 	const handleError = () => {
-		captcha.reset();
+		captcha?.reset();
 	};
 </script>
 
@@ -24,8 +38,8 @@
 
 		<div class="mb-8 flex flex-col space-y-10">
 			<div class="grid grid-cols-2 gap-x-10">
-				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-					>Vorname
+				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase">
+					Vorname
 					<input
 						class="mb-2 block border-2 border-neutral-400 p-4 font-normal text-black placeholder-gray-400 outline-none focus:border-2 focus:border-blue-600 focus:ring-0 focus:outline-none"
 						type="text"
@@ -35,8 +49,8 @@
 					/>
 				</label>
 
-				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-					>Nachname
+				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase">
+					Nachname
 					<input
 						class="mb-2 block border-2 border-neutral-400 bg-white p-4 font-normal text-black placeholder-gray-400 transition duration-300 ease-in-out outline-none focus:border-2 focus:border-blue-600 focus:bg-white focus:ring-0 focus:outline-none"
 						type="text"
@@ -48,8 +62,8 @@
 			</div>
 
 			<div class="grid grid-cols-2 gap-x-10">
-				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-					>E-Mailadresse
+				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase">
+					E-Mailadresse
 					<input
 						class="mb-2 block border-2 border-neutral-400 bg-white p-4 font-normal text-black placeholder-gray-400 transition duration-300 ease-in-out outline-none focus:border-2 focus:border-blue-600 focus:bg-white focus:ring-0 focus:outline-none"
 						type="email"
@@ -59,8 +73,8 @@
 					/>
 				</label>
 
-				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-					>Telefonnummer
+				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase">
+					Telefonnummer
 					<input
 						class="mb-2 block border-2 border-neutral-400 bg-white p-4 font-normal text-black placeholder-gray-400 transition duration-300 ease-in-out outline-none focus:border-2 focus:border-blue-600 focus:bg-white focus:ring-0 focus:outline-none"
 						type="tel"
@@ -74,7 +88,8 @@
 			<div class="grid grid-cols-2 gap-x-10">
 				<label
 					class="flex grow-1 flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-					>Strasse
+				>
+					Strasse
 					<input
 						class="mb-2 block border-2 border-neutral-400 bg-white p-4 font-normal text-black placeholder-gray-400 transition duration-300 ease-in-out outline-none focus:border-2 focus:border-blue-600 focus:bg-white focus:ring-0 focus:outline-none"
 						type="text"
@@ -86,7 +101,8 @@
 
 				<label
 					class="grow-none flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-					>Hausnummer
+				>
+					Hausnummer
 					<input
 						class="mb-2 block border-2 border-neutral-400 bg-white p-4 font-normal text-black placeholder-gray-400 transition duration-300 ease-in-out outline-none focus:border-2 focus:border-blue-600 focus:bg-white focus:ring-0 focus:outline-none"
 						type="text"
@@ -98,8 +114,8 @@
 			</div>
 
 			<div class="grid grid-cols-2 gap-x-10">
-				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-					>PLZ
+				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase">
+					PLZ
 					<input
 						class="mb-2 block border-2 border-neutral-400 bg-white p-4 font-normal text-black placeholder-gray-400 transition duration-300 ease-in-out outline-none focus:border-2 focus:border-blue-600 focus:bg-white focus:ring-0 focus:outline-none"
 						type="text"
@@ -109,8 +125,8 @@
 					/>
 				</label>
 
-				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-					>Ort
+				<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase">
+					Ort
 					<input
 						class="mb-2 block border-2 border-neutral-400 bg-white p-4 font-normal text-black placeholder-gray-400 transition duration-300 ease-in-out outline-none focus:border-2 focus:border-blue-600 focus:bg-white focus:ring-0 focus:outline-none"
 						type="text"
@@ -121,15 +137,15 @@
 				</label>
 			</div>
 
-			<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase"
-				>Anmerkung (optional)
+			<label class="flex flex-col-reverse text-xs font-bold tracking-widest text-black uppercase">
+				Anmerkung (optional)
 				<textarea
 					class="mb-2 block border-2 border-neutral-400 bg-white p-4 font-normal text-black placeholder-gray-400 transition duration-300 ease-in-out outline-none focus:border-2 focus:border-blue-600 focus:bg-white focus:ring-0 focus:outline-none"
 					name="anmerkung"
 					placeholder="Anmerkung zur Anmeldung"
-					rows="4"
-				></textarea>
+					rows="4"></textarea>
 			</label>
+
 			<div class="___registration checkboxes mb-8 flex flex-col space-y-6">
 				<label class="mt-4 flex">
 					<input
@@ -139,20 +155,25 @@
 						required
 					/>
 					<span>
-						Ich habe die <a
+						Ich habe die
+						<a
 							class="hyperlink"
-							href="{base}/content/AGB_tanzimpulse_interkultur.pdf"
-							target="_blank">AGB</a
+							href={asset('content/AGB_tanzimpulse_interkultur.pdf')}
+							target="_blank"
+							rel="noopener noreferrer">AGB</a
 						>, die
 						<a
 							class="hyperlink"
-							href="{base}/content/widerrufsbelehrung_tanzimpulse_bei_interkultur.pdf"
-							target="_blank">Widerrufsbelehrung</a
+							href={asset('content/widerrufsbelehrung_tanzimpulse_bei_interkultur.pdf')}
+							target="_blank"
+							rel="noopener noreferrer">Widerrufsbelehrung</a
 						>
 						sowie die Maßnahmen zum
-						<a class="hyperlink" href="{base}/datenschutz">Datenschutz</a> gelesen und akzeptiert
+						<a class="hyperlink" href={resolve('/datenschutz')}>Datenschutz</a>
+						gelesen und akzeptiert
 					</span>
 				</label>
+
 				<label class="flex items-center">
 					<input
 						class="mr-4 h-6 w-6 border-2 border-neutral-400 checked:border-blue-600 focus:border-blue-600 focus:ring-0"
@@ -163,14 +184,17 @@
 				</label>
 			</div>
 		</div>
+
 		<div class="flex justify-center pb-8">
 			<HCaptcha sitekey={HCAPTCHA_SITEKEY} hl="de" bind:this={captcha} on:error={handleError} />
+
 			<noscript>
 				Sie benötigen einen JavaScript-fähigen Browser für die Anmeldung zu einem Seminar.
 			</noscript>
 		</div>
-		{#if browser}
-			<Button buttonstyle={'blue'}>Kostenpflichtig Anmelden</Button>
+
+		{#if mounted}
+			<Button buttonstyle="blue">Kostenpflichtig Anmelden</Button>
 		{/if}
 	</form>
 </div>

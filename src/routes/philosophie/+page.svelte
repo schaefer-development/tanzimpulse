@@ -1,7 +1,7 @@
 <script lang="ts">
-	import DefaultCard from '$lib/components/DefaultCard/DefaultCard.svelte';
+	import DefaultCard from '#lib/components/DefaultCard/DefaultCard.svelte';
 
-	import Accordion from '$lib/components/Accordion/Accordion.svelte';
+	import Accordion from '#lib/components/Accordion/Accordion.svelte';
 
 	const faqItems = [
 		{
@@ -42,15 +42,11 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Philosophie</title>
-</svelte:head>
-
 <section>
 	<div class="container">
 		<div class="flex w-full lg:w-1/2">
 			<DefaultCard>
-				<h2 class="ti_headline_blue_bold mb-4">Philosophie</h2>
+				<h1 class="ti_headline_blue_bold mb-4">Philosophie</h1>
 
 				<!--	<p>
 					Wir verstehen uns als lernende Organisation und sind bemüht, unser Angebot kontinuierlich
@@ -66,15 +62,15 @@
 					uns wertvolle Impulse, unsere Arbeit zu verbessern und weiterzuentwickeln.<br />
 					<a class="hyperlink" href="https://ik-bonn.de/">ik-bonn.de</a>
 				</p>-->
-				<p>
+				<div>
 					<Accordion items={faqItems} />
-				</p>
+				</div>
 
 				<p class="pt-10">
 					Wir freuen uns, auf einen regen Austausch und interessante Tanzerlebnisse mit allen
 					Weiterbildungs- und Tanzinteressierten (m/w/d).
 				</p>
-				<p class="pt-4">Bettina Bierdümpel (Künstlerische Leitung)</p>
+				<p class="pt-4">Bettina Bierdümpel (Leitung)</p>
 			</DefaultCard>
 		</div>
 	</div>

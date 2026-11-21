@@ -1,4 +1,4 @@
-import { gql } from '$lib/helpers';
+import { gql } from '#lib/helpers';
 export const seminarFragment = gql`
 	fragment seminarFragment on Seminar {
 		id
@@ -8,6 +8,7 @@ export const seminarFragment = gql`
 		datum
 		endOfEvent
 		bild {
+			original: url
 			medium: url(transformation: { image: { resize: { width: 480 } } })
 			fileName
 			height
@@ -74,11 +75,11 @@ export const SEMINARE = gql`
 `;
 
 export const SITEMAP = gql`
-	${seminarFragment}
-
 	query ($today: DateTime!) {
-		seminare(orderBy: datum_ASC, where: { datum_gte: $today }) {
-			...seminarFragment
+		seminare(orderBy: datum_ASC, where: { endOfEvent_gte: $today }) {
+			url
+			format
+			updatedAt
 		}
 	}
 `;

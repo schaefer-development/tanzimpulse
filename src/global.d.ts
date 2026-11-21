@@ -4,15 +4,7 @@ interface Identifiable {
 }
 
 type ButtonColor =
-	| 'blue'
-	| 'cyan'
-	| 'green'
-	| '_blue'
-	| '_cyan'
-	| '_green'
-	| 'red'
-	| 'white'
-	| 'gray';
+	'blue' | 'cyan' | 'green' | '_blue' | '_cyan' | '_green' | 'red' | 'white' | 'gray';
 
 type Koordinaten = {
 	longitude: number;
@@ -49,6 +41,7 @@ type Teilnehmer = {
 type Bild = {
 	fileName: string;
 	medium: string;
+	original?: string;
 };
 
 type Referent = {
@@ -75,7 +68,7 @@ type Seminar = {
 	maximaleAnzahlTeilnehmer?: number;
 	teilnehmer: Teilnehmer[];
 	kategorien: Kategorie[];
-	veranstaltungsort: Veranstaltungsort;
+	veranstaltungsort: Veranstaltungsort | null;
 	format: 'ausbildung' | 'workshop';
 	referenten: Referent[];
 	bild?: Bild;

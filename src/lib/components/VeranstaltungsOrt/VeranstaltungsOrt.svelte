@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Map from '$lib/components/Map/Map.svelte';
-	export let veranstaltungsort: Veranstaltungsort;
+	import Map from '#lib/components/Map/Map.svelte';
+	export let veranstaltungsort: Veranstaltungsort | null;
 	export let showMap = false;
 	const mapAttributes = {
 		class: 'mt-4',

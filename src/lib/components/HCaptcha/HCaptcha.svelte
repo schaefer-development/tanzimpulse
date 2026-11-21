@@ -1,42 +1,75 @@
 <script lang="ts" context="module">
-	// @ts-nocheck
-	declare global {
-		interface Window {
-			sitekey: string;
-			hcaptchaOnLoad: Function;
-			onSuccess: Function;
-			onError: Function;
-			onClose: Function;
-			onExpired: Function;
-			hcaptcha: any;
-		}
+	export type CaptchaTheme = 'dark' | 'light';
+	type CaptchaSize = 'normal' | 'compact' | 'invisible';
+	type WidgetID = string | number;
+
+	interface ExecuteOptions {
+		async?: boolean;
 	}
 
-	declare var hcaptcha: any;
+	interface CaptchaResponse {
+		response: string;
+		key: string;
+	}
 
-	export type CaptchaTheme = 'dark' | 'light';
+	interface RenderOptions {
+		sitekey: string;
+		hl: string;
+		theme: CaptchaTheme;
+		size: CaptchaSize;
+		callback: string;
+		'error-callback': string;
+		'close-callback': string;
+		'expired-callback': string;
+	}
+
+	interface HCaptchaAPI {
+		render(container: string, options: RenderOptions): WidgetID;
+		reset(widgetID: WidgetID): void;
+		execute(widgetID: WidgetID, options?: ExecuteOptions): void | Promise<CaptchaResponse>;
+	}
+
+	declare global {
+		interface Window {
+			sitekey?: string;
+			hcaptchaOnLoad?: (() => void) | null;
+			onSuccess?: ((token: string) => void) | null;
+			onError?: (() => void) | null;
+			onClose?: (() => void) | null;
+			onExpired?: (() => void) | null;
+			hcaptcha?: HCaptchaAPI | null;
+		}
+	}
 </script>
 
 <script lang="ts">
-	// @ts-nocheck
 	import { onDestroy, createEventDispatcher, onMount } from 'svelte';
 	const browser = import.meta.env.SSR === undefined ? true : !import.meta.env.SSR;
 
-	const dispatch = createEventDispatcher();
+	const dispatch = createEventDispatcher<{
+		load: void;
+		success: { token: string };
+		error: void;
+		close: void;
+		expired: void;
+		mount: void;
+	}>();
 
 	export let sitekey: string;
 	export let apihost: string = 'https://js.hcaptcha.com/1/api.js';
 	export let hl: string = '';
 	export let reCaptchaCompat: boolean = false;
 	export let theme: CaptchaTheme = 'light';
-	export let size: 'normal' | 'compact' | 'invisible' = 'normal';
+	export let size: CaptchaSize = 'normal';
 
 	export const reset = () => {
-		if (mounted && loaded && widgetID) hcaptcha.reset(widgetID);
+		if (mounted && loaded && widgetID !== undefined) window.hcaptcha?.reset(widgetID);
 	};
 
-	export const execute = (options) => {
-		if (mounted && loaded && widgetID) return hcaptcha.execute(widgetID, options);
+	export const execute = (options?: ExecuteOptions) => {
+		if (mounted && loaded && widgetID !== undefined) {
+			return window.hcaptcha?.execute(widgetID, options);
+		}
 	};
 
 	// ensure that all captcha divs on a page are uniquely identifiable
@@ -44,7 +77,7 @@
 
 	let mounted = false;
 	let loaded = false;
-	let widgetID;
+	let widgetID: WidgetID | undefined;
 
 	// construct the script tag for hCaptcha remote resources
 	const query = new URLSearchParams({
@@ -55,7 +88,7 @@
 	const scriptSrc = `${apihost}?${query.toString()}`;
 
 	onMount(() => {
-		if (browser && !sitekey) sitekey = window.sitekey;
+		if (browser && !sitekey) sitekey = window.sitekey ?? '';
 
 		if (browser) {
 			window.hcaptchaOnLoad = () => {
@@ -94,11 +127,11 @@
 		}
 		// guard against script loading race conditions
 		// i.e. if component is destroyed before hcaptcha reference is loaded
-		if (loaded) hcaptcha = null;
+		if (browser && loaded) window.hcaptcha = null;
 	});
 
-	$: if (mounted && loaded) {
-		widgetID = hcaptcha.render(`h-captcha-${id}`, {
+	$: if (mounted && loaded && window.hcaptcha) {
+		widgetID = window.hcaptcha.render(`h-captcha-${id}`, {
 			sitekey,
 			hl, // force a specific localisation
 			theme,
